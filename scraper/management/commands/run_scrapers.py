@@ -9,14 +9,16 @@ Usage:
 
 from django.core.management.base import BaseCommand, CommandError
 
-from scraper.hwk_koblenz import HwkKoblenzScraper
-from scraper.hwk_trier   import HwkTrierScraper
+from scraper.hwk_koblenz      import HwkKoblenzScraper
+from scraper.hwk_trier        import HwkTrierScraper
+from scraper.hwk_pfalz        import HwkPfalzScraper
+from scraper.hwk_rheinhessen  import HwkRheinhessenScraper
 
 SCRAPERS = {
     "hwk-koblenz":     HwkKoblenzScraper,
     "hwk-trier":       HwkTrierScraper,
-    # "hwk-pfalz":      HwkPfalzScraper,
-    # "hwk-rheinhessen": HwkRheinhessenScraper,
+    "hwk-pfalz":       HwkPfalzScraper,
+    "hwk-rheinhessen": HwkRheinhessenScraper,
 }
 
 

@@ -52,7 +52,7 @@ class CourseOfferAdmin(admin.ModelAdmin):
 @admin.register(ExamFee)
 class ExamFeeAdmin(admin.ModelAdmin):
     list_display = (
-        "chamber", "trade", "part", "fee",
+        "chamber", "trade", "part", "fee_display_admin",
         "source_type", "manually_verified", "scraper_may_overwrite", "updated_at",
     )
     list_filter  = ("chamber", "trade", "part", "source_type",
@@ -61,7 +61,14 @@ class ExamFeeAdmin(admin.ModelAdmin):
     readonly_fields = ("created_at", "updated_at")
 
     fieldsets = (
-        ("Fee", {"fields": ("chamber", "trade", "part", "fee")}),
+        ("Fee", {
+            "fields": ("chamber", "trade", "part", "fee", "fee_qualifier"),
+            "description": (
+                "Set 'fee_qualifier' to 'bis zu' for maximum fees "
+                "(as published in HWK Koblenz Gebührenverzeichnis). "
+                "Leave blank for exact amounts."
+            ),
+        }),
         ("Source & Verification", {
             "fields": ("source_type", "source_url", "manually_verified", "scraper_may_overwrite"),
         }),
@@ -71,5 +78,9 @@ class ExamFeeAdmin(admin.ModelAdmin):
 
     def get_readonly_fields(self, request, obj=None):
         if obj and obj.manually_verified:
-            return self.readonly_fields + ("fee", "part", "chamber", "trade")
+            return self.readonly_fields + ("fee", "fee_qualifier", "part", "chamber", "trade")
         return self.readonly_fields
+
+    @admin.display(description="Fee")
+    def fee_display_admin(self, obj):
+        return obj.fee_display

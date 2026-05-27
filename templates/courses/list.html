@@ -1,5 +1,6 @@
 {% extends "base.html" %}
-{% block title %}Meistervorbereitungskurse – Vergleich{% endblock %}
+{% block title %}Kursfinder – MeisterVergleich{% endblock %}
+{% block tab_finder %}active{% endblock %}
 
 {% block extra_head %}
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
@@ -91,7 +92,7 @@
         </select>
 
         <select name="trade" onchange="this.form.submit()">
-          <option value="">Alle Gewerke</option>
+          <option value="">Meistervorbereitungskurse – alle Gewerke</option>
           {% for t in trades %}
             <option value="{{ t.slug }}" {% if sel_trade == t.slug %}selected{% endif %}>{{ t.name }}</option>
           {% endfor %}
@@ -100,7 +101,9 @@
         <select name="format" onchange="this.form.submit()">
           <option value="">Zeitmodell</option>
           {% for key, label in formats %}
-            <option value="{{ key }}" {% if sel_format == key %}selected{% endif %}>{{ label }}</option>
+            {% if key != 'part_or_full' %}
+              <option value="{{ key }}" {% if sel_format == key %}selected{% endif %}>{{ label }}</option>
+            {% endif %}
           {% endfor %}
         </select>
 
@@ -163,9 +166,8 @@
         </p>
         <select name="per_page" form="filter-form" onchange="document.getElementById('filter-form').submit()"
                 style="height:32px;padding:0 .6rem;border:1px solid var(--border);border-radius:var(--radius);font-family:inherit;font-size:.82rem;background:var(--bg);cursor:pointer">
-          <option value="" {% if not sel_per_page %}selected{% endif %}>30 pro Seite</option>
           {% for n in per_page_options %}
-            <option value="{{ n }}" {% if sel_per_page == n|stringformat:'s' %}selected{% endif %}>{{ n }} pro Seite</option>
+            <option value="{{ n }}" {% if sel_per_page == n|stringformat:'s' or not sel_per_page and n == 30 %}selected{% endif %}>{{ n }} pro Seite</option>
           {% endfor %}
           <option value="all" {% if sel_per_page == 'all' %}selected{% endif %}>Alle anzeigen</option>
         </select>
@@ -184,9 +186,9 @@
           <tr>
             <td>
               {% if offer.source_url %}
-                <a class="course-title link-icon" href="{{ offer.source_url }}" target="_blank">{{ offer.title }} ↗</a>
+                <a class="course-title link-icon" href="{{ offer.source_url }}" target="_blank">{{ offer.title|cut:"Meistervorbereitungskurs: " }} ↗</a>
               {% else %}
-                <div class="course-title">{{ offer.title }}</div>
+                <div class="course-title">{{ offer.title|cut:"Meistervorbereitungskurs: " }}</div>
               {% endif %}
               {% if offer.trade %}
                 <div class="course-meta">{{ offer.trade.name }}{% if offer.trade.berufenet_url %} · <a href="{{ offer.trade.berufenet_url }}" target="_blank" class="link-icon">Berufenet ↗</a>{% endif %}</div>
@@ -196,7 +198,7 @@
             <td><span class="badge">{{ offer.parts_label }}</span></td>
             <td>{{ offer.get_format_display }}</td>
             <td>{{ offer.get_teaching_mode_display }}</td>
-            <td style="white-space:nowrap;font-size:.82rem;">{% if offer.start_date %}{{ offer.start_date|date:"d.m.Y" }}{% else %}—{% endif %}</td>
+            <td style="white-space:nowrap;font-size:.82rem;">{% if offer.start_date %}{{ offer.start_date|date:"d.m.Y" }}{% else %}<span style="color:var(--text-lt);font-style:italic">Termine n. v.</span>{% endif %}</td>
             <td style="white-space:nowrap;font-size:.82rem;">{% if offer.end_date %}{{ offer.end_date|date:"d.m.Y" }}{% else %}—{% endif %}</td>
             <td style="white-space:nowrap;">{% if offer.duration_hours %}{{ offer.duration_hours }} Std.{% else %}—{% endif %}</td>
             <td>{% if offer.course_fee %}<span class="price">{{ offer.course_fee|floatformat:0 }} €</span>{% else %}<span class="price-na">—</span>{% endif %}</td>

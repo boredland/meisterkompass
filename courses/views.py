@@ -8,7 +8,7 @@ from django.db.models import Q
 from .models import CourseOffer, CourseFormat, TeachingMode
 from chambers.models import Chamber, Trade
 
-PER_PAGE_OPTIONS = [10, 20, 40, 60]
+PER_PAGE_OPTIONS = [10, 20, 30, 40, 60]
 PER_PAGE_DEFAULT = 30
 
 

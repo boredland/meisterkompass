@@ -17,7 +17,42 @@ from scraper.models import ScraperRun
 logger = logging.getLogger(__name__)
 
 GENERIC_TRADE_SLUG = "allgemein-teil-iii-iv"
-GENERIC_TRADE_NAME = "Allgemein (Teil III + IV)"
+GENERIC_TRADE_NAME = "Allgemein (Teile III + IV)"
+
+# Human-readable names for generic (trade-independent) exam parts
+_GENERIC_PART_NAMES: dict[tuple[int, ...], str] = {
+    (3,):    "Wirtschaft und Recht",
+    (4,):    "Berufs- und Arbeitspädagogik",
+    (3, 4):  "Wirtschaft und Recht, Pädagogik",
+}
+
+_ROMAN = {1: "I", 2: "II", 3: "III", 4: "IV"}
+
+
+def build_course_title(trade_name: str | None, parts: list[int]) -> str:
+    """
+    Build a normalised, human-readable course title without the
+    "Meistervorbereitungskurs" prefix (redundant on a platform dedicated
+    to these courses).
+
+    Trade-specific courses:
+        "Metallbauer (Teile I + II)"
+        "Friseur (Teil I)"
+
+    Generic (trade-independent) courses use the official German part names:
+        Part III only  → "Wirtschaft und Recht (Teil III)"
+        Part IV only   → "Berufs- und Arbeitspädagogik (Teil IV)"
+        Parts III + IV → "Wirtschaft und Recht, Pädagogik (Teile III + IV)"
+    """
+    parts_label = " + ".join(_ROMAN[p] for p in parts)
+    prefix = "Teile" if len(parts) > 1 else "Teil"
+
+    if trade_name:
+        base = trade_name
+    else:
+        base = _GENERIC_PART_NAMES.get(tuple(sorted(parts)), "Allgemein")
+
+    return f"{base} ({prefix} {parts_label})"
 
 
 @dataclass

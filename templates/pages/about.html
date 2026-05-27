@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% block title %}Über MeisterVergleich{% endblock %}
+{% block tab_about %}active{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="page-content">
+    <h1>Über MeisterVergleich</h1>
+
+    <p>
+      MeisterVergleich ist eine unabhängige Vergleichsplattform für
+      Meistervorbereitungskurse der Handwerkskammern in Rheinland-Pfalz.
+      Ziel ist es, angehenden Meisterinnen und Meistern einen schnellen,
+      übersichtlichen Vergleich von Kursangeboten, Gebühren und Standorten
+      zu ermöglichen.
+    </p>
+
+    <h2>Was wird verglichen?</h2>
+    <p>
+      Aktuell erfasst MeisterVergleich die Meistervorbereitungskurse der vier
+      Handwerkskammern in Rheinland-Pfalz:
+    </p>
+    <ul>
+      <li>Handwerkskammer Koblenz</li>
+      <li>Handwerkskammer Trier</li>
+      <li>Handwerkskammer der Pfalz</li>
+      <li>Handwerkskammer Rheinhessen</li>
+    </ul>
+    <p>
+      Eine Erweiterung auf weitere Bundesländer und alle ~53 Handwerkskammern
+      in Deutschland ist geplant.
+    </p>
+
+    <h2>Datenherkunft</h2>
+    <p>
+      Alle Daten werden automatisiert von den öffentlichen Webseiten der
+      jeweiligen Handwerkskammern bezogen und wöchentlich aktualisiert.
+      Prüfungsgebühren, die nicht direkt auf den Kursseiten veröffentlicht
+      werden, werden manuell aus den offiziellen Gebührenverzeichnissen
+      der Kammern entnommen.
+    </p>
+
+    <h2>Einschränkungen und Hinweise</h2>
+    <ul>
+      <li>
+        Die Angaben erheben keinen Anspruch auf Vollständigkeit oder
+        rechtliche Verbindlichkeit. Maßgeblich sind stets die Angaben
+        der jeweiligen Handwerkskammer.
+      </li>
+      <li>
+        Preisangaben können sich ändern. Bitte prüfe aktuelle Konditionen
+        direkt bei der Kammer.
+      </li>
+      <li>
+        Prüfungsgebühren bei HWK Koblenz werden als Höchstbeträge
+        ("bis zu") aus dem Gebührenverzeichnis angegeben.
+      </li>
+      <li>
+        Kurse ohne veröffentlichte Starttermine werden mit dem Hinweis
+        "Termine nicht verfügbar" gelistet, sofern bereits ein Preis
+        bekannt ist.
+      </li>
+      <li>
+        Der Scraper ist kein offizielles Angebot der Handwerkskammern.
+      </li>
+    </ul>
+
+    <h2>Kontakt & Feedback</h2>
+    <p>
+      Fehler, veraltete Daten oder Verbesserungsvorschläge bitte direkt
+      an den Betreiber dieser Plattform melden.
+    </p>
+  </div>
+</div>
+{% endblock %}

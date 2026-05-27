@@ -130,6 +130,15 @@ class ExamFee(models.Model):
     trade             = models.ForeignKey(Trade,   on_delete=models.CASCADE, related_name="exam_fees")
     part              = models.IntegerField(choices=PART_CHOICES)
     fee               = models.DecimalField(max_digits=8, decimal_places=2)
+    fee_qualifier     = models.CharField(
+        max_length=20,
+        blank=True,
+        default="",
+        help_text=(
+            "Optional qualifier displayed before the fee, e.g. 'bis zu' for maximum fees "
+            "(as in HWK Koblenz Gebührenverzeichnis). Leave blank for exact amounts."
+        ),
+    )
     scraper_may_overwrite = models.BooleanField(default=True)
     manually_verified = models.BooleanField(default=False)
     source_type       = models.CharField(max_length=20, choices=ExamSourceType.choices,
@@ -148,4 +157,11 @@ class ExamFee(models.Model):
 
     def __str__(self):
         roman = {1: "I", 2: "II", 3: "III", 4: "IV"}
-        return f"{self.chamber} · {self.trade} · Part {roman[self.part]} · {self.fee} €"
+        qualifier = f"{self.fee_qualifier} " if self.fee_qualifier else ""
+        return f"{self.chamber} · {self.trade} · Part {roman[self.part]} · {qualifier}{self.fee} €"
+
+    @property
+    def fee_display(self) -> str:
+        """Human-readable fee string, e.g. 'bis zu 380,00 €' or '1.130,00 €'."""
+        fee_str = f"{self.fee:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".") + " €"
+        return f"{self.fee_qualifier} {fee_str}".strip()

@@ -19,7 +19,7 @@ from datetime import date
 
 from bs4 import BeautifulSoup
 
-from .base import BaseScraper, RawCourseOffer, RawExamFee
+from .base import BaseScraper, RawCourseOffer, RawExamFee, build_course_title
 
 logger = logging.getLogger(__name__)
 
@@ -127,19 +127,6 @@ def parse_parts_and_trade(h1_text: str) -> tuple[list[int], str | None]:
 
     trade = TRADE_ALIASES.get(rest, rest) if rest else None
     return sorted(parts), trade
-
-
-def clean_title(parts: list[int], trade_name: str | None) -> str:
-    """
-    Build clean display title with parts in parentheses.
-    Example: "Meistervorbereitungskurs: Elektrotechniker (Teile I + II)"
-             "Meistervorbereitungskurs: Allgemein (Teil III)"
-    """
-    roman = {1: "I", 2: "II", 3: "III", 4: "IV"}
-    parts_label = " + ".join(roman[p] for p in parts)
-    prefix = "Teile" if len(parts) > 1 else "Teil"
-    base = trade_name or "Allgemein"
-    return f"Meistervorbereitungskurs: {base} ({prefix} {parts_label})"
 
 
 class HwkTrierScraper(BaseScraper):
@@ -292,7 +279,7 @@ class HwkTrierScraper(BaseScraper):
             logger.debug("Could not parse parts from h1 %r at %s", h1_text, url)
             return None
 
-        title        = clean_title(parts, trade_name)
+        title = build_course_title(trade_name, parts)
         page_text    = soup.get_text(separator="\n")
         availability = self._parse_availability(page_text)
         teaching_mode = parse_teaching_mode(page_text)

@@ -19,7 +19,7 @@ import re
 
 from bs4 import BeautifulSoup, Tag
 
-from .base import BaseScraper, RawCourseOffer, RawExamFee
+from .base import BaseScraper, RawCourseOffer, RawExamFee, build_course_title
 
 logger = logging.getLogger(__name__)
 
@@ -62,20 +62,6 @@ def parse_title(title: str) -> tuple[str | None, list[int]]:
         if token in ROMAN:
             parts.append(ROMAN[token])
     return trade_name, sorted(parts)
-
-
-def clean_title(trade_name: str | None, parts: list[int]) -> str:
-    """
-    Build a clean, normalised display title from the parsed trade name and parts.
-    Parts are placed in parentheses to avoid duplication with the parts badge.
-    Example: "Meistervorbereitungskurs: Metallbauer (Teile I + II)"
-             "Meistervorbereitungskurs: Allgemein (Teile III + IV)"
-    """
-    roman = {1: "I", 2: "II", 3: "III", 4: "IV"}
-    parts_label = " + ".join(roman[p] for p in parts)
-    prefix = "Teile" if len(parts) > 1 else "Teil"
-    base = trade_name if trade_name else "Allgemein"
-    return f"Meistervorbereitungskurs: {base} ({prefix} {parts_label})"
 
 
 def parse_format_and_mode(text: str) -> tuple[str, str]:
@@ -186,7 +172,7 @@ class HwkKoblenzScraper(BaseScraper):
         if not parts:
             return None
 
-        title_clean = clean_title(trade_name, parts)
+        title_clean = build_course_title(trade_name, parts)
 
         card_row = link.find_parent("div", class_="row")
         if card_row is None:
