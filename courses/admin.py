@@ -62,11 +62,13 @@ class ExamFeeAdmin(admin.ModelAdmin):
 
     fieldsets = (
         ("Fee", {
-            "fields": ("chamber", "trade", "part", "fee", "fee_qualifier"),
+            "fields": ("chamber", "trade", "part", "fee", "fee_max", "fee_qualifier"),
             "description": (
-                "Set 'fee_qualifier' to 'bis zu' for maximum fees "
-                "(as published in HWK Koblenz Gebührenverzeichnis). "
-                "Leave blank for exact amounts."
+                "Leave 'Trade' blank to apply this fee to ALL trades at this chamber "
+                "for the selected part — a trade-specific entry always takes precedence. "
+                "Use 'fee_max' for a range (e.g. fee=600, fee_max=2000 → '600,00 bis 2.000,00 €'). "
+                "Use 'fee_qualifier' = 'bis zu' for a single maximum value. "
+                "Don't combine fee_max and fee_qualifier — use one or the other."
             ),
         }),
         ("Source & Verification", {
@@ -78,7 +80,7 @@ class ExamFeeAdmin(admin.ModelAdmin):
 
     def get_readonly_fields(self, request, obj=None):
         if obj and obj.manually_verified:
-            return self.readonly_fields + ("fee", "fee_qualifier", "part", "chamber", "trade")
+            return self.readonly_fields + ("fee", "fee_max", "fee_qualifier", "part", "chamber", "trade")
         return self.readonly_fields
 
     @admin.display(description="Fee")

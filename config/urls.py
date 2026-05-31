@@ -13,5 +13,5 @@ urlpatterns = [
     path("",           CourseListView.as_view(),                                  name="course-list"),
     path("about/",     TemplateView.as_view(template_name="pages/about.html"),    name="about"),
     path("stat/",    TemplateView.as_view(template_name="pages/stat.html"),   name="zahlen"),
-    path("imprint/", TemplateView.as_view(template_name="pages/imprint.html"),name="impressum"),
+    path("imprint/", TemplateView.as_view(template_name="pages/imprint.html"), name="impressum"),
 ]

@@ -118,6 +118,87 @@ class CourseOffer(models.Model):
         return [p for p, f in [(1, self.has_part_1), (2, self.has_part_2),
                                 (3, self.has_part_3), (4, self.has_part_4)] if f]
 
+    @property
+    def course_fee_display(self) -> str:
+        """Format course fee as German number without decimals, e.g. '6.990 €'."""
+        if self.course_fee is None:
+            return "—"
+        return f"{self.course_fee:,.0f}".replace(",", ".") + " €"
+
+    def resolved_exam_fee_info(self, exam_fee_lookup: dict | None = None) -> dict:
+        """
+        Returns the best available exam fee info for display.
+
+        Priority:
+          1. exam_fee_scraped on this CourseOffer (from Trier/Pfalz scrapers)
+          2. ExamFee model records — summed across all parts this offer covers,
+             trade-specific first, then all-trades (trade=None) fallback.
+
+        For multi-part offers (e.g. Parts I+II), fees are summed.
+        If any part has a qualifier (e.g. "bis zu"), it applies to the total.
+
+        exam_fee_lookup: optional pre-built dict
+            {(chamber_id, trade_id_or_None, part): ExamFee}
+            Pass from view context to avoid repeated DB queries.
+
+        Returns dict with keys:
+            fee        Decimal | None
+            qualifier  str ("bis zu" or "")
+            display    str  e.g. "bis zu 760,00 €" or "1.130,00 €" or ""
+        """
+        from decimal import Decimal
+
+        # Priority 1: scraped fee
+        if self.exam_fee_scraped is not None:
+            fee_str = f"{self.exam_fee_scraped:,.0f}".replace(",", ".") + " €"
+            return {"fee": self.exam_fee_scraped, "qualifier": "", "display": fee_str, "fee_max": None}
+
+        # Priority 2: ExamFee model lookup
+        total_min = Decimal("0")
+        total_max = Decimal("0")
+        qualifier = ""
+        found     = False
+        has_range = False
+
+        for part in self.included_parts:
+            ef = None
+            if exam_fee_lookup is not None:
+                ef = (
+                    exam_fee_lookup.get((self.chamber_id, self.trade_id, part))
+                    or exam_fee_lookup.get((self.chamber_id, None, part))
+                )
+            else:
+                ef = ExamFee.objects.filter(
+                    chamber_id=self.chamber_id, trade_id=self.trade_id, part=part
+                ).first()
+                if not ef:
+                    ef = ExamFee.objects.filter(
+                        chamber_id=self.chamber_id, trade__isnull=True, part=part
+                    ).first()
+
+            if ef:
+                total_min += ef.fee
+                total_max += ef.fee_max if ef.fee_max else ef.fee
+                if ef.fee_max:
+                    has_range = True
+                if ef.fee_qualifier and not qualifier:
+                    qualifier = ef.fee_qualifier
+                found = True
+
+        if not found:
+            return {"fee": None, "fee_max": None, "qualifier": "", "display": ""}
+
+        def fmt(v):
+            return f"{v:,.0f}".replace(",", ".") + " €"
+
+        if has_range:
+            display = f"{fmt(total_min)} bis {fmt(total_max)}"
+            return {"fee": total_min, "fee_max": total_max, "qualifier": "", "display": display}
+
+        fee_str = fmt(total_min)
+        display = f"{qualifier} {fee_str}".strip() if qualifier else fee_str
+        return {"fee": total_min, "fee_max": None, "qualifier": qualifier, "display": display}
+
 
 class ExamFee(models.Model):
     PART_CHOICES = [
@@ -126,17 +207,38 @@ class ExamFee(models.Model):
         (3, "Part III – Business administration"),
         (4, "Part IV  – Vocational training"),
     ]
-    chamber           = models.ForeignKey(Chamber, on_delete=models.CASCADE, related_name="exam_fees")
-    trade             = models.ForeignKey(Trade,   on_delete=models.CASCADE, related_name="exam_fees")
+    chamber = models.ForeignKey(Chamber, on_delete=models.CASCADE, related_name="exam_fees")
+    trade   = models.ForeignKey(
+        Trade,
+        on_delete=models.CASCADE,
+        related_name="exam_fees",
+        null=True, blank=True,
+        help_text=(
+            "Leave blank to apply this fee to ALL trades at this chamber for the selected part. "
+            "A trade-specific entry always takes precedence over an all-trades entry."
+        ),
+    )
     part              = models.IntegerField(choices=PART_CHOICES)
-    fee               = models.DecimalField(max_digits=8, decimal_places=2)
+    fee     = models.DecimalField(
+        max_digits=8, decimal_places=2,
+        help_text="Fee amount (or lower bound of a range).",
+    )
+    fee_max = models.DecimalField(
+        max_digits=8, decimal_places=2,
+        null=True, blank=True,
+        help_text=(
+            "Optional upper bound for a range, e.g. enter 600 here and 2000 in fee_max "
+            "to display '600,00 bis 2.000,00 €'. Leave blank for a single value."
+        ),
+    )
     fee_qualifier     = models.CharField(
         max_length=20,
         blank=True,
         default="",
         help_text=(
             "Optional qualifier displayed before the fee, e.g. 'bis zu' for maximum fees "
-            "(as in HWK Koblenz Gebührenverzeichnis). Leave blank for exact amounts."
+            "(as in HWK Koblenz Gebührenverzeichnis). Leave blank for exact amounts. "
+            "Not used when fee_max is set (the range itself communicates variability)."
         ),
     )
     scraper_may_overwrite = models.BooleanField(default=True)
@@ -153,15 +255,54 @@ class ExamFee(models.Model):
         ordering = ["chamber__name", "trade__name", "part"]
         verbose_name = "Exam Fee"
         verbose_name_plural = "Exam Fees"
-        unique_together = [("chamber", "trade", "part")]
+        # Note: unique_together cannot enforce NULL uniqueness in all DBs.
+        # Uniqueness for trade-specific entries is enforced here;
+        # all-trades entries (trade=NULL) are validated in clean().
+
+    def clean(self):
+        from django.core.exceptions import ValidationError
+        if self.trade is None:
+            # Only one all-trades entry per chamber+part
+            qs = ExamFee.objects.filter(
+                chamber=self.chamber, trade__isnull=True, part=self.part
+            )
+            if self.pk:
+                qs = qs.exclude(pk=self.pk)
+            if qs.exists():
+                raise ValidationError(
+                    f"An all-trades exam fee for this chamber and part already exists."
+                )
+        else:
+            # Only one trade-specific entry per chamber+trade+part
+            qs = ExamFee.objects.filter(
+                chamber=self.chamber, trade=self.trade, part=self.part
+            )
+            if self.pk:
+                qs = qs.exclude(pk=self.pk)
+            if qs.exists():
+                raise ValidationError(
+                    f"An exam fee for this chamber, trade, and part already exists."
+                )
 
     def __str__(self):
-        roman = {1: "I", 2: "II", 3: "III", 4: "IV"}
-        qualifier = f"{self.fee_qualifier} " if self.fee_qualifier else ""
-        return f"{self.chamber} · {self.trade} · Part {roman[self.part]} · {qualifier}{self.fee} €"
+        roman     = {1: "I", 2: "II", 3: "III", 4: "IV"}
+        trade_str = self.trade.name if self.trade else "Alle Gewerke"
+        return f"{self.chamber} · {trade_str} · Part {roman[self.part]} · {self.fee_display}"
+
+    @staticmethod
+    def _fmt(amount) -> str:
+        """Format a Decimal as German number string without decimals, e.g. '1.130 €'."""
+        return f"{amount:,.0f}".replace(",", ".") + " €"
 
     @property
     def fee_display(self) -> str:
-        """Human-readable fee string, e.g. 'bis zu 380,00 €' or '1.130,00 €'."""
-        fee_str = f"{self.fee:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".") + " €"
+        """
+        Human-readable fee string. Examples:
+          Single exact:   "1.130 €"
+          With qualifier: "bis zu 380 €"
+          Range:          "600 bis 2.000 €"
+        """
+        if self.fee_max:
+            return f"{self._fmt(self.fee)} bis {self._fmt(self.fee_max)}"
+        fee_str = self._fmt(self.fee)
         return f"{self.fee_qualifier} {fee_str}".strip()

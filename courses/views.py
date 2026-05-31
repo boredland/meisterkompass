@@ -9,7 +9,7 @@ from .models import CourseOffer, CourseFormat, TeachingMode
 from chambers.models import Chamber, Trade
 
 PER_PAGE_OPTIONS = [10, 20, 30, 40, 60]
-PER_PAGE_DEFAULT = 30
+PER_PAGE_DEFAULT = 20
 
 
 class CourseListView(ListView):
@@ -34,7 +34,7 @@ class CourseListView(ListView):
         if v := p.get("chamber"):   qs = qs.filter(chamber__slug=v)
         if v := p.get("trade"):     qs = qs.filter(trade__slug=v)
         if v := p.get("format"):    qs = qs.filter(format=v)
-        if v := p.get("teaching"):  qs = qs.filter(teaching_mode=v)
+        if p.get("available"):      qs = qs.filter(availability="available")
         if v := p.get("date_from"): qs = qs.filter(start_date__gte=v)
         if v := p.get("date_to"):   qs = qs.filter(start_date__lte=v)
 
@@ -68,7 +68,6 @@ class CourseListView(ListView):
         ctx = super().get_context_data(**kwargs)
         ctx["chambers"]        = Chamber.objects.all().order_by("name")
         ctx["formats"]         = CourseFormat.choices
-        ctx["teaching_modes"]  = TeachingMode.choices
         ctx["per_page_options"] = PER_PAGE_OPTIONS
 
         p = self.request.GET
@@ -89,8 +88,8 @@ class CourseListView(ListView):
         ctx["sel_chamber"]       = sel_chamber
         ctx["sel_trade"]         = p.get("trade",         "")
         ctx["sel_format"]        = p.get("format",        "")
-        ctx["sel_teaching"]      = p.get("teaching",      "")
-        ctx["sel_parts"]         = p.getlist("part")       # list of strings
+        ctx["sel_available"]     = p.get("available",     "")
+        ctx["sel_parts"]         = p.getlist("part")
         ctx["sel_include_combos"] = p.get("include_combos", "") == "1"
         ctx["sel_date_from"]     = p.get("date_from",     "")
         ctx["sel_date_to"]       = p.get("date_to",       "")
@@ -103,6 +102,13 @@ class CourseListView(ListView):
             .select_related("chamber", "trade")
             .order_by("start_date")
         )
+        # Build exam fee lookup for map offers too
+        from courses.models import ExamFee as EF
+        map_chamber_ids = set(o.chamber_id for o in map_qs)
+        map_ef_lookup: dict = {}
+        for ef in EF.objects.filter(chamber_id__in=map_chamber_ids).select_related("trade"):
+            map_ef_lookup[(ef.chamber_id, ef.trade_id, ef.part)] = ef
+
         ctx["map_data_json"] = json.dumps([
             {
                 "title":    o.title,
@@ -112,7 +118,8 @@ class CourseListView(ListView):
                 "lat":      float(o.latitude),
                 "lng":      float(o.longitude),
                 "fee":      float(o.course_fee) if o.course_fee else None,
-                "exam_fee": float(o.exam_fee_scraped) if o.exam_fee_scraped else None,
+                "exam_fee": float(ef_info["fee"]) if ef_info["fee"] else None,
+                "exam_fee_display": ef_info["display"],
                 "format":   o.get_format_display(),
                 "teaching": o.get_teaching_mode_display(),
                 "parts":    o.parts_label,
@@ -120,7 +127,24 @@ class CourseListView(ListView):
                 "url":      o.source_url,
             }
             for o in map_qs
+            for ef_info in [o.resolved_exam_fee_info(map_ef_lookup)]
         ])
+
+        # Build exam fee lookup for efficient per-row resolution
+        # Keys: (chamber_id, trade_id_or_None, part)
+        from courses.models import ExamFee as EF
+        chamber_ids = set(o.chamber_id for o in ctx["offers"])
+        ef_qs = EF.objects.filter(chamber_id__in=chamber_ids).select_related("trade")
+        exam_fee_lookup: dict = {}
+        for ef in ef_qs:
+            exam_fee_lookup[(ef.chamber_id, ef.trade_id, ef.part)] = ef
+
+        # Attach resolved exam fee info to each offer for the template
+        for offer in ctx["offers"]:
+            offer.exam_fee_info = offer.resolved_exam_fee_info(exam_fee_lookup)
+
+        # Same for map data (already serialised above, no change needed)
+        ctx["exam_fee_lookup"] = exam_fee_lookup
 
         filter_params = "&".join(
             f"{k}={v}" for k, v in p.items()

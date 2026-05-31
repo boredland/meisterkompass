@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}Kursfinder – MeisterVergleich{% endblock %}
+{% block title %}Kursfinder – MeisterKompass{% endblock %}
 {% block tab_finder %}active{% endblock %}
 
 {% block extra_head %}
@@ -18,6 +18,7 @@
 .date-range input{width:140px}
 .btn{height:36px;padding:0 1rem;border:none;border-radius:var(--radius);font-family:inherit;font-size:.85rem;font-weight:500;cursor:pointer;transition:background .15s}
 .btn-ghost{background:transparent;color:var(--text-mid);border:1px solid var(--border)}.btn-ghost:hover{background:var(--bg)}
+.btn-primary{background:#2E6E4A;color:#fff}.btn-primary:hover{background:#256040;}
 .view-toggle{display:flex;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;margin-left:auto}
 .view-toggle button{height:34px;padding:0 .85rem;border:none;font-family:inherit;font-size:.82rem;font-weight:500;cursor:pointer;background:var(--bg);color:var(--text-mid);transition:background .15s,color .15s}
 .view-toggle button.active{background:var(--navy);color:#fff}
@@ -53,6 +54,11 @@
 .badge-available{background:#DCFCE7;border-color:#86EFAC;color:#166534}
 .link-icon{font-size:.8rem;color:var(--navy-mid);text-decoration:none}
 .link-icon:hover{text-decoration:underline}
+/* Exam fee tooltip */
+.fee-info-wrap{display:inline-flex;align-items:center;gap:4px}
+.fee-info-btn{display:inline-flex;align-items:center;justify-content:center;width:15px;height:15px;border-radius:50%;background:var(--navy-mid);color:#fff;font-size:.65rem;font-weight:700;cursor:help;position:relative;flex-shrink:0;border:none;padding:0;line-height:1}
+.fee-info-btn::after{content:attr(data-tooltip);position:absolute;bottom:calc(100% + 8px);left:50%;transform:translateX(-50%);background:#1E1E1E;color:#fff;font-size:.75rem;font-weight:400;line-height:1.45;padding:.5rem .75rem;border-radius:5px;width:260px;white-space:normal;text-align:left;box-shadow:0 4px 12px rgba(0,0,0,.25);pointer-events:none;opacity:0;transition:opacity .15s;z-index:500}
+.fee-info-btn:hover::after{opacity:1}
 #map{height:600px;border-radius:var(--radius);box-shadow:var(--shadow)}
 .map-notice{font-size:.82rem;color:var(--text-lt);margin-bottom:.75rem}
 .mv-popup{font-family:'DM Sans',sans-serif;min-width:230px}
@@ -74,7 +80,7 @@
 <div class="page-header">
   <div class="container">
     <h1>Meistervorbereitungskurse</h1>
-    <p>Vergleich der Kursangebote von Handwerkskammern in Rheinland-Pfalz</p>
+    <p>Kursangebote der Handwerkskammern in Rheinland-Pfalz</p>
   </div>
 </div>
 
@@ -84,21 +90,21 @@
       <input type="hidden" name="view" id="view-input" value="{{ view_mode }}">
       <div class="filter-row">
 
-        <select name="chamber" onchange="this.form.submit()">
+        <select name="chamber" onchange="submitWithView(this.form)">
           <option value="">Alle Kammern</option>
           {% for c in chambers %}
             <option value="{{ c.slug }}" {% if sel_chamber == c.slug %}selected{% endif %}>{{ c.short_name }}</option>
           {% endfor %}
         </select>
 
-        <select name="trade" onchange="this.form.submit()">
+        <select name="trade" onchange="submitWithView(this.form)">
           <option value="">Meistervorbereitungskurse – alle Gewerke</option>
           {% for t in trades %}
             <option value="{{ t.slug }}" {% if sel_trade == t.slug %}selected{% endif %}>{{ t.name }}</option>
           {% endfor %}
         </select>
 
-        <select name="format" onchange="this.form.submit()">
+        <select name="format" onchange="submitWithView(this.form)">
           <option value="">Zeitmodell</option>
           {% for key, label in formats %}
             {% if key != 'part_or_full' %}
@@ -107,12 +113,6 @@
           {% endfor %}
         </select>
 
-        <select name="teaching" onchange="this.form.submit()">
-          <option value="">Unterrichtsform</option>
-          {% for key, label in teaching_modes %}
-            <option value="{{ key }}" {% if sel_teaching == key %}selected{% endif %}>{{ label }}</option>
-          {% endfor %}
-        </select>
 
         <!-- Parts multi-select dropdown -->
         <div class="parts-wrap" id="parts-wrap">
@@ -137,11 +137,23 @@
         </div>
 
         <div class="date-range">
-          Start ab <input type="date" name="date_from" value="{{ sel_date_from }}" onchange="this.form.submit()">
-          bis      <input type="date" name="date_to"   value="{{ sel_date_to }}"   onchange="this.form.submit()">
+          <button type="button"
+            onclick="toggleAvailable(this)"
+            id="btn-available"
+            class="btn {% if sel_available %}btn-primary{% else %}btn-ghost{% endif %}"
+            style="height:36px;font-size:.82rem;white-space:nowrap"
+            title="Nur Kurse mit freien Plätzen anzeigen">
+            freie Plätze
+          </button>
+          <input type="hidden" name="available" id="available-input" value="{{ sel_available }}">
         </div>
 
-        {% if sel_chamber or sel_trade or sel_format or sel_teaching or sel_parts or sel_date_from or sel_date_to %}
+        <div class="date-range">
+          Start ab <input type="date" name="date_from" value="{{ sel_date_from }}" onchange="submitWithView(this.form)">
+          bis      <input type="date" name="date_to"   value="{{ sel_date_to }}"   onchange="submitWithView(this.form)">
+        </div>
+
+        {% if sel_chamber or sel_trade or sel_format or sel_available or sel_parts or sel_date_from or sel_date_to %}
           <a href="/?view={{ view_mode }}" class="btn btn-ghost">✕ Zurücksetzen</a>
         {% endif %}
 
@@ -167,16 +179,17 @@
         <select name="per_page" form="filter-form" onchange="document.getElementById('filter-form').submit()"
                 style="height:32px;padding:0 .6rem;border:1px solid var(--border);border-radius:var(--radius);font-family:inherit;font-size:.82rem;background:var(--bg);cursor:pointer">
           {% for n in per_page_options %}
-            <option value="{{ n }}" {% if sel_per_page == n|stringformat:'s' or not sel_per_page and n == 30 %}selected{% endif %}>{{ n }} pro Seite</option>
+            <option value="{{ n }}" {% if sel_per_page == n|stringformat:'s' or not sel_per_page and n == 20 %}selected{% endif %}>{{ n }} pro Seite</option>
           {% endfor %}
           <option value="all" {% if sel_per_page == 'all' %}selected{% endif %}>Alle anzeigen</option>
         </select>
       </div>
 
+      <div style="overflow-x:auto">
       <table class="course-table">
         <thead>
           <tr>
-            <th>Kurs</th><th>HWK</th><th>Teile</th><th>Zeitmodell</th><th>Unterrichtsform</th>
+            <th>Kurs</th><th>HWK</th><th>Teile</th><th>Zeitmodell</th>
             <th>Startdatum</th><th>Enddatum</th><th>Dauer</th>
             <th>Kursgebühr</th><th>Prüfungsgebühr</th><th>Ort</th><th>Verfügbarkeit</th>
           </tr>
@@ -197,12 +210,11 @@
             <td style="white-space:nowrap;font-size:.82rem;">{{ offer.chamber.short_name }}</td>
             <td><span class="badge">{{ offer.parts_label }}</span></td>
             <td>{{ offer.get_format_display }}</td>
-            <td>{{ offer.get_teaching_mode_display }}</td>
             <td style="white-space:nowrap;font-size:.82rem;">{% if offer.start_date %}{{ offer.start_date|date:"d.m.Y" }}{% else %}<span style="color:var(--text-lt);font-style:italic">Termine n. v.</span>{% endif %}</td>
             <td style="white-space:nowrap;font-size:.82rem;">{% if offer.end_date %}{{ offer.end_date|date:"d.m.Y" }}{% else %}—{% endif %}</td>
             <td style="white-space:nowrap;">{% if offer.duration_hours %}{{ offer.duration_hours }} Std.{% else %}—{% endif %}</td>
-            <td>{% if offer.course_fee %}<span class="price">{{ offer.course_fee|floatformat:0 }} €</span>{% else %}<span class="price-na">—</span>{% endif %}</td>
-            <td>{% if offer.exam_fee_scraped %}<span class="price">{{ offer.exam_fee_scraped|floatformat:0 }} €</span>{% else %}<span class="price-na">—</span>{% endif %}</td>
+            <td><span class="{% if offer.course_fee %}price{% else %}price-na{% endif %}">{{ offer.course_fee_display }}</span></td>
+            <td>{% with ef=offer.exam_fee_info %}{% if ef.fee %}<span class="fee-info-wrap"><span class="price">{{ ef.display }}</span>{% if ef.qualifier %}<button class="fee-info-btn" data-tooltip="Die Prüfungsgebühr je Teil entstammt dem offiziellen Gebührenverzeichnis. Dies ist die Gebühr, die maximal erhoben werden kann. Häufig ist die Prüfungsgebühr tatsächlich niedriger. Erkundigen Sie sich bitte bei der jeweiligen Kammer." type="button">i</button>{% elif ef.fee_max %}<button class="fee-info-btn" data-tooltip="Die Spanne der Prüfungsgebühr je Teil entstammt dem offiziellen Gebührenverzeichnis. Die genaue Gebühr innerhalb dieser Spanne wird von der Kammer festgelegt. Erkundigen Sie sich bitte bei der jeweiligen Kammer." type="button">i</button>{% endif %}</span>{% else %}<span class="price-na">—</span>{% endif %}{% endwith %}</td>
             <td>{{ offer.city|default:"—" }}</td>
             <td>
               {% if offer.availability == 'full' %}<span class="badge badge-full">Ausgebucht</span>
@@ -212,10 +224,11 @@
             </td>
           </tr>
           {% empty %}
-          <tr><td colspan="12" style="text-align:center;color:var(--text-lt);padding:2rem;">Keine Kurse gefunden.</td></tr>
+          <tr><td colspan="11" style="text-align:center;color:var(--text-lt);padding:2rem;">Keine Kurse gefunden.</td></tr>
           {% endfor %}
         </tbody>
       </table>
+      </div>
 
       {% if is_paginated %}
       <div class="pagination">
@@ -252,6 +265,24 @@ function setView(mode) {
   document.getElementById('btn-list').classList.toggle('active', mode === 'list');
   document.getElementById('btn-map').classList.toggle('active',  mode === 'map');
   if (mode === 'map' && !window._mapInit) initMap();
+}
+
+// Submit filter form while preserving the current view (list or map)
+function submitWithView(form) {
+  var mapDiv = document.getElementById('view-map');
+  var isMap  = mapDiv && mapDiv.style.display !== 'none';
+  document.getElementById('view-input').value = isMap ? 'map' : 'list';
+  form.submit();
+}
+
+// Availability toggle button
+function toggleAvailable(btn) {
+  var input = document.getElementById('available-input');
+  var active = input.value === '1';
+  input.value = active ? '' : '1';
+  btn.classList.toggle('btn-primary', !active);
+  btn.classList.toggle('btn-ghost',   active);
+  submitWithView(document.getElementById('filter-form'));
 }
 
 // Parts dropdown
@@ -303,17 +334,17 @@ function initMap() {
       <div style="font-size:.75rem;color:#888;margin-bottom:.4rem">${firstChamber}</div>`;
 
     visible.forEach(function(o) {
-      const fee     = o.fee      ? o.fee.toLocaleString('de-DE')      + '\u00a0€' : 'k.A.';
-      const examFee = o.exam_fee ? o.exam_fee.toLocaleString('de-DE') + '\u00a0€' : null;
+      const fee      = o.fee      ? o.fee.toLocaleString('de-DE')      + '\u00a0€' : 'k.A.';
+      const examFeeDisplay = o.exam_fee_display || null;
       const titleEl = o.url
         ? `<a href="${o.url}" target="_blank" style="color:#1B3A5C;font-weight:500;font-size:.85rem;display:block;line-height:1.3;text-decoration:none">${o.title} ↗</a>`
         : `<strong style="font-size:.85rem;color:#1B3A5C;display:block;line-height:1.3">${o.title}</strong>`;
       html += `<div class="mv-popup-course">
         ${titleEl}
-        <div class="meta">${o.parts} · ${o.format} · ${o.teaching}</div>
+        <div class="meta">${o.parts} · ${o.format}</div>
         <div class="meta">Startdatum: ${o.start || '–'}</div>
         <div class="meta">Kursgebühr: ${fee}</div>
-        ${examFee ? `<div class="meta">Prüfungsgebühr: ${examFee}</div>` : ''}
+        ${examFeeDisplay ? `<div class="meta">Prüfungsgebühr: ${examFeeDisplay}</div>` : ''}
       </div>`;
     });
 

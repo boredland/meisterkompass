@@ -73,11 +73,22 @@ def calculate_total_cost(
 
     missing_course = [p for p in [1, 2, 3, 4] if p not in part_to_offer]
 
-    # Exam fees
-    exam_fee_map = {
-        ef.part: ef.fee
-        for ef in ExamFee.objects.filter(chamber=chamber, trade=trade)
-    }
+    # Exam fees — trade-specific first, then all-trades fallback
+    def get_exam_fee(part: int) -> "ExamFee | None":
+        specific = ExamFee.objects.filter(
+            chamber=chamber, trade=trade, part=part
+        ).first()
+        if specific:
+            return specific
+        return ExamFee.objects.filter(
+            chamber=chamber, trade__isnull=True, part=part
+        ).first()
+
+    exam_fee_map: dict[int, "ExamFee"] = {}
+    for part in [1, 2, 3, 4]:
+        ef = get_exam_fee(part)
+        if ef:
+            exam_fee_map[part] = ef
     missing_exam = [p for p in [1, 2, 3, 4] if p not in exam_fee_map]
 
     # Build per-part breakdown
@@ -91,10 +102,11 @@ def calculate_total_cost(
         else:
             per_part_fee = None
 
+        ef = exam_fee_map.get(part)
         parts_list.append(PartCost(
             part=part,
             course_fee=per_part_fee,
-            exam_fee=exam_fee_map.get(part),
+            exam_fee=ef.fee if ef else None,
             offer_title=offer.title if offer else "",
         ))
 

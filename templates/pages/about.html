@@ -1,23 +1,20 @@
 {% extends "base.html" %}
-{% block title %}Über MeisterVergleich{% endblock %}
+{% block title %}Über MeisterKompass{% endblock %}
 {% block tab_about %}active{% endblock %}
-
 {% block content %}
 <div class="container">
   <div class="page-content">
-    <h1>Über MeisterVergleich</h1>
-
+    <h1>Über MeisterKompass</h1>
     <p>
-      MeisterVergleich ist eine unabhängige Vergleichsplattform für
+      MeisterKompass ist eine unabhängige, nicht-kommerzielle Vergleichsplattform für
       Meistervorbereitungskurse der Handwerkskammern in Rheinland-Pfalz.
       Ziel ist es, angehenden Meisterinnen und Meistern einen schnellen,
       übersichtlichen Vergleich von Kursangeboten, Gebühren und Standorten
       zu ermöglichen.
     </p>
-
     <h2>Was wird verglichen?</h2>
     <p>
-      Aktuell erfasst MeisterVergleich die Meistervorbereitungskurse der vier
+      Aktuell erfasst MeisterKompass die Meistervorbereitungskurse der vier
       Handwerkskammern in Rheinland-Pfalz:
     </p>
     <ul>
@@ -27,33 +24,29 @@
       <li>Handwerkskammer Rheinhessen</li>
     </ul>
     <p>
-      Eine Erweiterung auf weitere Bundesländer und alle ~53 Handwerkskammern
-      in Deutschland ist geplant.
+      Eine Erweiterung mit weiteren Kammerbezirken ist in Überlegung.
     </p>
-
     <h2>Datenherkunft</h2>
     <p>
-      Alle Daten werden automatisiert von den öffentlichen Webseiten der
-      jeweiligen Handwerkskammern bezogen und wöchentlich aktualisiert.
+      Der Großteil der Daten wird automatisiert von den öffentlichen Webseiten der
+      jeweiligen Handwerkskammern bezogen.
       Prüfungsgebühren, die nicht direkt auf den Kursseiten veröffentlicht
       werden, werden manuell aus den offiziellen Gebührenverzeichnissen
-      der Kammern entnommen.
+      der Kammern entnommen. Die Prüfungsgebühren aus den Gebührenverzeichnissen
+      sind meist in einer Preisspanne oder mit "bis zu" angegeben. Die Kammern
+      legen die tatsächliche Gebühr in diesem Rahmen fest.
     </p>
-
     <h2>Einschränkungen und Hinweise</h2>
     <ul>
       <li>
         Die Angaben erheben keinen Anspruch auf Vollständigkeit oder
         rechtliche Verbindlichkeit. Maßgeblich sind stets die Angaben
-        der jeweiligen Handwerkskammer.
+        der jeweiligen Handwerkskammer. Die aufgeführten Kurse haben
+        Verlinkungen zu den Webseiten der Kammern.
       </li>
       <li>
         Preisangaben können sich ändern. Bitte prüfe aktuelle Konditionen
         direkt bei der Kammer.
-      </li>
-      <li>
-        Prüfungsgebühren bei HWK Koblenz werden als Höchstbeträge
-        ("bis zu") aus dem Gebührenverzeichnis angegeben.
       </li>
       <li>
         Kurse ohne veröffentlichte Starttermine werden mit dem Hinweis
@@ -64,12 +57,6 @@
         Der Scraper ist kein offizielles Angebot der Handwerkskammern.
       </li>
     </ul>
-
-    <h2>Kontakt & Feedback</h2>
-    <p>
-      Fehler, veraltete Daten oder Verbesserungsvorschläge bitte direkt
-      an den Betreiber dieser Plattform melden.
-    </p>
   </div>
 </div>
 {% endblock %}
