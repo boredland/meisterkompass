@@ -4,7 +4,7 @@ An independent, non-commercial comparison platform for Meister preparation
 courses offered by Handwerkskammern (HWK) in Germany.
 
 Enables direct comparison of prices, duration, and exam fees across chambers,
-as well as statistical analysis of the Meister education landscape.
+as well as calculation of AFBG (Aufstiegs-BAföG) funding.
 
 Initial scope: four chambers in Rhineland-Palatinate (Koblenz, Pfalz,
 Rheinhessen, Trier). Designed to scale to all chambers nationwide.
@@ -17,12 +17,18 @@ Rheinhessen, Trier). Designed to scale to all chambers nationwide.
 
 - Filterable course listings per trade, chamber, format, and exam part
 - Multi-part filter with optional "include combination courses" toggle
-- Course fees and examination fees displayed side by side
+- "Plätze verfügbar" toggle to filter for courses with open spots
+- Default view shows only upcoming courses; past courses visible via date filter
+- Course fees and examination fees displayed side by side (no decimal places)
 - "bis zu" qualifier and fee ranges for maximum-fee entries (e.g. HWK Koblenz)
-- Interactive map with geocoded course location pins (Leaflet + OpenStreetMap)
-- Automatic price/fee propagation from nearest dated course when missing
+- ⓘ tooltip explaining the source of exam fee data
+- Interactive map with geocoded course location pins (Leaflet + CartoDB)
+- Automatic price/fee propagation from nearest available course
 - "Termine nicht verfügbar" indicator for courses without scheduled dates
-- Tab navigation: Kursfinder, Über MeisterKompass, Zahlen zum Meister
+- Responsive design for desktop, tablet, and mobile
+- Tab navigation: Kursfinder, AFBG-Rechner, Über MeisterKompass, Impressum
+- AFBG-Rechner: calculates Aufstiegs-BAföG funding for course fees and
+  Meisterprojekt costs, with auto-fill from Kursfinder data
 - Django admin for manual data entry and exam fee verification
 - Weekly automated data updates via GitHub Actions
 
@@ -34,8 +40,9 @@ Rheinhessen, Trier). Designed to scale to all chambers nationwide.
 |-------------|-------------------------------------------------|
 | Backend     | Django 6.x                                      |
 | Database    | SQLite (dev) / PostgreSQL via Neon (prod)        |
-| Scraping    | requests + BeautifulSoup (Playwright optional)  |
+| Scraping    | requests + BeautifulSoup                        |
 | Frontend    | Django Templates + Leaflet.js                   |
+| Map tiles   | CartoDB (no API key required)                   |
 | Geocoding   | Nominatim / OpenStreetMap (no API key required) |
 | Hosting     | Render (web app) + Neon (database)              |
 | Cron        | GitHub Actions (every Friday 03:00 UTC)         |
@@ -50,25 +57,24 @@ meisterkompass/
 ├── chambers/                 # Chamber and Trade models + admin
 ├── courses/                  # CourseOffer, ExamFee models + admin
 │   ├── calculators.py        # Total cost calculation logic
-│   └── views.py              # Course listing view with filters
+│   └── views.py              # CourseListView + AfbgView
 ├── scraper/                  # Scraper pipeline
-│   ├── base.py               # Abstract base scraper + RawCourseOffer + build_course_title
-│   ├── hwk_koblenz.py        # HWK Koblenz scraper ✓
-│   ├── hwk_trier.py          # HWK Trier scraper ✓  (incl. exam fees)
-│   ├── hwk_pfalz.py          # HWK Pfalz scraper ✓  (incl. exam fees)
-│   ├── hwk_rheinhessen.py    # HWK Rheinhessen scraper ✓
-│   └── management/
-│       └── commands/
-│           ├── run_scrapers.py    # python manage.py run_scrapers
-│           └── geocode_offers.py  # python manage.py geocode_offers
+│   ├── base.py               # Abstract base + RawCourseOffer + build_course_title
+│   ├── hwk_koblenz.py        # HWK Koblenz ✓
+│   ├── hwk_trier.py          # HWK Trier ✓  (incl. exam fees)
+│   ├── hwk_pfalz.py          # HWK Pfalz ✓  (incl. exam fees)
+│   ├── hwk_rheinhessen.py    # HWK Rheinhessen ✓  (WordPress-based)
+│   └── management/commands/
+│       ├── run_scrapers.py    # python manage.py run_scrapers
+│       └── geocode_offers.py  # python manage.py geocode_offers
 ├── templates/
-│   ├── base.html             # Single nav bar (brand + tabs), shared styles
+│   ├── base.html             # Nav bar + shared styles + responsive
 │   ├── courses/
 │   │   └── list.html         # Kursfinder (filterable list + map)
 │   └── pages/
+│       ├── afbg.html         # AFBG-Rechner
 │       ├── about.html        # Über MeisterKompass
-│       └── stat.html         # Zahlen zum Meister (statistics, planned)
-│       └── imprint.html      # Imprint   
+│       └── imprint.html      # Impressum + Haftungsausschluss
 ├── .env                      # Local secrets — never commit to Git
 ├── requirements.txt
 └── README.md
@@ -89,8 +95,7 @@ meisterkompass/
 python -m venv .venv
 .venv\Scripts\activate
 
-pip install django dj-database-url python-decouple ^
-  requests beautifulsoup4
+pip install django dj-database-url python-decouple requests beautifulsoup4
 ```
 
 ### .env file
@@ -111,18 +116,19 @@ python manage.py createsuperuser
 python manage.py runserver
 ```
 
-Admin interface: http://127.0.0.1:8000/admin/
+---
+
+## Running the Scrapers
+
+```bat
+python manage.py run_scrapers
+python manage.py run_scrapers --chamber hwk-koblenz --dry-run
+python manage.py geocode_offers
+```
 
 ---
 
-## Data Model Overview
-
-```
-Chamber ──┐
-          ├── CourseOffer   (one row per course listing on the chamber website)
-Trade   ──┘
-          └── ExamFee       (official exam fee per part, chamber and trade)
-```
+## Data Model
 
 ### CourseOffer
 
@@ -138,29 +144,39 @@ Trade   ──┘
 | `source_url`       | Direct link to the course page on the chamber website             |
 
 `start_date = None` → "Termine nicht verfügbar".
+Past courses are retained in the DB and visible when a past date filter is applied.
 
 ### ExamFee
 
-| Chamber     | Source                                         |
-|-------------|------------------------------------------------|
-| Trier       | Scraped directly from course detail pages      |
-| Pfalz       | Scraped directly from course detail pages      |
-| Koblenz     | Manual entry from PDF Gebührenverzeichnis      |
-| Rheinhessen | Manual entry (exam fee pages per trade)        |
+| Chamber     | Source                                    | Notes                     |
+|-------------|-------------------------------------------|---------------------------|
+| Trier       | Scraped from course detail pages          | Exact values              |
+| Pfalz       | Scraped from course detail pages          | Exact values              |
+| Koblenz     | Manual entry from Gebührenverzeichnis     | "bis zu" qualifier        |
+| Rheinhessen | Manual entry per trade                    | Range or exact            |
 
-- `fee_qualifier = "bis zu"` → displays "bis zu 380 €" with ⓘ tooltip
-- `fee_max` set → displays "600 bis 2.000 €" with ⓘ tooltip
+- `fee_qualifier = "bis zu"` → "bis zu 380 €" with ⓘ tooltip
+- `fee_max` set → "600 bis 2.000 €" with ⓘ tooltip
 - `trade = null` → fee applies to all trades at this chamber for the given part
 
 ---
 
-## Running the Scrapers
+## AFBG-Rechner
 
-```bat
-python manage.py run_scrapers
-python manage.py run_scrapers --chamber hwk-koblenz --dry-run
-python manage.py geocode_offers
-```
+Available at `/afbg/`. Calculates Aufstiegs-BAföG funding based on:
+
+**Lehrgangs- und Prüfungsgebühren (up to €15,000):**
+- 50 % Zuschuss (non-repayable)
+- 50 % KfW-Darlehen
+- 50 % Darlehenserlass upon passing
+
+**Meisterprojekt (separate, up to €2,000):**
+- 50 % Zuschuss
+- 50 % KfW-Darlehen (no Darlehenserlass)
+
+Fees can be auto-filled from Kursfinder data (by chamber + trade) or entered
+manually. Generic Part III/IV courses are automatically included when a trade
+is selected. Source: BMBF / AFBG — www.aufstiegs-bafoeg.de (Stand: Juni 2026).
 
 ---
 
@@ -168,13 +184,15 @@ python manage.py geocode_offers
 
 ### Completed
 - [x] All four RLP chambers scraped and live
-- [x] Exam fees with "bis zu" qualifier and range display
+- [x] Exam fees with qualifier, range display and tooltips
 - [x] Filterable course list + interactive map
-- [x] Tab navigation (Kursfinder, Über, Zahlen)
-- [x] Trade name normalisation across chambers
+- [x] "Plätze verfügbar" availability filter
+- [x] Default future-only view; past courses visible via date filter
+- [x] Responsive design (desktop, tablet, mobile)
+- [x] AFBG-Rechner with Meisterprojekt support
+- [x] Tab navigation + Impressum with Haftungsausschluss
 
 ### Planned
-- [ ] Statistics page (Zahlen zum Meister)
 - [ ] GitHub Actions cron job + Render/Neon deployment
-- [ ] AFBG / Meister-BAföG funding calculator
+- [ ] Berufenet links per trade (field already in model)
 - [ ] Nationwide expansion (~53 HWK chambers)

@@ -87,7 +87,7 @@
     }
 
     /* ── Page container ── */
-    .container { max-width: 1600px; margin: 0 auto; padding: 0 0.75rem; }
+    .container { max-width: 1280px; margin: 0 auto; padding: 0 1.5rem; }
 
     /* ── Misc ── */
     a { color: var(--navy-mid); text-decoration: none; }
@@ -144,6 +144,20 @@
       font-style: italic;
       margin: 1.5rem 0;
     }
+    /* ── Responsive ── */
+    @media (max-width: 640px) {
+      .topbar .container { height: auto; flex-wrap: wrap; padding: .6rem .75rem; gap: .4rem; }
+      .nav-brand { padding-right: 0; font-size: 1.05rem; }
+      .nav-tabs { margin-left: 0; width: 100%; overflow-x: auto; gap: 0; }
+      .nav-tabs a { padding: .4rem .75rem; font-size: .78rem; }
+      .container { padding: 0 .5rem; }
+      .page-content { padding: 1.25rem; margin: 1rem auto; }
+    }
+    @media (min-width: 641px) and (max-width: 1024px) {
+      .topbar .container { height: 54px; }
+      .nav-tabs a { padding: 0 .85rem; font-size: .82rem; }
+      .container { padding: 0 1rem; }
+    }
   </style>
 
   {% block extra_head %}{% endblock %}
@@ -154,9 +168,9 @@
   <div class="container">
     <a class="nav-brand" href="/">Meister<span>Kompass</span></a>
     <nav class="nav-tabs">
-      <a href="/"       class="{% block tab_finder %}{% endblock %}">Kursfinder</a>
-      <a href="/about/" class="{% block tab_about %}{% endblock %}">Über MeisterKompass</a>
-      <a href="/stat/"  class="{% block tab_zahlen %}{% endblock %}">Zahlen zum Meister</a>
+      <a href="/"         class="{% block tab_finder %}{% endblock %}">Kursfinder</a>
+      <a href="/afbg/"    class="{% block tab_afbg %}{% endblock %}">AFBG-Rechner</a>
+      <a href="/about/"   class="{% block tab_about %}{% endblock %}">Über MeisterKompass</a>
       <a href="/imprint/" class="{% block tab_impressum %}{% endblock %}">Impressum</a>
     </nav>
   </div>

@@ -111,7 +111,7 @@ class CourseOffer(models.Model):
                                            (3, self.has_part_3), (4, self.has_part_4)] if f]
         if not included:
             return "—"
-        return ("Part " if len(included) == 1 else "Parts ") + " + ".join(included)
+        return " + ".join(included)
 
     @property
     def included_parts(self) -> list[int]:
@@ -298,9 +298,9 @@ class ExamFee(models.Model):
     def fee_display(self) -> str:
         """
         Human-readable fee string. Examples:
-          Single exact:   "1.130 €"
-          With qualifier: "bis zu 380 €"
-          Range:          "600 bis 2.000 €"
+          Single exact:   "1.130,00 €"
+          With qualifier: "bis zu 380,00 €"
+          Range:          "600,00 bis 2.000,00 €"
         """
         if self.fee_max:
             return f"{self._fmt(self.fee)} bis {self._fmt(self.fee_max)}"
