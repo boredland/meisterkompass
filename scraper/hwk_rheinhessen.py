@@ -58,8 +58,8 @@ TRADE_PAGES: list[dict] = [
     {"slug": "teil-iii-tz",                                     "trade": None, "parts": [3]},
     {"slug": "teil-iii-vz",                                     "trade": None, "parts": [3]},
     # Part III via FKM track
-    {"slug": "fachmann-frau-fuer-kaufmaennische-betriebsfuehrung-fkm-tz",  "trade": None, "parts": [3]},
-    {"slug": "fachmann-frau-fuer-kaufmaennsche-betriebsfuehrung-fkm-vz",   "trade": None, "parts": [3]},
+    {"slug": "fachmann-frau-fuer-kaufmaennische-betriebsfuehrung-fkm-tz",  "trade": None, "parts": [3], "title_override": "Fachmann/-frau für kaufmännische Betriebsführung"},
+    {"slug": "fachmann-frau-fuer-kaufmaennsche-betriebsfuehrung-fkm-vz",   "trade": None, "parts": [3], "title_override": "Fachmann/-frau für kaufmännische Betriebsführung"},
     # Generic Part IV (Berufs- und Arbeitspädagogik / AEVO)
     {"slug": "ausbildereignung-nach-aevo-teilzeit-ada-tz",      "trade": None, "parts": [4]},
     {"slug": "vorbereitung-ausbildereignung-in-vollzeit-aevo-ada-vz", "trade": None, "parts": [4]},
@@ -103,7 +103,7 @@ def parse_availability(text: str) -> str:
     if any(w in lower for w in ("ausgebucht", "keine freien", "nicht buchbar", "voll")):
         return "full"
     if any(w in lower for w in ("wenige", "letzte")):
-        return "few_spots"
+        return "available"
     if any(w in lower for w in ("freie", "verfügbar", "plätze frei")):
         return "available"
     return "unknown"
@@ -149,6 +149,7 @@ class HwkRheinhessenScraper(BaseScraper):
                 trade_name=trade_page["trade"],
                 parts=trade_page["parts"],
                 default_format=parse_format_from_url(trade_page["slug"]),
+                title_override=trade_page.get("title_override"),
             )
             logger.info("  %s → %d offer(s)", trade_page["slug"], len(page_offers))
             offers.extend(page_offers)
@@ -170,7 +171,8 @@ class HwkRheinhessenScraper(BaseScraper):
         source_url: str,
         trade_name: str | None,
         parts: list[int],
-        default_format: str,
+        default_format: str = "part_time",
+        title_override: str | None = None,
     ) -> RawCourseOffer | None:
         """
         For trade pages that list a Kursgebühr but have no scheduled dates yet,
@@ -199,7 +201,7 @@ class HwkRheinhessenScraper(BaseScraper):
         )
 
         return RawCourseOffer(
-            title=build_course_title(trade_name, parts),
+            title=title_override or build_course_title(trade_name, parts),
             trade_name=trade_name,
             parts=parts,
             format_key=default_format,
@@ -225,7 +227,8 @@ class HwkRheinhessenScraper(BaseScraper):
         url: str,
         trade_name: str | None,
         parts: list[int],
-        default_format: str,
+        default_format: str = "part_time",
+        title_override: str | None = None,
     ) -> list[RawCourseOffer]:
         soup = self.parse_html(url)
         if soup is None:
@@ -242,7 +245,7 @@ class HwkRheinhessenScraper(BaseScraper):
         )
 
         content_text = main.get_text(separator="\n")
-        offers = self._extract_runs(content_text, url, trade_name, parts, default_format)
+        offers = self._extract_runs(content_text, url, trade_name, parts, default_format, title_override=title_override)
 
         # Deduplicate: WordPress renders some blocks twice (preview + full content).
         seen: set[tuple] = set()
@@ -257,7 +260,8 @@ class HwkRheinhessenScraper(BaseScraper):
         # course and its fee remain visible for comparison purposes.
         if not unique:
             fallback = self._extract_static_offer(
-                content_text, url, trade_name, parts, default_format
+                content_text, url, trade_name, parts, default_format,
+                title_override=title_override,
             )
             if fallback:
                 unique.append(fallback)
@@ -274,7 +278,8 @@ class HwkRheinhessenScraper(BaseScraper):
         source_url: str,
         trade_name: str | None,
         parts: list[int],
-        default_format: str,
+        default_format: str = "part_time",
+        title_override: str | None = None,
     ) -> list[RawCourseOffer]:
         """
         Split page text on date-range patterns to isolate each course run.
@@ -310,7 +315,8 @@ class HwkRheinhessenScraper(BaseScraper):
         source_url: str,
         trade_name: str | None,
         parts: list[int],
-        default_format: str,
+        default_format: str = "part_time",
+        title_override: str | None = None,
     ) -> RawCourseOffer | None:
         # Dates from the matched date range
         start_raw, end_raw = date_match.group(1), date_match.group(2)
@@ -364,7 +370,7 @@ class HwkRheinhessenScraper(BaseScraper):
             return None
 
         return RawCourseOffer(
-            title=build_course_title(trade_name, parts),
+            title=title_override or build_course_title(trade_name, parts),
             trade_name=trade_name,
             parts=parts,
             format_key=default_format,

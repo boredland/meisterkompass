@@ -340,8 +340,10 @@ class HwkTrierScraper(BaseScraper):
         lower = text.lower()
         if any(w in lower for w in ("ausgebucht", "keine freien", "nicht buchbar")):
             return "full"
+        if "warteliste" in lower:
+            return "waitlist"
         if any(w in lower for w in ("wenige", "letzte")):
-            return "few_spots"
+            return "available"
         if any(w in lower for w in ("freie", "ausreichend", "verfügbar", "buchbar")):
             return "available"
         return "unknown"

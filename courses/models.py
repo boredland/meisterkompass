@@ -23,6 +23,7 @@ class Availability(models.TextChoices):
     AVAILABLE = "available", "Freie Plätze"
     FEW_SPOTS = "few_spots", "Wenige Plätze"
     FULL      = "full",      "Ausgebucht"
+    WAITLIST  = "waitlist",  "Warteliste"
     UNKNOWN   = "unknown",   "Unbekannt"
 
 

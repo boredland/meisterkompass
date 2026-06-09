@@ -136,8 +136,9 @@ def parse_format(text: str) -> str:
 
 def parse_availability(text: str) -> str:
     lower = text.lower()
+    if "warteliste"  in lower: return "waitlist"
     if "ausgebucht" in lower:   return "full"
-    if "wenige"     in lower:   return "few_spots"
+    if "wenige"     in lower:   return "available"
     if "freie"      in lower:   return "available"
     return "unknown"
 
@@ -150,7 +151,7 @@ def parse_city(text: str) -> str:
     text = text.replace("\xa0", " ")
     dur_m   = DURATION_RE.search(text)
     avail_m = re.search(
-        r"ausgebucht|freie\s+Plätze|wenige\s+Plätze|Garantierte\s+Durchführung",
+        r"ausgebucht|warteliste|freie\s+Plätze|wenige\s+Plätze|Garantierte\s+Durchführung",
         text, re.IGNORECASE,
     )
     if dur_m and avail_m and dur_m.end() < avail_m.start():
@@ -160,7 +161,7 @@ def parse_city(text: str) -> str:
             line = line.strip()
             if line and 2 < len(line) < 60 and valid.match(line):
                 return line
-    return ""
+    return "Kaiserslautern"  # fallback: HWK Pfalz main location
 
 
 class HwkPfalzScraper(BaseScraper):

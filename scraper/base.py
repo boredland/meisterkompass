@@ -17,7 +17,7 @@ from scraper.models import ScraperRun
 logger = logging.getLogger(__name__)
 
 GENERIC_TRADE_SLUG = "allgemein-teil-iii-iv"
-GENERIC_TRADE_NAME = "Allgemein (Teile III + IV)"
+GENERIC_TRADE_NAME = "Wirtschaft, Recht, Pädagogik"
 
 # Human-readable names for generic (trade-independent) exam parts
 _GENERIC_PART_NAMES: dict[tuple[int, ...], str] = {

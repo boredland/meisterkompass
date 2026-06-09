@@ -96,6 +96,10 @@ class CourseListView(ListView):
             ).distinct().order_by("name")
         ctx["trades"] = trades_qs
 
+        # Count distinct chambers in the current filtered results
+        ctx["filtered_chamber_count"] = (
+            self.get_queryset().values("chamber").distinct().count()
+        )
         ctx["sel_chamber"]        = sel_chamber
         ctx["sel_trade"]          = p.get("trade",         "")
         ctx["sel_format"]         = p.get("format",        "")
@@ -215,10 +219,12 @@ class AfbgView(TemplateView):
                 key = (o.chamber_id, o.trade_id, tuple(o.included_parts))
                 if key not in seen:
                     seen[key] = {
-                        "chamber_id": o.chamber_id,
-                        "trade_id":   o.trade_id,
-                        "parts":      o.included_parts,
-                        "fee":        float(o.course_fee),
+                        "chamber_id":       o.chamber_id,
+                        "trade_id":         o.trade_id,
+                        "parts":            o.included_parts,
+                        "fee":              float(o.course_fee),
+                        # Include scraped exam fee for AFBG calculator auto-fill
+                        "exam_fee_scraped": float(o.exam_fee_scraped) if o.exam_fee_scraped else None,
                     }
             fee_list = list(seen.values())
         except Exception:

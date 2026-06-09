@@ -90,9 +90,10 @@ def parse_duration(text: str) -> int | None:
 
 def parse_availability(text: str) -> str:
     lower = text.lower()
-    if "ausgebucht" in lower:   return "full"
-    if "wenige"     in lower:   return "few_spots"
-    if "freie"      in lower:   return "available"
+    if "ausgebucht"  in lower: return "full"
+    if "warteliste"  in lower: return "waitlist"
+    if "wenige"      in lower: return "available"
+    if "freie"       in lower: return "available"
     return "unknown"
 
 
@@ -104,7 +105,7 @@ def parse_city(text: str) -> str:
     text = text.replace("\xa0", " ")
     dur_match   = DURATION_PATTERN.search(text)
     avail_match = re.search(
-        r"ausgebucht|freie\s+Plätze|wenige\s+Plätze", text, re.IGNORECASE
+        r"ausgebucht|warteliste|freie\s+Plätze|wenige\s+Plätze", text, re.IGNORECASE
     )
     if dur_match and avail_match and dur_match.end() < avail_match.start():
         between = text[dur_match.end():avail_match.start()]
@@ -113,7 +114,7 @@ def parse_city(text: str) -> str:
             line = line.strip()
             if line and 2 < len(line) < 60 and valid_city.match(line):
                 return line
-    return ""
+    return "Koblenz"  # fallback: all HWK Koblenz courses are in Koblenz
 
 
 class HwkKoblenzScraper(BaseScraper):

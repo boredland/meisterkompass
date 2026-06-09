@@ -158,6 +158,23 @@
       .nav-tabs a { padding: 0 .85rem; font-size: .82rem; }
       .container { padding: 0 1rem; }
     }
+
+  /* ── Enhanced headers (point 1) ── */
+  .page-header, .afbg-hero {
+    background: linear-gradient(135deg, var(--navy) 0%, #0f2440 100%);
+    position: relative;
+    overflow: hidden;
+  }
+  .page-header::before, .afbg-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse at 15% 60%, rgba(201,123,26,.10) 0%, transparent 55%),
+      radial-gradient(ellipse at 85% 15%, rgba(255,255,255,.05) 0%, transparent 45%);
+    pointer-events: none;
+  }
+  .page-header .container, .afbg-hero .container { position: relative; }
   </style>
 
   {% block extra_head %}{% endblock %}

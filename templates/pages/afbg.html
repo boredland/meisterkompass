@@ -36,14 +36,17 @@
 .fee-info-btn-calc:hover::after{opacity:1}
 .result-card{background:var(--navy);color:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:1.5rem}
 .result-card h2{font-family:'Syne',sans-serif;font-size:.9rem;font-weight:700;color:rgba(255,255,255,.75);margin-bottom:1.1rem;line-height:1.4}
-.result-row{display:flex;justify-content:space-between;align-items:baseline;padding:.45rem 0;border-bottom:1px solid rgba(255,255,255,.1)}
+.result-row{display:flex;justify-content:space-between;align-items:center;padding:.5rem 0;border-bottom:1px solid rgba(255,255,255,.1);gap:.75rem}
 .result-row:last-of-type{border-bottom:none}
-.result-row .label{color:rgba(255,255,255,.7);font-size:.85rem}
-.result-row .value{font-weight:600;color:#fff;font-size:.95rem;white-space:nowrap}
+.result-row .label{color:rgba(255,255,255,.7);font-size:.84rem;display:flex;align-items:center;gap:.4rem}
+.result-row .label .icon{font-size:.95rem;flex-shrink:0}
+.result-row .value{font-weight:600;color:#fff;font-size:.95rem;white-space:nowrap;text-align:right}
 .result-row.highlight .label{color:#fff;font-weight:500}
+.result-row.highlight .value{font-size:1.05rem}
 .result-row.positive .value{color:#6EE7A0}
 .result-row.loan .value{color:#FCD34D}
-.result-row.deduct .value{color:rgba(255,255,255,.45);font-size:.82rem}
+.result-row.deduct .label{color:rgba(255,255,255,.45);font-size:.78rem}
+.result-row.deduct .value{color:rgba(255,255,255,.45);font-size:.78rem}
 .result-divider{border:none;border-top:1px solid rgba(255,255,255,.2);margin:.5rem 0}
 .result-note{font-size:.75rem;color:rgba(255,255,255,.5);margin-top:.85rem;line-height:1.5}
 .result-empty{text-align:center;color:rgba(255,255,255,.4);font-size:.85rem;padding:1.5rem 0}
@@ -93,6 +96,15 @@
         <label class="part-check"><input type="checkbox" id="chk2" value="2" onchange="onPartCheck(2)"> Teil II – Fachtheorie</label>
         <label class="part-check"><input type="checkbox" id="chk3" value="3" onchange="onPartCheck(3)"> Teil III – BWL/Recht</label>
         <label class="part-check"><input type="checkbox" id="chk4" value="4" onchange="onPartCheck(4)"> Teil IV – Pädagogik</label>
+      </div>
+
+      <div id="combo-options" style="display:none;margin:.6rem 0">
+        <label style="display:flex;align-items:center;gap:.4rem;font-size:.8rem;
+               background:var(--bg-mid);border:1px solid var(--border);border-radius:100px;
+               padding:.25rem .75rem;cursor:pointer;user-select:none;width:fit-content">
+          <input type="checkbox" id="prefer-singles" onchange="renderFeeInputs()">
+          Einzelne Kursteile den Kombi-Kursen bevorzugen
+        </label>
       </div>
 
       <div id="fee-inputs"></div>
@@ -149,13 +161,18 @@
       <li><strong>50 % Darlehenserlass</strong> bei bestandener Prüfung</li>
       <li>Effektiver Eigenanteil bei Bestehen: ca. <strong>25 %</strong> der geförderten Kosten</li>
     </ul>
-    <p style="font-size:.875rem;color:var(--text-mid);line-height:1.7;margin-top:1rem;margin-bottom:.5rem">Das AFBG fördert Materialkosten des Meisterprüfungsprojekts (und vergleichbaren Arbeiten): bis zu <strong>2.000 €</strong></p>
+    <p style="font-size:.875rem;color:var(--text-mid);line-height:1.7;margin-top:1rem;margin-bottom:.5rem">Das AFBG fördert Materialkosten des Meisterprüfungsprojekts (und vergleichbaren Arbeiten) bis zu <strong>2.000 €</strong>:</p>
     <ul style="font-size:.875rem;color:var(--text-mid);line-height:1.8;margin-left:1.2rem;margin-bottom:.75rem">
       <li><strong>50 % Zuschuss</strong> – wird nicht zurückgezahlt</li>
       <li><strong>50 % zinsgünstiges KfW-Darlehen</strong> – kein Darlehenserlass</li>
     </ul>
+    <p style="font-size:.875rem;color:var(--text-mid);line-height:1.7;margin-top:1rem;margin-bottom:.5rem">
+      Wenn du an einer Vollzeitmaßnahme teilnimmst, kannst du zusätzlich einen Beitrag zum Lebensunterhalt erhalten.
+      Diese Unterhaltsförderung ist unter anderem abhängig von deinem Einkommen und Vermögen.
+      Informiere dich auf <a href="https://www.aufstiegs-bafoeg.de/aufstiegsbafoeg/de/die-foerderung/wie-wird-gefoerdert/wie-wird-gefoerdert_node.html" target="_blank" style="color:var(--navy-mid)">www.aufstiegs-bafoeg.de</a>
+    </p>
     <p style="font-size:.8rem;color:var(--text-lt);margin-top:.75rem">
-      Quelle: BMBF / AFBG. Weitere Informationen:
+      Quelle: BMBFSFJ,
       <a href="https://www.aufstiegs-bafoeg.de/aufstiegsbafoeg/de/home/home_node.html" target="_blank" style="color:var(--navy-mid)">www.aufstiegs-bafoeg.de</a>.
       Angaben ohne Gewähr. (Stand: 03. Juni 2026)
     </p>
@@ -210,7 +227,13 @@ function setMode(mode) {
 }
 
 // ── Chamber / Trade ───────────────────────────────────────────────────
+function resetComboOptions() {
+  var el = document.getElementById('prefer-singles');
+  if (el) el.checked = false;
+}
+
 function onChamberChange() {
+  resetComboOptions();
   currentCid = parseInt(document.getElementById('auto-chamber').value) || null;
   currentTid = null;
   feeGroups = [];
@@ -296,28 +319,53 @@ function fillExamFees() {
   var cidStr = String(currentCid);
   var efChamber = EXAM_FEES[cidStr] || {};
   var tidStr = currentTid ? String(currentTid) : null;
-  // Merge: null-trade as base, trade-specific overrides
+
+  // Merge ExamFee table: null-trade as base, trade-specific overrides
   var efByPart = {};
   var efNull  = efChamber['null'] || {};
   var efTrade = (tidStr && efChamber[tidStr]) ? efChamber[tidStr] : {};
   Object.keys(efNull).forEach(function(k){ efByPart[parseInt(k)] = efNull[k]; });
   Object.keys(efTrade).forEach(function(k){ efByPart[parseInt(k)] = efTrade[k]; });
 
-  // For each group, SUM the exam fees of all its parts
+  // For each group: sum exam fees from ExamFee table first,
+  // then fall back to exam_fee_scraped from course offers
   feeGroups.forEach(function(g) {
     var totalFee = 0, totalMin = 0, totalMax = 0;
     var hasMax = false, qualifier = '', hasAny = false;
+
     g.parts.forEach(function(p) {
       var ef = efByPart[p];
-      if (!ef) return;
-      hasAny = true;
-      var fee = ef.fee_max ? Math.round((ef.fee + ef.fee_max) / 2) : ef.fee;
-      totalFee += fee;
-      totalMin += ef.fee;
-      if (ef.fee_max) { totalMax += ef.fee_max; hasMax = true; }
-      else            { totalMax += ef.fee; }
-      if (ef.qualifier) qualifier = ef.qualifier;
+      if (ef) {
+        // Priority 1: ExamFee table entry
+        hasAny = true;
+        var fee = ef.fee_max ? Math.round((ef.fee + ef.fee_max) / 2) : ef.fee;
+        totalFee += fee;
+        totalMin += ef.fee;
+        if (ef.fee_max) { totalMax += ef.fee_max; hasMax = true; }
+        else            { totalMax += ef.fee; }
+        if (ef.qualifier) qualifier = ef.qualifier;
+      }
     });
+
+    if (!hasAny) {
+      // Priority 2: exam_fee_scraped on the matching CourseOffer
+      var matchingOffers = COURSE_FEES.filter(function(o) {
+        if (o.chamber_id !== currentCid) return false;
+        if (o.exam_fee_scraped == null) return false;
+        var sameParts = JSON.stringify(o.parts.slice().sort()) ===
+                        JSON.stringify(g.parts.slice().sort());
+        // For generic courses (III/IV): match by parts regardless of trade
+        var isGeneric = o.is_generic;
+        var tradeMatch = isGeneric || (currentTid && o.trade_id === currentTid);
+        return sameParts && tradeMatch;
+      });
+      if (matchingOffers.length > 0 && matchingOffers[0].exam_fee_scraped) {
+        hasAny = true;
+        totalFee = matchingOffers[0].exam_fee_scraped;
+        totalMin = totalFee;
+      }
+    }
+
     if (hasAny) {
       g.examFee    = totalFee;
       g.examFeeMin = totalMin;
@@ -330,14 +378,18 @@ function fillExamFees() {
 // ── Part checkbox interaction ─────────────────────────────────────────
 function onPartCheck(p) {
   var checked = document.getElementById('chk'+p).checked;
-  // If this part belongs to a combo group, also check/uncheck siblings
-  feeGroups.forEach(function(g) {
-    if (g.isCombo && g.parts.indexOf(p) >= 0) {
-      g.parts.forEach(function(sibling) {
-        document.getElementById('chk'+sibling).checked = checked;
-      });
-    }
-  });
+  // Cascade to combo siblings — but only when NOT in prefer-singles mode
+  var preferSinglesEl = document.getElementById('prefer-singles');
+  var preferSingles = preferSinglesEl ? preferSinglesEl.checked : false;
+  if (!preferSingles) {
+    feeGroups.forEach(function(g) {
+      if (g.isCombo && g.parts.indexOf(p) >= 0) {
+        g.parts.forEach(function(sibling) {
+          document.getElementById('chk'+sibling).checked = checked;
+        });
+      }
+    });
+  }
   // In manual mode: if a part is checked and not yet in any group, create solo group
   if (currentMode === 'manual' && checked) {
     var inGroup = feeGroups.some(function(g){ return g.parts.indexOf(p) >= 0; });
@@ -361,15 +413,66 @@ function renderFeeInputs() {
     return;
   }
 
-  // In manual mode with no feeGroups, render solo inputs for checked parts
-  var groupsToRender = feeGroups.length > 0 ? feeGroups : parts.map(function(p){
-    return {parts:[p], courseFee:null, examFee:null, examFeeMin:null, examFeeMax:null, qualifier:'', isAuto:false, isCombo:false};
+  // Candidate groups: parts all currently selected
+  var candidateGroups = feeGroups.filter(function(g) {
+    return g.parts.every(function(p) { return parts.indexOf(p) >= 0; });
   });
 
-  // Only render groups whose parts are currently checked
-  groupsToRender = groupsToRender.filter(function(g){
-    return g.parts.every(function(p){ return document.getElementById('chk'+p).checked; });
-  });
+  // All combo groups where ALL their parts are currently selected
+  var allComboGroups = candidateGroups.filter(function(g) { return g.parts.length > 1; });
+
+  // Show "prefer singles" option only when combos exist for selected parts
+  var comboOpts = document.getElementById('combo-options');
+  var anyCombo = allComboGroups.length > 0;
+  if (comboOpts) comboOpts.style.display = anyCombo ? 'block' : 'none';
+
+  // Read "prefer singles" toggle
+  var preferSinglesEl = document.getElementById('prefer-singles');
+  var preferSingles = preferSinglesEl ? preferSinglesEl.checked : false;
+
+  var groupsToRender;
+  if (preferSingles) {
+    // Prefer individual part groups.
+    // If no individual exists for a part → fall back to the smallest combo containing it.
+    // Combos used as fallback are deduplicated so they appear only once.
+    var shownGroups = [];
+    parts.forEach(function(p) {
+      var indiv = candidateGroups.find(function(g) {
+        return g.parts.length === 1 && g.parts[0] === p;
+      });
+      if (indiv) {
+        shownGroups.push(indiv);
+      } else {
+        // Fallback: smallest combo that covers this part
+        var fallback = allComboGroups
+          .filter(function(g) { return g.parts.indexOf(p) >= 0; })
+          .sort(function(a, b) { return a.parts.length - b.parts.length; })[0];
+        if (fallback && shownGroups.indexOf(fallback) < 0) {
+          shownGroups.push(fallback);
+        }
+      }
+    });
+    groupsToRender = shownGroups;
+  } else {
+    // Default: combos take priority — individual parts hidden when covered by combo
+    var activeComboGroups = allComboGroups;
+    groupsToRender = candidateGroups.filter(function(g) {
+      if (g.parts.length === 1) {
+        return !activeComboGroups.some(function(combo) {
+          return combo.parts.indexOf(g.parts[0]) >= 0;
+        });
+      }
+      return true;  // keep combos
+    });
+  }
+
+  // Fallback when no feeGroups loaded yet
+  if (feeGroups.length === 0) {
+    groupsToRender = parts.map(function(p) {
+      return {parts:[p], courseFee:null, examFee:null, examFeeMin:null, examFeeMax:null, qualifier:'', isAuto:false, isCombo:false};
+    });
+  }
+  groupsToRender.sort(function(a, b) { return a.parts[0] - b.parts[0]; });
 
   if (groupsToRender.length === 0) {
     container.innerHTML = '<p style="font-size:.82rem;color:var(--text-lt);margin-bottom:.75rem">Bitte mindestens einen Teil auswählen.</p>';
@@ -405,11 +508,11 @@ function renderFeeInputs() {
 function buildExamLabel(g) {
   var label = 'Prüfungsgebühr (€)';
   if (g.examFeeMax) {
-    var tt = 'Die Spanne der Prüfungsgebühr je Teil entstammt dem offiziellen Gebührenverzeichnis. Die genaue Gebühr innerhalb dieser Spanne wird von der Kammer festgelegt. Erkundigen Sie sich bitte bei der jeweiligen Kammer.';
+    var tt = 'Die Spanne der Prüfungsgebühr je Teil entstammt dem offiziellen Gebührenverzeichnis. Die genaue Gebühr innerhalb dieser Spanne wird von der Kammer festgelegt. Erkundige dich gerne bei der jeweiligen Kammer.';
     var span = Math.round(g.examFeeMin).toLocaleString('de-DE') + ' bis ' + Math.round(g.examFeeMax).toLocaleString('de-DE') + '\u00a0€';
     label += ' <span class="fee-info-wrap-calc"><small style="color:var(--text-lt)">' + span + '</small><button class="fee-info-btn-calc" type="button" data-tooltip="' + tt + '">i</button></span>';
   } else if (g.qualifier) {
-    var tt2 = 'Die Prüfungsgebühr je Teil entstammt dem offiziellen Gebührenverzeichnis. Dies ist die Gebühr, die maximal erhoben werden kann. Häufig ist die Prüfungsgebühr tatsächlich niedriger. Erkundigen Sie sich bitte bei der jeweiligen Kammer.';
+    var tt2 = 'Die Prüfungsgebühr je Teil entstammt dem offiziellen Gebührenverzeichnis. Dies ist die Gebühr, die maximal erhoben werden kann. Häufig ist die Prüfungsgebühr tatsächlich niedriger. Erkundige dich gerne bei der jeweiligen Kammer.';
     label += ' <span class="fee-info-wrap-calc"><small style="color:var(--text-lt)">' + g.qualifier + '</small><button class="fee-info-btn-calc" type="button" data-tooltip="' + tt2 + '">i</button></span>';
   }
   return label;
@@ -463,15 +566,15 @@ function calculate() {
   }
   html +=
     '<hr class="result-divider">'+
-    '<div class="result-row positive"><span class="label">Zuschuss (50 % – nicht rückzahlbar)</span><span class="value">+ '+fmt(zuschuss)+'</span></div>'+
-    '<div class="result-row loan"><span class="label">KfW-Darlehen (50 %)</span><span class="value">'+fmt(darlehen)+'</span></div>'+
-    '<div class="result-row positive"><span class="label">Darlehenserlass bei Bestehen (50 %)</span><span class="value">+ '+fmt(erlass)+'</span></div>'+
-    '<div class="result-row deduct"><span class="label">Verbleibendes Darlehen nach Bestehen</span><span class="value">'+fmt(darlehenNach)+'</span></div>'+
+    '<div class="result-row positive"><span class="label"><span class="icon">✅</span>Zuschuss (50 % – nicht rückzahlbar)</span><span class="value">+ '+fmt(zuschuss)+'</span></div>'+
+    '<div class="result-row loan"><span class="label"><span class="icon">🏦</span>KfW-Darlehen (50 %)</span><span class="value">'+fmt(darlehen)+'</span></div>'+
+    '<div class="result-row positive"><span class="label"><span class="icon">🎓</span>Darlehenserlass bei Bestehen (50 %)</span><span class="value">+ '+fmt(erlass)+'</span></div>'+
+    '<div class="result-row deduct"><span class="label"><span class="icon">↩</span>Verbleibendes Darlehen nach Bestehen</span><span class="value">'+fmt(darlehenNach)+'</span></div>'+
     '<hr class="result-divider">'+
-    '<div class="result-row highlight"><span class="label">Effektiver Eigenanteil (bei Bestehen)</span><span class="value" style="color:var(--amber-lt)">'+fmt(eigenanteil)+'</span></div>';
+    '<div class="result-row highlight"><span class="label"><span class="icon">💡</span>Effektiver Eigenanteil (bei Bestehen)</span><span class="value" style="color:var(--amber-lt)">'+fmt(eigenanteil)+'</span></div>';
 
   if (total > 0) {
-    html += '<div class="result-row deduct"><span class="label">Entspricht ca.</span><span class="value">'+Math.round(eigenanteil/total*100)+' % der Gesamtkosten</span></div>';
+    html += '<div class="result-row deduct"><span class="label"><span class="icon">≈</span>Entspricht ca.</span><span class="value">'+Math.round(eigenanteil/total*100)+' % der Gesamtkosten</span></div>';
   }
   html += '<p class="result-note">'+(missing?'&#9888; Einige Lehrgangsgebühren fehlen – das Ergebnis ist unvollständig.<br>':'')+'Ohne Aufstiegs-BAföG: '+fmt(total)+' · Mit Aufstiegs-BAföG (bei Bestehen): '+fmt(eigenanteil)+'.</p>';
 
@@ -484,16 +587,16 @@ function calculate() {
     pEigenanteil = projektKosten - pZuschuss;
 
     var pHtml =
-      '<div class="result-row"><span class="label">Materialkosten Projekt</span><span class="value">'+fmt(projektKosten)+'</span></div>'+
-      '<div class="result-row deduct"><span class="label">Davon förderbar (max. 2.000 €)</span><span class="value">'+fmt(pFoerderbar)+'</span></div>'+
-      '<div class="result-row positive"><span class="label">Zuschuss (50 % der Förderung)</span><span class="value">+ '+fmt(pZuschuss)+'</span></div>'+
-      '<div class="result-row loan"><span class="label">KfW-Darlehen (50 % der Förderung)</span><span class="value">'+fmt(pDarlehen)+'</span></div>'+
+      '<div class="result-row"><span class="label"><span class="icon">🔧</span>Materialkosten Projekt</span><span class="value">'+fmt(projektKosten)+'</span></div>'+
+      '<div class="result-row deduct"><span class="label"><span class="icon">✦</span>Davon förderbar (max. 2.000 €)</span><span class="value">'+fmt(pFoerderbar)+'</span></div>'+
+      '<div class="result-row positive"><span class="label"><span class="icon">✅</span>Zuschuss (50 % der Förderung)</span><span class="value">+ '+fmt(pZuschuss)+'</span></div>'+
+      '<div class="result-row loan"><span class="label"><span class="icon">🏦</span>KfW-Darlehen (50 % der Förderung)</span><span class="value">'+fmt(pDarlehen)+'</span></div>'+
       '<hr class="result-divider">'+
-      '<div class="result-row highlight"><span class="label">Eigenanteil Meisterprojekt</span><span class="value" style="color:#D4A8FF">'+fmt(pEigenanteil)+'</span></div>'+
+      '<div class="result-row highlight"><span class="label"><span class="icon">💡</span>Eigenanteil Meisterprojekt</span><span class="value" style="color:#D4A8FF">'+fmt(pEigenanteil)+'</span></div>'+
       '<p class="result-note">Kein Darlehenserlass beim Meisterprojekt – das KfW-Darlehen ('+fmt(pDarlehen)+') ist vollständig zurückzuzahlen.</p>';
 
     document.getElementById('result-box-projekt').style.display = '';
-    document.getElementById('result-projekt-content').innerHTML = pHtml;
+    document.getElementById('result-projekt-content').innerHTML = pHtml + '<p style="font-size:.72rem;color:var(--text-lt);margin-top:.75rem;line-height:1.5">Angaben ohne Gewähr. Es handelt sich um eine Annäherung auf Basis der verfügbaren Daten. Weitere Kosten oder Gebühren können hinzukommen.</p>';
   } else {
     document.getElementById('result-box-projekt').style.display = 'none';
   }
@@ -502,18 +605,18 @@ function calculate() {
   var totalEigenanteil = eigenanteil + pEigenanteil;
   var totalDarlehen    = darlehenNach + pDarlehen;
   var tHtml =
-    '<div class="result-row"><span class="label">Eigenanteil Lehrgangs-/Prüfungsgebühren</span><span class="value">'+fmt(eigenanteil)+'</span></div>'+
-    (projektKosten > 0 ? '<div class="result-row"><span class="label">Eigenanteil Meisterprojekt</span><span class="value">'+fmt(pEigenanteil)+'</span></div>' : '')+
+    '<div class="result-row"><span class="label"><span class="icon">📌</span>Eigenanteil Lehrgangs-/Prüfungsgebühren</span><span class="value">'+fmt(eigenanteil)+'</span></div>'+
+    (projektKosten > 0 ? '<div class="result-row"><span class="label"><span class="icon">📌</span>Eigenanteil Meisterprojekt</span><span class="value">'+fmt(pEigenanteil)+'</span></div>' : '')+
     '<hr class="result-divider">'+
-    '<div class="result-row highlight"><span class="label">Gesamter Eigenanteil</span><span class="value" style="color:var(--amber-lt)">'+fmt(totalEigenanteil)+'</span></div>'+
-    '<div class="result-row loan"><span class="label">Davon KfW-Darlehen (gesamt)</span><span class="value">'+fmt(totalDarlehen)+'</span></div>';
+    '<div class="result-row highlight"><span class="label"><span class="icon">💶</span>Gesamter Eigenanteil</span><span class="value" style="color:var(--amber-lt)">'+fmt(totalEigenanteil)+'</span></div>'+
+    '<div class="result-row loan"><span class="label"><span class="icon">🏦</span>Davon KfW-Darlehen (gesamt)</span><span class="value">'+fmt(totalDarlehen)+'</span></div>';
 
   document.getElementById('result-box-total').style.display = '';
-  document.getElementById('result-total-content').innerHTML = tHtml;
+  document.getElementById('result-total-content').innerHTML = tHtml + '<p style="font-size:.72rem;color:var(--text-lt);margin-top:.75rem;line-height:1.5">Angaben ohne Gewähr. Es handelt sich um eine Annäherung auf Basis der verfügbaren Daten. Weitere Kosten oder Gebühren können hinzukommen.</p>';
 
   document.getElementById('result-empty').style.display   = 'none';
   document.getElementById('result-content').style.display = '';
-  document.getElementById('result-content').innerHTML = html;
+  document.getElementById('result-content').innerHTML = html + '<p style="font-size:.72rem;color:var(--text-lt);margin-top:.75rem;line-height:1.5">Angaben ohne Gewähr. Es handelt sich um eine Annäherung auf Basis der verfügbaren Daten. Weitere Kosten oder Gebühren können hinzukommen.</p>';
 }
 
 renderFeeInputs();

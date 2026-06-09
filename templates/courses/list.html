@@ -46,12 +46,13 @@
 .course-table tbody tr:hover{background:#F9F7F3}
 .course-title{font-weight:500;color:var(--navy);line-height:1.35}
 .course-meta{font-size:.78rem;color:var(--text-lt);margin-top:2px}
-.price{font-weight:600;color:var(--text);white-space:nowrap}
+.price{white-space:nowrap}
 .price-na{color:var(--text-lt)}
-.badge{display:inline-block;padding:2px 8px;border-radius:20px;font-size:.72rem;font-weight:500;background:var(--bg);border:1px solid var(--border);color:var(--text-mid)}
-.badge-full{background:#FEE2E2;border-color:#FCA5A5;color:#991B1B}
-.badge-few{background:#FEF9C3;border-color:#FCD34D;color:#92400E}
-.badge-available{background:#DCFCE7;border-color:#86EFAC;color:#166534}
+.badge{display:inline-block;padding:3px 10px;border-radius:100px;font-size:.72rem;font-weight:600;background:var(--bg);border:1px solid var(--border);color:var(--text-mid)}
+.badge-full{background:#FEE2E2;border-color:#FCA5A5;color:#991B1B;border-radius:100px}
+.badge-few{background:#FEF9C3;border-color:#FCD34D;color:#92400E;border-radius:100px}
+.badge-available{background:#DCFCE7;border-color:#86EFAC;color:#166534;border-radius:100px}
+.badge-waitlist{background:#FFF7ED;border-color:#FDBA74;color:#9A3412;border-radius:100px}
 .link-icon{font-size:.8rem;color:var(--navy-mid);text-decoration:none}
 .link-icon:hover{text-decoration:underline}
 /* Exam fee tooltip */
@@ -93,7 +94,6 @@
   .course-table td::before{content:attr(data-label);font-size:.72rem;font-weight:600;color:var(--text-lt);text-transform:uppercase;letter-spacing:.04em;display:block;margin-bottom:1px}
   .course-table td:empty{display:none}
   /* Hide less important columns on mobile */
-  .course-table td.col-end,
   .course-table td.col-duration{display:none}
   #map{height:420px}
 }
@@ -115,7 +115,17 @@
 <div class="page-header">
   <div class="container">
     <h1>Meistervorbereitungskurse</h1>
-    <p>Kursangebote der Handwerkskammern in Rheinland-Pfalz</p>
+    <p>Kursangebote der Handwerkskammern in Rheinland-Pfalz und dem Saarland</p>
+    <div style="display:flex;gap:1.5rem;margin-top:1rem;flex-wrap:wrap">
+      <div style="font-size:.82rem;color:rgba(255,255,255,.55)">
+        <span style="font-size:1.1rem;font-weight:700;color:rgba(255,255,255,.9);margin-right:.3rem">{{ paginator.count }}</span>
+        Kursangebote
+      </div>
+      <div style="font-size:.82rem;color:rgba(255,255,255,.55)">
+        <span style="font-size:1.1rem;font-weight:700;color:rgba(255,255,255,.9);margin-right:.3rem">{{ filtered_chamber_count }}</span>
+        Kammern
+      </div>
+    </div>
   </div>
 </div>
 
@@ -133,7 +143,7 @@
         </select>
 
         <select name="trade" onchange="submitWithView(this.form)">
-          <option value="">Beruf/Fachrichtung</option>
+          <option value="">Beruf / Fachrichtung</option>
           {% for t in trades %}
             <option value="{{ t.slug }}" {% if sel_trade == t.slug %}selected{% endif %}>{{ t.name }}</option>
           {% endfor %}
@@ -229,7 +239,7 @@
         <thead>
           <tr>
             <th>Kurs</th><th>Kammer</th><th>Teile</th><th>Zeitmodell</th>
-            <th>Start</th><th>Ende</th><th>Dauer</th>
+            <th>Laufzeit</th><th>Dauer</th>
             <th>Kursgebühr</th><th>Prüfungsgebühr</th><th>Ort</th><th>Verfügbarkeit</th>
           </tr>
         </thead>
@@ -247,23 +257,38 @@
               {% endif %}
             </td>
             <td data-label="Kammer" style="white-space:nowrap;font-size:.82rem;">{{ offer.chamber.short_name }}</td>
-            <td data-label="Teile"><span class="badge">{{ offer.parts_label }}</span></td>
+            <td data-label="Teile" style="white-space:nowrap">{% for p in offer.included_parts %}<span class="badge" style="display:block;margin-bottom:2px">{% if p == 1 %}I{% elif p == 2 %}II{% elif p == 3 %}III{% elif p == 4 %}IV{% else %}{{ p }}{% endif %}</span>{% endfor %}</td>
             <td data-label="Zeitmodell">{{ offer.get_format_display }}</td>
-            <td data-label="Start" style="white-space:nowrap;font-size:.82rem;">{% if offer.start_date %}{{ offer.start_date|date:"d.m.Y" }}{% else %}<span style="color:var(--text-lt);font-style:italic">Termine n. v.</span>{% endif %}</td>
-            <td data-label="Ende" class="col-end" style="white-space:nowrap;font-size:.82rem;">{% if offer.end_date %}{{ offer.end_date|date:"d.m.Y" }}{% else %}—{% endif %}</td>
+            <td data-label="Laufzeit" style="font-size:.82rem;font-variant-numeric:tabular-nums;">
+              {% if offer.start_date %}
+                <div style="white-space:nowrap">{{ offer.start_date|date:"d.m.Y" }}</div>
+                {% if offer.end_date %}
+                  <div style="color:var(--text-lt);font-size:.72rem;line-height:1.2">bis</div>
+                  <div style="white-space:nowrap">{{ offer.end_date|date:"d.m.Y" }}</div>
+                {% endif %}
+              {% else %}
+                <span style="color:var(--text-lt);font-style:italic">Termine n. v.</span>
+              {% endif %}
+            </td>
             <td data-label="Dauer" class="col-duration" style="white-space:nowrap;">{% if offer.duration_hours %}{{ offer.duration_hours }} Std.{% else %}—{% endif %}</td>
             <td data-label="Kursgebühr"><span class="{% if offer.course_fee %}price{% else %}price-na{% endif %}">{{ offer.course_fee_display }}</span></td>
-            <td data-label="Prüfungsgebühr">{% with ef=offer.exam_fee_info %}{% if ef.fee %}<span class="fee-info-wrap"><span class="price">{{ ef.display }}</span>{% if ef.qualifier %}<button class="fee-info-btn" data-tooltip="Die Prüfungsgebühr je Teil entstammt dem offiziellen Gebührenverzeichnis. Dies ist die Gebühr, die maximal erhoben werden kann. Häufig ist die Prüfungsgebühr tatsächlich niedriger. Erkundigen Sie sich bitte bei der jeweiligen Kammer." type="button">i</button>{% elif ef.fee_max %}<button class="fee-info-btn" data-tooltip="Die Spanne der Prüfungsgebühr je Teil entstammt dem offiziellen Gebührenverzeichnis. Die genaue Gebühr innerhalb dieser Spanne wird von der Kammer festgelegt. Erkundigen Sie sich bitte bei der jeweiligen Kammer." type="button">i</button>{% endif %}</span>{% else %}<span class="price-na">—</span>{% endif %}{% endwith %}</td>
+            <td data-label="Prüfungsgebühr">{% with ef=offer.exam_fee_info %}{% if ef.fee %}<span class="fee-info-wrap"><span class="price">{{ ef.display }}</span>{% if ef.qualifier %}<button class="fee-info-btn" data-tooltip="Die Prüfungsgebühr je Teil entstammt dem offiziellen Gebührenverzeichnis. Dies ist die Gebühr, die maximal erhoben werden kann. Häufig ist die Prüfungsgebühr tatsächlich niedriger. Erkundige dich bitte bei der jeweiligen Kammer." type="button">i</button>{% elif ef.fee_max %}<button class="fee-info-btn" data-tooltip="Die Spanne der Prüfungsgebühr je Teil entstammt dem offiziellen Gebührenverzeichnis. Die genaue Gebühr innerhalb dieser Spanne wird von der Kammer festgelegt. Erkundige dich bitte bei der jeweiligen Kammer." type="button">i</button>{% endif %}</span>{% else %}<span class="price-na">—</span>{% endif %}{% endwith %}</td>
             <td data-label="Ort">{{ offer.city|default:"—" }}</td>
             <td data-label="Verfügbarkeit">
               {% if offer.availability == 'full' %}<span class="badge badge-full">Ausgebucht</span>
-              {% elif offer.availability == 'few_spots' %}<span class="badge badge-few">Wenige Plätze</span>
-              {% elif offer.availability == 'available' %}<span class="badge badge-available">Freie Plätze</span>
+              {% elif offer.availability == 'waitlist' %}<span class="badge badge-waitlist">Warteliste</span>
+              {% elif offer.availability == 'available' or offer.availability == 'few_spots' %}<span class="badge badge-available">Freie Plätze</span>
               {% else %}<span class="badge">–</span>{% endif %}
             </td>
           </tr>
           {% empty %}
-          <tr><td colspan="11" style="text-align:center;color:var(--text-lt);padding:2rem;">Keine Kurse gefunden.</td></tr>
+          <tr><td colspan="10">
+            <div style="text-align:center;padding:3rem 1rem">
+              <div style="font-size:2.5rem;margin-bottom:.75rem">🔍</div>
+              <div style="font-weight:600;color:var(--text);margin-bottom:.35rem">Keine Kurse gefunden</div>
+              <div style="font-size:.85rem;color:var(--text-lt)">Passe die Filter an oder setze sie zurück, um mehr Ergebnisse zu sehen.</div>
+            </div>
+          </td></tr>
           {% endfor %}
         </tbody>
       </table>
