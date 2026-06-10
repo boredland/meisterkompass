@@ -1,0 +1,40 @@
+name: Weekly scraper
+
+on:
+  schedule:
+    - cron: "0 3 * * 5"   # Every Friday at 03:00 UTC
+  workflow_dispatch:        # Allow manual trigger from GitHub UI
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run all scrapers
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          SECRET_KEY: ${{ secrets.SECRET_KEY }}
+          DJANGO_SETTINGS_MODULE: config.settings_prod
+          # Override SSL redirect for management commands (no HTTPS in CI)
+          SECURE_SSL_REDIRECT: "False"
+          ALLOWED_HOSTS: "localhost"
+          CSRF_TRUSTED_ORIGINS: "http://localhost"
+        run: |
+          python manage.py run_scrapers
+          python manage.py geocode_offers
+
+      - name: Notify on failure
+        if: failure()
+        run: echo "Scraper run failed — check logs above."
