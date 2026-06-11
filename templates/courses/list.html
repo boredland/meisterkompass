@@ -309,7 +309,7 @@
           {% for offer in offers %}
           <tr>
             {# Mobile accordion header — tapping opens the detail cells #}
-            <td class="mob-summary" style="display:none">
+            <td class="mob-summary">
               <div class="row-toggle" onclick="toggleRow(this)">
                 <div>
                   <div class="row-title">{{ offer.title|cut:"Meistervorbereitungskurs: " }}</div>
@@ -594,3 +594,30 @@ window.addEventListener('resize', function() {
 
 </script>
 {% endblock %}
+  /* ── Mobile accordion ─────────────────────────────────────── */
+  /* Desktop: hide the mobile summary cell */
+  .mob-summary { display: none; }
+
+  @media (max-width: 640px) {
+    /* Show mobile summary cell, hide desktop Kurs+Kammer cells */
+    .mob-summary { display: block !important; }
+    .col-kurs, .col-kammer { display: none !important; }
+
+    /* Row toggle header */
+    .row-toggle {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      cursor: pointer;
+      padding-bottom: .5rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: .3rem;
+    }
+    .row-title { font-weight: 600; font-size: .88rem; color: var(--text); }
+    .chevron { transition: transform .2s; display: inline-block; }
+    .course-table tr.open .chevron { transform: rotate(180deg); }
+
+    /* Detail cells: hidden until row is opened */
+    .detail-cell { display: none !important; }
+    .course-table tr.open .detail-cell { display: flex !important; }
+  }
