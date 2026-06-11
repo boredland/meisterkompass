@@ -138,7 +138,13 @@
     .chevron{transition:transform .2s;display:inline-block}
     .course-table tr.open .chevron{transform:rotate(180deg)}
     .course-table tbody td.detail-cell{display:none!important}
-    .course-table tbody tr.open td.detail-cell{display:flex!important}
+    .course-table tbody tr.open td.detail-cell{
+      display:block!important;
+      padding:.5rem 0;
+      border-bottom:1px solid var(--border);
+    }
+    .course-table tbody tr.open td.detail-cell:last-child{border-bottom:none}
+    .course-table tbody tr.open td.detail-cell::before{margin-bottom:3px}
   }
 
 </style>
