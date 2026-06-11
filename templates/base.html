@@ -175,6 +175,46 @@
     pointer-events: none;
   }
   .page-header .container, .afbg-hero .container { position: relative; }
+
+  /* ── Mobile hamburger menu ── */
+  .hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: .4rem;
+    color: rgba(255,255,255,.85);
+    font-size: 1.4rem;
+    line-height: 1;
+  }
+  .mobile-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background: var(--navy);
+    border-top: 1px solid rgba(255,255,255,.1);
+    z-index: 200;
+    padding: .5rem 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,.3);
+  }
+  .mobile-menu.open { display: block; }
+  .mobile-menu a {
+    display: block;
+    padding: .75rem 1.25rem;
+    color: rgba(255,255,255,.8);
+    text-decoration: none;
+    font-size: .9rem;
+    border-bottom: 1px solid rgba(255,255,255,.07);
+  }
+  .mobile-menu a:last-child { border-bottom: none; }
+  .mobile-menu a:hover,
+  .mobile-menu a.active { color: #fff; background: rgba(255,255,255,.08); }
+  @media (max-width: 640px) {
+    .nav-tabs { display: none; }
+    .hamburger { display: block; }
+  }
   </style>
 
   {% block extra_head %}{% endblock %}
@@ -190,8 +230,32 @@
       <a href="/about/"   class="{% block tab_about %}{% endblock %}">Über MeisterKompass</a>
       <a href="/imprint/" class="{% block tab_impressum %}{% endblock %}">Impressum</a>
     </nav>
+    <button class="hamburger" id="hamburger-btn" aria-label="Menü öffnen" onclick="toggleMenu()">☰</button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="/"         class="{% block mob_finder %}{% endblock %}">Kursfinder</a>
+    <a href="/afbg/"    class="{% block mob_afbg %}{% endblock %}">AFBG-Rechner</a>
+    <a href="/about/"   class="{% block mob_about %}{% endblock %}">Über MeisterKompass</a>
+    <a href="/imprint/" class="{% block mob_impressum %}{% endblock %}">Impressum</a>
   </div>
 </header>
+<script>
+function toggleMenu() {
+  var m = document.getElementById('mobile-menu');
+  var b = document.getElementById('hamburger-btn');
+  m.classList.toggle('open');
+  b.textContent = m.classList.contains('open') ? '✕' : '☰';
+}
+// Close menu on nav click
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.mobile-menu a').forEach(function(a) {
+    a.addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.remove('open');
+      document.getElementById('hamburger-btn').textContent = '☰';
+    });
+  });
+});
+</script>
 
 {% block content %}{% endblock %}
 
