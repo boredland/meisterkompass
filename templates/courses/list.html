@@ -333,7 +333,15 @@
             <td class="mob-summary" onclick="toggleRow(this)" style="cursor:pointer">
               <div class="row-toggle">
                 <div>
+                  {% if offer.source_url %}
+                  <a class="row-title" href="{{ offer.source_url }}" target="_blank"
+                     style="color:var(--text);text-decoration:none"
+                     onclick="event.stopPropagation()">
+                    {{ offer.title|cut:"Meistervorbereitungskurs: " }} ↗
+                  </a>
+                  {% else %}
                   <div class="row-title">{{ offer.title|cut:"Meistervorbereitungskurs: " }}</div>
+                  {% endif %}
                   <div style="font-size:.75rem;color:var(--text-mid);margin-top:.15rem">{{ offer.chamber.short_name }}</div>
                 </div>
                 <div style="display:flex;align-items:center;gap:.4rem;flex-shrink:0">
