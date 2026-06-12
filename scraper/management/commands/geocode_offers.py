@@ -1,12 +1,13 @@
 """
 scraper/management/commands/geocode_offers.py
 
-Geocodes CourseOffer records that have a city but no coordinates,
-using the free Nominatim API (OpenStreetMap). No API key required.
+Geocodes CourseOffer records using Nominatim (OpenStreetMap).
+Uses the full address (street + ZIP + city) when available for pin-level
+precision; falls back to city-only when street is missing.
 
 Usage:
     python manage.py geocode_offers
-    python manage.py geocode_offers --force   # re-geocode all, even existing coords
+    python manage.py geocode_offers --force   # re-geocode all existing coords
 """
 
 import time
@@ -16,12 +17,12 @@ from courses.models import CourseOffer
 
 
 NOMINATIM_URL = "https://nominatim.openstreetmap.org/search"
-HEADERS = {"User-Agent": "MeistervergleichBot/1.0 (+https://meistervergleich.de)"}
-DELAY = 1.1  # Nominatim rate limit: max 1 request/second
+HEADERS = {"User-Agent": "MeisterKompassBot/1.0 (+https://meisterkompass.de)"}
+DELAY = 1.1   # Nominatim rate limit: max 1 request/second
 
 
 class Command(BaseCommand):
-    help = "Geocode CourseOffer records using city name via Nominatim (OpenStreetMap)."
+    help = "Geocode CourseOffer records via Nominatim (OpenStreetMap)."
 
     def add_arguments(self, parser):
         parser.add_argument(
@@ -31,41 +32,63 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         force = options["force"]
-        qs = CourseOffer.objects.filter(city__gt="")
+        qs = CourseOffer.objects.filter(city__gt="").select_related("chamber")
         if not force:
             qs = qs.filter(latitude__isnull=True)
 
         total = qs.count()
         self.stdout.write(f"Geocoding {total} offer(s)...\n")
 
-        # Cache city → (lat, lng) to avoid duplicate API calls
         cache: dict[str, tuple | None] = {}
-        success = skipped = failed = 0
+        success = failed = 0
 
         for offer in qs.iterator():
-            city_key = f"{offer.city}, Rheinland-Pfalz, Deutschland"
+            query = self._build_query(offer)
 
-            if city_key not in cache:
-                coords = self._geocode(city_key)
-                cache[city_key] = coords
+            if query not in cache:
+                coords = self._geocode(query)
+                cache[query] = coords
                 time.sleep(DELAY)
             else:
-                coords = cache[city_key]
+                coords = cache[query]
 
             if coords:
                 offer.latitude, offer.longitude = coords
                 offer.save(update_fields=["latitude", "longitude"])
                 success += 1
-                self.stdout.write(f"  ✔ {offer.city} → {coords[0]:.4f}, {coords[1]:.4f}")
+                self.stdout.write(
+                    f"  ✔ {query[:60]} → {coords[0]:.4f}, {coords[1]:.4f}"
+                )
             else:
                 failed += 1
                 self.stdout.write(
-                    self.style.WARNING(f"  ✘ Could not geocode: {offer.city}")
+                    self.style.WARNING(f"  ✘ Could not geocode: {query[:60]}")
                 )
 
         self.stdout.write(self.style.SUCCESS(
-            f"\nDone. Success: {success} | Failed: {failed} | Skipped: {skipped}"
+            f"\nDone. Success: {success} | Failed: {failed}"
         ))
+
+    def _build_query(self, offer: CourseOffer) -> str:
+        """
+        Build Nominatim query string.
+        Full address (street + ZIP + city) when available — gives pin-level
+        accuracy. Falls back to city + region for city-centre coordinates.
+        """
+        city   = offer.city or ""
+        street = (offer.street or "").strip()
+        zcode  = (offer.zip_code or "").strip()
+        region = getattr(offer.chamber, "region", "") or "Deutschland"
+
+        if street and zcode:
+            # Precise: "Dagobertstraße 2, 55116 Mainz, Deutschland"
+            return f"{street}, {zcode} {city}, Deutschland"
+        elif street:
+            return f"{street}, {city}, Deutschland"
+        elif zcode:
+            return f"{zcode} {city}, Deutschland"
+        else:
+            return f"{city}, {region}, Deutschland"
 
     def _geocode(self, query: str) -> tuple[float, float] | None:
         try:
@@ -80,5 +103,7 @@ class Command(BaseCommand):
             if results:
                 return float(results[0]["lat"]), float(results[0]["lon"])
         except Exception as exc:
-            self.stdout.write(self.style.ERROR(f"  Nominatim error for {query!r}: {exc}"))
+            self.stdout.write(
+                self.style.ERROR(f"  Nominatim error for {query!r}: {exc}")
+            )
         return None

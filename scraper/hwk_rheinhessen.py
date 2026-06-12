@@ -189,11 +189,14 @@ class HwkRheinhessenScraper(BaseScraper):
 
         # Try to get location from ZIP pattern
         city = "Mainz"
-        zip_code = ""
+        zip_code = "55129"
+        street = "Robert-Bosch-Straße 8"
         zip_m = ZIP_CITY_RE.search(text)
         if zip_m:
             zip_code = zip_m.group(1)
             city     = zip_m.group(2).strip()
+            if city.startswith("Mainz-"):
+                city = "Mainz"
 
         logger.info(
             "No course dates found for %s — creating price-only offer (%.2f €).",
@@ -340,15 +343,18 @@ class HwkRheinhessenScraper(BaseScraper):
         availability = parse_availability(block)
 
         # Location: look for ZIP+city pattern
-        city        = "Mainz"    # Rheinhessen HQ default
-        street      = ""
-        zip_code    = ""
+        city        = "Mainz"
+        street      = "Robert-Bosch-Straße 8"  # Rheinhessen default location
+        zip_code    = "55129"
         location_name = ""
 
         zip_m = ZIP_CITY_RE.search(block)
         if zip_m:
             zip_code = zip_m.group(1)
             city     = zip_m.group(2).strip()
+            # Normalize Mainz districts (e.g. "Mainz-Hechtsheim") → "Mainz"
+            if city.startswith("Mainz-"):
+                city = "Mainz"
 
             # Try to find street line just before the ZIP line
             lines = block.split("\n")
