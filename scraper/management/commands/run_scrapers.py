@@ -31,11 +31,7 @@ class Command(BaseCommand):
         )
 
     def _fix_saarland_coordinates(self) -> int:
-        """
-        Set correct coordinates for HWK Saarland courses.
-        Nominatim sometimes geocodes 'Saarbrücken' to wrong coordinates,
-        so we force-set the known HWK headquarters location.
-        """
+        """Force-set coordinates for HWK Saarland (single location)."""
         from courses.models import CourseOffer
         from chambers.models import Chamber
         try:
@@ -46,6 +42,38 @@ class Command(BaseCommand):
             chamber=chamber,
             is_active=True,
         ).update(latitude=49.2297, longitude=6.9967)
+
+    def _fix_rheinhessen_coordinates(self) -> int:
+        """
+        Fix coordinates for HWK Rheinhessen courses that Nominatim geocodes
+        inconsistently:
+        - Empty street → set to Robert-Bosch-Straße 8 (default location)
+        - Robert-Bosch-Straße → force-set to known coords (Nominatim unreliable)
+        - Dekan-Laist-Str. → leave untouched (already correctly geocoded)
+        """
+        from courses.models import CourseOffer
+        from chambers.models import Chamber
+        try:
+            chamber = Chamber.objects.get(slug="hwk-rheinhessen")
+        except Chamber.DoesNotExist:
+            return 0
+
+        LAT, LNG = 49.959692, 8.260685  # Robert-Bosch-Straße 8
+
+        # Only fix courses without a street or with Robert-Bosch address
+        updated = CourseOffer.objects.filter(
+            chamber=chamber,
+            is_active=True,
+        ).exclude(
+            street__icontains="dekan-laist"  # leave correctly placed courses alone
+        ).update(
+            street="Robert-Bosch-Straße 8",
+            zip_code="55129",
+            city="Mainz",
+            latitude=LAT,
+            longitude=LNG,
+        )
+        return updated
 
     def _deactivate_stale_approx_dates(self, chamber_slug: str) -> int:
         """
@@ -125,3 +153,7 @@ class Command(BaseCommand):
                     fixed = self._fix_saarland_coordinates()
                     if fixed:
                         self.stdout.write(f"  Coordinates: {fixed} Saarland record(s) updated")
+                if slug == "hwk-rheinhessen":
+                    fixed = self._fix_rheinhessen_coordinates()
+                    if fixed:
+                        self.stdout.write(f"  Coordinates: {fixed} Rheinhessen record(s) updated")

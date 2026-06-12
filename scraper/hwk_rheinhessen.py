@@ -75,6 +75,21 @@ KURSGEBUEHR_RE = re.compile(
 )
 DURATION_RE   = re.compile(r"(\d+)\s*Stunden?", re.IGNORECASE)
 ZIP_CITY_RE   = re.compile(r"(\d{5})\s+([A-ZÄÖÜa-zäöüß][^\n]{1,50})")
+# Known HWK Rheinhessen locations with exact coordinates
+# These bypass Nominatim geocoding to ensure consistent map pins.
+KNOWN_COORDS: dict[str, tuple[float, float]] = {
+    "robert-bosch": (49.959692, 8.260685),   # Robert-Bosch-Str./Straße 8
+    "dekan-laist":  (49.966844, 8.267110),   # Dekan-Laist-Str. 5
+}
+
+def resolve_coords(street: str) -> tuple[float, float] | None:
+    """Return hardcoded coordinates for known HWK Rheinhessen streets."""
+    s = street.lower()
+    for key, coords in KNOWN_COORDS.items():
+        if key in s:
+            return coords
+    return None
+
 STREET_RE     = re.compile(r"[A-ZÄÖÜa-zäöüß][^\n]{2,50}\s+\d+[a-zA-Z]?$")
 
 # Date-range pattern: "03.09.2026 — 18.01.2028" (em dash, en dash, hyphen, or "bis")
@@ -375,6 +390,7 @@ class HwkRheinhessenScraper(BaseScraper):
             # Block has no useful data — skip (likely a boilerplate section)
             return None
 
+        coords = resolve_coords(street)
         return RawCourseOffer(
             title=title_override or build_course_title(trade_name, parts),
             trade_name=trade_name,
@@ -389,6 +405,7 @@ class HwkRheinhessenScraper(BaseScraper):
             exam_fee_scraped=None,  # must be entered manually
             street=street,
             zip_code=zip_code,
+
             availability=availability,
             source_url=source_url,
             scraped_raw={
