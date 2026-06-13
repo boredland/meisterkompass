@@ -75,6 +75,46 @@ class Command(BaseCommand):
         )
         return updated
 
+    def _deactivate_missing_future_courses(self, chamber_slug: str, current_offers) -> int:
+        """
+        Deactivate future courses in the DB that were NOT found in the current
+        scrape. This handles courses removed from the website or with changed dates.
+        Past courses are never touched.
+        """
+        from datetime import date as date_cls
+        from courses.models import CourseOffer
+        from chambers.models import Chamber
+
+        today = date_cls.today()
+        try:
+            chamber = Chamber.objects.get(slug=chamber_slug)
+        except Chamber.DoesNotExist:
+            return 0
+
+        # Build set of (source_url, start_date) from current scrape
+        scraped_keys = set()
+        for offer in current_offers:
+            if offer.source_url:
+                scraped_keys.add((offer.source_url, str(offer.start_date)))
+
+        if not scraped_keys:
+            return 0  # Safety: never deactivate if scrape returned nothing
+
+        # Find active future DB records not in current scrape
+        deactivated = 0
+        db_offers = CourseOffer.objects.filter(
+            chamber=chamber,
+            is_active=True,
+            start_date__gte=today,
+        )
+        for db_offer in db_offers:
+            key = (db_offer.source_url, str(db_offer.start_date))
+            if key not in scraped_keys:
+                db_offer.is_active = False
+                db_offer.save(update_fields=["is_active"])
+                deactivated += 1
+        return deactivated
+
     def _deactivate_stale_approx_dates(self, chamber_slug: str) -> int:
         """
         After a scrape, deactivate future first-of-month records (day=1)
@@ -136,19 +176,23 @@ class Command(BaseCommand):
                 offers = scraper.fetch_raw_courses()
                 self.stdout.write(f"  Scraped {len(offers)} offers (dry-run, not saved)")
             else:
-                # Full run: fetch + save via BaseScraper.run()
+                # Full run: fetch offers first, then save
+                current_offers = scraper.fetch_raw_courses()
                 result = scraper.run()
                 self.stdout.write(f"  Done: {result}")
-                # Cleanup: deactivate stale first-of-month future records that have
-                # been superseded by exact-date records in the same month.
-                # Past courses are never touched.
+
+                # Deactivate future courses no longer found on the website
+                removed = self._deactivate_missing_future_courses(slug, current_offers)
+                if removed:
+                    self.stdout.write(f"  Cleanup: {removed} stale future course(s) deactivated")
+
+                # Deactivate stale first-of-month records superseded by exact dates
                 deactivated = self._deactivate_stale_approx_dates(slug)
                 if deactivated:
                     self.stdout.write(
                         f"  Cleanup: {deactivated} stale approximate-date record(s) deactivated"
                     )
-                # For HWK Saarland: force-set coordinates to avoid geocoding errors.
-                # geocode_offers uses Nominatim which sometimes returns wrong results.
+                # Force-set coordinates for known locations
                 if slug == "hwk-saarland":
                     fixed = self._fix_saarland_coordinates()
                     if fixed:

@@ -194,6 +194,9 @@ class HwkKoblenzScraper(BaseScraper):
         city           = parse_city(card_text)
         availability   = parse_availability(card_text)
 
+        # Fetch detail page to get exact Lehrgangsort address
+        street, zip_code = self._parse_detail_address(detail_url, city)
+
         return RawCourseOffer(
             title=title_clean,
             trade_name=trade_name,
@@ -205,6 +208,8 @@ class HwkKoblenzScraper(BaseScraper):
             duration_hours=duration_hours,
             course_fee=price,
             city=city,
+            street=street,
+            zip_code=zip_code,
             availability=availability,
             source_url=detail_url,
             scraped_raw={
@@ -213,3 +218,37 @@ class HwkKoblenzScraper(BaseScraper):
                 "card_text": card_text[:500],
             },
         )
+
+    def _parse_detail_address(self, url: str, fallback_city: str) -> tuple[str, str]:
+        """
+        Fetch the course detail page and extract the Lehrgangsort address.
+        Returns (street, zip_code). Falls back to known default if not found.
+        """
+        import time
+        DEFAULT_STREET  = "Friedrich-Ebert-Ring 33"
+        DEFAULT_ZIP     = "56068"
+
+        try:
+            time.sleep(0.5)  # polite delay
+            soup = self.parse_html(url)
+            if soup is None:
+                return DEFAULT_STREET, DEFAULT_ZIP
+            text = soup.get_text("\n")
+            # Look for ZIP+street pattern near "Lehrgangsort"
+            idx = text.find("Lehrgangsort")
+            if idx >= 0:
+                block = text[idx:idx + 300]
+                zip_m = re.search(r"(\d{5})\s+(\S+.*)", block)
+                if zip_m:
+                    zip_code = zip_m.group(1)
+                    city_line = zip_m.group(2).strip().split("\n")[0]
+                    # Street is the line just before the ZIP
+                    lines = block[:zip_m.start()].strip().split("\n")
+                    street = lines[-1].strip() if lines else ""
+                    # Valid street: contains a number (house number)
+                    if street and re.search(r"\d", street):
+                        return street, zip_code
+        except Exception as exc:
+            logger.warning("Could not fetch detail address from %s: %s", url, exc)
+
+        return DEFAULT_STREET, DEFAULT_ZIP

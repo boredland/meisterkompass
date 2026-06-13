@@ -300,6 +300,21 @@ class HwkPfalzScraper(BaseScraper):
         course_fee   = None
         exam_fee     = None
 
+        # Known HWK Pfalz locations — used when page has no specific street
+        CITY_DEFAULTS = {
+            "kaiserslautern": ("Am Altenhof 15",    "67655", "Kaiserslautern"),
+            "landau":         ("Im Grein 5",         "76829", "Landau in der Pfalz"),
+            "ludwigshafen":   ("Karlsbader Str. 2",  "67065", "Ludwigshafen am Rhein"),
+        }
+
+        def city_default(city_name: str) -> tuple[str, str, str]:
+            for key, vals in CITY_DEFAULTS.items():
+                if key in city_name.lower():
+                    return vals
+            return CITY_DEFAULTS["kaiserslautern"]
+
+        street, zip_code, city = city_default(card["city"] or "kaiserslautern")
+
         soup = self.parse_html(card["detail_url"])
         if soup:
             page_text = soup.get_text(separator="\n")
@@ -311,6 +326,26 @@ class HwkPfalzScraper(BaseScraper):
                 course_fee = float(kurs_m.group(1).replace(".", "") + "." + kurs_m.group(2))
             if pruef_m:
                 exam_fee = float(pruef_m.group(1).replace(".", "") + "." + pruef_m.group(2))
+
+            # Extract Lehrgangsort address
+            idx = page_text.find("Lehrgangsort")
+            if idx >= 0:
+                block = page_text[idx:idx + 300]
+                zip_m = re.search(r"(\d{5})\s+([^\n]+)", block)
+                if zip_m:
+                    extracted_zip  = zip_m.group(1)
+                    extracted_city = zip_m.group(2).strip()
+                    lines = block[:zip_m.start()].strip().split("\n")
+                    candidate = lines[-1].strip() if lines else ""
+                    if candidate and re.search(r"\d", candidate):
+                        # Full address found on page — use it
+                        street, zip_code, city = candidate, extracted_zip, extracted_city
+                    else:
+                        # City/zip found but no street — use city default
+                        street, zip_code, city = city_default(extracted_city)
+                else:
+                    # No zip in Lehrgangsort — keep card-city default (already set above)
+                    pass
 
         # Fallback: use combined price if no breakdown found
         if course_fee is None:
@@ -328,7 +363,9 @@ class HwkPfalzScraper(BaseScraper):
             end_date=card["end_date"],
             duration_hours=card["duration_hours"],
             course_fee=course_fee,
-            city=card["city"],
+            city=city,
+            street=street,
+            zip_code=zip_code,
             exam_fee_scraped=exam_fee,
             availability=card["availability"],
             source_url=card["detail_url"],
