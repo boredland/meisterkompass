@@ -1,3 +1,4 @@
+import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { defineConfig } from "vite";
 
@@ -8,9 +9,35 @@ const repoRoot = resolve(__dirname, "..");
 // project site (user.github.io/<repo>/) set VITE_BASE=/<repo>/ in CI.
 const base = process.env.VITE_BASE || "/";
 
+// Pre-render the default Kursfinder table into index.html at build time (SSG):
+// instant first paint, crawlable content, works without JS. The runtime JS
+// re-renders idempotently on load using the same render.js module.
+function prerenderList() {
+  return {
+    name: "prerender-list",
+    async transformIndexHtml(html, ctx) {
+      if (!ctx.filename.replace(/\\/g, "/").endsWith("/index.html")) return html;
+      const courses = JSON.parse(readFileSync(resolve(repoRoot, "data/courses.json"), "utf8"));
+      const { applyFilters, rowHtml, emptyRow, pageItems, defaultState } = await import("./src/render.js");
+      const today = new Date().toISOString().slice(0, 10);
+      const state = defaultState();
+      const filtered = applyFilters(courses, state, today);
+      const items = pageItems(filtered, state);
+      const rows = items.length ? items.map(rowHtml).join("") : emptyRow();
+      const chambers = new Set(filtered.map((c) => c.chamber_slug)).size;
+      return html
+        .replace('<tbody id="course-tbody"></tbody>', `<tbody id="course-tbody">${rows}</tbody>`)
+        .replace('id="count-courses">0<', `id="count-courses">${filtered.length}<`)
+        .replace('id="count-chambers">0<', `id="count-chambers">${chambers}<`)
+        .replace('id="results-count">0<', `id="results-count">${filtered.length}<`);
+    },
+  };
+}
+
 export default defineConfig({
   root: __dirname,
   base,
+  plugins: [prerenderList()],
   resolve: {
     alias: { "@data": resolve(repoRoot, "data") },
   },

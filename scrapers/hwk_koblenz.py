@@ -19,7 +19,7 @@ import re
 
 from bs4 import BeautifulSoup, Tag
 
-from .base import BaseScraper, RawCourseOffer, RawExamFee, build_course_title
+from .base import BaseScraper, RawCourseOffer, build_course_title
 
 logger = logging.getLogger(__name__)
 
@@ -143,9 +143,6 @@ class HwkKoblenzScraper(BaseScraper):
 
         logger.info("HWK Koblenz: parsed %d course offers total.", len(all_offers))
         return all_offers
-
-    def fetch_raw_exam_fees(self) -> list[RawExamFee]:
-        return []
 
     def _parse_total(self, soup: BeautifulSoup) -> int:
         m = re.search(r"von\s+(\d+);\s*Seite", soup.get_text())

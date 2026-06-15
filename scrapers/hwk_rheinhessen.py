@@ -172,10 +172,6 @@ class HwkRheinhessenScraper(BaseScraper):
         logger.info("HWK Rheinhessen: parsed %d course offers total.", len(offers))
         return offers
 
-    def fetch_raw_exam_fees(self):
-        # Exam fees require manual entry from individual Meisterprüfung pages.
-        return []
-
     # ------------------------------------------------------------------
     # Fallback: price-only offer for pages without scheduled dates
     # ------------------------------------------------------------------

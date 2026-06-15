@@ -205,24 +205,18 @@ def _load_manual_fee_rows() -> list[dict]:
     return json.loads(MANUAL_FEES_JSON.read_text(encoding="utf-8"))
 
 
-def build_exam_fees_files(lookup: dict) -> tuple[dict, list[dict]]:
+def build_exam_fees_nested(lookup: dict) -> dict:
     """
-    Returns (nested, flat) exam-fee structures from a prebuilt fee lookup.
-      nested: {chamber_slug: {trade_slug|'null': {part: {fee, fee_max, qualifier}}}}
-      flat:   [{chamber_slug, trade_slug|null, part, fee, fee_max, qualifier}]
+    Build the nested exam-fee structure the AFBG calculator consumes:
+      {chamber_slug: {trade_slug|'null': {part: {fee, fee_max, qualifier}}}}
     """
     nested: dict = {}
-    flat: list[dict] = []
     for (chamber_slug, trade_slug, part), v in sorted(lookup.items(), key=lambda kv: (kv[0][0], kv[0][1] or "", kv[0][2])):
         tkey = trade_slug if trade_slug else "null"
         nested.setdefault(chamber_slug, {}).setdefault(tkey, {})[str(part)] = {
             "fee": v["fee"], "fee_max": v["fee_max"], "qualifier": v["qualifier"],
         }
-        flat.append({
-            "chamber_slug": chamber_slug, "trade_slug": trade_slug, "part": part,
-            "fee": v["fee"], "fee_max": v["fee_max"], "qualifier": v["qualifier"],
-        })
-    return nested, flat
+    return nested
 
 
 def build_course_fees(records: list[dict], today_iso: str) -> list[dict]:
@@ -312,9 +306,8 @@ def _resolve_and_write_derived(records: list[dict], scraped_rows: list[dict], ma
             rec["chamber_slug"], rec["trade_slug"], rec["parts"], rec.get("exam_fee_scraped"), lookup,
         )
     records.sort(key=_course_sort_key)
-    nested_fees, flat_fees = build_exam_fees_files(lookup)
     _write_json(COURSES_JSON, records)
-    _write_json(DATA_DIR / "exam_fees.json", {"nested": nested_fees, "flat": flat_fees})
+    _write_json(DATA_DIR / "exam_fees.json", {"nested": build_exam_fees_nested(lookup)})
     _write_json(DATA_DIR / "course_fees.json", build_course_fees(records, today_iso))
 
 

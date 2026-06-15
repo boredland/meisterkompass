@@ -102,14 +102,6 @@ class RawCourseOffer:
 
 
 @dataclass
-class RawExamFee:
-    trade_name: str
-    part:       int
-    fee:        float
-    source_url: str = ""
-
-
-@dataclass
 class ScrapeResult:
     """In-memory output of one chamber scrape."""
     chamber_slug:    str
@@ -142,9 +134,6 @@ class BaseScraper(ABC):
 
     @abstractmethod
     def fetch_raw_courses(self) -> list[RawCourseOffer]: ...
-
-    def fetch_raw_exam_fees(self) -> list[RawExamFee]:
-        return []
 
     def get(self, url: str, **kwargs) -> requests.Response | None:
         try:

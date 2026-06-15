@@ -19,7 +19,7 @@ from datetime import date
 
 from bs4 import BeautifulSoup
 
-from .base import BaseScraper, RawCourseOffer, RawExamFee, build_course_title
+from .base import BaseScraper, RawCourseOffer, build_course_title
 
 logger = logging.getLogger(__name__)
 
@@ -165,9 +165,6 @@ class HwkTrierScraper(BaseScraper):
 
         logger.info("HWK Trier: parsed %d course offers.", len(offers))
         return offers
-
-    def fetch_raw_exam_fees(self) -> list[RawExamFee]:
-        return []
 
     # ------------------------------------------------------------------
     # Price fill: propagate from nearest dated course of same type

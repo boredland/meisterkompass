@@ -32,7 +32,7 @@ from datetime import date
 
 from bs4 import BeautifulSoup, Tag
 
-from .base import BaseScraper, RawCourseOffer, RawExamFee, build_course_title
+from .base import BaseScraper, RawCourseOffer, build_course_title
 
 logger = logging.getLogger(__name__)
 
@@ -212,9 +212,6 @@ class HwkPfalzScraper(BaseScraper):
 
         logger.info("HWK Pfalz: finalised %d course offers.", len(offers))
         return offers
-
-    def fetch_raw_exam_fees(self) -> list[RawExamFee]:
-        return []  # handled in _save_courses override below
 
     # ------------------------------------------------------------------
     # List page helpers
