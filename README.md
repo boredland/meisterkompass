@@ -49,7 +49,7 @@ meisterkompass/
 ├── web/                      # Vite static MPA
 │   ├── index.html afbg.html about.html imprint.html
 │   └── src/{base.css,list.css,afbg.css,nav.js,list.js,map.js,afbg.js}
-├── scripts/export_legacy_data.py  # ONE-TIME Django→JSON migration helper
+├── scripts/import_manual_fees_from_live.py  # recover curated fees from old site
 ├── mise.toml                 # pins python 3.12 + node 22
 └── .github/workflows/{scrape.yml, deploy.yml}
 ```
@@ -124,10 +124,6 @@ python -m scrapers.run --rebake                  # re-apply manual fees to data/
 
 `data/manual/exam_fees_manual.json` is thereafter edited by hand and committed via
 PR; `--rebake` re-applies it without re-scraping.
-
-(An alternative `scripts/export_legacy_data.py` exports the same data — plus past
-courses and geocodes — straight from the database if you still have `DATABASE_URL`
-access and Django installed.)
 
 ---
 
