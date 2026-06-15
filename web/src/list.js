@@ -2,8 +2,22 @@ import courses from "@data/courses.json";
 import chambers from "@data/chambers.json";
 import trades from "@data/trades.json";
 import { initNav } from "./nav.js";
-import { renderMap } from "./map.js";
 import { ROMAN, partsLabel, esc, TOOLTIP_QUALIFIER, TOOLTIP_RANGE } from "./util.js";
+
+// Leaflet (~140 KB) + its CSS are loaded only when the map view is first opened,
+// keeping the default list view's bundle small.
+let _leafletCssLoaded = false;
+async function showMap(mapData, listHref) {
+  if (!_leafletCssLoaded) {
+    const link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css";
+    document.head.appendChild(link);
+    _leafletCssLoaded = true;
+  }
+  const { renderMap } = await import("./map.js");
+  renderMap(mapData, listHref);
+}
 
 const todayIso = (() => {
   const d = new Date();
@@ -290,7 +304,7 @@ function render() {
         url: c.source_url,
       }));
     const fp = filterParamString(state);
-    renderMap(mapData, "./index.html" + (fp ? "?" + fp : ""));
+    showMap(mapData, "./index.html" + (fp ? "?" + fp : ""));
   }
 }
 
