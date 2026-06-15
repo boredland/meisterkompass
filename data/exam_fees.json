@@ -1,0 +1,1120 @@
+{
+  "nested": {
+    "hwk-pfalz": {
+      "allgemein-teil-iii-iv": {
+        "3": {
+          "fee": 600.0,
+          "fee_max": null,
+          "qualifier": ""
+        },
+        "4": {
+          "fee": 600.0,
+          "fee_max": null,
+          "qualifier": ""
+        }
+      },
+      "dachdecker": {
+        "2": {
+          "fee": 350.0,
+          "fee_max": null,
+          "qualifier": ""
+        }
+      },
+      "elektrotechniker": {
+        "1": {
+          "fee": 1600.0,
+          "fee_max": null,
+          "qualifier": ""
+        },
+        "2": {
+          "fee": 1600.0,
+          "fee_max": null,
+          "qualifier": ""
+        }
+      },
+      "fliesen-platten-und-mosaikleger": {
+        "2": {
+          "fee": 400.0,
+          "fee_max": null,
+          "qualifier": ""
+        }
+      },
+      "informationstechniker": {
+        "1": {
+          "fee": 1100.0,
+          "fee_max": null,
+          "qualifier": ""
+        },
+        "2": {
+          "fee": 1100.0,
+          "fee_max": null,
+          "qualifier": ""
+        }
+      },
+      "installateur-und-heizungsbauer": {
+        "1": {
+          "fee": 1000.0,
+          "fee_max": null,
+          "qualifier": ""
+        },
+        "2": {
+          "fee": 400.0,
+          "fee_max": null,
+          "qualifier": ""
+        }
+      },
+      "kfz-techniker": {
+        "2": {
+          "fee": 600.0,
+          "fee_max": null,
+          "qualifier": ""
+        }
+      },
+      "land-und-baumaschinenmechatroniker": {
+        "1": {
+          "fee": 1100.0,
+          "fee_max": null,
+          "qualifier": ""
+        }
+      },
+      "straenbauer": {
+        "1": {
+          "fee": 1300.0,
+          "fee_max": null,
+          "qualifier": ""
+        },
+        "2": {
+          "fee": 1300.0,
+          "fee_max": null,
+          "qualifier": ""
+        }
+      }
+    },
+    "hwk-saarland": {
+      "allgemein-teil-iii-iv": {
+        "3": {
+          "fee": 110.0,
+          "fee_max": null,
+          "qualifier": ""
+        },
+        "4": {
+          "fee": 130.0,
+          "fee_max": null,
+          "qualifier": ""
+        }
+      },
+      "backer": {
+        "1": {
+          "fee": 990.0,
+          "fee_max": null,
+          "qualifier": ""
+        },
+        "2": {
+          "fee": 560.0,
+          "fee_max": null,
+          "qualifier": ""
+        }
+      },
+      "dachdecker": {
+        "1": {
+          "fee": 990.0,
+          "fee_max": null,
+          "qualifier": ""
+        },
+        "2": {
+          "fee": 350.0,
+          "fee_max": null,
+          "qualifier": ""
+        }
+      },
+      "elektrotechniker": {
+        "1": {
+          "fee": 1790.0,
+          "fee_max": null,
+          "qualifier": ""
+        },
+        "2": {
+          "fee": 1790.0,
+          "fee_max": null,
+          "qualifier": ""
+        },
+        "3": {
+          "fee": 1790.0,
+          "fee_max": null,
+          "qualifier": ""
+        },
+        "4": {
+          "fee": 1790.0,
+          "fee_max": null,
+          "qualifier": ""
+        }
+      },
+      "feinwerkmechaniker": {
+        "1": {
+          "fee": 1790.0,
+          "fee_max": null,
+          "qualifier": ""
+        },
+        "2": {
+          "fee": 1790.0,
+          "fee_max": null,
+          "qualifier": ""
+        },
+        "3": {
+          "fee": 1790.0,
+          "fee_max": null,
+          "qualifier": ""
+        },
+        "4": {
+          "fee": 1790.0,
+          "fee_max": null,
+          "qualifier": ""
+        }
+      },
+      "fliesen-platten-und-mosaikleger": {
+        "1": {
+          "fee": 990.0,
+          "fee_max": null,
+          "qualifier": ""
+        },
+        "2": {
+          "fee": 330.0,
+          "fee_max": null,
+          "qualifier": ""
+        }
+      },
+      "friseur": {
+        "1": {
+          "fee": 1790.0,
+          "fee_max": null,
+          "qualifier": ""
+        },
+        "2": {
+          "fee": 1790.0,
+          "fee_max": null,
+          "qualifier": ""
+        },
+        "3": {
+          "fee": 1790.0,
+          "fee_max": null,
+          "qualifier": ""
+        },
+        "4": {
+          "fee": 1790.0,
+          "fee_max": null,
+          "qualifier": ""
+        }
+      },
+      "installateur-und-heizungsbauer": {
+        "1": {
+          "fee": 1790.0,
+          "fee_max": null,
+          "qualifier": ""
+        },
+        "2": {
+          "fee": 1790.0,
+          "fee_max": null,
+          "qualifier": ""
+        },
+        "3": {
+          "fee": 1790.0,
+          "fee_max": null,
+          "qualifier": ""
+        },
+        "4": {
+          "fee": 1790.0,
+          "fee_max": null,
+          "qualifier": ""
+        }
+      },
+      "kfz-techniker": {
+        "1": {
+          "fee": 1400.0,
+          "fee_max": null,
+          "qualifier": ""
+        },
+        "2": {
+          "fee": 1400.0,
+          "fee_max": null,
+          "qualifier": ""
+        },
+        "3": {
+          "fee": 1400.0,
+          "fee_max": null,
+          "qualifier": ""
+        },
+        "4": {
+          "fee": 1400.0,
+          "fee_max": null,
+          "qualifier": ""
+        }
+      },
+      "konditor": {
+        "1": {
+          "fee": 990.0,
+          "fee_max": null,
+          "qualifier": ""
+        },
+        "2": {
+          "fee": 560.0,
+          "fee_max": null,
+          "qualifier": ""
+        }
+      },
+      "maler-und-lackierer": {
+        "1": {
+          "fee": 1650.0,
+          "fee_max": null,
+          "qualifier": ""
+        },
+        "2": {
+          "fee": 1650.0,
+          "fee_max": null,
+          "qualifier": ""
+        },
+        "3": {
+          "fee": 1650.0,
+          "fee_max": null,
+          "qualifier": ""
+        },
+        "4": {
+          "fee": 1650.0,
+          "fee_max": null,
+          "qualifier": ""
+        }
+      },
+      "maurer-und-betonbauer": {
+        "1": {
+          "fee": 990.0,
+          "fee_max": null,
+          "qualifier": ""
+        },
+        "2": {
+          "fee": 560.0,
+          "fee_max": null,
+          "qualifier": ""
+        }
+      },
+      "metallbauer": {
+        "1": {
+          "fee": 1790.0,
+          "fee_max": null,
+          "qualifier": ""
+        },
+        "2": {
+          "fee": 1790.0,
+          "fee_max": null,
+          "qualifier": ""
+        },
+        "3": {
+          "fee": 1790.0,
+          "fee_max": null,
+          "qualifier": ""
+        },
+        "4": {
+          "fee": 1790.0,
+          "fee_max": null,
+          "qualifier": ""
+        }
+      },
+      "straenbauer": {
+        "1": {
+          "fee": 990.0,
+          "fee_max": null,
+          "qualifier": ""
+        },
+        "2": {
+          "fee": 560.0,
+          "fee_max": null,
+          "qualifier": ""
+        }
+      },
+      "stuckateure": {
+        "1": {
+          "fee": 990.0,
+          "fee_max": null,
+          "qualifier": ""
+        },
+        "2": {
+          "fee": 560.0,
+          "fee_max": null,
+          "qualifier": ""
+        }
+      },
+      "tischler": {
+        "1": {
+          "fee": 1300.0,
+          "fee_max": null,
+          "qualifier": ""
+        },
+        "2": {
+          "fee": 1300.0,
+          "fee_max": null,
+          "qualifier": ""
+        },
+        "3": {
+          "fee": 1300.0,
+          "fee_max": null,
+          "qualifier": ""
+        },
+        "4": {
+          "fee": 1300.0,
+          "fee_max": null,
+          "qualifier": ""
+        }
+      }
+    },
+    "hwk-trier": {
+      "elektrotechniker": {
+        "1": {
+          "fee": 1130.0,
+          "fee_max": null,
+          "qualifier": ""
+        },
+        "2": {
+          "fee": 1130.0,
+          "fee_max": null,
+          "qualifier": ""
+        }
+      },
+      "friseur": {
+        "1": {
+          "fee": 1130.0,
+          "fee_max": null,
+          "qualifier": ""
+        },
+        "2": {
+          "fee": 1130.0,
+          "fee_max": null,
+          "qualifier": ""
+        }
+      },
+      "installateur-und-heizungsbauer": {
+        "1": {
+          "fee": 1130.0,
+          "fee_max": null,
+          "qualifier": ""
+        },
+        "2": {
+          "fee": 1130.0,
+          "fee_max": null,
+          "qualifier": ""
+        }
+      },
+      "maler-und-lackierer": {
+        "1": {
+          "fee": 1130.0,
+          "fee_max": null,
+          "qualifier": ""
+        },
+        "2": {
+          "fee": 1130.0,
+          "fee_max": null,
+          "qualifier": ""
+        }
+      },
+      "maurer-und-betonbauer": {
+        "1": {
+          "fee": 1130.0,
+          "fee_max": null,
+          "qualifier": ""
+        },
+        "2": {
+          "fee": 1130.0,
+          "fee_max": null,
+          "qualifier": ""
+        }
+      },
+      "metallbauer": {
+        "1": {
+          "fee": 1130.0,
+          "fee_max": null,
+          "qualifier": ""
+        },
+        "2": {
+          "fee": 1130.0,
+          "fee_max": null,
+          "qualifier": ""
+        }
+      },
+      "tischler": {
+        "1": {
+          "fee": 1130.0,
+          "fee_max": null,
+          "qualifier": ""
+        },
+        "2": {
+          "fee": 1130.0,
+          "fee_max": null,
+          "qualifier": ""
+        }
+      },
+      "zahntechniker": {
+        "1": {
+          "fee": 1130.0,
+          "fee_max": null,
+          "qualifier": ""
+        },
+        "2": {
+          "fee": 1130.0,
+          "fee_max": null,
+          "qualifier": ""
+        }
+      },
+      "zimmerer": {
+        "1": {
+          "fee": 1130.0,
+          "fee_max": null,
+          "qualifier": ""
+        },
+        "2": {
+          "fee": 1130.0,
+          "fee_max": null,
+          "qualifier": ""
+        }
+      }
+    }
+  },
+  "flat": [
+    {
+      "chamber_slug": "hwk-pfalz",
+      "trade_slug": "allgemein-teil-iii-iv",
+      "part": 3,
+      "fee": 600.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-pfalz",
+      "trade_slug": "allgemein-teil-iii-iv",
+      "part": 4,
+      "fee": 600.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-pfalz",
+      "trade_slug": "dachdecker",
+      "part": 2,
+      "fee": 350.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-pfalz",
+      "trade_slug": "elektrotechniker",
+      "part": 1,
+      "fee": 1600.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-pfalz",
+      "trade_slug": "elektrotechniker",
+      "part": 2,
+      "fee": 1600.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-pfalz",
+      "trade_slug": "fliesen-platten-und-mosaikleger",
+      "part": 2,
+      "fee": 400.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-pfalz",
+      "trade_slug": "informationstechniker",
+      "part": 1,
+      "fee": 1100.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-pfalz",
+      "trade_slug": "informationstechniker",
+      "part": 2,
+      "fee": 1100.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-pfalz",
+      "trade_slug": "installateur-und-heizungsbauer",
+      "part": 1,
+      "fee": 1000.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-pfalz",
+      "trade_slug": "installateur-und-heizungsbauer",
+      "part": 2,
+      "fee": 400.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-pfalz",
+      "trade_slug": "kfz-techniker",
+      "part": 2,
+      "fee": 600.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-pfalz",
+      "trade_slug": "land-und-baumaschinenmechatroniker",
+      "part": 1,
+      "fee": 1100.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-pfalz",
+      "trade_slug": "straenbauer",
+      "part": 1,
+      "fee": 1300.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-pfalz",
+      "trade_slug": "straenbauer",
+      "part": 2,
+      "fee": 1300.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-saarland",
+      "trade_slug": "allgemein-teil-iii-iv",
+      "part": 3,
+      "fee": 110.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-saarland",
+      "trade_slug": "allgemein-teil-iii-iv",
+      "part": 4,
+      "fee": 130.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-saarland",
+      "trade_slug": "backer",
+      "part": 1,
+      "fee": 990.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-saarland",
+      "trade_slug": "backer",
+      "part": 2,
+      "fee": 560.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-saarland",
+      "trade_slug": "dachdecker",
+      "part": 1,
+      "fee": 990.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-saarland",
+      "trade_slug": "dachdecker",
+      "part": 2,
+      "fee": 350.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-saarland",
+      "trade_slug": "elektrotechniker",
+      "part": 1,
+      "fee": 1790.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-saarland",
+      "trade_slug": "elektrotechniker",
+      "part": 2,
+      "fee": 1790.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-saarland",
+      "trade_slug": "elektrotechniker",
+      "part": 3,
+      "fee": 1790.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-saarland",
+      "trade_slug": "elektrotechniker",
+      "part": 4,
+      "fee": 1790.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-saarland",
+      "trade_slug": "feinwerkmechaniker",
+      "part": 1,
+      "fee": 1790.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-saarland",
+      "trade_slug": "feinwerkmechaniker",
+      "part": 2,
+      "fee": 1790.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-saarland",
+      "trade_slug": "feinwerkmechaniker",
+      "part": 3,
+      "fee": 1790.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-saarland",
+      "trade_slug": "feinwerkmechaniker",
+      "part": 4,
+      "fee": 1790.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-saarland",
+      "trade_slug": "fliesen-platten-und-mosaikleger",
+      "part": 1,
+      "fee": 990.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-saarland",
+      "trade_slug": "fliesen-platten-und-mosaikleger",
+      "part": 2,
+      "fee": 330.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-saarland",
+      "trade_slug": "friseur",
+      "part": 1,
+      "fee": 1790.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-saarland",
+      "trade_slug": "friseur",
+      "part": 2,
+      "fee": 1790.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-saarland",
+      "trade_slug": "friseur",
+      "part": 3,
+      "fee": 1790.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-saarland",
+      "trade_slug": "friseur",
+      "part": 4,
+      "fee": 1790.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-saarland",
+      "trade_slug": "installateur-und-heizungsbauer",
+      "part": 1,
+      "fee": 1790.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-saarland",
+      "trade_slug": "installateur-und-heizungsbauer",
+      "part": 2,
+      "fee": 1790.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-saarland",
+      "trade_slug": "installateur-und-heizungsbauer",
+      "part": 3,
+      "fee": 1790.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-saarland",
+      "trade_slug": "installateur-und-heizungsbauer",
+      "part": 4,
+      "fee": 1790.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-saarland",
+      "trade_slug": "kfz-techniker",
+      "part": 1,
+      "fee": 1400.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-saarland",
+      "trade_slug": "kfz-techniker",
+      "part": 2,
+      "fee": 1400.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-saarland",
+      "trade_slug": "kfz-techniker",
+      "part": 3,
+      "fee": 1400.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-saarland",
+      "trade_slug": "kfz-techniker",
+      "part": 4,
+      "fee": 1400.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-saarland",
+      "trade_slug": "konditor",
+      "part": 1,
+      "fee": 990.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-saarland",
+      "trade_slug": "konditor",
+      "part": 2,
+      "fee": 560.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-saarland",
+      "trade_slug": "maler-und-lackierer",
+      "part": 1,
+      "fee": 1650.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-saarland",
+      "trade_slug": "maler-und-lackierer",
+      "part": 2,
+      "fee": 1650.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-saarland",
+      "trade_slug": "maler-und-lackierer",
+      "part": 3,
+      "fee": 1650.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-saarland",
+      "trade_slug": "maler-und-lackierer",
+      "part": 4,
+      "fee": 1650.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-saarland",
+      "trade_slug": "maurer-und-betonbauer",
+      "part": 1,
+      "fee": 990.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-saarland",
+      "trade_slug": "maurer-und-betonbauer",
+      "part": 2,
+      "fee": 560.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-saarland",
+      "trade_slug": "metallbauer",
+      "part": 1,
+      "fee": 1790.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-saarland",
+      "trade_slug": "metallbauer",
+      "part": 2,
+      "fee": 1790.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-saarland",
+      "trade_slug": "metallbauer",
+      "part": 3,
+      "fee": 1790.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-saarland",
+      "trade_slug": "metallbauer",
+      "part": 4,
+      "fee": 1790.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-saarland",
+      "trade_slug": "straenbauer",
+      "part": 1,
+      "fee": 990.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-saarland",
+      "trade_slug": "straenbauer",
+      "part": 2,
+      "fee": 560.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-saarland",
+      "trade_slug": "stuckateure",
+      "part": 1,
+      "fee": 990.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-saarland",
+      "trade_slug": "stuckateure",
+      "part": 2,
+      "fee": 560.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-saarland",
+      "trade_slug": "tischler",
+      "part": 1,
+      "fee": 1300.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-saarland",
+      "trade_slug": "tischler",
+      "part": 2,
+      "fee": 1300.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-saarland",
+      "trade_slug": "tischler",
+      "part": 3,
+      "fee": 1300.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-saarland",
+      "trade_slug": "tischler",
+      "part": 4,
+      "fee": 1300.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-trier",
+      "trade_slug": "elektrotechniker",
+      "part": 1,
+      "fee": 1130.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-trier",
+      "trade_slug": "elektrotechniker",
+      "part": 2,
+      "fee": 1130.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-trier",
+      "trade_slug": "friseur",
+      "part": 1,
+      "fee": 1130.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-trier",
+      "trade_slug": "friseur",
+      "part": 2,
+      "fee": 1130.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-trier",
+      "trade_slug": "installateur-und-heizungsbauer",
+      "part": 1,
+      "fee": 1130.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-trier",
+      "trade_slug": "installateur-und-heizungsbauer",
+      "part": 2,
+      "fee": 1130.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-trier",
+      "trade_slug": "maler-und-lackierer",
+      "part": 1,
+      "fee": 1130.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-trier",
+      "trade_slug": "maler-und-lackierer",
+      "part": 2,
+      "fee": 1130.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-trier",
+      "trade_slug": "maurer-und-betonbauer",
+      "part": 1,
+      "fee": 1130.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-trier",
+      "trade_slug": "maurer-und-betonbauer",
+      "part": 2,
+      "fee": 1130.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-trier",
+      "trade_slug": "metallbauer",
+      "part": 1,
+      "fee": 1130.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-trier",
+      "trade_slug": "metallbauer",
+      "part": 2,
+      "fee": 1130.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-trier",
+      "trade_slug": "tischler",
+      "part": 1,
+      "fee": 1130.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-trier",
+      "trade_slug": "tischler",
+      "part": 2,
+      "fee": 1130.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-trier",
+      "trade_slug": "zahntechniker",
+      "part": 1,
+      "fee": 1130.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-trier",
+      "trade_slug": "zahntechniker",
+      "part": 2,
+      "fee": 1130.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-trier",
+      "trade_slug": "zimmerer",
+      "part": 1,
+      "fee": 1130.0,
+      "fee_max": null,
+      "qualifier": ""
+    },
+    {
+      "chamber_slug": "hwk-trier",
+      "trade_slug": "zimmerer",
+      "part": 2,
+      "fee": 1130.0,
+      "fee_max": null,
+      "qualifier": ""
+    }
+  ]
+}

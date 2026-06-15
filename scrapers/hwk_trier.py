@@ -347,38 +347,3 @@ class HwkTrierScraper(BaseScraper):
         if any(w in lower for w in ("freie", "ausreichend", "verfügbar", "buchbar")):
             return "available"
         return "unknown"
-
-    # ------------------------------------------------------------------
-    # Persist exam fees after saving courses
-    # ------------------------------------------------------------------
-
-    def _save_courses(self, chamber, raw_offers, errors):
-        stats = super()._save_courses(chamber, raw_offers, errors)
-
-        from courses.models import ExamFee, ExamSourceType
-        exam_fees_added = 0
-        for raw in raw_offers:
-            if raw.exam_fee_scraped is None:
-                continue
-            trade = self._resolve_trade(raw.trade_name)
-            if trade is None:
-                continue
-            for part in raw.parts:
-                existing = ExamFee.objects.filter(
-                    chamber=chamber, trade=trade, part=part
-                ).first()
-                if existing and not existing.scraper_may_overwrite:
-                    continue
-                ExamFee.objects.update_or_create(
-                    chamber=chamber, trade=trade, part=part,
-                    defaults={
-                        "fee":         raw.exam_fee_scraped,
-                        "source_type": ExamSourceType.SCRAPED,
-                        "source_url":  raw.source_url,
-                    },
-                )
-                exam_fees_added += 1
-
-        if exam_fees_added:
-            logger.info("HWK Trier: saved %d exam fee records.", exam_fees_added)
-        return stats

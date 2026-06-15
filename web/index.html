@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kursfinder – MeisterKompass</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <link rel="stylesheet" href="./src/base.css">
+  <link rel="stylesheet" href="./src/list.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="container">
+    <a class="nav-brand" href="./index.html">Meister<span>Kompass</span></a>
+    <nav class="nav-tabs">
+      <a href="./index.html" class="active">Kursfinder</a>
+      <a href="./afbg.html">AFBG-Rechner</a>
+      <a href="./about.html">Über MeisterKompass</a>
+      <a href="./imprint.html">Impressum</a>
+    </nav>
+    <button class="hamburger" id="hamburger-btn" aria-label="Menü öffnen">☰</button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="./index.html" class="active">Kursfinder</a>
+    <a href="./afbg.html">AFBG-Rechner</a>
+    <a href="./about.html">Über MeisterKompass</a>
+    <a href="./imprint.html">Impressum</a>
+  </div>
+</header>
+
+<button id="back-to-top" aria-label="Nach oben">↑</button>
+
+<div class="page-header">
+  <div class="container">
+    <h1>Meistervorbereitungskurse</h1>
+    <p>Kursangebote der Handwerkskammern in Rheinland-Pfalz und dem Saarland</p>
+    <div style="display:flex;gap:1.5rem;margin-top:1rem;flex-wrap:wrap">
+      <div style="font-size:.82rem;color:rgba(255,255,255,.55)">
+        <span id="count-courses" style="font-size:1.1rem;font-weight:700;color:rgba(255,255,255,.9);margin-right:.3rem">0</span>
+        Kursangebote
+      </div>
+      <div style="font-size:.82rem;color:rgba(255,255,255,.55)">
+        <span id="count-chambers" style="font-size:1.1rem;font-weight:700;color:rgba(255,255,255,.9);margin-right:.3rem">0</span>
+        Kammern
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="filter-bar">
+  <div class="container">
+    <button type="button" class="filter-toggle-btn" id="filter-toggle-btn" style="display:none">
+      <span>🔍 Filter</span>
+      <span id="filter-badge" style="display:none;background:var(--navy);color:#fff;border-radius:100px;font-size:.72rem;padding:1px 7px">aktiv</span>
+      <span class="ftb-chevron">▼</span>
+    </button>
+    <div class="filter-panel-mobile" id="filter-panel-mobile">
+      <div class="filter-row">
+        <select id="f-chamber"><option value="">Alle Kammern</option></select>
+        <select id="f-trade"><option value="">Beruf / Fachrichtung</option></select>
+        <select id="f-format">
+          <option value="">Zeitmodell</option>
+          <option value="full_time">Vollzeit</option>
+          <option value="part_time">Teilzeit</option>
+        </select>
+
+        <div class="parts-wrap" id="parts-wrap">
+          <button type="button" class="parts-btn" id="parts-btn">Teile ▾</button>
+          <div class="parts-dropdown" id="parts-dropdown">
+            <label><input type="checkbox" class="f-part" value="1"> Teil I – Fachpraxis</label>
+            <label><input type="checkbox" class="f-part" value="2"> Teil II – Fachtheorie</label>
+            <label><input type="checkbox" class="f-part" value="3"> Teil III – Betriebswirtschaft</label>
+            <label><input type="checkbox" class="f-part" value="4"> Teil IV – Pädagogik</label>
+            <hr>
+            <label title="Zeigt auch Kurse an, die den gewählten Teil in Kombination mit weiteren Teilen anbieten">
+              <input type="checkbox" id="f-include-combos" value="1"> Kombikurse einschließen
+            </label>
+            <button type="button" class="parts-apply" id="parts-apply">Anwenden</button>
+          </div>
+        </div>
+
+        <div class="date-range">
+          <button type="button" id="btn-available" class="btn btn-ghost"
+                  style="height:36px;font-size:.82rem;white-space:nowrap"
+                  title="Nur Kurse mit freien Plätzen anzeigen">✓ Plätze verfügbar</button>
+        </div>
+
+        <div class="date-range">
+          Start ab <input type="date" id="f-date-from">
+          bis <input type="date" id="f-date-to">
+        </div>
+
+        <button type="button" id="btn-reset" class="btn btn-ghost" style="display:none">✕ Zurücksetzen</button>
+
+        <div class="view-toggle">
+          <button type="button" id="btn-list" class="active">☰ Liste</button>
+          <button type="button" id="btn-map">⊙ Karte</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="main">
+  <div class="container">
+    <div id="view-list">
+      <div id="active-filters" style="display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:.6rem"></div>
+      <div class="results-bar">
+        <p class="results-meta"><span id="results-count">0</span> <span id="results-noun">Kursangebote</span> gefunden</p>
+        <select id="f-per-page" style="height:32px;padding:0 .6rem;border:1px solid var(--border);border-radius:var(--radius);font-family:inherit;font-size:.82rem;background:var(--bg);cursor:pointer">
+          <option value="10">10 pro Seite</option>
+          <option value="20" selected>20 pro Seite</option>
+          <option value="30">30 pro Seite</option>
+          <option value="40">40 pro Seite</option>
+          <option value="60">60 pro Seite</option>
+          <option value="all">Alle anzeigen</option>
+        </select>
+      </div>
+
+      <div class="table-scroll-wrap">
+        <div class="table-scroll" id="scroll-main">
+          <table class="course-table" id="main-table">
+            <thead>
+              <tr>
+                <th>Kurs</th><th>Kammer</th><th>Teile</th><th>Zeitmodell</th>
+                <th>Laufzeit</th><th>Dauer</th>
+                <th>Kursgebühr</th><th>Prüfungsgebühr</th><th>Ort</th><th>Verfügbarkeit</th>
+              </tr>
+            </thead>
+            <tbody id="course-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="pagination" id="pagination"></div>
+    </div>
+
+    <div id="view-map" style="display:none">
+      <p class="map-notice" id="map-notice">Nur Kurse mit bekannten Koordinaten werden angezeigt.</p>
+      <div id="map"></div>
+    </div>
+  </div>
+</div>
+
+<script type="module" src="./src/list.js"></script>
+</body>
+</html>

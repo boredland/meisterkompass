@@ -101,7 +101,10 @@ TRADE_PAGES: list[tuple] = [
 
 
 class HwkSaarlandScraper(BaseScraper):
-    chamber_slug = "hwk-saarland"
+    chamber_slug    = "hwk-saarland"
+    chamber_name    = "Handwerkskammer des Saarlandes"
+    chamber_region  = "Saarland"
+    chamber_website = BASE
 
     def fetch_raw_courses(self) -> list[RawCourseOffer]:
         offers: list[RawCourseOffer] = []
