@@ -20,9 +20,9 @@
   /* Ink (deep navy) */
   --ink:         #14304A;
   --ink-2:       #2E4D69;
-  --ink-70:      rgba(20, 48, 74, .74);
-  --ink-50:      rgba(20, 48, 74, .62);  /* AA-safe for small text on parchment */
-  --ink-35:      rgba(20, 48, 74, .40);
+  --ink-70:      rgba(20, 48, 74, .78);
+  --ink-50:      rgba(20, 48, 74, .72);  /* AA (4.5:1) for small text on card/paper */
+  --ink-35:      rgba(20, 48, 74, .42);
 
   /* Brass accent */
   --brass:       #A55D0E;
