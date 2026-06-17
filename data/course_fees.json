@@ -537,17 +537,6 @@
     "is_generic": false
   },
   {
-    "chamber_slug": "hwk-koblenz",
-    "trade_slug": "karosserie-und-fahrzeugbauer",
-    "parts": [
-      1,
-      2
-    ],
-    "fee": 6390.0,
-    "exam_fee_scraped": null,
-    "is_generic": false
-  },
-  {
     "chamber_slug": "hwk-rheinhessen",
     "trade_slug": "tischler",
     "parts": [
@@ -854,6 +843,17 @@
     ],
     "fee": 3035.0,
     "exam_fee_scraped": 990.0,
+    "is_generic": false
+  },
+  {
+    "chamber_slug": "hwk-koblenz",
+    "trade_slug": "karosserie-und-fahrzeugbauer",
+    "parts": [
+      1,
+      2
+    ],
+    "fee": 6390.0,
+    "exam_fee_scraped": null,
     "is_generic": false
   },
   {
