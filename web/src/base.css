@@ -154,7 +154,6 @@ body {
   white-space: nowrap;
   display: flex;
   align-items: center;
-  gap: .55rem;
   padding-right: 2rem;
   flex-shrink: 0;
 }
@@ -162,6 +161,7 @@ body {
 .nav-brand .mark {
   width: 22px; height: 22px; flex-shrink: 0;
   color: var(--brass-bright);
+  margin-right: .55rem;
 }
 .nav-brand span { color: var(--brass-bright); }
 
