@@ -762,7 +762,7 @@
     "format_display": "Teilzeit",
     "teaching_mode": "presence",
     "start_date": "2027-10-18",
-    "end_date": "2028-04-15",
+    "end_date": "2028-04-29",
     "duration_hours": 500,
     "course_fee": 6350.0,
     "course_fee_display": "6.350 €",
@@ -2240,7 +2240,7 @@
     "latitude": 50.5456433,
     "longitude": 7.1017081,
     "availability": "available",
-    "source_url": "https://www.hwk-koblenz.de/kurse/teile-iii-und-iv-in-teilzeit-52,0,coursedetail.html?id=114752&search-onr=52&img=13"
+    "source_url": "https://www.hwk-koblenz.de/kurse/teile-iii-und-iv-in-teilzeit-52,0,coursedetail.html?id=114752&search-onr=52&img=14"
   },
   {
     "chamber_slug": "hwk-koblenz",
@@ -2274,7 +2274,7 @@
     "latitude": 50.7821939,
     "longitude": 7.740086,
     "availability": "available",
-    "source_url": "https://www.hwk-koblenz.de/kurse/teile-iii-und-iv-in-teilzeit-52,0,coursedetail.html?id=114757&search-onr=52&img=14"
+    "source_url": "https://www.hwk-koblenz.de/kurse/teile-iii-und-iv-in-teilzeit-52,0,coursedetail.html?id=114757&search-onr=52&img=13"
   },
   {
     "chamber_slug": "hwk-koblenz",
@@ -7598,7 +7598,7 @@
     "zip_code": "54292",
     "latitude": 49.775426,
     "longitude": 6.6804464,
-    "availability": "waitlist",
+    "availability": "available",
     "source_url": "https://www.hwk-trier.de/kurse/teil-iii-elektrotechniker-54,0,coursedetail.html?id=60549&search-onr=54&img=2"
   },
   {
@@ -7702,6 +7702,72 @@
     "longitude": 6.6804464,
     "availability": "available",
     "source_url": "https://www.hwk-trier.de/kurse/teil-iii-installateure-und-heizungsbauer-54,0,coursedetail.html?id=60533&search-onr=54&img=1"
+  },
+  {
+    "chamber_slug": "hwk-trier",
+    "chamber_name": "HWK Trier",
+    "chamber_region": "Rheinland-Pfalz",
+    "trade_slug": "kfz-techniker",
+    "trade_name": "Kfz.-Techniker",
+    "title": "Kfz.-Techniker (Teil I)",
+    "parts": [
+      1
+    ],
+    "format": "part_time",
+    "format_display": "Teilzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-01-09",
+    "end_date": "2028-07-01",
+    "duration_hours": 340,
+    "course_fee": 4200.0,
+    "course_fee_display": "4.200 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": null,
+      "fee_max": null,
+      "qualifier": "",
+      "display": ""
+    },
+    "city": "Trier",
+    "street": "Loebstr.  18",
+    "zip_code": "54292",
+    "latitude": 49.775426,
+    "longitude": 6.6804464,
+    "availability": "available",
+    "source_url": "https://www.hwk-trier.de/kurse/teil-i-kfz-techniker-54,0,coursedetail.html?id=60505&search-onr=54&img=2"
+  },
+  {
+    "chamber_slug": "hwk-trier",
+    "chamber_name": "HWK Trier",
+    "chamber_region": "Rheinland-Pfalz",
+    "trade_slug": "kfz-techniker",
+    "trade_name": "Kfz.-Techniker",
+    "title": "Kfz.-Techniker (Teil II)",
+    "parts": [
+      2
+    ],
+    "format": "part_time",
+    "format_display": "Teilzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-01-09",
+    "end_date": "2028-07-01",
+    "duration_hours": 280,
+    "course_fee": 3300.0,
+    "course_fee_display": "3.300 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": null,
+      "fee_max": null,
+      "qualifier": "",
+      "display": ""
+    },
+    "city": "Trier",
+    "street": "Loebstr.  18",
+    "zip_code": "54292",
+    "latitude": 49.775426,
+    "longitude": 6.6804464,
+    "availability": "available",
+    "source_url": "https://www.hwk-trier.de/kurse/teil-ii-kfz-techniker-54,0,coursedetail.html?id=60511&search-onr=54&img=1"
   },
   {
     "chamber_slug": "hwk-trier",
