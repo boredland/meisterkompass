@@ -46,7 +46,7 @@ jobs:
 
       - name: Build
         working-directory: web
-        # Project site lives at sebak-01.github.io/meisterkompass/, so assets
+        # Project site lives at meisterkompass.eu/, so assets
         # must be served from that base path. For a custom domain, set "/".
         env:
           VITE_BASE: "/meisterkompass/"
