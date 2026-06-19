@@ -16,6 +16,8 @@
   font-weight: 600;
   line-height: 1.04;
   letter-spacing: -.02em;
+  hyphens: auto;
+  overflow-wrap: break-word;
 }
 .page-header .lede { margin-top: .55rem; font-size: .95rem; color: rgba(255,255,255,.7); max-width: 50ch; }
 .header-stats { display: flex; gap: 2.25rem; margin-top: 1.5rem; flex-wrap: wrap; }
@@ -259,7 +261,7 @@
   .parts-wrap { width: 100%; }
   .parts-dropdown { width: 100%; }
   .date-range { width: 100%; justify-content: space-between; }
-  .date-range input { width: auto; flex: 1; }
+  .date-range input { width: auto; flex: 1; min-width: 0; }
   .view-toggle { margin-left: 0; width: 100%; }
   .view-toggle button { flex: 1; height: 42px; }
   .results-bar { flex-direction: column; align-items: flex-start; gap: .6rem; }
