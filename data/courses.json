@@ -7877,39 +7877,6 @@
     "chamber_region": "Rheinland-Pfalz",
     "trade_slug": "allgemein-teil-iii-iv",
     "trade_name": "Wirtschaft, Recht, Pädagogik",
-    "title": "Berufs- und Arbeitspädagogik (Teil IV)",
-    "parts": [
-      4
-    ],
-    "format": "part_time",
-    "format_display": "Teilzeit",
-    "teaching_mode": "presence",
-    "start_date": "2026-06-20",
-    "end_date": "2026-11-21",
-    "duration_hours": 100,
-    "course_fee": 600.0,
-    "course_fee_display": "600 €",
-    "exam_fee_scraped": 225.0,
-    "exam_fee": {
-      "fee": 225.0,
-      "fee_max": null,
-      "qualifier": "",
-      "display": "225 €"
-    },
-    "city": "Trier",
-    "street": "Loebstraße 18",
-    "zip_code": "54292",
-    "latitude": 49.7754619,
-    "longitude": 6.6805129,
-    "availability": "available",
-    "source_url": "https://www.hwk-trier.de/kurse/teil-iv-berufs-und-arbeitspaedagogik-54,0,coursedetail.html?id=60562&search-onr=54&img=1"
-  },
-  {
-    "chamber_slug": "hwk-trier",
-    "chamber_name": "HWK Trier",
-    "chamber_region": "Rheinland-Pfalz",
-    "trade_slug": "allgemein-teil-iii-iv",
-    "trade_name": "Wirtschaft, Recht, Pädagogik",
     "title": "Wirtschaft und Recht (Teil III)",
     "parts": [
       3

@@ -1,15 +1,5 @@
 [
   {
-    "chamber_slug": "hwk-trier",
-    "trade_slug": "allgemein-teil-iii-iv",
-    "parts": [
-      4
-    ],
-    "fee": 600.0,
-    "exam_fee_scraped": 225.0,
-    "is_generic": true
-  },
-  {
     "chamber_slug": "hwk-saarland",
     "trade_slug": "fliesen-platten-und-mosaikleger",
     "parts": [
@@ -251,6 +241,16 @@
     "fee": 7350.0,
     "exam_fee_scraped": null,
     "is_generic": false
+  },
+  {
+    "chamber_slug": "hwk-trier",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "parts": [
+      4
+    ],
+    "fee": 600.0,
+    "exam_fee_scraped": 225.0,
+    "is_generic": true
   },
   {
     "chamber_slug": "hwk-koblenz",
