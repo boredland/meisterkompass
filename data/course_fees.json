@@ -10,16 +10,6 @@
     "is_generic": false
   },
   {
-    "chamber_slug": "hwk-saarland",
-    "trade_slug": "allgemein-teil-iii-iv",
-    "parts": [
-      3
-    ],
-    "fee": 1925.0,
-    "exam_fee_scraped": 110.0,
-    "is_generic": true
-  },
-  {
     "chamber_slug": "hwk-trier",
     "trade_slug": "allgemein-teil-iii-iv",
     "parts": [
@@ -305,6 +295,16 @@
     "is_generic": false
   },
   {
+    "chamber_slug": "hwk-saarland",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "parts": [
+      3
+    ],
+    "fee": 1925.0,
+    "exam_fee_scraped": 110.0,
+    "is_generic": true
+  },
+  {
     "chamber_slug": "hwk-koblenz",
     "trade_slug": "steinmetze-und-steinbildhauer",
     "parts": [
@@ -585,6 +585,16 @@
     ],
     "fee": 4340.0,
     "exam_fee_scraped": 330.0,
+    "is_generic": false
+  },
+  {
+    "chamber_slug": "hwk-saarland",
+    "trade_slug": "dachdecker",
+    "parts": [
+      2
+    ],
+    "fee": 2340.0,
+    "exam_fee_scraped": 350.0,
     "is_generic": false
   },
   {
@@ -885,16 +895,6 @@
     ],
     "fee": 7300.0,
     "exam_fee_scraped": null,
-    "is_generic": false
-  },
-  {
-    "chamber_slug": "hwk-saarland",
-    "trade_slug": "dachdecker",
-    "parts": [
-      2
-    ],
-    "fee": 2340.0,
-    "exam_fee_scraped": 350.0,
     "is_generic": false
   },
   {
