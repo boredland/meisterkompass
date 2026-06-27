@@ -2375,7 +2375,7 @@
     "zip_code": "53474",
     "latitude": 50.5456433,
     "longitude": 7.1017081,
-    "availability": "waitlist",
+    "availability": "available",
     "source_url": "https://www.hwk-koblenz.de/kurse/teile-iii-und-iv-crashkurs-52,0,coursedetail.html?id=114772&search-onr=52&img=16"
   },
   {
@@ -4339,7 +4339,7 @@
     "latitude": 49.4760852,
     "longitude": 8.4080881,
     "availability": "available",
-    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-teile-iii-iv-51,0,coursedetail.html?id=104969&search-onr=51&img=15"
+    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-teile-iii-iv-51,0,coursedetail.html?id=104969&search-onr=51&img=14"
   },
   {
     "chamber_slug": "hwk-pfalz",
@@ -4373,7 +4373,7 @@
     "latitude": 49.4441065,
     "longitude": 7.7686373,
     "availability": "available",
-    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-teile-iii-iv-51,0,coursedetail.html?id=105601&search-onr=51&img=13"
+    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-teile-iii-iv-51,0,coursedetail.html?id=105601&search-onr=51&img=15"
   },
   {
     "chamber_slug": "hwk-pfalz",
@@ -4407,7 +4407,7 @@
     "latitude": 49.2117701,
     "longitude": 8.1271493,
     "availability": "available",
-    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-teile-iii-iv-51,0,coursedetail.html?id=105611&search-onr=51&img=14"
+    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-teile-iii-iv-51,0,coursedetail.html?id=105611&search-onr=51&img=13"
   },
   {
     "chamber_slug": "hwk-pfalz",
@@ -5804,8 +5804,8 @@
     "format": "part_time",
     "format_display": "Teilzeit",
     "teaching_mode": "presence",
-    "start_date": null,
-    "end_date": null,
+    "start_date": "2027-10-08",
+    "end_date": "2028-11-21",
     "duration_hours": 478,
     "course_fee": 2340.0,
     "course_fee_display": "2.340 €",
@@ -5821,7 +5821,7 @@
     "zip_code": "66117",
     "latitude": 49.2297,
     "longitude": 6.9967,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.hwk-saarland.de/seminar/mv-teil-ii-dachdecker-m2da/"
   },
   {
