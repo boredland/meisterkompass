@@ -87,13 +87,6 @@
           "qualifier": ""
         }
       },
-      "kfz-techniker": {
-        "2": {
-          "fee": 600.0,
-          "fee_max": null,
-          "qualifier": ""
-        }
-      },
       "land-und-baumaschinenmechatroniker": {
         "1": {
           "fee": 1100.0,

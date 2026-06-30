@@ -62,16 +62,6 @@
     "is_generic": false
   },
   {
-    "chamber_slug": "hwk-pfalz",
-    "trade_slug": "kfz-techniker",
-    "parts": [
-      2
-    ],
-    "fee": 3700.0,
-    "exam_fee_scraped": 600.0,
-    "is_generic": false
-  },
-  {
     "chamber_slug": "hwk-rheinhessen",
     "trade_slug": "metallbauer",
     "parts": [
