@@ -3633,7 +3633,7 @@
     "latitude": 49.4760852,
     "longitude": 8.4080881,
     "availability": "available",
-    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-elektrotechniker-teile-i-ii-51,0,coursedetail.html?id=110304&search-onr=51&img=10"
+    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-elektrotechniker-teile-i-ii-51,0,coursedetail.html?id=110304&search-onr=51&img=11"
   },
   {
     "chamber_slug": "hwk-pfalz",
@@ -3842,6 +3842,40 @@
     "chamber_region": "Rheinland-Pfalz",
     "trade_slug": "installateur-und-heizungsbauer",
     "trade_name": "Installateur- und Heizungsbauer",
+    "title": "Installateur- und Heizungsbauer (Teile I + II)",
+    "parts": [
+      1,
+      2
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2029-08-27",
+    "end_date": "2030-04-05",
+    "duration_hours": 1024,
+    "course_fee": 7350.0,
+    "course_fee_display": "7.350 €",
+    "exam_fee_scraped": 1000.0,
+    "exam_fee": {
+      "fee": 1000.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "1.000 €"
+    },
+    "city": "Landau in der Pfalz",
+    "street": "Im Grein 5",
+    "zip_code": "76829",
+    "latitude": 49.2117701,
+    "longitude": 8.1271493,
+    "availability": "available",
+    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-installateur-und-heizungsbauer-teile-i-ii-51,0,coursedetail.html?id=110030&search-onr=51&img=9"
+  },
+  {
+    "chamber_slug": "hwk-pfalz",
+    "chamber_name": "HWK der Pfalz",
+    "chamber_region": "Rheinland-Pfalz",
+    "trade_slug": "installateur-und-heizungsbauer",
+    "trade_name": "Installateur- und Heizungsbauer",
     "title": "Installateur- und Heizungsbauer (Teil II)",
     "parts": [
       2
@@ -3867,7 +3901,7 @@
     "latitude": 49.4495183,
     "longitude": 7.7678746,
     "availability": "available",
-    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-installateur-und-heizungsbauer-teil-ii-51,0,coursedetail.html?id=107707&search-onr=51&img=9"
+    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-installateur-und-heizungsbauer-teil-ii-51,0,coursedetail.html?id=107707&search-onr=51&img=10"
   },
   {
     "chamber_slug": "hwk-pfalz",
