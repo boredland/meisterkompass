@@ -30,7 +30,7 @@
     "zip_code": "34123",
     "latitude": 51.2841009,
     "longitude": 9.498614,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bz-kassel.de/bildungsangebot/elektro-und-gebaeudetechnik/kursdetail/kurs-412"
   },
   {
@@ -64,7 +64,7 @@
     "zip_code": "34123",
     "latitude": 51.2841009,
     "longitude": 9.498614,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bz-kassel.de/bildungsangebot/metalltechnik-und-schweisstechnik/kursdetail/kurs-2022"
   },
   {
@@ -98,7 +98,7 @@
     "zip_code": "34123",
     "latitude": 51.2841009,
     "longitude": 9.498614,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bz-kassel.de/bildungsangebot/fleischerhandwerk/kursdetail/kurs-1888"
   },
   {
@@ -132,7 +132,7 @@
     "zip_code": "34123",
     "latitude": 51.2841009,
     "longitude": 9.498614,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bz-kassel.de/bildungsangebot/friseurhandwerk/kursdetail/kurs-1534"
   },
   {
@@ -166,7 +166,7 @@
     "zip_code": "34123",
     "latitude": 51.2841009,
     "longitude": 9.498614,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bz-kassel.de/bildungsangebot/friseurhandwerk/kursdetail/kurs-1536"
   },
   {
@@ -200,7 +200,7 @@
     "zip_code": "35043",
     "latitude": 50.7872688,
     "longitude": 8.7666044,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bbz-marburg.de/kurs/mv-fri-vz/"
   },
   {
@@ -234,7 +234,7 @@
     "zip_code": "34123",
     "latitude": 51.2841009,
     "longitude": 9.498614,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bz-kassel.de/bildungsangebot/friseurhandwerk/kursdetail/kurs-1884"
   },
   {
@@ -268,7 +268,7 @@
     "zip_code": "34123",
     "latitude": 51.2841009,
     "longitude": 9.498614,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bz-kassel.de/bildungsangebot/friseurhandwerk/kursdetail/kurs-1886"
   },
   {
@@ -302,7 +302,7 @@
     "zip_code": "35043",
     "latitude": 50.7872688,
     "longitude": 8.7666044,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bbz-marburg.de/kurs/mv-fri-tz/"
   },
   {
@@ -336,7 +336,7 @@
     "zip_code": "35043",
     "latitude": 50.7872688,
     "longitude": 8.7666044,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bbz-marburg.de/kurs/mv-fri-vz/"
   },
   {
@@ -371,7 +371,7 @@
     "zip_code": "35043",
     "latitude": 50.7872688,
     "longitude": 8.7666044,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bbz-marburg.de/kurs/mv-shk-vz/"
   },
   {
@@ -406,7 +406,7 @@
     "zip_code": "35043",
     "latitude": 50.7872688,
     "longitude": 8.7666044,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bbz-marburg.de/kurs/mv-shk-vz/"
   },
   {
@@ -441,7 +441,7 @@
     "zip_code": "35043",
     "latitude": 50.7872688,
     "longitude": 8.7666044,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bbz-marburg.de/kurs/mv-shk-vz/"
   },
   {
@@ -474,7 +474,7 @@
     "zip_code": "35043",
     "latitude": 50.7872688,
     "longitude": 8.7666044,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bbz-marburg.de/kurs/mv-kfz/"
   },
   {
@@ -507,7 +507,7 @@
     "zip_code": "35043",
     "latitude": 50.7872688,
     "longitude": 8.7666044,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bbz-marburg.de/kurs/mv-kfz/"
   },
   {
@@ -541,7 +541,7 @@
     "zip_code": "35043",
     "latitude": 50.7872688,
     "longitude": 8.7666044,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bbz-marburg.de/kurs/mv-kfz-tz/"
   },
   {
@@ -574,7 +574,7 @@
     "zip_code": "35043",
     "latitude": 50.7872688,
     "longitude": 8.7666044,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bbz-marburg.de/kurs/mv-kfz/"
   },
   {
@@ -608,7 +608,7 @@
     "zip_code": "35043",
     "latitude": 50.7872688,
     "longitude": 8.7666044,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bbz-marburg.de/kurs/mv-kfz-tz/"
   },
   {
@@ -642,7 +642,7 @@
     "zip_code": "35043",
     "latitude": 50.7872688,
     "longitude": 8.7666044,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bbz-marburg.de/kurs/mv-mal-vz/"
   },
   {
@@ -676,7 +676,7 @@
     "zip_code": "34123",
     "latitude": 51.2841009,
     "longitude": 9.498614,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bz-kassel.de/bildungsangebot/elektro-und-gebaeudetechnik/kursdetail/kurs-1870"
   },
   {
@@ -710,7 +710,7 @@
     "zip_code": "35043",
     "latitude": 50.7872688,
     "longitude": 8.7666044,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bbz-marburg.de/kurs/mv-mal-vz/"
   },
   {
@@ -744,7 +744,7 @@
     "zip_code": "35043",
     "latitude": 50.7872688,
     "longitude": 8.7666044,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bbz-marburg.de/kurs/mv-mal-tz/"
   },
   {
@@ -778,7 +778,7 @@
     "zip_code": "34123",
     "latitude": 51.2841009,
     "longitude": 9.498614,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bz-kassel.de/bildungsangebot/metalltechnik-und-schweisstechnik/kursdetail/kurs-1350"
   },
   {
@@ -812,7 +812,7 @@
     "zip_code": "34123",
     "latitude": 51.2841009,
     "longitude": 9.498614,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bz-kassel.de/bildungsangebot/metalltechnik-und-schweisstechnik/kursdetail/kurs-2024"
   },
   {
@@ -845,7 +845,7 @@
     "zip_code": "35043",
     "latitude": 50.7872688,
     "longitude": 8.7666044,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bbz-marburg.de/kurs/mv-iii-tz/"
   },
   {
@@ -878,7 +878,7 @@
     "zip_code": "34123",
     "latitude": 51.2841009,
     "longitude": 9.498614,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1078"
   },
   {
@@ -911,7 +911,7 @@
     "zip_code": "34123",
     "latitude": 51.2841009,
     "longitude": 9.498614,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1140"
   },
   {
@@ -944,7 +944,7 @@
     "zip_code": "34123",
     "latitude": 51.2841009,
     "longitude": 9.498614,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1070"
   },
   {
@@ -977,7 +977,7 @@
     "zip_code": "35043",
     "latitude": 50.7872688,
     "longitude": 8.7666044,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bbz-marburg.de/kurs/mv-iii-vz/"
   },
   {
@@ -1010,7 +1010,7 @@
     "zip_code": "34123",
     "latitude": 51.2841009,
     "longitude": 9.498614,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-830"
   },
   {
@@ -1043,7 +1043,7 @@
     "zip_code": "35043",
     "latitude": 50.7872688,
     "longitude": 8.7666044,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bbz-marburg.de/kurs/ada-vz-96/"
   },
   {
@@ -1076,7 +1076,7 @@
     "zip_code": "34123",
     "latitude": 51.2841009,
     "longitude": 9.498614,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1574"
   },
   {
@@ -1109,7 +1109,7 @@
     "zip_code": "34123",
     "latitude": 51.2841009,
     "longitude": 9.498614,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1732"
   },
   {
@@ -1142,7 +1142,7 @@
     "zip_code": "34123",
     "latitude": 51.2841009,
     "longitude": 9.498614,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1784"
   },
   {
@@ -1175,7 +1175,7 @@
     "zip_code": "35043",
     "latitude": 50.7872688,
     "longitude": 8.7666044,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bbz-marburg.de/kurs/mv-iii-vz/"
   },
   {
@@ -1208,7 +1208,7 @@
     "zip_code": "35043",
     "latitude": 50.7872688,
     "longitude": 8.7666044,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bbz-marburg.de/kurs/mv-iii-tz/"
   },
   {
@@ -1241,7 +1241,7 @@
     "zip_code": "34123",
     "latitude": 51.2841009,
     "longitude": 9.498614,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1576"
   },
   {
@@ -1274,7 +1274,7 @@
     "zip_code": "35043",
     "latitude": 50.7872688,
     "longitude": 8.7666044,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bbz-marburg.de/kurs/ada-vz-96/"
   },
   {
@@ -1307,7 +1307,7 @@
     "zip_code": "34123",
     "latitude": 51.2841009,
     "longitude": 9.498614,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1734"
   },
   {
@@ -1340,7 +1340,7 @@
     "zip_code": "34123",
     "latitude": 51.2841009,
     "longitude": 9.498614,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1578"
   },
   {
@@ -1373,7 +1373,7 @@
     "zip_code": "34123",
     "latitude": 51.2841009,
     "longitude": 9.498614,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1596"
   },
   {
@@ -1406,7 +1406,7 @@
     "zip_code": "34123",
     "latitude": 51.2841009,
     "longitude": 9.498614,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1736"
   },
   {
@@ -1439,7 +1439,7 @@
     "zip_code": "35043",
     "latitude": 50.7872688,
     "longitude": 8.7666044,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bbz-marburg.de/kurs/mv-iii-vz/"
   },
   {
@@ -1472,7 +1472,7 @@
     "zip_code": "34123",
     "latitude": 51.2841009,
     "longitude": 9.498614,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1738"
   },
   {
@@ -1505,7 +1505,7 @@
     "zip_code": "34123",
     "latitude": 51.2841009,
     "longitude": 9.498614,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1582"
   },
   {
@@ -1538,7 +1538,7 @@
     "zip_code": "35043",
     "latitude": 50.7872688,
     "longitude": 8.7666044,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bbz-marburg.de/kurs/mv-iii-tz/"
   },
   {
@@ -1571,7 +1571,7 @@
     "zip_code": "35043",
     "latitude": 50.7872688,
     "longitude": 8.7666044,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bbz-marburg.de/kurs/ada-vz-96/"
   },
   {
@@ -1604,7 +1604,7 @@
     "zip_code": "34123",
     "latitude": 51.2841009,
     "longitude": 9.498614,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1740"
   },
   {
@@ -1637,7 +1637,7 @@
     "zip_code": "34123",
     "latitude": 51.2841009,
     "longitude": 9.498614,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1786"
   },
   {
@@ -1670,7 +1670,7 @@
     "zip_code": "34123",
     "latitude": 51.2841009,
     "longitude": 9.498614,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1584"
   },
   {
@@ -1703,7 +1703,7 @@
     "zip_code": "34123",
     "latitude": 51.2841009,
     "longitude": 9.498614,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1744"
   },
   {
@@ -1736,7 +1736,7 @@
     "zip_code": "35043",
     "latitude": 50.7872688,
     "longitude": 8.7666044,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bbz-marburg.de/kurs/mv-iii-vz/"
   },
   {
@@ -1769,7 +1769,7 @@
     "zip_code": "34123",
     "latitude": 51.2841009,
     "longitude": 9.498614,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1742"
   },
   {
@@ -1802,7 +1802,7 @@
     "zip_code": "34123",
     "latitude": 51.2841009,
     "longitude": 9.498614,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1586"
   },
   {
@@ -1835,7 +1835,7 @@
     "zip_code": "35043",
     "latitude": 50.7872688,
     "longitude": 8.7666044,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.bbz-marburg.de/kurs/ada-vz-96/"
   },
   {
@@ -3638,7 +3638,7 @@
     "latitude": 50.3895583,
     "longitude": 7.5708933,
     "availability": "available",
-    "source_url": "https://www.hwk-koblenz.de/kurse/maurer-und-betonbauer-teile-i-und-ii-in-vollzeit-52,0,coursedetail.html?id=120845&search-onr=52&img=6"
+    "source_url": "https://www.hwk-koblenz.de/kurse/maurer-und-betonbauer-teile-i-und-ii-in-vollzeit-52,0,coursedetail.html?id=120845&search-onr=52&img=4"
   },
   {
     "chamber_slug": "hwk-koblenz",
@@ -5527,10 +5527,10 @@
     "course_fee_display": "—",
     "exam_fee_scraped": null,
     "exam_fee": {
-      "fee": null,
+      "fee": 400.0,
       "fee_max": null,
       "qualifier": "",
-      "display": ""
+      "display": "400 €"
     },
     "city": "Kaiserslautern",
     "street": "Am Altenhof 15",
@@ -6236,10 +6236,10 @@
     "course_fee_display": "—",
     "exam_fee_scraped": null,
     "exam_fee": {
-      "fee": null,
+      "fee": 1200.0,
       "fee_max": null,
       "qualifier": "",
-      "display": ""
+      "display": "1.200 €"
     },
     "city": "Kaiserslautern",
     "street": "Am Altenhof 15",
@@ -6270,10 +6270,10 @@
     "course_fee_display": "—",
     "exam_fee_scraped": null,
     "exam_fee": {
-      "fee": null,
+      "fee": 1200.0,
       "fee_max": null,
       "qualifier": "",
-      "display": ""
+      "display": "1.200 €"
     },
     "city": "Kaiserslautern",
     "street": "Am Altenhof 15",
@@ -6304,10 +6304,10 @@
     "course_fee_display": "—",
     "exam_fee_scraped": null,
     "exam_fee": {
-      "fee": null,
+      "fee": 1200.0,
       "fee_max": null,
       "qualifier": "",
-      "display": ""
+      "display": "1.200 €"
     },
     "city": "Kaiserslautern",
     "street": "Am Altenhof 15",
@@ -6338,10 +6338,10 @@
     "course_fee_display": "—",
     "exam_fee_scraped": null,
     "exam_fee": {
-      "fee": null,
+      "fee": 1200.0,
       "fee_max": null,
       "qualifier": "",
-      "display": ""
+      "display": "1.200 €"
     },
     "city": "Kaiserslautern",
     "street": "Am Altenhof 15",
@@ -6372,10 +6372,10 @@
     "course_fee_display": "—",
     "exam_fee_scraped": null,
     "exam_fee": {
-      "fee": null,
+      "fee": 1200.0,
       "fee_max": null,
       "qualifier": "",
-      "display": ""
+      "display": "1.200 €"
     },
     "city": "Kaiserslautern",
     "street": "Am Altenhof 15",
@@ -6406,10 +6406,10 @@
     "course_fee_display": "—",
     "exam_fee_scraped": null,
     "exam_fee": {
-      "fee": null,
+      "fee": 1200.0,
       "fee_max": null,
       "qualifier": "",
-      "display": ""
+      "display": "1.200 €"
     },
     "city": "Kaiserslautern",
     "street": "Am Altenhof 15",
@@ -11772,7 +11772,7 @@
     "format_display": "Vollzeit",
     "teaching_mode": "presence",
     "start_date": "2026-08-24",
-    "end_date": "2027-01-29",
+    "end_date": "2027-01-22",
     "duration_hours": 806,
     "course_fee": 7400.0,
     "course_fee_display": "7.400 €",
@@ -11856,7 +11856,7 @@
     "latitude": 50.5548159,
     "longitude": 8.4921662,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/ausbildereignungspruefung-vollzeit-44,0,coursedetail.html?id=50893&search-onr=44&img=3"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/ausbildereignungspruefung-vollzeit-44,0,coursedetail.html?id=50893&search-onr=44&img=1"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -11889,7 +11889,7 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "waitlist",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iv-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=94347&search-onr=44&img=4"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iv-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=94347&search-onr=44&img=2"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -11923,7 +11923,7 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teile-iii-iv-teilzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=105441&search-onr=44&img=5"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teile-iii-iv-teilzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=105441&search-onr=44&img=3"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -11956,7 +11956,7 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "waitlist",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=94343&search-onr=44&img=6"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=94343&search-onr=44&img=4"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -11989,7 +11989,7 @@
     "latitude": 50.5548159,
     "longitude": 8.4921662,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-44,0,coursedetail.html?id=53244&search-onr=44&img=7"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-44,0,coursedetail.html?id=53244&search-onr=44&img=5"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -12023,7 +12023,7 @@
     "latitude": 50.5548159,
     "longitude": 8.4921662,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teile-iii-iv-vollzeit-44,0,coursedetail.html?id=48864&search-onr=44&img=8"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teile-iii-iv-vollzeit-44,0,coursedetail.html?id=48864&search-onr=44&img=6"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -12056,7 +12056,7 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/ausbildereignungspruefung-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103826&search-onr=44&img=10"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/ausbildereignungspruefung-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103826&search-onr=44&img=8"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -12089,7 +12089,7 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iv-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=94350&search-onr=44&img=9"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iv-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=94350&search-onr=44&img=7"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -12122,7 +12122,7 @@
     "latitude": 50.5548159,
     "longitude": 8.4921662,
     "availability": "waitlist",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/ausbildereignungspruefung-vollzeit-44,0,coursedetail.html?id=50894&search-onr=44&img=11"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/ausbildereignungspruefung-vollzeit-44,0,coursedetail.html?id=50894&search-onr=44&img=9"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -12155,7 +12155,7 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=94344&search-onr=44&img=12"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=94344&search-onr=44&img=10"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -12188,7 +12188,7 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/ausbildereignungspruefung-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103827&search-onr=44&img=14"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/ausbildereignungspruefung-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103827&search-onr=44&img=12"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -12221,7 +12221,7 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iv-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=94351&search-onr=44&img=13"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iv-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=94351&search-onr=44&img=11"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -12254,7 +12254,7 @@
     "latitude": 50.5548159,
     "longitude": 8.4921662,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-44,0,coursedetail.html?id=53245&search-onr=44&img=15"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-44,0,coursedetail.html?id=53245&search-onr=44&img=13"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -12288,7 +12288,7 @@
     "latitude": 50.5548159,
     "longitude": 8.4921662,
     "availability": "waitlist",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teile-iii-iv-vollzeit-44,0,coursedetail.html?id=77273&search-onr=44&img=16"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teile-iii-iv-vollzeit-44,0,coursedetail.html?id=77273&search-onr=44&img=14"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -12321,7 +12321,7 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103182&search-onr=44&img=17"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103182&search-onr=44&img=15"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -12354,7 +12354,7 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/ausbildereignungspruefung-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103841&search-onr=44&img=19"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/ausbildereignungspruefung-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103841&search-onr=44&img=17"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -12387,7 +12387,7 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iv-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103645&search-onr=44&img=18"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iv-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103645&search-onr=44&img=16"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -12420,7 +12420,7 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103624&search-onr=44&img=20"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103624&search-onr=44&img=18"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -12453,7 +12453,7 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/ausbildereignungspruefung-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103842&search-onr=44&img=2"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/ausbildereignungspruefung-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103842&search-onr=44&img=20"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -12486,7 +12486,7 @@
     "latitude": 50.5548159,
     "longitude": 8.4921662,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-44,0,coursedetail.html?id=113231&search-onr=44&img=3"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-44,0,coursedetail.html?id=113231&search-onr=44&img=1"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -12519,7 +12519,7 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iv-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103646&search-onr=44&img=1"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iv-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103646&search-onr=44&img=19"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -12553,7 +12553,7 @@
     "latitude": 50.5548159,
     "longitude": 8.4921662,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teile-iii-iv-vollzeit-44,0,coursedetail.html?id=113223&search-onr=44&img=4"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teile-iii-iv-vollzeit-44,0,coursedetail.html?id=113223&search-onr=44&img=2"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -12586,7 +12586,7 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103641&search-onr=44&img=5"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103641&search-onr=44&img=3"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -12619,7 +12619,7 @@
     "latitude": 50.5548159,
     "longitude": 8.4921662,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-teilzeit-44,0,coursedetail.html?id=123886&search-onr=44&img=7"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-teilzeit-44,0,coursedetail.html?id=123886&search-onr=44&img=5"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -12653,7 +12653,7 @@
     "latitude": 50.5548159,
     "longitude": 8.4921662,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teile-iii-iv-teilzeit-44,0,coursedetail.html?id=115841&search-onr=44&img=6"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teile-iii-iv-teilzeit-44,0,coursedetail.html?id=115841&search-onr=44&img=4"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -12686,7 +12686,7 @@
     "latitude": 50.5548159,
     "longitude": 8.4921662,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/ausbildereignungspruefung-vollzeit-44,0,coursedetail.html?id=113233&search-onr=44&img=8"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/ausbildereignungspruefung-vollzeit-44,0,coursedetail.html?id=113233&search-onr=44&img=6"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -12719,7 +12719,7 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/ausbildereignungspruefung-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103843&search-onr=44&img=10"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/ausbildereignungspruefung-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103843&search-onr=44&img=8"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -12752,7 +12752,7 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iv-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103647&search-onr=44&img=9"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iv-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103647&search-onr=44&img=7"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -12785,7 +12785,7 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103642&search-onr=44&img=11"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103642&search-onr=44&img=9"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -12818,7 +12818,7 @@
     "latitude": 50.5548159,
     "longitude": 8.4921662,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-44,0,coursedetail.html?id=113235&search-onr=44&img=12"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-44,0,coursedetail.html?id=113235&search-onr=44&img=10"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -12852,7 +12852,7 @@
     "latitude": 50.5548159,
     "longitude": 8.4921662,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teile-iii-iv-vollzeit-44,0,coursedetail.html?id=113228&search-onr=44&img=13"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teile-iii-iv-vollzeit-44,0,coursedetail.html?id=113228&search-onr=44&img=11"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -12885,7 +12885,7 @@
     "latitude": 50.5548159,
     "longitude": 8.4921662,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/ausbildereignungspruefung-vollzeit-44,0,coursedetail.html?id=113234&search-onr=44&img=14"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/ausbildereignungspruefung-vollzeit-44,0,coursedetail.html?id=113234&search-onr=44&img=12"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -12918,7 +12918,7 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/ausbildereignungspruefung-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103844&search-onr=44&img=16"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/ausbildereignungspruefung-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103844&search-onr=44&img=14"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -12951,7 +12951,7 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iv-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103648&search-onr=44&img=15"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iv-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103648&search-onr=44&img=13"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -12984,7 +12984,7 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103643&search-onr=44&img=17"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103643&search-onr=44&img=15"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -13017,7 +13017,7 @@
     "latitude": 50.5548159,
     "longitude": 8.4921662,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-44,0,coursedetail.html?id=113236&search-onr=44&img=18"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-44,0,coursedetail.html?id=113236&search-onr=44&img=16"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -13051,7 +13051,7 @@
     "latitude": 50.5548159,
     "longitude": 8.4921662,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teile-iii-iv-vollzeit-44,0,coursedetail.html?id=113229&search-onr=44&img=19"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teile-iii-iv-vollzeit-44,0,coursedetail.html?id=113229&search-onr=44&img=17"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -13084,7 +13084,7 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/ausbildereignungspruefung-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103845&search-onr=44&img=1"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/ausbildereignungspruefung-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103845&search-onr=44&img=19"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -13117,7 +13117,7 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iv-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103649&search-onr=44&img=20"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iv-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103649&search-onr=44&img=18"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -13150,7 +13150,7 @@
     "latitude": 50.5548159,
     "longitude": 8.4921662,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/ausbildereignungspruefung-vollzeit-44,0,coursedetail.html?id=113237&search-onr=44&img=2"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/ausbildereignungspruefung-vollzeit-44,0,coursedetail.html?id=113237&search-onr=44&img=20"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -13183,7 +13183,7 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103644&search-onr=44&img=3"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103644&search-onr=44&img=1"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -13216,7 +13216,7 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/ausbildereignungspruefung-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103846&search-onr=44&img=5"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/ausbildereignungspruefung-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103846&search-onr=44&img=3"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -13249,7 +13249,7 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iv-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103650&search-onr=44&img=4"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iv-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103650&search-onr=44&img=2"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -13282,7 +13282,7 @@
     "latitude": 50.5548159,
     "longitude": 8.4921662,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-44,0,coursedetail.html?id=113238&search-onr=44&img=6"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-44,0,coursedetail.html?id=113238&search-onr=44&img=4"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -13316,7 +13316,7 @@
     "latitude": 50.5548159,
     "longitude": 8.4921662,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teile-iii-iv-vollzeit-44,0,coursedetail.html?id=113230&search-onr=44&img=7"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teile-iii-iv-vollzeit-44,0,coursedetail.html?id=113230&search-onr=44&img=5"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -13349,6 +13349,6 @@
     "latitude": 50.5548159,
     "longitude": 8.4921662,
     "availability": "waitlist",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/ausbildereignungspruefung-vollzeit-44,0,coursedetail.html?id=113239&search-onr=44&img=8"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/ausbildereignungspruefung-vollzeit-44,0,coursedetail.html?id=113239&search-onr=44&img=6"
   }
 ]
