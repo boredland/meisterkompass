@@ -2414,11 +2414,7 @@
     "latitude": 50.3603382,
     "longitude": 7.5844202,
     "availability": "available",
-<<<<<<< HEAD
-    "source_url": "https://www.hwk-koblenz.de/kurse/fleischer-teile-i-und-ii-in-teilzeit-52,0,coursedetail.html?id=119741&search-onr=52&img=19"
-=======
     "source_url": "https://www.hwk-koblenz.de/kurse/fleischer-teile-i-und-ii-in-teilzeit-52,0,coursedetail.html?id=119741&search-onr=52&img=17"
->>>>>>> 7117843e6690eea26825bda8c14dbf1c96f3b6b8
   },
   {
     "chamber_slug": "hwk-koblenz",
@@ -3642,11 +3638,7 @@
     "latitude": 50.3895583,
     "longitude": 7.5708933,
     "availability": "available",
-<<<<<<< HEAD
     "source_url": "https://www.hwk-koblenz.de/kurse/maurer-und-betonbauer-teile-i-und-ii-in-vollzeit-52,0,coursedetail.html?id=120845&search-onr=52&img=6"
-=======
-    "source_url": "https://www.hwk-koblenz.de/kurse/maurer-und-betonbauer-teile-i-und-ii-in-vollzeit-52,0,coursedetail.html?id=120845&search-onr=52&img=4"
->>>>>>> 7117843e6690eea26825bda8c14dbf1c96f3b6b8
   },
   {
     "chamber_slug": "hwk-koblenz",
