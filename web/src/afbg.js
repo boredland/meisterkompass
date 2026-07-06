@@ -171,7 +171,13 @@ function fillExamFees() {
     }
 
     if (hasAny) {
-      g.examFee = totalFee;
+      // Neither a range ("Spanne", e.g. HWK Rheinhessen) nor a "bis zu"
+      // qualifier (e.g. HWK Koblenz) is a fee the chamber commits to in
+      // advance — the exact amount is set by the chamber later. Pre-filling
+      // a computed midpoint/maximum would misrepresent that as a known fee,
+      // so leave the input blank in both cases; the range/qualifier is still
+      // shown as a hint via buildExamLabel()'s tooltip.
+      g.examFee = (hasMax || qualifier) ? null : totalFee;
       g.examFeeMin = totalMin;
       g.examFeeMax = hasMax ? totalMax : null;
       g.qualifier = qualifier;
@@ -284,7 +290,8 @@ function buildExamLabel(g) {
     label += ' <span class="fee-info-wrap-calc"><small style="color:var(--text-lt)">' + span + '</small><button class="fee-info-btn-calc" type="button" data-tooltip="' + tt + '">i</button></span>';
   } else if (g.qualifier) {
     const tt2 = "Die Prüfungsgebühr je Teil entstammt dem offiziellen Gebührenverzeichnis. Dies ist die Gebühr, die maximal erhoben werden kann. Häufig ist die Prüfungsgebühr tatsächlich niedriger. Erkundige dich gerne bei der jeweiligen Kammer.";
-    label += ' <span class="fee-info-wrap-calc"><small style="color:var(--text-lt)">' + g.qualifier + '</small><button class="fee-info-btn-calc" type="button" data-tooltip="' + tt2 + '">i</button></span>';
+    const qualifierAmount = Math.round(g.examFeeMin).toLocaleString("de-DE") + " €";
+    label += ' <span class="fee-info-wrap-calc"><small style="color:var(--text-lt)">' + g.qualifier + " " + qualifierAmount + '</small><button class="fee-info-btn-calc" type="button" data-tooltip="' + tt2 + '">i</button></span>';
   } else if (g.examFee && currentCid && HESSEN_CHAMBERS.has(currentCid)) {
     label += ' <button class="fee-info-btn-calc" type="button" data-tooltip="' + TOOLTIP_HESSEN + '">i</button>';
   }

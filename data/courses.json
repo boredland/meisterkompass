@@ -5527,10 +5527,10 @@
     "course_fee_display": "—",
     "exam_fee_scraped": null,
     "exam_fee": {
-      "fee": null,
+      "fee": 400.0,
       "fee_max": null,
       "qualifier": "",
-      "display": ""
+      "display": "400 €"
     },
     "city": "Kaiserslautern",
     "street": "Am Altenhof 15",
@@ -6236,10 +6236,10 @@
     "course_fee_display": "—",
     "exam_fee_scraped": null,
     "exam_fee": {
-      "fee": null,
+      "fee": 1200.0,
       "fee_max": null,
       "qualifier": "",
-      "display": ""
+      "display": "1.200 €"
     },
     "city": "Kaiserslautern",
     "street": "Am Altenhof 15",
@@ -6270,10 +6270,10 @@
     "course_fee_display": "—",
     "exam_fee_scraped": null,
     "exam_fee": {
-      "fee": null,
+      "fee": 1200.0,
       "fee_max": null,
       "qualifier": "",
-      "display": ""
+      "display": "1.200 €"
     },
     "city": "Kaiserslautern",
     "street": "Am Altenhof 15",
@@ -6304,10 +6304,10 @@
     "course_fee_display": "—",
     "exam_fee_scraped": null,
     "exam_fee": {
-      "fee": null,
+      "fee": 1200.0,
       "fee_max": null,
       "qualifier": "",
-      "display": ""
+      "display": "1.200 €"
     },
     "city": "Kaiserslautern",
     "street": "Am Altenhof 15",
@@ -6338,10 +6338,10 @@
     "course_fee_display": "—",
     "exam_fee_scraped": null,
     "exam_fee": {
-      "fee": null,
+      "fee": 1200.0,
       "fee_max": null,
       "qualifier": "",
-      "display": ""
+      "display": "1.200 €"
     },
     "city": "Kaiserslautern",
     "street": "Am Altenhof 15",
@@ -6372,10 +6372,10 @@
     "course_fee_display": "—",
     "exam_fee_scraped": null,
     "exam_fee": {
-      "fee": null,
+      "fee": 1200.0,
       "fee_max": null,
       "qualifier": "",
-      "display": ""
+      "display": "1.200 €"
     },
     "city": "Kaiserslautern",
     "street": "Am Altenhof 15",
@@ -6406,10 +6406,10 @@
     "course_fee_display": "—",
     "exam_fee_scraped": null,
     "exam_fee": {
-      "fee": null,
+      "fee": 1200.0,
       "fee_max": null,
       "qualifier": "",
-      "display": ""
+      "display": "1.200 €"
     },
     "city": "Kaiserslautern",
     "street": "Am Altenhof 15",

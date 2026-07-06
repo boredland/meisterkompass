@@ -1,9 +1,6 @@
 """
 scrapers/base.py
 
-Django-free scraper base. Each concrete scraper implements ``fetch_raw_courses``
-and returns plain ``RawCourseOffer`` dataclasses; the pipeline serialises them
-to JSON. No database, no ORM.
 """
 
 import logging
@@ -163,9 +160,28 @@ class BaseScraper(ABC):
         Replaces the (previously duplicated) HWK Trier / HWK Pfalz
         ``_save_courses`` overrides. Any scraper that sets ``exam_fee_scraped``
         on its offers now contributes scraped exam fees automatically.
+
+        Offers are processed broadest-combo-first, most-specific-last. This
+        matters because ``build_exam_fee_lookup`` keys purely on
+        ``(chamber_slug, trade_slug, part)`` and does last-write-wins on
+        collision — it has no notion of "this row came from a combo course".
+        If a chamber offers both single-part courses (e.g. Teil I on its own,
+        with its own exam fee) and a Vollzeit combo bundling several parts
+        together (with one combined exam fee), and the combo happens to be
+        iterated after the single-part offers, the combo's fee would silently
+        overwrite the correct single-part fee for every part it touches.
+
+        Concretely: HWK Saarland's Elektrotechniker Teil I costs 990 €, but
+        its Vollzeit combo (Teile I+II+III+IV) has a combined exam fee of
+        1.790 €. Without this ordering, TRADE_PAGES iteration order caused
+        the combo row to land last and overwrite Teil I's 990 € with 1.790 €
+        for every part — so selecting just "Teil I" in the AFBG-Rechner would
+        show the full combo's fee instead of the single-part fee. Sorting by
+        descending part count ensures single-part (more specific) rows are
+        always written last and therefore win.
         """
         rows: list[dict] = []
-        for raw in offers:
+        for raw in sorted(offers, key=lambda o: -len(o.parts)):
             if raw.exam_fee_scraped is None:
                 continue
             trade_slug, _ = normalize_trade(raw.trade_name)
