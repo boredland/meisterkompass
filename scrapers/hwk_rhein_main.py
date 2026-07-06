@@ -206,7 +206,6 @@ class HwkRheinMainScraper(BaseScraper):
         order: list[tuple[str, str, str]] = []
 
         # Find individual structural blocks or rows containing course items
-        # Typically structured as rows, tables, or generic paragraphs with Lehrgangsort
         paragraphs = container.find_all(["p", "div", "tr"])
         
         current_ort = None
@@ -214,11 +213,11 @@ class HwkRheinMainScraper(BaseScraper):
         
         for elem in paragraphs:
             text = re.sub(r"\s+", " ", elem.get_text(separator=" ", strip=True))
+            text_lower = text.lower()  # <-- FIXED: Defined text_lower here
             
             ort_m = ORT_RE.search(text)
             if ort_m:
                 current_ort = ort_m.group("ort").strip()
-                # Try to clean up tail end if elements are packed together
                 if "Zeiten:" in current_ort:
                     current_ort = current_ort.split("Zeiten:")[0].strip()
 
@@ -238,6 +237,14 @@ class HwkRheinMainScraper(BaseScraper):
                 except ValueError:
                     pass
 
+                # --- Check availability ---
+                if "ausgebucht" in text_lower:
+                    availability_status = "fully_booked"
+                elif "warteliste" in text_lower:
+                    availability_status = "waiting_list"
+                else:
+                    availability_status = "available"
+
                 key = (current_ort, start_raw, end_raw)
                 fee = parse_price(fee_m.group("fee"))
                 
@@ -245,11 +252,17 @@ class HwkRheinMainScraper(BaseScraper):
                 anmeldegebuehr = amb_m.group("anmeldegebuehr") if amb_m else None
 
                 if key not in groups:
-                    groups[key] = {"fee": fee, "anmeldegebuehr": anmeldegebuehr}
+                    groups[key] = {
+                        "fee": fee, 
+                        "anmeldegebuehr": anmeldegebuehr, 
+                        "availability": availability_status
+                    }
                     order.append(key)
-                elif fee is not None and (groups[key]["fee"] is None or fee > groups[key]["fee"]):
-                    groups[key]["fee"] = fee
-                    groups[key]["anmeldegebuehr"] = anmeldegebuehr
+                else:
+                    if fee is not None and (groups[key]["fee"] is None or fee > groups[key]["fee"]):
+                        groups[key]["fee"] = fee
+                        groups[key]["anmeldegebuehr"] = anmeldegebuehr
+                    groups[key]["availability"] = availability_status
 
         offers: list[RawCourseOffer] = []
         for key in order:
@@ -269,7 +282,7 @@ class HwkRheinMainScraper(BaseScraper):
                 street=loc["street"],
                 zip_code=loc["zip_code"],
                 exam_fee_scraped=None,
-                availability="unknown",
+                availability=groups[key]["availability"],
                 source_url=url,
                 scraped_raw={
                     "h1": title, "lehrgangsort": ort,
@@ -280,7 +293,16 @@ class HwkRheinMainScraper(BaseScraper):
         if not offers:
             # Fallback out to general page text if no dated blocks match active conditions
             page_text = container.get_text(separator=" ")
+            page_text_lower = page_text.lower()  # <-- FIXED: Defined page_text_lower here
             fee_m = KURSGEBUEHR_RE.search(page_text)
+
+            # --- Check status for fallback blocks ---
+            fallback_availability = "available"
+            if "ausgebucht" in page_text_lower:
+                fallback_availability = "fully_booked"
+            elif "warteliste" in page_text_lower:
+                fallback_availability = "waiting_list"
+
             if fee_m:
                 course_fee = float(fee_m.group(1).replace(".", "") + "." + fee_m.group(2))
                 loc = parse_location(current_ort) if current_ort else DEFAULT_LOCATION
@@ -289,7 +311,9 @@ class HwkRheinMainScraper(BaseScraper):
                     format_key=format_key, teaching_mode=teaching_mode,
                     start_date=None, end_date=None, duration_hours=None,
                     course_fee=course_fee, city=loc["city"], street=loc["street"], zip_code=loc["zip_code"],
-                    exam_fee_scraped=None, availability="unknown", source_url=url,
+                    exam_fee_scraped=None,
+                    availability=fallback_availability,  # <-- FIXED: Used the dynamic string instead of "unknown"
+                    source_url=url,
                     scraped_raw={"h1": title, "note": "Termine vergangen oder nicht verfügbar", "course_fee": course_fee},
                 ))
         return offers
