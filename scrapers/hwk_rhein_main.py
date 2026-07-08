@@ -56,6 +56,16 @@ FORMAT_KEYWORDS = {
     "sprinter": "part_time",
 }
 
+# Shared vocabulary used by every scraper + web/src/render.js's availabilityBadge():
+# "available" | "waitlist" | "full" | "unknown". Do NOT invent new values here —
+# anything else renders as a blank badge on the site.
+def _detect_availability(text_lower: str) -> str:
+    if "ausgebucht" in text_lower:
+        return "full"
+    if "warteliste" in text_lower:
+        return "waitlist"
+    return "available"
+
 
 def parse_parts(raw: str) -> list[int]:
     raw = raw.strip().upper()
@@ -178,25 +188,62 @@ class HwkRheinMainScraper(BaseScraper):
 
         # Detect structural tabs / multi-module divs
         tab_containers = soup.find_all("div", class_="tab-pane")
-        
+
         if tab_containers:
             offers: list[RawCourseOffer] = []
-            for container in tab_containers:
-                tab_id = container.get("id", "")
-                # Find matching link for label to determine part variations
-                tab_link = soup.find("a", href=f"#{tab_id}")
-                tab_label = tab_link.get_text(strip=True) if tab_link else ""
-                
+            for container, tab_label in self._pair_tab_labels(soup, tab_containers):
                 tab_m = MODULE_TAB_LABEL_RE.search(tab_label)
                 tab_parts = parse_parts(tab_m.group("parts")) if tab_m else parts
-                
+                if not tab_parts:
+                    tab_parts = parts
+
                 t_name = None if set(tab_parts) <= {3, 4} else trade_name
                 t_title = build_course_title(t_name, tab_parts)
-                
+
                 offers.extend(self._parse_container_termine(container, url, t_name, tab_parts, t_title, format_key, teaching_mode))
             return offers
 
         return self._parse_container_termine(soup, url, trade_name, parts, title, format_key, teaching_mode)
+
+    def _pair_tab_labels(self, soup: BeautifulSoup, tab_containers: list) -> list[tuple]:
+        """
+        Return ``[(container, label_text), ...]`` pairing each tab-pane with its
+        "Modul wählen" label (e.g. "Termine Teile I - IV", "Termine Teile I + II").
+
+        Some course pages (e.g. the "Zweirad" Meisterkurs, which offers a choice
+        between "Teile I - IV" and "Teile I + II" with different dates/fees) render
+        the module-selector links as plain ``href="#"`` anchors with no id linking
+        them to their ``div.tab-pane`` — so a plain ``soup.find("a",
+        href=f"#{tab_id}")`` lookup silently fails and every module falls back to
+        the same (wrong, page-title-derived) parts. When that href-based lookup
+        can't resolve a label for a given container, fall back to pairing tab
+        containers with "Termine Teile ..." labels positionally, in document
+        order — the two lists have matching length and order for every course
+        page seen so far.
+        """
+        # Collect every "Termine Teile ..." label on the page, in document order,
+        # deduplicated. Scanned via get_text() rather than raw NavigableStrings
+        # so labels split across nested tags (e.g. a bold span inside a link)
+        # are still picked up whole.
+        all_labels: list[str] = []
+        seen_labels: set[str] = set()
+        for tag in soup.find_all(["a", "strong", "b", "td", "th"]):
+            text = tag.get_text(strip=True)
+            if MODULE_TAB_LABEL_RE.search(text) and text not in seen_labels:
+                seen_labels.add(text)
+                all_labels.append(text)
+
+        pairs: list[tuple] = []
+        for i, container in enumerate(tab_containers):
+            tab_id = container.get("id", "")
+            tab_link = soup.find("a", href=f"#{tab_id}") if tab_id else None
+            label = tab_link.get_text(strip=True) if tab_link else ""
+
+            if not MODULE_TAB_LABEL_RE.search(label) and i < len(all_labels):
+                label = all_labels[i]
+
+            pairs.append((container, label))
+        return pairs
 
     def _parse_container_termine(
         self, container: BeautifulSoup, url: str, trade_name: str | None, parts: list[int],
@@ -206,18 +253,20 @@ class HwkRheinMainScraper(BaseScraper):
         order: list[tuple[str, str, str]] = []
 
         # Find individual structural blocks or rows containing course items
+        # Typically structured as rows, tables, or generic paragraphs with Lehrgangsort
         paragraphs = container.find_all(["p", "div", "tr"])
-        
+
         current_ort = None
         current_dates = None
-        
+
         for elem in paragraphs:
             text = re.sub(r"\s+", " ", elem.get_text(separator=" ", strip=True))
-            text_lower = text.lower()  # <-- FIXED: Defined text_lower here
-            
+            text_lower = text.lower()
+
             ort_m = ORT_RE.search(text)
             if ort_m:
                 current_ort = ort_m.group("ort").strip()
+                # Try to clean up tail end if elements are packed together
                 if "Zeiten:" in current_ort:
                     current_ort = current_ort.split("Zeiten:")[0].strip()
 
@@ -228,7 +277,7 @@ class HwkRheinMainScraper(BaseScraper):
             fee_m = GEBUEHR_RE.search(text)
             if fee_m and current_ort and current_dates:
                 start_raw, end_raw = current_dates
-                
+
                 # Check expiration date right here:
                 try:
                     start_dt = datetime.strptime(start_raw, "%d.%m.%Y")
@@ -237,37 +286,45 @@ class HwkRheinMainScraper(BaseScraper):
                 except ValueError:
                     pass
 
-                # --- Check availability ---
-                if "ausgebucht" in text_lower:
-                    availability_status = "fully_booked"
-                elif "warteliste" in text_lower:
-                    availability_status = "waiting_list"
-                else:
-                    availability_status = "available"
+                availability = _detect_availability(text_lower)
 
                 key = (current_ort, start_raw, end_raw)
                 fee = parse_price(fee_m.group("fee"))
-                
+
                 amb_m = ANMELDEGEBUEHR_RE.search(text)
                 anmeldegebuehr = amb_m.group("anmeldegebuehr") if amb_m else None
 
                 if key not in groups:
                     groups[key] = {
-                        "fee": fee, 
-                        "anmeldegebuehr": anmeldegebuehr, 
-                        "availability": availability_status
+                        "fee": fee,
+                        "anmeldegebuehr": anmeldegebuehr,
+                        "availability": availability,
                     }
                     order.append(key)
                 else:
                     if fee is not None and (groups[key]["fee"] is None or fee > groups[key]["fee"]):
                         groups[key]["fee"] = fee
                         groups[key]["anmeldegebuehr"] = anmeldegebuehr
-                    groups[key]["availability"] = availability_status
+                    groups[key]["availability"] = availability
+
+        # Per-module fallback: a run's inline "Gebühr:" sometimes reads
+        # "Kostenlos" even though the module has a real total fee shown in its
+        # own "Kursgebühr" (BAföG-Rechner) figure elsewhere in this same
+        # container — use that as the fee for any run left without one, rather
+        # than reporting the module as free.
+        container_fee_m = KURSGEBUEHR_RE.search(container.get_text(separator=" "))
+        container_fee = (
+            float(container_fee_m.group(1).replace(".", "") + "." + container_fee_m.group(2))
+            if container_fee_m else None
+        )
 
         offers: list[RawCourseOffer] = []
         for key in order:
             ort, start_raw, end_raw = key
             loc = parse_location(ort)
+            fee = groups[key]["fee"]
+            if fee is None and container_fee is not None:
+                fee = container_fee
             offers.append(RawCourseOffer(
                 title=title,
                 trade_name=trade_name,
@@ -277,7 +334,7 @@ class HwkRheinMainScraper(BaseScraper):
                 start_date=fmt_date(start_raw),
                 end_date=fmt_date(end_raw),
                 duration_hours=None,
-                course_fee=groups[key]["fee"],
+                course_fee=fee,
                 city=loc["city"],
                 street=loc["street"],
                 zip_code=loc["zip_code"],
@@ -293,16 +350,8 @@ class HwkRheinMainScraper(BaseScraper):
         if not offers:
             # Fallback out to general page text if no dated blocks match active conditions
             page_text = container.get_text(separator=" ")
-            page_text_lower = page_text.lower()  # <-- FIXED: Defined page_text_lower here
             fee_m = KURSGEBUEHR_RE.search(page_text)
-
-            # --- Check status for fallback blocks ---
-            fallback_availability = "available"
-            if "ausgebucht" in page_text_lower:
-                fallback_availability = "fully_booked"
-            elif "warteliste" in page_text_lower:
-                fallback_availability = "waiting_list"
-
+            fallback_availability = _detect_availability(page_text.lower())
             if fee_m:
                 course_fee = float(fee_m.group(1).replace(".", "") + "." + fee_m.group(2))
                 loc = parse_location(current_ort) if current_ort else DEFAULT_LOCATION
@@ -311,9 +360,7 @@ class HwkRheinMainScraper(BaseScraper):
                     format_key=format_key, teaching_mode=teaching_mode,
                     start_date=None, end_date=None, duration_hours=None,
                     course_fee=course_fee, city=loc["city"], street=loc["street"], zip_code=loc["zip_code"],
-                    exam_fee_scraped=None,
-                    availability=fallback_availability,  # <-- FIXED: Used the dynamic string instead of "unknown"
-                    source_url=url,
+                    exam_fee_scraped=None, availability=fallback_availability, source_url=url,
                     scraped_raw={"h1": title, "note": "Termine vergangen oder nicht verfügbar", "course_fee": course_fee},
                 ))
         return offers
