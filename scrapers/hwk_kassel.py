@@ -14,8 +14,8 @@ Providers (verified 2026-07-09):
   - BZ Bildungszentrum Kassel GmbH   — bz-kassel.de            [IMPLEMENTED]
   - Berufsbildungszentrum Marburg    — bbz-marburg.de          [IMPLEMENTED]
   - Bubiza (Zimmerer/Ausbau)         — bubiza.de               [IMPLEMENTED]
+  - BBZ Mitte GmbH                   — bbz-mitte.de            [IMPLEMENTED]
   - FTZ / Innung Kfz-Gewerbe Kassel  — kfz-innung-kassel.de    [BLOCKED: info page only]
-  - BBZ Mitte GmbH                   — bbz-mitte.de            [BLOCKED: JS-rendered]
   - Kreishandwerkerschaft Waldeck-Frankenberg — khkb.de        [BLOCKED: PDF-only]
   - Holzfachschule Bad Wildungen     — holzfachschule.de       [BLOCKED: JS/JSF]
   - Beratungsstelle Handwerk u. Denkmalpflege — denkmalpflegeberatung.de
@@ -57,6 +57,24 @@ Berufsbildungszentrum Marburg GmbH (bbz-marburg.de):
     "DD.MM.YYYY - DD.MM.YYYY" ranges; a course with no currently scheduled
     run yields a single dateless (start_date=None) offer so its price still
     appears in comparisons, mirroring the HWK Rheinhessen fallback pattern.
+
+BBZ Mitte GmbH (bbz-mitte.de):
+  - Neos/Flow CMS. Its /de/kursfinder listing renders results client-side,
+    but the underlying AJAX endpoint /de/seminar-navigator/search-results
+    returns them server-side as a static HTML fragment (one
+    <div.seminar-list-entry> per course). Results are scoped by the repeated
+    ``c[]`` category param (c[]=600 → "Meisterschule") and paginated via
+    ``seite=N``, with an ``a.aw-load-more-link`` present while another page
+    exists — so no headless browser is needed.
+  - Filtering: the Meisterschule category still bundles in IHK
+    Industriemeister courses and "Infoabend" info evenings; both are dropped
+    (Industriemeister is out of scope as on BBZ Marburg; Infoabende are not
+    courses). A remaining course is kept only if its title/run-headings yield
+    at least one Meisterprüfung part.
+  - Each course detail page lists one or more scheduled runs as
+    <div.seminar-date> boxes, each carrying its own date range, price
+    ("… €"), Unterrichtsform and "(NNN UE)" hours; one RawCourseOffer is
+    emitted per run, mirroring the BBZ Marburg multi-run pattern.
 
 Exam fees:
   HWK Kassel publishes one fee schedule per Meisterprüfung part that is
@@ -350,6 +368,73 @@ def parse_format_from_text(text: str) -> str:
     return positions[min(positions)] if positions else "part_time"
 
 
+# ----------------------------------------------------------------------
+# BBZ Mitte GmbH
+# ----------------------------------------------------------------------
+
+BBZM_BASE = "https://www.bbz-mitte.de"
+# /de/kursfinder renders its result list client-side (invisible to
+# BeautifulSoup), but its underlying AJAX endpoint returns the exact same
+# results server-side as a static HTML fragment: one <div.seminar-list-entry>
+# per course. Results are scoped by the repeated ``c[]`` category param and
+# paginated via ``seite=N``; a "mehr laden" link (a.aw-load-more-link) is
+# emitted while another page exists. c[]=600 is the "Meisterschule" category
+# (confirmed 2026-07-09). Filter category, not keyword: it already excludes
+# the unrelated Fachkurse the site offers.
+BBZM_SEARCH_URL       = f"{BBZM_BASE}/de/seminar-navigator/search-results"
+BBZM_MEISTER_CATEGORY = 600
+
+BBZM_DEFAULT_STREET = "Goerdelerstraße 139"
+BBZM_DEFAULT_ZIP     = "36100"
+BBZM_DEFAULT_CITY    = "Petersberg"
+
+# Map a course title to a canonical trade name (aligned to data/trades.json
+# slugs); ordered, first match wins. Generic Teil III/IV courses ("... für
+# alle Gewerke im Handwerk") carry no trade and resolve to the shared generic
+# trade. BBZ Mitte's Meisterschule catalogue only covers these four trades;
+# extend this list as new trades appear.
+BBZM_TRADE_PATTERNS: list[tuple[re.Pattern, str]] = [
+    (re.compile(r"elektrotechnik", re.IGNORECASE),                            "Elektrotechniker"),
+    (re.compile(r"kfz|kraftfahrzeug", re.IGNORECASE),                         "Kfz.-Techniker"),
+    (re.compile(r"land-?\s*und\s*baumaschinen|landmaschinen", re.IGNORECASE), "Land- und Baumaschinenmechatroniker"),
+    (re.compile(r"tischler|schreiner", re.IGNORECASE),                        "Tischler"),
+]
+
+# Unterrichtsstunden appear only as "(530 UE)" inside a run heading / Zeiten
+# text — a bare parse_int() would wrongly grab the "08" from an "08:00" time.
+BBZM_UE_RE = re.compile(r"(\d+)\s*UE")
+
+
+def extract_bbzm_trade(title: str, parts: list[int]) -> str | None:
+    """
+    Resolve a BBZ Mitte course title to a canonical trade name, or None for
+    generic Teil III/IV-only courses (which resolve to the shared generic
+    trade downstream). See BBZM_TRADE_PATTERNS.
+    """
+    if set(parts) <= {3, 4}:
+        return None
+    for pattern, name in BBZM_TRADE_PATTERNS:
+        if pattern.search(title):
+            return name
+    return None
+
+
+def parse_bbzm_format(text: str) -> str:
+    """
+    BBZ Mitte labels runs "Vollzeit" / "Berufsbegleitend" (there is no
+    "Teilzeit" wording); anything berufsbegleitend/weekend is part-time.
+    """
+    lower = text.lower()
+    if "vollzeit" in lower:
+        return "full_time"
+    return "part_time"
+
+
+def parse_bbzm_hours(text: str) -> int | None:
+    m = BBZM_UE_RE.search(text)
+    return int(m.group(1)) if m else None
+
+
 class HwkKasselScraper(BaseScraper):
     chamber_slug    = "hwk-kassel"
     chamber_name    = "Handwerkskammer Kassel"
@@ -392,14 +477,20 @@ class HwkKasselScraper(BaseScraper):
         except Exception:
             logger.exception("HWK Kassel/Bubiza: provider failed — skipping.")
 
+        # ---- Provider: BBZ Mitte GmbH ---------------------------------
+        try:
+            bbzm_offers = self._fetch_bbz_mitte()
+            logger.info("HWK Kassel/BBZ Mitte: %d course offers.", len(bbzm_offers))
+            offers.extend(bbzm_offers)
+        except Exception:
+            logger.exception("HWK Kassel/BBZ Mitte: provider failed — skipping.")
+
         # ---- Remaining providers: not yet implemented -----------------
         # Each should follow the same pattern: its own _fetch_<provider>()
         # method, wrapped in try/except here, contributing RawCourseOffers
         # to the same `offers` list.
         #   FTZ / Innung Kfz-Gewerbe Kassel — www.kfz-innung-kassel.de
         #     (info page only — no structured course listing; blocked)
-        #   BBZ Mitte GmbH               — www.bbz-mitte.de
-        #     (JS-rendered kursfinder; blocked on raw HTML / API endpoint)
         #   Kreishandwerkerschaft Waldeck-Frankenberg — www.khkb.de
         #     (Meistervorbereitungslehrgänge only via PDF; blocked)
         #   Holzfachschule Bad Wildungen — www.holzfachschule.de
@@ -926,3 +1017,175 @@ class HwkKasselScraper(BaseScraper):
         ):
             found.add(ROMAN[m.group(1).upper()])
         return sorted(found) or [1, 2]
+
+    # ------------------------------------------------------------------
+    # BBZ Mitte GmbH
+    # ------------------------------------------------------------------
+
+    def _fetch_bbz_mitte(self) -> list[RawCourseOffer]:
+        listings = self._collect_bbzm_listings()
+        logger.info("BBZ Mitte: %d Meisterkurs listing(s) found.", len(listings))
+
+        offers: list[RawCourseOffer] = []
+        for listing in listings:
+            try:
+                offers.extend(self._parse_bbzm_offer(listing))
+            except Exception as exc:
+                logger.warning("BBZ Mitte: error parsing %s: %s", listing["detail_url"], exc)
+        return offers
+
+    def _collect_bbzm_listings(self) -> list[dict]:
+        """
+        Page through the Meisterschule category (c[]=600) of the seminar
+        navigator's server-side result fragment, one <div.seminar-list-entry>
+        per course, following the "mehr laden" link until it disappears.
+        Industriemeister (out of scope) and Infoabend (info evenings, not
+        courses) entries are dropped here.
+        """
+        listings: list[dict] = []
+        seen_urls: set[str] = set()
+        page = 1
+        while True:
+            soup = self.parse_html(
+                BBZM_SEARCH_URL,
+                params={"c[]": BBZM_MEISTER_CATEGORY, "seite": page},
+            )
+            if soup is None:
+                logger.warning("BBZ Mitte: could not fetch result page %d", page)
+                break
+
+            entries = soup.select("div.seminar-list-entry")
+            for entry in entries:
+                listing = self._parse_bbzm_listing_entry(entry)
+                if listing is None or listing["detail_url"] in seen_urls:
+                    continue
+                seen_urls.add(listing["detail_url"])
+                listings.append(listing)
+
+            # The result fragment emits a "mehr laden" link only while a
+            # further page exists; its absence terminates pagination.
+            if not entries or soup.select_one("a.aw-load-more-link") is None:
+                break
+            page += 1
+
+        return listings
+
+    def _parse_bbzm_listing_entry(self, entry: Tag) -> dict | None:
+        heading = entry.select_one("span.heading b")
+        title = heading.get_text(strip=True) if heading else ""
+        link = entry.select_one("a.seminar-link")
+        href = link.get("href", "") if link else ""
+        if not title or not href:
+            return None
+        if not href.startswith("http"):
+            href = BBZM_BASE + href
+
+        categories = [pill.get_text(strip=True) for pill in entry.select(".categories .pill")]
+        event_type = entry.select_one("span.event-type")
+        event_text = event_type.get_text(" ", strip=True) if event_type else ""
+
+        is_infoabend = "Infoabend" in categories or title.lower().startswith("kostenloser infoabend")
+        if is_infoabend or EXCLUDE_INDUSTRIEMEISTER_RE.search(title):
+            return None
+
+        return {
+            "title":      title,
+            "detail_url": href,
+            "event_type": event_text,
+        }
+
+    def _parse_bbzm_offer(self, listing: dict) -> list[RawCourseOffer]:
+        title = listing["title"]
+
+        soup = self.parse_html(listing["detail_url"])
+        if soup is None:
+            logger.warning("BBZ Mitte: could not fetch detail page %s", listing["detail_url"])
+            return []
+
+        runs = self._parse_bbzm_run_boxes(soup)
+
+        # Parts come from the title plus every run heading — a title like
+        # "Vorbereitungslehrgang zum Tischler- / Schreinermeister(in)" states
+        # no part, but its run heading does ("… Teil I + II").
+        heading_text = " ".join(run["heading"] for run in runs)
+        parts = parse_parts_from_text(f"{title} {heading_text}")
+        if not parts:
+            logger.debug("BBZ Mitte: could not parse parts for %r", title)
+            return []
+
+        trade_name = extract_bbzm_trade(title, parts)
+
+        base = dict(
+            title=build_course_title(trade_name, parts),
+            trade_name=trade_name,
+            parts=parts,
+            teaching_mode="presence",  # BBZ Mitte Meisterkurse are all Präsenz
+            city=BBZM_DEFAULT_CITY,
+            street=BBZM_DEFAULT_STREET,
+            zip_code=BBZM_DEFAULT_ZIP,
+            exam_fee_scraped=None,  # resolved chamber-wide — see collect()
+            availability="available",  # BBZ Mitte does not publish seat counts; assume available
+            source_url=listing["detail_url"],
+        )
+
+        if not runs:
+            # No scheduled run ("Auf Anfrage") — keep a price-less, dateless
+            # offer visible for comparison, same fallback as BBZ Marburg.
+            return [RawCourseOffer(
+                **base,
+                format_key=parse_bbzm_format(f"{title} {listing['event_type']}"),
+                start_date=None, end_date=None,
+                duration_hours=None, course_fee=None,
+                scraped_raw={"title": title, "note": "Keine Termine veröffentlicht"},
+            )]
+
+        offers: list[RawCourseOffer] = []
+        for run in runs:
+            format_context = " ".join([
+                title, listing["event_type"], run["heading"], run["form"], run["zeiten"],
+            ])
+            offers.append(RawCourseOffer(
+                **base,
+                format_key=parse_bbzm_format(format_context),
+                start_date=run["start_date"],
+                end_date=run["end_date"],
+                duration_hours=parse_bbzm_hours(f"{run['heading']} {run['zeiten']}"),
+                course_fee=parse_price(run["fee"]),
+                scraped_raw={"title": title, "run_heading": run["heading"]},
+            ))
+        return offers
+
+    def _parse_bbzm_run_boxes(self, soup: BeautifulSoup) -> list[dict]:
+        """
+        Each scheduled run is a <div.seminar-date> box carrying its date range
+        (data-date + heading), a "(NNN UE)" hours hint, and labelled columns
+        for Zeiten / Unterrichtsform / Standort / Gebühr.
+        """
+        runs: list[dict] = []
+        for box in soup.select("div.seminar-date"):
+            heading_el = box.select_one(".seminar-heading")
+            heading = heading_el.get_text(" ", strip=True) if heading_el else ""
+
+            start_date, end_date = parse_date_range(box.get("data-date", "") or heading)
+
+            fields: dict[str, str] = {}
+            for col in box.select(".box-border .row > div"):
+                label = col.select_one(".text-bold")
+                if label is None:
+                    fee_el = col.select_one(".gebuehreninfo-area")
+                    if fee_el is not None:
+                        fields["fee"] = fee_el.get_text(" ", strip=True)
+                    continue
+                key = label.get_text(strip=True)
+                value = col.get_text(" ", strip=True).replace(key, "", 1).strip()
+                fields[key] = value
+
+            runs.append({
+                "heading":    heading,
+                "start_date": start_date,
+                "end_date":   end_date,
+                "fee":        fields.get("fee"),
+                "form":       fields.get("Unterrichtsform", ""),
+                "zeiten":     fields.get("Zeiten", ""),
+            })
+        return runs
