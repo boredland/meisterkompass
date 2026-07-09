@@ -68,6 +68,17 @@
     "is_generic": false
   },
   {
+    "chamber_slug": "hwk-pfalz",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "parts": [
+      3,
+      4
+    ],
+    "fee": 2300.0,
+    "exam_fee_scraped": 600.0,
+    "is_generic": true
+  },
+  {
     "chamber_slug": "hwk-saarland",
     "trade_slug": "feinwerkmechaniker",
     "parts": [
@@ -515,17 +526,6 @@
     "is_generic": false
   },
   {
-    "chamber_slug": "hwk-pfalz",
-    "trade_slug": "allgemein-teil-iii-iv",
-    "parts": [
-      3,
-      4
-    ],
-    "fee": 2300.0,
-    "exam_fee_scraped": 600.0,
-    "is_generic": true
-  },
-  {
     "chamber_slug": "hwk-koblenz",
     "trade_slug": "backer",
     "parts": [
@@ -721,6 +721,17 @@
       2
     ],
     "fee": 8650.0,
+    "exam_fee_scraped": null,
+    "is_generic": false
+  },
+  {
+    "chamber_slug": "hwk-rheinhessen",
+    "trade_slug": "elektrotechniker",
+    "parts": [
+      1,
+      2
+    ],
+    "fee": 7900.0,
     "exam_fee_scraped": null,
     "is_generic": false
   },
