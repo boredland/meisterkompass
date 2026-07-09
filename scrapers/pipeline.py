@@ -20,6 +20,7 @@ from .base import ScrapeResult, normalize_trade
 from .fees import _fmt, build_exam_fee_lookup, resolve_exam_fee
 from .geocode import Geocoder, build_query
 from .hwk_koblenz import HwkKoblenzScraper
+from .hwk_berlin import HwkBerlinScraper
 from .hwk_pfalz import HwkPfalzScraper
 from .hwk_rheinhessen import (
     HwkRheinhessenScraper,
@@ -44,6 +45,7 @@ SCRAPERS: dict[str, type] = {
     "hwk-kassel":      HwkKasselScraper,
     "hwk-rhein-main":  HwkRheinMainScraper,
     "hwk-wiesbaden":   HwkWiesbadenScraper,
+    "hwk-berlin":      HwkBerlinScraper,
 }
 
 FORMAT_DISPLAY = {

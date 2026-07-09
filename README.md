@@ -6,11 +6,12 @@ courses offered by Handwerkskammern (HWK) in Germany.
 Enables direct comparison of prices, duration, and exam fees across chambers,
 as well as calculation of AFBG (Aufstiegs-BAföG) funding.
 
-Current scope: eight chambers across three Bundesländer —
+Current scope: nine chambers across four Bundesländer —
 
 - **Hessen:** Frankfurt-Rhein-Main, Kassel, Wiesbaden
 - **Rheinland-Pfalz:** Koblenz, der Pfalz, Rheinhessen, Trier
 - **Saarland:** HWK des Saarlandes
+- **Berlin:** HWK Berlin
 
 ---
 
@@ -50,6 +51,7 @@ meisterkompass/
 │   ├── hwk_kassel.py          # HWK Kassel — multi-provider (see below)
 │   ├── hwk_rhein_main.py      # HWK Frankfurt-Rhein-Main — tabbed multi-module pages
 │   ├── hwk_wiesbaden.py       # HWK Wiesbaden
+│   ├── hwk_berlin.py          # HWK Berlin (bildung4u.de — same CMS as HWK Koblenz)
 │   ├── fees.py                # exam-fee resolution (scraped + manual overlay, combo-bundle keys)
 │   ├── geocode.py             # Photon geocoder + committed cache
 │   ├── pipeline.py            # scrape → merge → geocode → resolve → split → write JSON
@@ -236,18 +238,17 @@ has since been removed entirely.
 
 ### Planned
 - [ ] Berufenet links per trade (field already in the model)
-- [ ] Nationwide expansion — add the remaining German Handwerkskammern (45 of 53)
+- [ ] Nationwide expansion — add the remaining German Handwerkskammern (44 of 53)
 
 #### Remaining Handwerkskammern by Bundesland
 
 > Covered: Hessen (Frankfurt-Rhein-Main, Kassel, Wiesbaden) · RLP (Koblenz, Trier,
-> Pfalz, Rheinhessen) · Saarland.
+> Pfalz, Rheinhessen) · Saarland · Berlin.
 
 - **Baden-Württemberg:** Freiburg · Heilbronn-Franken · Karlsruhe · Konstanz · Mannheim
   Rhein-Neckar-Odenwald · Reutlingen · Region Stuttgart · Ulm
 - **Bayern:** München und Oberbayern · Niederbayern-Oberpfalz · Oberfranken ·
   Mittelfranken · Unterfranken · Schwaben
-- **Berlin:** Berlin
 - **Brandenburg:** Cottbus · Frankfurt (Oder) / Ostbrandenburg · Potsdam
 - **Bremen:** Bremen
 - **Hamburg:** Hamburg
