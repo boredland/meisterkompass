@@ -9,6 +9,9 @@ const repoRoot = resolve(__dirname, "..");
 // project site (user.github.io/<repo>/) set VITE_BASE=/<repo>/ in CI.
 const base = process.env.VITE_BASE || "/";
 
+const readChambers = () =>
+  JSON.parse(readFileSync(resolve(repoRoot, "data/chambers.json"), "utf8"));
+
 // Pre-render the default Kursfinder table into index.html at build time (SSG):
 // instant first paint, crawlable content, works without JS. The runtime JS
 // re-renders idempotently on load using the same render.js module.
@@ -30,6 +33,27 @@ function prerenderList() {
         .replace('id="count-courses">0<', `id="count-courses">${filtered.length}<`)
         .replace('id="count-chambers">0<', `id="count-chambers">${chambers}<`)
         .replace('id="results-count">0<', `id="results-count">${filtered.length}<`);
+    },
+  };
+}
+
+// Pre-render the "Über MeisterKompass" coverage into about.html at build time:
+// the chamber <ul>, the intro prose, and the SEO meta descriptions are all
+// derived from data/chambers.json so none of them drift as chambers are added.
+// The page ships no runtime script beyond nav, so this is pure SSG (no hydrate).
+function prerenderAbout() {
+  return {
+    name: "prerender-about",
+    async transformIndexHtml(html, ctx) {
+      if (!ctx.filename.replace(/\\/g, "/").endsWith("/about.html")) return html;
+      const { coverageChambersHtml, regionsPhrase } = await import("./src/render.js");
+      const chambers = readChambers();
+      return html
+        .replace(
+          '<ul id="coverage-chambers"><!-- built at build time from data/chambers.json (vite prerender) --></ul>',
+          `<ul id="coverage-chambers">${coverageChambersHtml(chambers)}</ul>`,
+        )
+        .replaceAll("{{REGIONS}}", regionsPhrase(chambers));
     },
   };
 }
@@ -65,7 +89,7 @@ function trimmedCourses() {
 export default defineConfig({
   root: __dirname,
   base,
-  plugins: [prerenderList(), trimmedCourses()],
+  plugins: [prerenderList(), prerenderAbout(), trimmedCourses()],
   resolve: {
     alias: { "@data": resolve(repoRoot, "data") },
   },
