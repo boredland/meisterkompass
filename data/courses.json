@@ -7300,9 +7300,12 @@
     "chamber_region": "Hessen",
     "trade_slug": "backer",
     "trade_name": "Bäcker",
-    "title": "Bäcker (Teil I)",
+    "title": "Bäcker (Teile I + II + III + IV)",
     "parts": [
-      1
+      1,
+      2,
+      3,
+      4
     ],
     "format": "full_time",
     "format_display": "Vollzeit",
@@ -7310,14 +7313,14 @@
     "start_date": "2026-09-07",
     "end_date": "2026-11-26",
     "duration_hours": null,
-    "course_fee": 750.0,
-    "course_fee_display": "750 €",
+    "course_fee": 4500.0,
+    "course_fee_display": "4.500 €",
     "exam_fee_scraped": null,
     "exam_fee": {
-      "fee": 420.0,
+      "fee": 820.0,
       "fee_max": null,
       "qualifier": "",
-      "display": "420 €"
+      "display": "820 €"
     },
     "city": "Weiterstadt",
     "street": "Rudolf-Diesel-Straße 30",
@@ -7333,9 +7336,12 @@
     "chamber_region": "Hessen",
     "trade_slug": "backer",
     "trade_name": "Bäcker",
-    "title": "Bäcker (Teil I)",
+    "title": "Bäcker (Teile I + II + III + IV)",
     "parts": [
-      1
+      1,
+      2,
+      3,
+      4
     ],
     "format": "full_time",
     "format_display": "Vollzeit",
@@ -7343,14 +7349,14 @@
     "start_date": "2027-01-04",
     "end_date": "2027-03-25",
     "duration_hours": null,
-    "course_fee": 750.0,
-    "course_fee_display": "750 €",
+    "course_fee": 4990.0,
+    "course_fee_display": "4.990 €",
     "exam_fee_scraped": null,
     "exam_fee": {
-      "fee": 420.0,
+      "fee": 820.0,
       "fee_max": null,
       "qualifier": "",
-      "display": "420 €"
+      "display": "820 €"
     },
     "city": "Weiterstadt",
     "street": "Rudolf-Diesel-Straße 30",
@@ -7366,9 +7372,12 @@
     "chamber_region": "Hessen",
     "trade_slug": "backer",
     "trade_name": "Bäcker",
-    "title": "Bäcker (Teil I)",
+    "title": "Bäcker (Teile I + II + III + IV)",
     "parts": [
-      1
+      1,
+      2,
+      3,
+      4
     ],
     "format": "full_time",
     "format_display": "Vollzeit",
@@ -7376,14 +7385,14 @@
     "start_date": "2027-09-06",
     "end_date": "2027-11-25",
     "duration_hours": null,
-    "course_fee": 750.0,
-    "course_fee_display": "750 €",
+    "course_fee": 4990.0,
+    "course_fee_display": "4.990 €",
     "exam_fee_scraped": null,
     "exam_fee": {
-      "fee": 420.0,
+      "fee": 820.0,
       "fee_max": null,
       "qualifier": "",
-      "display": "420 €"
+      "display": "820 €"
     },
     "city": "Weiterstadt",
     "street": "Rudolf-Diesel-Straße 30",
@@ -7535,9 +7544,12 @@
     "chamber_region": "Hessen",
     "trade_slug": "fleischer",
     "trade_name": "Fleischer",
-    "title": "Fleischer (Teil I)",
+    "title": "Fleischer (Teile I + II + III + IV)",
     "parts": [
-      1
+      1,
+      2,
+      3,
+      4
     ],
     "format": "full_time",
     "format_display": "Vollzeit",
@@ -7545,14 +7557,14 @@
     "start_date": "2026-09-07",
     "end_date": "2026-11-26",
     "duration_hours": null,
-    "course_fee": 1500.0,
-    "course_fee_display": "1.500 €",
+    "course_fee": 4700.0,
+    "course_fee_display": "4.700 €",
     "exam_fee_scraped": null,
     "exam_fee": {
-      "fee": 420.0,
+      "fee": 820.0,
       "fee_max": null,
       "qualifier": "",
-      "display": "420 €"
+      "display": "820 €"
     },
     "city": "Weiterstadt",
     "street": "Rudolf-Diesel-Straße 30",
@@ -7568,9 +7580,12 @@
     "chamber_region": "Hessen",
     "trade_slug": "fleischer",
     "trade_name": "Fleischer",
-    "title": "Fleischer (Teil I)",
+    "title": "Fleischer (Teile I + II + III + IV)",
     "parts": [
-      1
+      1,
+      2,
+      3,
+      4
     ],
     "format": "full_time",
     "format_display": "Vollzeit",
@@ -7578,14 +7593,14 @@
     "start_date": "2027-01-04",
     "end_date": "2027-03-25",
     "duration_hours": null,
-    "course_fee": 1500.0,
-    "course_fee_display": "1.500 €",
+    "course_fee": 4990.0,
+    "course_fee_display": "4.990 €",
     "exam_fee_scraped": null,
     "exam_fee": {
-      "fee": 420.0,
+      "fee": 820.0,
       "fee_max": null,
       "qualifier": "",
-      "display": "420 €"
+      "display": "820 €"
     },
     "city": "Weiterstadt",
     "street": "Rudolf-Diesel-Straße 30",
@@ -7601,9 +7616,12 @@
     "chamber_region": "Hessen",
     "trade_slug": "fleischer",
     "trade_name": "Fleischer",
-    "title": "Fleischer (Teil I)",
+    "title": "Fleischer (Teile I + II + III + IV)",
     "parts": [
-      1
+      1,
+      2,
+      3,
+      4
     ],
     "format": "full_time",
     "format_display": "Vollzeit",
@@ -7611,14 +7629,14 @@
     "start_date": "2027-09-07",
     "end_date": "2027-11-26",
     "duration_hours": null,
-    "course_fee": 1500.0,
-    "course_fee_display": "1.500 €",
+    "course_fee": 4990.0,
+    "course_fee_display": "4.990 €",
     "exam_fee_scraped": null,
     "exam_fee": {
-      "fee": 420.0,
+      "fee": 820.0,
       "fee_max": null,
       "qualifier": "",
-      "display": "420 €"
+      "display": "820 €"
     },
     "city": "Weiterstadt",
     "street": "Rudolf-Diesel-Straße 30",
@@ -8029,6 +8047,39 @@
     "longitude": 8.6137976,
     "availability": "available",
     "source_url": "https://portal.hwk-rhein-main.de/seminar/ml-99sp/"
+  },
+  {
+    "chamber_slug": "hwk-rhein-main",
+    "chamber_name": "HWK Frankfurt-Rhein-Main",
+    "chamber_region": "Hessen",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Wirtschaft und Recht (Teil III)",
+    "parts": [
+      3
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2026-10-20",
+    "end_date": "2026-12-09",
+    "duration_hours": null,
+    "course_fee": 2290.0,
+    "course_fee_display": "2.290 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 340.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "340 €"
+    },
+    "city": "Weiterstadt",
+    "street": "Rudolf-Diesel-Straße 30",
+    "zip_code": "64331",
+    "latitude": 49.9011703,
+    "longitude": 8.6137976,
+    "availability": "available",
+    "source_url": "https://portal.hwk-rhein-main.de/seminar/ml-99vz/"
   },
   {
     "chamber_slug": "hwk-rhein-main",
