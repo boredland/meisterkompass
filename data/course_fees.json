@@ -778,16 +778,6 @@
     "is_generic": false
   },
   {
-    "chamber_slug": "hwk-saarland",
-    "trade_slug": "maurer-und-betonbauer",
-    "parts": [
-      1
-    ],
-    "fee": 1705.0,
-    "exam_fee_scraped": 990.0,
-    "is_generic": false
-  },
-  {
     "chamber_slug": "hwk-koblenz",
     "trade_slug": "fliesen-platten-und-mosaikleger",
     "parts": [
@@ -1181,6 +1171,16 @@
     ],
     "fee": 9990.0,
     "exam_fee_scraped": null,
+    "is_generic": false
+  },
+  {
+    "chamber_slug": "hwk-saarland",
+    "trade_slug": "maurer-und-betonbauer",
+    "parts": [
+      1
+    ],
+    "fee": 1705.0,
+    "exam_fee_scraped": 990.0,
     "is_generic": false
   },
   {
