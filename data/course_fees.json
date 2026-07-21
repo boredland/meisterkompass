@@ -1,18 +1,6 @@
 [
   {
     "chamber_slug": "hwk-kassel",
-    "trade_slug": "installateur-und-heizungsbauer",
-    "parts": [
-      1,
-      2,
-      4
-    ],
-    "fee": 9930.0,
-    "exam_fee_scraped": null,
-    "is_generic": false
-  },
-  {
-    "chamber_slug": "hwk-kassel",
     "trade_slug": "allgemein-teil-iii-iv",
     "parts": [
       3
@@ -53,16 +41,6 @@
     "fee": 7350.0,
     "exam_fee_scraped": null,
     "is_generic": false
-  },
-  {
-    "chamber_slug": "hwk-rhein-main",
-    "trade_slug": "allgemein-teil-iii-iv",
-    "parts": [
-      3
-    ],
-    "fee": 2290.0,
-    "exam_fee_scraped": null,
-    "is_generic": true
   },
   {
     "chamber_slug": "hwk-rhein-main",
@@ -115,6 +93,16 @@
       4
     ],
     "fee": 900.0,
+    "exam_fee_scraped": null,
+    "is_generic": true
+  },
+  {
+    "chamber_slug": "hwk-rhein-main",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "parts": [
+      3
+    ],
+    "fee": 2290.0,
     "exam_fee_scraped": null,
     "is_generic": true
   },
@@ -563,7 +551,7 @@
       1
     ],
     "fee": 4200.0,
-    "exam_fee_scraped": null,
+    "exam_fee_scraped": 615.0,
     "is_generic": false
   },
   {
@@ -573,7 +561,7 @@
       2
     ],
     "fee": 3300.0,
-    "exam_fee_scraped": null,
+    "exam_fee_scraped": 515.0,
     "is_generic": false
   },
   {
@@ -695,6 +683,18 @@
     "is_generic": false
   },
   {
+    "chamber_slug": "hwk-kassel",
+    "trade_slug": "installateur-und-heizungsbauer",
+    "parts": [
+      1,
+      2,
+      4
+    ],
+    "fee": 9930.0,
+    "exam_fee_scraped": null,
+    "is_generic": false
+  },
+  {
     "chamber_slug": "hwk-saarland",
     "trade_slug": "backer",
     "parts": [
@@ -784,17 +784,6 @@
       1
     ],
     "fee": 4400.0,
-    "exam_fee_scraped": null,
-    "is_generic": false
-  },
-  {
-    "chamber_slug": "hwk-rhein-main",
-    "trade_slug": "installateur-und-heizungsbauer",
-    "parts": [
-      1,
-      2
-    ],
-    "fee": 11490.0,
     "exam_fee_scraped": null,
     "is_generic": false
   },

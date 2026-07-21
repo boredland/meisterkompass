@@ -589,41 +589,6 @@
     "format": "full_time",
     "format_display": "Vollzeit",
     "teaching_mode": "presence",
-    "start_date": "2026-07-20",
-    "end_date": "2027-03-02",
-    "duration_hours": 1245,
-    "course_fee": 9930.0,
-    "course_fee_display": "9.930 €",
-    "exam_fee_scraped": null,
-    "exam_fee": {
-      "fee": 1075.0,
-      "fee_max": null,
-      "qualifier": "",
-      "display": "1.075 €"
-    },
-    "city": "Marburg",
-    "street": "Umgehungsstraße 1-3",
-    "zip_code": "35043",
-    "latitude": 50.7872688,
-    "longitude": 8.7666044,
-    "availability": "available",
-    "source_url": "https://www.bbz-marburg.de/kurs/mv-shk-vz/"
-  },
-  {
-    "chamber_slug": "hwk-kassel",
-    "chamber_name": "HWK Kassel",
-    "chamber_region": "Hessen",
-    "trade_slug": "installateur-und-heizungsbauer",
-    "trade_name": "Installateur- und Heizungsbauer",
-    "title": "Installateur- und Heizungsbauer (Teile I + II + IV)",
-    "parts": [
-      1,
-      2,
-      4
-    ],
-    "format": "full_time",
-    "format_display": "Vollzeit",
-    "teaching_mode": "presence",
     "start_date": "2027-03-01",
     "end_date": "2027-10-05",
     "duration_hours": 1245,
@@ -1490,6 +1455,74 @@
     "chamber_slug": "hwk-kassel",
     "chamber_name": "HWK Kassel",
     "chamber_region": "Hessen",
+    "trade_slug": "tischler",
+    "trade_name": "Tischler",
+    "title": "Tischler (Teile I + II)",
+    "parts": [
+      1,
+      2
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-10-11",
+    "end_date": "2028-02-25",
+    "duration_hours": null,
+    "course_fee": 9612.0,
+    "course_fee_display": "9.612 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 730.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "730 €"
+    },
+    "city": "Bad Wildungen",
+    "street": "Auf der Roten Erde 9",
+    "zip_code": "34537",
+    "latitude": 51.1300434,
+    "longitude": 9.1225344,
+    "availability": "available",
+    "source_url": "https://veranstaltung.holzfachschule.de/seminar/vorbereitungslehrgang-auf-die-meisterpruefung-im-tischlerhandwerk-teil-i-ii_104765"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "tischler",
+    "trade_name": "Tischler",
+    "title": "Tischler (Teile I + II)",
+    "parts": [
+      1,
+      2
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-12-06",
+    "end_date": "2028-04-21",
+    "duration_hours": null,
+    "course_fee": 9612.0,
+    "course_fee_display": "9.612 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 730.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "730 €"
+    },
+    "city": "Bad Wildungen",
+    "street": "Auf der Roten Erde 9",
+    "zip_code": "34537",
+    "latitude": 51.1300434,
+    "longitude": 9.1225344,
+    "availability": "available",
+    "source_url": "https://veranstaltung.holzfachschule.de/seminar/vorbereitungslehrgang-auf-die-meisterpruefung-im-tischlerhandwerk-teil-i-ii_104765"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
     "trade_slug": "allgemein-teil-iii-iv",
     "trade_name": "Wirtschaft, Recht, Pädagogik",
     "title": "Wirtschaft und Recht (Teil III)",
@@ -1552,39 +1585,6 @@
     "longitude": 9.1225344,
     "availability": "available",
     "source_url": "https://veranstaltung.holzfachschule.de/seminar/meister-teil-iii-iv_104853"
-  },
-  {
-    "chamber_slug": "hwk-kassel",
-    "chamber_name": "HWK Kassel",
-    "chamber_region": "Hessen",
-    "trade_slug": "allgemein-teil-iii-iv",
-    "trade_name": "Wirtschaft, Recht, Pädagogik",
-    "title": "Wirtschaft und Recht (Teil III)",
-    "parts": [
-      3
-    ],
-    "format": "full_time",
-    "format_display": "Vollzeit",
-    "teaching_mode": "presence",
-    "start_date": "2026-08-10",
-    "end_date": "2026-10-02",
-    "duration_hours": null,
-    "course_fee": 1750.0,
-    "course_fee_display": "1.750 €",
-    "exam_fee_scraped": null,
-    "exam_fee": {
-      "fee": 340.0,
-      "fee_max": null,
-      "qualifier": "",
-      "display": "340 €"
-    },
-    "city": "Petersberg",
-    "street": "Goerdelerstraße 139",
-    "zip_code": "36100",
-    "latitude": 50.5673891,
-    "longitude": 9.699491,
-    "availability": "available",
-    "source_url": "https://www.bbz-mitte.de/de/kursfinder/meistervorbereitungskurs-teil-iii-fuer-alle-gewerke-im-handwerk"
   },
   {
     "chamber_slug": "hwk-kassel",
@@ -2385,6 +2385,40 @@
     "chamber_region": "Hessen",
     "trade_slug": "allgemein-teil-iii-iv",
     "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Wirtschaft und Recht, Pädagogik (Teile III + IV)",
+    "parts": [
+      3,
+      4
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-08-09",
+    "end_date": "2027-10-01",
+    "duration_hours": null,
+    "course_fee": 3900.0,
+    "course_fee_display": "3.900 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 490.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "490 €"
+    },
+    "city": "Bad Wildungen",
+    "street": "Auf der Roten Erde 9",
+    "zip_code": "34537",
+    "latitude": 51.1300434,
+    "longitude": 9.1225344,
+    "availability": "available",
+    "source_url": "https://veranstaltung.holzfachschule.de/seminar/meister-teil-iii-iv_104853"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
     "title": "Berufs- und Arbeitspädagogik (Teil IV)",
     "parts": [
       4
@@ -2576,6 +2610,40 @@
     "longitude": 9.498614,
     "availability": "available",
     "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1744"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Wirtschaft und Recht, Pädagogik (Teile III + IV)",
+    "parts": [
+      3,
+      4
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-10-04",
+    "end_date": "2027-11-26",
+    "duration_hours": null,
+    "course_fee": 3900.0,
+    "course_fee_display": "3.900 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 490.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "490 €"
+    },
+    "city": "Bad Wildungen",
+    "street": "Auf der Roten Erde 9",
+    "zip_code": "34537",
+    "latitude": 51.1300434,
+    "longitude": 9.1225344,
+    "availability": "available",
+    "source_url": "https://veranstaltung.holzfachschule.de/seminar/meister-teil-iii-iv_104853"
   },
   {
     "chamber_slug": "hwk-kassel",
@@ -5861,7 +5929,7 @@
     "latitude": 50.5456433,
     "longitude": 7.1017081,
     "availability": "available",
-    "source_url": "https://www.hwk-koblenz.de/kurse/teile-iii-und-iv-crashkurs-52,0,coursedetail.html?id=115504&search-onr=52&img=13"
+    "source_url": "https://www.hwk-koblenz.de/kurse/teile-iii-und-iv-crashkurs-52,0,coursedetail.html?id=115504&search-onr=52&img=12"
   },
   {
     "chamber_slug": "hwk-koblenz",
@@ -5895,7 +5963,7 @@
     "latitude": 49.9837081,
     "longitude": 7.5250674,
     "availability": "available",
-    "source_url": "https://www.hwk-koblenz.de/kurse/teile-iii-und-iv-crashkurs-52,0,coursedetail.html?id=115509&search-onr=52&img=12"
+    "source_url": "https://www.hwk-koblenz.de/kurse/teile-iii-und-iv-crashkurs-52,0,coursedetail.html?id=115509&search-onr=52&img=14"
   },
   {
     "chamber_slug": "hwk-koblenz",
@@ -5929,7 +5997,7 @@
     "latitude": 50.7821939,
     "longitude": 7.740086,
     "availability": "available",
-    "source_url": "https://www.hwk-koblenz.de/kurse/teile-iii-und-iv-crashkurs-52,0,coursedetail.html?id=115514&search-onr=52&img=14"
+    "source_url": "https://www.hwk-koblenz.de/kurse/teile-iii-und-iv-crashkurs-52,0,coursedetail.html?id=115514&search-onr=52&img=13"
   },
   {
     "chamber_slug": "hwk-koblenz",
@@ -8251,40 +8319,6 @@
     "chamber_slug": "hwk-rhein-main",
     "chamber_name": "HWK Frankfurt-Rhein-Main",
     "chamber_region": "Hessen",
-    "trade_slug": "installateur-und-heizungsbauer",
-    "trade_name": "Installateur- und Heizungsbauer",
-    "title": "Installateur- und Heizungsbauer (Teile I + II)",
-    "parts": [
-      1,
-      2
-    ],
-    "format": "part_time",
-    "format_display": "Teilzeit",
-    "teaching_mode": "presence",
-    "start_date": "2027-05-04",
-    "end_date": "2028-12-22",
-    "duration_hours": null,
-    "course_fee": 11490.0,
-    "course_fee_display": "11.490 €",
-    "exam_fee_scraped": null,
-    "exam_fee": {
-      "fee": 730.0,
-      "fee_max": null,
-      "qualifier": "",
-      "display": "730 €"
-    },
-    "city": "Frankfurt am Main",
-    "street": "Schönstraße 21",
-    "zip_code": "60327",
-    "latitude": 50.1013705,
-    "longitude": 8.65682,
-    "availability": "available",
-    "source_url": "https://portal.hwk-rhein-main.de/seminar/ml-27tz/"
-  },
-  {
-    "chamber_slug": "hwk-rhein-main",
-    "chamber_name": "HWK Frankfurt-Rhein-Main",
-    "chamber_region": "Hessen",
     "trade_slug": "maler",
     "trade_name": "Maler",
     "title": "Maler (Teile I + II)",
@@ -8450,39 +8484,6 @@
     "longitude": 8.6137976,
     "availability": "available",
     "source_url": "https://portal.hwk-rhein-main.de/seminar/ml-38-tz/"
-  },
-  {
-    "chamber_slug": "hwk-rhein-main",
-    "chamber_name": "HWK Frankfurt-Rhein-Main",
-    "chamber_region": "Hessen",
-    "trade_slug": "allgemein-teil-iii-iv",
-    "trade_name": "Wirtschaft, Recht, Pädagogik",
-    "title": "Wirtschaft und Recht (Teil III)",
-    "parts": [
-      3
-    ],
-    "format": "full_time",
-    "format_display": "Vollzeit",
-    "teaching_mode": "presence",
-    "start_date": "2026-08-10",
-    "end_date": "2026-09-29",
-    "duration_hours": null,
-    "course_fee": 2290.0,
-    "course_fee_display": "2.290 €",
-    "exam_fee_scraped": null,
-    "exam_fee": {
-      "fee": 340.0,
-      "fee_max": null,
-      "qualifier": "",
-      "display": "340 €"
-    },
-    "city": "Frankfurt am Main",
-    "street": "Schönstraße 21",
-    "zip_code": "60327",
-    "latitude": 50.1013705,
-    "longitude": 8.65682,
-    "availability": "available",
-    "source_url": "https://portal.hwk-rhein-main.de/seminar/ml-99vz/"
   },
   {
     "chamber_slug": "hwk-rhein-main",
@@ -9348,6 +9349,40 @@
     "longitude": 8.65682,
     "availability": "available",
     "source_url": "https://portal.hwk-rhein-main.de/seminar/ml-20vz-m/"
+  },
+  {
+    "chamber_slug": "hwk-rhein-main",
+    "chamber_name": "HWK Frankfurt-Rhein-Main",
+    "chamber_region": "Hessen",
+    "trade_slug": "zweirad",
+    "trade_name": "Zweirad",
+    "title": "Zweirad (Teile I + II)",
+    "parts": [
+      1,
+      2
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-10-18",
+    "end_date": "2028-03-17",
+    "duration_hours": null,
+    "course_fee": 9990.0,
+    "course_fee_display": "9.990 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 730.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "730 €"
+    },
+    "city": "Frankfurt am Main",
+    "street": "Schönstraße 21",
+    "zip_code": "60327",
+    "latitude": 50.1013705,
+    "longitude": 8.65682,
+    "availability": "available",
+    "source_url": "https://portal.hwk-rhein-main.de/seminar/ml-20vz-m-iii/"
   },
   {
     "chamber_slug": "hwk-rheinhessen",
@@ -11949,12 +11984,12 @@
     "duration_hours": 340,
     "course_fee": 4200.0,
     "course_fee_display": "4.200 €",
-    "exam_fee_scraped": null,
+    "exam_fee_scraped": 615.0,
     "exam_fee": {
-      "fee": null,
+      "fee": 615.0,
       "fee_max": null,
       "qualifier": "",
-      "display": ""
+      "display": "615 €"
     },
     "city": "Trier",
     "street": "Loebstr.  18",
@@ -11982,12 +12017,12 @@
     "duration_hours": 280,
     "course_fee": 3300.0,
     "course_fee_display": "3.300 €",
-    "exam_fee_scraped": null,
+    "exam_fee_scraped": 515.0,
     "exam_fee": {
-      "fee": null,
+      "fee": 515.0,
       "fee_max": null,
       "qualifier": "",
-      "display": ""
+      "display": "515 €"
     },
     "city": "Trier",
     "street": "Loebstr.  18",
@@ -13639,7 +13674,7 @@
     "zip_code": "65189",
     "latitude": 50.0652806,
     "longitude": 8.2590004,
-    "availability": "available",
+    "availability": "waitlist",
     "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=94343&search-onr=44&img=4"
   },
   {
