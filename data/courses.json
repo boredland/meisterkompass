@@ -78,14 +78,14 @@
       1,
       2
     ],
-    "format": "full_time",
-    "format_display": "Vollzeit",
+    "format": "part_time",
+    "format_display": "Teilzeit",
     "teaching_mode": "presence",
-    "start_date": "2026-08-24",
-    "end_date": "2027-06-11",
+    "start_date": "2026-09-08",
+    "end_date": "2028-11-04",
     "duration_hours": 1200,
-    "course_fee": 9500.0,
-    "course_fee_display": "9.500 €",
+    "course_fee": 9450.0,
+    "course_fee_display": "9.450 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 730.0,
@@ -93,54 +93,21 @@
       "qualifier": "",
       "display": "730 €"
     },
-    "city": "Petersberg",
-    "street": "Goerdelerstraße 139",
-    "zip_code": "36100",
-    "latitude": 50.5673891,
-    "longitude": 9.699491,
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
     "availability": "available",
-    "source_url": "https://www.bbz-mitte.de/de/kursfinder/elektrotechnikermeister-teil-ii-i-vollzeit"
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/elektro-und-gebaeudetechnik/kursdetail/kurs-412"
   },
   {
     "chamber_slug": "hwk-kassel",
     "chamber_name": "HWK Kassel",
     "chamber_region": "Hessen",
-    "trade_slug": "elektrotechniker",
-    "trade_name": "Elektrotechniker",
-    "title": "Elektrotechniker (Teil II)",
-    "parts": [
-      2
-    ],
-    "format": "part_time",
-    "format_display": "Teilzeit",
-    "teaching_mode": "presence",
-    "start_date": "2027-02-16",
-    "end_date": "2028-09-23",
-    "duration_hours": null,
-    "course_fee": 6150.0,
-    "course_fee_display": "6.150 €",
-    "exam_fee_scraped": null,
-    "exam_fee": {
-      "fee": 420.0,
-      "fee_max": null,
-      "qualifier": "",
-      "display": "420 €"
-    },
-    "city": "Petersberg",
-    "street": "Goerdelerstraße 139",
-    "zip_code": "36100",
-    "latitude": 50.5673891,
-    "longitude": 9.699491,
-    "availability": "available",
-    "source_url": "https://www.bbz-mitte.de/de/kursfinder/elektrotechnikermeister-teil-ii"
-  },
-  {
-    "chamber_slug": "hwk-kassel",
-    "chamber_name": "HWK Kassel",
-    "chamber_region": "Hessen",
-    "trade_slug": "elektrotechniker",
-    "trade_name": "Elektrotechniker",
-    "title": "Elektrotechniker (Teile I + II)",
+    "trade_slug": "feinwerkmechaniker",
+    "trade_name": "Feinwerkmechaniker",
+    "title": "Feinwerkmechaniker (Teile I + II)",
     "parts": [
       1,
       2
@@ -148,11 +115,11 @@
     "format": "full_time",
     "format_display": "Vollzeit",
     "teaching_mode": "presence",
-    "start_date": "2027-08-23",
-    "end_date": "2028-06-14",
-    "duration_hours": 1200,
-    "course_fee": 9750.0,
-    "course_fee_display": "9.750 €",
+    "start_date": "2027-10-25",
+    "end_date": "2028-04-28",
+    "duration_hours": 930,
+    "course_fee": 9086.0,
+    "course_fee_display": "9.086 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 730.0,
@@ -160,79 +127,115 @@
       "qualifier": "",
       "display": "730 €"
     },
-    "city": "Petersberg",
-    "street": "Goerdelerstraße 139",
-    "zip_code": "36100",
-    "latitude": 50.5673891,
-    "longitude": 9.699491,
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
     "availability": "available",
-    "source_url": "https://www.bbz-mitte.de/de/kursfinder/elektrotechnikermeister-teil-ii-i-vollzeit"
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/metalltechnik-und-schweisstechnik/kursdetail/kurs-2022"
   },
   {
     "chamber_slug": "hwk-kassel",
     "chamber_name": "HWK Kassel",
     "chamber_region": "Hessen",
-    "trade_slug": "elektrotechniker",
-    "trade_name": "Elektrotechniker",
-    "title": "Elektrotechniker (Teil I)",
+    "trade_slug": "fleischer",
+    "trade_name": "Fleischer",
+    "title": "Fleischer (Teile I + II)",
     "parts": [
-      1
+      1,
+      2
     ],
-    "format": "part_time",
-    "format_display": "Teilzeit",
+    "format": "full_time",
+    "format_display": "Vollzeit",
     "teaching_mode": "presence",
-    "start_date": null,
-    "end_date": null,
-    "duration_hours": null,
+    "start_date": "2027-06-28",
+    "end_date": "2027-08-08",
+    "duration_hours": 300,
     "course_fee": null,
     "course_fee_display": "—",
     "exam_fee_scraped": null,
     "exam_fee": {
-      "fee": 420.0,
+      "fee": 730.0,
       "fee_max": null,
       "qualifier": "",
-      "display": "420 €"
+      "display": "730 €"
     },
-    "city": "Petersberg",
-    "street": "Goerdelerstraße 139",
-    "zip_code": "36100",
-    "latitude": 50.5673891,
-    "longitude": 9.699491,
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
     "availability": "available",
-    "source_url": "https://www.bbz-mitte.de/de/kursfinder/elektrotechnikermeister-teil-i"
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/fleischerhandwerk/kursdetail/kurs-1888"
   },
   {
     "chamber_slug": "hwk-kassel",
     "chamber_name": "HWK Kassel",
     "chamber_region": "Hessen",
-    "trade_slug": "elektrotechniker",
-    "trade_name": "Elektrotechniker",
-    "title": "Elektrotechniker (Teil II)",
+    "trade_slug": "friseur",
+    "trade_name": "Friseur",
+    "title": "Friseur (Teile I + II)",
     "parts": [
+      1,
+      2
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2026-08-17",
+    "end_date": "2026-11-27",
+    "duration_hours": 500,
+    "course_fee": 4800.0,
+    "course_fee_display": "4.800 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 730.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "730 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/friseurhandwerk/kursdetail/kurs-1534"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "friseur",
+    "trade_name": "Friseur",
+    "title": "Friseur (Teile I + II)",
+    "parts": [
+      1,
       2
     ],
     "format": "part_time",
     "format_display": "Teilzeit",
     "teaching_mode": "presence",
-    "start_date": null,
-    "end_date": null,
-    "duration_hours": null,
-    "course_fee": null,
-    "course_fee_display": "—",
+    "start_date": "2026-08-17",
+    "end_date": "2027-04-16",
+    "duration_hours": 500,
+    "course_fee": 4900.0,
+    "course_fee_display": "4.900 €",
     "exam_fee_scraped": null,
     "exam_fee": {
-      "fee": 420.0,
+      "fee": 730.0,
       "fee_max": null,
       "qualifier": "",
-      "display": "420 €"
+      "display": "730 €"
     },
-    "city": "Petersberg",
-    "street": "Goerdelerstraße 139",
-    "zip_code": "36100",
-    "latitude": 50.5673891,
-    "longitude": 9.699491,
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
     "availability": "available",
-    "source_url": "https://www.bbz-mitte.de/de/kursfinder/elektrotechnikermeister-teil-ii"
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/friseurhandwerk/kursdetail/kurs-1536"
   },
   {
     "chamber_slug": "hwk-kassel",
@@ -267,6 +270,74 @@
     "longitude": 8.7666044,
     "availability": "available",
     "source_url": "https://www.bbz-marburg.de/kurs/mv-fri-vz/"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "friseur",
+    "trade_name": "Friseur",
+    "title": "Friseur (Teile I + II)",
+    "parts": [
+      1,
+      2
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-08-09",
+    "end_date": "2027-11-28",
+    "duration_hours": 500,
+    "course_fee": null,
+    "course_fee_display": "—",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 730.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "730 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/friseurhandwerk/kursdetail/kurs-1884"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "friseur",
+    "trade_name": "Friseur",
+    "title": "Friseur (Teile I + II)",
+    "parts": [
+      1,
+      2
+    ],
+    "format": "part_time",
+    "format_display": "Teilzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-08-09",
+    "end_date": "2028-04-30",
+    "duration_hours": 500,
+    "course_fee": null,
+    "course_fee_display": "—",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 730.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "730 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/friseurhandwerk/kursdetail/kurs-1886"
   },
   {
     "chamber_slug": "hwk-kassel",
@@ -478,39 +549,6 @@
     "chamber_region": "Hessen",
     "trade_slug": "kfz-techniker",
     "trade_name": "Kfz.-Techniker",
-    "title": "Kfz.-Techniker (Teil II)",
-    "parts": [
-      2
-    ],
-    "format": "part_time",
-    "format_display": "Teilzeit",
-    "teaching_mode": "presence",
-    "start_date": "2027-03-08",
-    "end_date": "2027-06-11",
-    "duration_hours": 530,
-    "course_fee": 3990.0,
-    "course_fee_display": "3.990 €",
-    "exam_fee_scraped": null,
-    "exam_fee": {
-      "fee": 420.0,
-      "fee_max": null,
-      "qualifier": "",
-      "display": "420 €"
-    },
-    "city": "Petersberg",
-    "street": "Goerdelerstraße 139",
-    "zip_code": "36100",
-    "latitude": 50.5673891,
-    "longitude": 9.699491,
-    "availability": "available",
-    "source_url": "https://www.bbz-mitte.de/de/kursfinder/meistervorbereitungskurs-im-kfz-techniker-handwerk"
-  },
-  {
-    "chamber_slug": "hwk-kassel",
-    "chamber_name": "HWK Kassel",
-    "chamber_region": "Hessen",
-    "trade_slug": "kfz-techniker",
-    "trade_name": "Kfz.-Techniker",
     "title": "Kfz.-Techniker (Teile I + II)",
     "parts": [
       1,
@@ -538,39 +576,6 @@
     "longitude": 8.7666044,
     "availability": "available",
     "source_url": "https://www.bbz-marburg.de/kurs/mv-kfz-tz/"
-  },
-  {
-    "chamber_slug": "hwk-kassel",
-    "chamber_name": "HWK Kassel",
-    "chamber_region": "Hessen",
-    "trade_slug": "kfz-techniker",
-    "trade_name": "Kfz.-Techniker",
-    "title": "Kfz.-Techniker (Teil I)",
-    "parts": [
-      1
-    ],
-    "format": "part_time",
-    "format_display": "Teilzeit",
-    "teaching_mode": "presence",
-    "start_date": "2027-06-14",
-    "end_date": "2027-08-06",
-    "duration_hours": 320,
-    "course_fee": 2990.0,
-    "course_fee_display": "2.990 €",
-    "exam_fee_scraped": null,
-    "exam_fee": {
-      "fee": 420.0,
-      "fee_max": null,
-      "qualifier": "",
-      "display": "420 €"
-    },
-    "city": "Petersberg",
-    "street": "Goerdelerstraße 139",
-    "zip_code": "36100",
-    "latitude": 50.5673891,
-    "longitude": 9.699491,
-    "availability": "available",
-    "source_url": "https://www.bbz-mitte.de/de/kursfinder/kraftfahrzeugservicetechniker"
   },
   {
     "chamber_slug": "hwk-kassel",
@@ -638,72 +643,6 @@
     "longitude": 8.7666044,
     "availability": "available",
     "source_url": "https://www.bbz-marburg.de/kurs/mv-kfz-tz/"
-  },
-  {
-    "chamber_slug": "hwk-kassel",
-    "chamber_name": "HWK Kassel",
-    "chamber_region": "Hessen",
-    "trade_slug": "kfz-techniker",
-    "trade_name": "Kfz.-Techniker",
-    "title": "Kfz.-Techniker (Teil II)",
-    "parts": [
-      2
-    ],
-    "format": "part_time",
-    "format_display": "Teilzeit",
-    "teaching_mode": "presence",
-    "start_date": "2028-03-13",
-    "end_date": "2028-06-16",
-    "duration_hours": 530,
-    "course_fee": 4600.0,
-    "course_fee_display": "4.600 €",
-    "exam_fee_scraped": null,
-    "exam_fee": {
-      "fee": 420.0,
-      "fee_max": null,
-      "qualifier": "",
-      "display": "420 €"
-    },
-    "city": "Petersberg",
-    "street": "Goerdelerstraße 139",
-    "zip_code": "36100",
-    "latitude": 50.5673891,
-    "longitude": 9.699491,
-    "availability": "available",
-    "source_url": "https://www.bbz-mitte.de/de/kursfinder/meistervorbereitungskurs-im-kfz-techniker-handwerk"
-  },
-  {
-    "chamber_slug": "hwk-kassel",
-    "chamber_name": "HWK Kassel",
-    "chamber_region": "Hessen",
-    "trade_slug": "kfz-techniker",
-    "trade_name": "Kfz.-Techniker",
-    "title": "Kfz.-Techniker (Teil I)",
-    "parts": [
-      1
-    ],
-    "format": "part_time",
-    "format_display": "Teilzeit",
-    "teaching_mode": "presence",
-    "start_date": "2028-06-19",
-    "end_date": "2028-08-11",
-    "duration_hours": 320,
-    "course_fee": 3700.0,
-    "course_fee_display": "3.700 €",
-    "exam_fee_scraped": null,
-    "exam_fee": {
-      "fee": 420.0,
-      "fee_max": null,
-      "qualifier": "",
-      "display": "420 €"
-    },
-    "city": "Petersberg",
-    "street": "Goerdelerstraße 139",
-    "zip_code": "36100",
-    "latitude": 50.5673891,
-    "longitude": 9.699491,
-    "availability": "available",
-    "source_url": "https://www.bbz-mitte.de/de/kursfinder/kraftfahrzeugservicetechniker"
   },
   {
     "chamber_slug": "hwk-kassel",
@@ -809,74 +748,6 @@
     "chamber_slug": "hwk-kassel",
     "chamber_name": "HWK Kassel",
     "chamber_region": "Hessen",
-    "trade_slug": "land-und-baumaschinenmechatroniker",
-    "trade_name": "Land- und Baumaschinenmechatroniker",
-    "title": "Land- und Baumaschinenmechatroniker (Teile I + II)",
-    "parts": [
-      1,
-      2
-    ],
-    "format": "part_time",
-    "format_display": "Teilzeit",
-    "teaching_mode": "presence",
-    "start_date": "2026-09-28",
-    "end_date": "2027-04-23",
-    "duration_hours": 1100,
-    "course_fee": 10500.0,
-    "course_fee_display": "10.500 €",
-    "exam_fee_scraped": null,
-    "exam_fee": {
-      "fee": 730.0,
-      "fee_max": null,
-      "qualifier": "",
-      "display": "730 €"
-    },
-    "city": "Petersberg",
-    "street": "Goerdelerstraße 139",
-    "zip_code": "36100",
-    "latitude": 50.5673891,
-    "longitude": 9.699491,
-    "availability": "available",
-    "source_url": "https://www.bbz-mitte.de/de/kursfinder/meistervorbereitungskurs-landmaschinenmechaniker-handwerk-teile-i-ii"
-  },
-  {
-    "chamber_slug": "hwk-kassel",
-    "chamber_name": "HWK Kassel",
-    "chamber_region": "Hessen",
-    "trade_slug": "land-und-baumaschinenmechatroniker",
-    "trade_name": "Land- und Baumaschinenmechatroniker",
-    "title": "Land- und Baumaschinenmechatroniker (Teile I + II)",
-    "parts": [
-      1,
-      2
-    ],
-    "format": "part_time",
-    "format_display": "Teilzeit",
-    "teaching_mode": "presence",
-    "start_date": "2027-10-04",
-    "end_date": "2028-04-28",
-    "duration_hours": 1100,
-    "course_fee": 11000.0,
-    "course_fee_display": "11.000 €",
-    "exam_fee_scraped": null,
-    "exam_fee": {
-      "fee": 730.0,
-      "fee_max": null,
-      "qualifier": "",
-      "display": "730 €"
-    },
-    "city": "Petersberg",
-    "street": "Goerdelerstraße 139",
-    "zip_code": "36100",
-    "latitude": 50.5673891,
-    "longitude": 9.699491,
-    "availability": "available",
-    "source_url": "https://www.bbz-mitte.de/de/kursfinder/meistervorbereitungskurs-landmaschinenmechaniker-handwerk-teile-i-ii"
-  },
-  {
-    "chamber_slug": "hwk-kassel",
-    "chamber_name": "HWK Kassel",
-    "chamber_region": "Hessen",
     "trade_slug": "maler-und-lackierer",
     "trade_name": "Maler und Lackierer",
     "title": "Maler und Lackierer (Teile I + II)",
@@ -906,6 +777,40 @@
     "longitude": 8.7666044,
     "availability": "available",
     "source_url": "https://www.bbz-marburg.de/kurs/mv-mal-vz/"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "maler-und-lackierer",
+    "trade_name": "Maler und Lackierer",
+    "title": "Maler und Lackierer (Teile I + II)",
+    "parts": [
+      1,
+      2
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-03-15",
+    "end_date": "2027-08-06",
+    "duration_hours": 820,
+    "course_fee": 7100.0,
+    "course_fee_display": "7.100 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 730.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "730 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/elektro-und-gebaeudetechnik/kursdetail/kurs-1870"
   },
   {
     "chamber_slug": "hwk-kassel",
@@ -979,6 +884,74 @@
     "chamber_slug": "hwk-kassel",
     "chamber_name": "HWK Kassel",
     "chamber_region": "Hessen",
+    "trade_slug": "metallbauer",
+    "trade_name": "Metallbauer",
+    "title": "Metallbauer (Teile I + II)",
+    "parts": [
+      1,
+      2
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2026-10-26",
+    "end_date": "2027-04-30",
+    "duration_hours": 850,
+    "course_fee": 9086.0,
+    "course_fee_display": "9.086 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 730.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "730 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/metalltechnik-und-schweisstechnik/kursdetail/kurs-1350"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "metallbauer",
+    "trade_name": "Metallbauer",
+    "title": "Metallbauer (Teile I + II)",
+    "parts": [
+      1,
+      2
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-10-25",
+    "end_date": "2028-04-28",
+    "duration_hours": 850,
+    "course_fee": 9086.0,
+    "course_fee_display": "9.086 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 730.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "730 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/metalltechnik-und-schweisstechnik/kursdetail/kurs-2024"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
     "trade_slug": "modellbauer",
     "trade_name": "Modellbauer",
     "title": "Modellbauer (Teile I + II)",
@@ -1042,40 +1015,6 @@
     "longitude": 9.1225344,
     "availability": "full",
     "source_url": "https://veranstaltung.holzfachschule.de/seminar/vorbereitungslehrgang-auf-die-meisterpruefung-im-tischlerhandwerk-teil-i-ii_104765"
-  },
-  {
-    "chamber_slug": "hwk-kassel",
-    "chamber_name": "HWK Kassel",
-    "chamber_region": "Hessen",
-    "trade_slug": "tischler",
-    "trade_name": "Tischler",
-    "title": "Tischler (Teile I + II)",
-    "parts": [
-      1,
-      2
-    ],
-    "format": "full_time",
-    "format_display": "Vollzeit",
-    "teaching_mode": "presence",
-    "start_date": "2027-01-18",
-    "end_date": "2027-06-11",
-    "duration_hours": null,
-    "course_fee": 9500.0,
-    "course_fee_display": "9.500 €",
-    "exam_fee_scraped": null,
-    "exam_fee": {
-      "fee": 730.0,
-      "fee_max": null,
-      "qualifier": "",
-      "display": "730 €"
-    },
-    "city": "Petersberg",
-    "street": "Goerdelerstraße 139",
-    "zip_code": "36100",
-    "latitude": 50.5673891,
-    "longitude": 9.699491,
-    "availability": "available",
-    "source_url": "https://www.bbz-mitte.de/de/kursfinder/meistervorbereitungslehrgang-im-tischler-schreinerhandwerk"
   },
   {
     "chamber_slug": "hwk-kassel",
@@ -1256,6 +1195,105 @@
     "parts": [
       3
     ],
+    "format": "part_time",
+    "format_display": "Teilzeit",
+    "teaching_mode": "presence",
+    "start_date": "2026-09-01",
+    "end_date": "2027-02-25",
+    "duration_hours": 280,
+    "course_fee": 2100.0,
+    "course_fee_display": "2.100 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 340.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "340 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1078"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Berufs- und Arbeitspädagogik (Teil IV)",
+    "parts": [
+      4
+    ],
+    "format": "part_time",
+    "format_display": "Teilzeit",
+    "teaching_mode": "presence",
+    "start_date": "2026-09-08",
+    "end_date": "2026-11-23",
+    "duration_hours": 92,
+    "course_fee": 750.0,
+    "course_fee_display": "750 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 235.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "235 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1140"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Wirtschaft und Recht (Teil III)",
+    "parts": [
+      3
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2026-10-12",
+    "end_date": "2026-11-27",
+    "duration_hours": 280,
+    "course_fee": 2100.0,
+    "course_fee_display": "2.100 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 340.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "340 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1070"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Wirtschaft und Recht (Teil III)",
+    "parts": [
+      3
+    ],
     "format": "full_time",
     "format_display": "Vollzeit",
     "teaching_mode": "presence",
@@ -1278,6 +1316,39 @@
     "longitude": 8.7666044,
     "availability": "available",
     "source_url": "https://www.bbz-marburg.de/kurs/mv-iii-vz/"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Berufs- und Arbeitspädagogik (Teil IV)",
+    "parts": [
+      4
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2026-10-19",
+    "end_date": "2026-11-06",
+    "duration_hours": 92,
+    "course_fee": 750.0,
+    "course_fee_display": "750 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 235.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "235 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-830"
   },
   {
     "chamber_slug": "hwk-kassel",
@@ -1352,6 +1423,39 @@
     "chamber_region": "Hessen",
     "trade_slug": "allgemein-teil-iii-iv",
     "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Berufs- und Arbeitspädagogik (Teil IV)",
+    "parts": [
+      4
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-01-11",
+    "end_date": "2027-01-29",
+    "duration_hours": 92,
+    "course_fee": 825.0,
+    "course_fee_display": "825 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 235.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "235 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1574"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
     "title": "Wirtschaft und Recht (Teil III)",
     "parts": [
       3
@@ -1359,11 +1463,11 @@
     "format": "full_time",
     "format_display": "Vollzeit",
     "teaching_mode": "presence",
-    "start_date": "2027-01-04",
+    "start_date": "2027-01-11",
     "end_date": "2027-02-26",
-    "duration_hours": null,
-    "course_fee": 1830.0,
-    "course_fee_display": "1.830 €",
+    "duration_hours": 280,
+    "course_fee": 2500.0,
+    "course_fee_display": "2.500 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 340.0,
@@ -1371,13 +1475,46 @@
       "qualifier": "",
       "display": "340 €"
     },
-    "city": "Petersberg",
-    "street": "Goerdelerstraße 139",
-    "zip_code": "36100",
-    "latitude": 50.5673891,
-    "longitude": 9.699491,
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
     "availability": "available",
-    "source_url": "https://www.bbz-mitte.de/de/kursfinder/meistervorbereitungskurs-teil-iii-fuer-alle-gewerke-im-handwerk"
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1732"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Wirtschaft und Recht (Teil III)",
+    "parts": [
+      3
+    ],
+    "format": "part_time",
+    "format_display": "Teilzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-01-19",
+    "end_date": "2027-06-26",
+    "duration_hours": 280,
+    "course_fee": 2500.0,
+    "course_fee_display": "2.500 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 340.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "340 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1784"
   },
   {
     "chamber_slug": "hwk-kassel",
@@ -1418,39 +1555,6 @@
     "chamber_region": "Hessen",
     "trade_slug": "allgemein-teil-iii-iv",
     "trade_name": "Wirtschaft, Recht, Pädagogik",
-    "title": "Berufs- und Arbeitspädagogik (Teil IV)",
-    "parts": [
-      4
-    ],
-    "format": "full_time",
-    "format_display": "Vollzeit",
-    "teaching_mode": "presence",
-    "start_date": "2027-02-01",
-    "end_date": "2027-02-18",
-    "duration_hours": null,
-    "course_fee": 890.0,
-    "course_fee_display": "890 €",
-    "exam_fee_scraped": null,
-    "exam_fee": {
-      "fee": 235.0,
-      "fee_max": null,
-      "qualifier": "",
-      "display": "235 €"
-    },
-    "city": "Kassel",
-    "street": "Auedamm 18",
-    "zip_code": "34123",
-    "latitude": 51.3021202,
-    "longitude": 9.4991416,
-    "availability": "available",
-    "source_url": "https://www.bubiza.de/kurse/vollzeit-hoehere-berufsbildung/dachdeckermeister-fuer-dachdeckergesellen.html"
-  },
-  {
-    "chamber_slug": "hwk-kassel",
-    "chamber_name": "HWK Kassel",
-    "chamber_region": "Hessen",
-    "trade_slug": "allgemein-teil-iii-iv",
-    "trade_name": "Wirtschaft, Recht, Pädagogik",
     "title": "Wirtschaft und Recht (Teil III)",
     "parts": [
       3
@@ -1484,32 +1588,32 @@
     "chamber_region": "Hessen",
     "trade_slug": "allgemein-teil-iii-iv",
     "trade_name": "Wirtschaft, Recht, Pädagogik",
-    "title": "Wirtschaft und Recht (Teil III)",
+    "title": "Berufs- und Arbeitspädagogik (Teil IV)",
     "parts": [
-      3
+      4
     ],
     "format": "full_time",
     "format_display": "Vollzeit",
     "teaching_mode": "presence",
-    "start_date": "2027-03-01",
-    "end_date": "2027-04-23",
-    "duration_hours": null,
-    "course_fee": 1990.0,
-    "course_fee_display": "1.990 €",
+    "start_date": "2027-02-22",
+    "end_date": "2027-03-12",
+    "duration_hours": 92,
+    "course_fee": 825.0,
+    "course_fee_display": "825 €",
     "exam_fee_scraped": null,
     "exam_fee": {
-      "fee": 340.0,
+      "fee": 235.0,
       "fee_max": null,
       "qualifier": "",
-      "display": "340 €"
+      "display": "235 €"
     },
     "city": "Kassel",
-    "street": "Auedamm 18",
+    "street": "Falderbaumstraße 18-20",
     "zip_code": "34123",
-    "latitude": 51.3021202,
-    "longitude": 9.4991416,
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
     "availability": "available",
-    "source_url": "https://www.bubiza.de/kurse/vollzeit-hoehere-berufsbildung/dachdeckermeister-fuer-dachdeckergesellen.html"
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1576"
   },
   {
     "chamber_slug": "hwk-kassel",
@@ -1557,11 +1661,11 @@
     "format": "full_time",
     "format_display": "Vollzeit",
     "teaching_mode": "presence",
-    "start_date": "2027-05-10",
-    "end_date": "2027-07-09",
-    "duration_hours": null,
-    "course_fee": 1830.0,
-    "course_fee_display": "1.830 €",
+    "start_date": "2027-03-15",
+    "end_date": "2027-05-14",
+    "duration_hours": 280,
+    "course_fee": 2500.0,
+    "course_fee_display": "2.500 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 340.0,
@@ -1569,13 +1673,112 @@
       "qualifier": "",
       "display": "340 €"
     },
-    "city": "Petersberg",
-    "street": "Goerdelerstraße 139",
-    "zip_code": "36100",
-    "latitude": 50.5673891,
-    "longitude": 9.699491,
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
     "availability": "available",
-    "source_url": "https://www.bbz-mitte.de/de/kursfinder/meistervorbereitungskurs-teil-iii-fuer-alle-gewerke-im-handwerk"
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1734"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Berufs- und Arbeitspädagogik (Teil IV)",
+    "parts": [
+      4
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-04-05",
+    "end_date": "2027-04-23",
+    "duration_hours": 92,
+    "course_fee": 825.0,
+    "course_fee_display": "825 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 235.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "235 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1578"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Berufs- und Arbeitspädagogik (Teil IV)",
+    "parts": [
+      4
+    ],
+    "format": "part_time",
+    "format_display": "Teilzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-04-05",
+    "end_date": "2027-06-11",
+    "duration_hours": 92,
+    "course_fee": 825.0,
+    "course_fee_display": "825 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 235.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "235 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1596"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Wirtschaft und Recht (Teil III)",
+    "parts": [
+      3
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-05-03",
+    "end_date": "2027-06-25",
+    "duration_hours": 280,
+    "course_fee": 2500.0,
+    "course_fee_display": "2.500 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 340.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "340 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1736"
   },
   {
     "chamber_slug": "hwk-kassel",
@@ -1609,6 +1812,72 @@
     "longitude": 8.7666044,
     "availability": "available",
     "source_url": "https://www.bbz-marburg.de/kurs/mv-iii-vz/"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Wirtschaft und Recht (Teil III)",
+    "parts": [
+      3
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-06-28",
+    "end_date": "2027-08-06",
+    "duration_hours": 240,
+    "course_fee": 2500.0,
+    "course_fee_display": "2.500 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 340.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "340 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1738"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Berufs- und Arbeitspädagogik (Teil IV)",
+    "parts": [
+      4
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "online",
+    "start_date": "2027-07-05",
+    "end_date": "2027-07-23",
+    "duration_hours": 92,
+    "course_fee": 825.0,
+    "course_fee_display": "825 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 235.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "235 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1582"
   },
   {
     "chamber_slug": "hwk-kassel",
@@ -1723,11 +1992,11 @@
     "format": "full_time",
     "format_display": "Vollzeit",
     "teaching_mode": "presence",
-    "start_date": "2027-08-09",
+    "start_date": "2027-08-16",
     "end_date": "2027-10-01",
-    "duration_hours": null,
-    "course_fee": 1830.0,
-    "course_fee_display": "1.830 €",
+    "duration_hours": 280,
+    "course_fee": 2500.0,
+    "course_fee_display": "2.500 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 340.0,
@@ -1735,13 +2004,112 @@
       "qualifier": "",
       "display": "340 €"
     },
-    "city": "Petersberg",
-    "street": "Goerdelerstraße 139",
-    "zip_code": "36100",
-    "latitude": 50.5673891,
-    "longitude": 9.699491,
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
     "availability": "available",
-    "source_url": "https://www.bbz-mitte.de/de/kursfinder/meistervorbereitungskurs-teil-iii-fuer-alle-gewerke-im-handwerk"
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1740"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Wirtschaft und Recht (Teil III)",
+    "parts": [
+      3
+    ],
+    "format": "part_time",
+    "format_display": "Teilzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-08-31",
+    "end_date": "2028-02-16",
+    "duration_hours": 280,
+    "course_fee": 2500.0,
+    "course_fee_display": "2.500 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 340.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "340 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1786"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Berufs- und Arbeitspädagogik (Teil IV)",
+    "parts": [
+      4
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-09-06",
+    "end_date": "2027-09-24",
+    "duration_hours": 92,
+    "course_fee": 825.0,
+    "course_fee_display": "825 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 235.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "235 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1584"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Berufs- und Arbeitspädagogik (Teil IV)",
+    "parts": [
+      4
+    ],
+    "format": "part_time",
+    "format_display": "Teilzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-09-06",
+    "end_date": "2027-11-24",
+    "duration_hours": 92,
+    "course_fee": 825.0,
+    "course_fee_display": "825 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 235.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "235 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1744"
   },
   {
     "chamber_slug": "hwk-kassel",
@@ -1842,6 +2210,72 @@
     "longitude": 8.7666044,
     "availability": "available",
     "source_url": "https://www.bbz-marburg.de/kurs/mv-iii-vz/"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Wirtschaft und Recht (Teil III)",
+    "parts": [
+      3
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-10-18",
+    "end_date": "2027-12-03",
+    "duration_hours": 280,
+    "course_fee": 2500.0,
+    "course_fee_display": "2.500 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 340.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "340 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1742"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Berufs- und Arbeitspädagogik (Teil IV)",
+    "parts": [
+      4
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-10-25",
+    "end_date": "2027-11-12",
+    "duration_hours": 92,
+    "course_fee": 825.0,
+    "course_fee_display": "825 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 235.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "235 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1586"
   },
   {
     "chamber_slug": "hwk-kassel",
@@ -5267,7 +5701,7 @@
     "latitude": 50.5456433,
     "longitude": 7.1017081,
     "availability": "available",
-    "source_url": "https://www.hwk-koblenz.de/kurse/teile-iii-und-iv-in-teilzeit-52,0,coursedetail.html?id=115566&search-onr=52&img=16"
+    "source_url": "https://www.hwk-koblenz.de/kurse/teile-iii-und-iv-in-teilzeit-52,0,coursedetail.html?id=115566&search-onr=52&img=17"
   },
   {
     "chamber_slug": "hwk-koblenz",
@@ -5301,7 +5735,7 @@
     "latitude": 50.7821939,
     "longitude": 7.740086,
     "availability": "available",
-    "source_url": "https://www.hwk-koblenz.de/kurse/teile-iii-und-iv-in-teilzeit-52,0,coursedetail.html?id=115571&search-onr=52&img=17"
+    "source_url": "https://www.hwk-koblenz.de/kurse/teile-iii-und-iv-in-teilzeit-52,0,coursedetail.html?id=115571&search-onr=52&img=16"
   },
   {
     "chamber_slug": "hwk-koblenz",
@@ -8762,39 +9196,6 @@
     "chamber_region": "Rheinland-Pfalz",
     "trade_slug": "allgemein-teil-iii-iv",
     "trade_name": "Wirtschaft, Recht, Pädagogik",
-    "title": "Wirtschaft und Recht (Teil III)",
-    "parts": [
-      3
-    ],
-    "format": "full_time",
-    "format_display": "Vollzeit",
-    "teaching_mode": "presence",
-    "start_date": "2026-09-07",
-    "end_date": "2026-10-10",
-    "duration_hours": 240,
-    "course_fee": 1700.0,
-    "course_fee_display": "1.700 €",
-    "exam_fee_scraped": null,
-    "exam_fee": {
-      "fee": 220.0,
-      "fee_max": 300.0,
-      "qualifier": "",
-      "display": "220 € bis 300 €"
-    },
-    "city": "Mainz",
-    "street": "Robert-Bosch-Straße 8",
-    "zip_code": "55129",
-    "latitude": 49.959692,
-    "longitude": 8.260685,
-    "availability": "full",
-    "source_url": "https://www.hwk.de/seminar/teil-iii-vz/"
-  },
-  {
-    "chamber_slug": "hwk-rheinhessen",
-    "chamber_name": "HWK Rheinhessen",
-    "chamber_region": "Rheinland-Pfalz",
-    "trade_slug": "allgemein-teil-iii-iv",
-    "trade_name": "Wirtschaft, Recht, Pädagogik",
     "title": "Berufs- und Arbeitspädagogik (Teil IV)",
     "parts": [
       4
@@ -9799,39 +10200,6 @@
     "chamber_region": "Saarland",
     "trade_slug": "kfz-techniker",
     "trade_name": "Kfz.-Techniker",
-    "title": "Kfz.-Techniker (Teil II)",
-    "parts": [
-      2
-    ],
-    "format": "part_time",
-    "format_display": "Teilzeit",
-    "teaching_mode": "presence",
-    "start_date": "2027-08-09",
-    "end_date": "2028-05-12",
-    "duration_hours": 540,
-    "course_fee": 1650.0,
-    "course_fee_display": "1.650 €",
-    "exam_fee_scraped": 170.0,
-    "exam_fee": {
-      "fee": 170.0,
-      "fee_max": null,
-      "qualifier": "",
-      "display": "170 €"
-    },
-    "city": "Saarbrücken",
-    "street": "Hohenzollernstraße 47-49",
-    "zip_code": "66117",
-    "latitude": 49.2297,
-    "longitude": 6.9967,
-    "availability": "available",
-    "source_url": "https://www.hwk-saarland.de/seminar/mv-teil-ii-kraftfahrzeugtechniker-m2km/"
-  },
-  {
-    "chamber_slug": "hwk-saarland",
-    "chamber_name": "HWK des Saarlandes",
-    "chamber_region": "Saarland",
-    "trade_slug": "kfz-techniker",
-    "trade_name": "Kfz.-Techniker",
     "title": "Kfz.-Techniker (Teil I)",
     "parts": [
       1
@@ -9927,6 +10295,39 @@
     "longitude": 6.9967,
     "availability": "unknown",
     "source_url": "https://www.hwk-saarland.de/seminar/ms-kraftfahrzeugtechnik-vollzeit-msvzkfz/"
+  },
+  {
+    "chamber_slug": "hwk-saarland",
+    "chamber_name": "HWK des Saarlandes",
+    "chamber_region": "Saarland",
+    "trade_slug": "kfz-techniker",
+    "trade_name": "Kfz.-Techniker",
+    "title": "Kfz.-Techniker (Teil II)",
+    "parts": [
+      2
+    ],
+    "format": "part_time",
+    "format_display": "Teilzeit",
+    "teaching_mode": "presence",
+    "start_date": null,
+    "end_date": null,
+    "duration_hours": 540,
+    "course_fee": 1650.0,
+    "course_fee_display": "1.650 €",
+    "exam_fee_scraped": 170.0,
+    "exam_fee": {
+      "fee": 170.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "170 €"
+    },
+    "city": "Saarbrücken",
+    "street": "Hohenzollernstraße 47-49",
+    "zip_code": "66117",
+    "latitude": 49.2297,
+    "longitude": 6.9967,
+    "availability": "unknown",
+    "source_url": "https://www.hwk-saarland.de/seminar/mv-teil-ii-kraftfahrzeugtechniker-m2km/"
   },
   {
     "chamber_slug": "hwk-saarland",
