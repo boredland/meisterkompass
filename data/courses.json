@@ -8211,6 +8211,40 @@
     "chamber_slug": "hwk-rhein-main",
     "chamber_name": "HWK Frankfurt-Rhein-Main",
     "chamber_region": "Hessen",
+    "trade_slug": "feinwerkmechaniker",
+    "trade_name": "Feinwerkmechaniker",
+    "title": "Feinwerkmechaniker (Teile I + II)",
+    "parts": [
+      1,
+      2
+    ],
+    "format": "part_time",
+    "format_display": "Teilzeit",
+    "teaching_mode": "presence",
+    "start_date": "2028-01-11",
+    "end_date": "2028-12-02",
+    "duration_hours": null,
+    "course_fee": 9990.0,
+    "course_fee_display": "9.990 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 730.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "730 €"
+    },
+    "city": "Frankfurt am Main",
+    "street": "Schönstraße 21",
+    "zip_code": "60327",
+    "latitude": 50.1013705,
+    "longitude": 8.65682,
+    "availability": "available",
+    "source_url": "https://portal.hwk-rhein-main.de/seminar/ml-19tz/"
+  },
+  {
+    "chamber_slug": "hwk-rhein-main",
+    "chamber_name": "HWK Frankfurt-Rhein-Main",
+    "chamber_region": "Hessen",
     "trade_slug": "fleischer",
     "trade_name": "Fleischer",
     "title": "Fleischer (Teile I + II + III + IV)",
@@ -8416,6 +8450,40 @@
     "longitude": 8.65682,
     "availability": "available",
     "source_url": "https://portal.hwk-rhein-main.de/seminar/ml-16vz-iii/"
+  },
+  {
+    "chamber_slug": "hwk-rhein-main",
+    "chamber_name": "HWK Frankfurt-Rhein-Main",
+    "chamber_region": "Hessen",
+    "trade_slug": "metallbauer",
+    "trade_name": "Metallbauer",
+    "title": "Metallbauer (Teile I + II)",
+    "parts": [
+      1,
+      2
+    ],
+    "format": "part_time",
+    "format_display": "Teilzeit",
+    "teaching_mode": "presence",
+    "start_date": "2028-01-11",
+    "end_date": "2028-12-02",
+    "duration_hours": null,
+    "course_fee": 9990.0,
+    "course_fee_display": "9.990 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 730.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "730 €"
+    },
+    "city": "Frankfurt am Main",
+    "street": "Schönstraße 21",
+    "zip_code": "60327",
+    "latitude": 50.1013705,
+    "longitude": 8.65682,
+    "availability": "available",
+    "source_url": "https://portal.hwk-rhein-main.de/seminar/ml-16tz/"
   },
   {
     "chamber_slug": "hwk-rhein-main",
@@ -8896,7 +8964,7 @@
     "format_display": "Teilzeit",
     "teaching_mode": "presence",
     "start_date": "2027-02-13",
-    "end_date": "2027-09-03",
+    "end_date": "2027-09-08",
     "duration_hours": null,
     "course_fee": 2990.0,
     "course_fee_display": "2.990 €",
@@ -9046,6 +9114,40 @@
     "longitude": 8.65682,
     "availability": "available",
     "source_url": "https://portal.hwk-rhein-main.de/seminar/ml-99vz/"
+  },
+  {
+    "chamber_slug": "hwk-rhein-main",
+    "chamber_name": "HWK Frankfurt-Rhein-Main",
+    "chamber_region": "Hessen",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Wirtschaft und Recht, Pädagogik (Teile III + IV)",
+    "parts": [
+      3,
+      4
+    ],
+    "format": "part_time",
+    "format_display": "Teilzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-05-15",
+    "end_date": "2027-12-08",
+    "duration_hours": null,
+    "course_fee": 2990.0,
+    "course_fee_display": "2.990 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 490.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "490 €"
+    },
+    "city": "Frankfurt am Main",
+    "street": "Schönstraße 21",
+    "zip_code": "60327",
+    "latitude": 50.1013705,
+    "longitude": 8.65682,
+    "availability": "available",
+    "source_url": "https://portal.hwk-rhein-main.de/seminar/ml-99bb/"
   },
   {
     "chamber_slug": "hwk-rhein-main",
@@ -11745,7 +11847,7 @@
     "format_display": "Teilzeit",
     "teaching_mode": "presence",
     "start_date": "2027-11-15",
-    "end_date": "2028-01-13",
+    "end_date": "2028-01-20",
     "duration_hours": 56,
     "course_fee": 505.0,
     "course_fee_display": "505 €",
@@ -14007,7 +14109,7 @@
     "zip_code": "35576",
     "latitude": 50.5548159,
     "longitude": 8.4921662,
-    "availability": "waitlist",
+    "availability": "available",
     "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teile-iii-iv-vollzeit-44,0,coursedetail.html?id=77273&search-onr=44&img=14"
   },
   {
