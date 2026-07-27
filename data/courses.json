@@ -4943,7 +4943,7 @@
     "zip_code": "56073",
     "latitude": 50.3603382,
     "longitude": 7.5844202,
-    "availability": "available",
+    "availability": "waitlist",
     "source_url": "https://www.hwk-koblenz.de/kurse/konditoren-teile-i-und-ii-in-vollzeit-52,0,coursedetail.html?id=111930&search-onr=52&img=1"
   },
   {
@@ -6473,7 +6473,7 @@
     "latitude": 50.7821939,
     "longitude": 7.740086,
     "availability": "available",
-    "source_url": "https://www.hwk-koblenz.de/kurse/teile-iii-und-iv-crashkurs-52,0,coursedetail.html?id=120026&search-onr=52&img=16"
+    "source_url": "https://www.hwk-koblenz.de/kurse/teile-iii-und-iv-crashkurs-52,0,coursedetail.html?id=120026&search-onr=52&img=15"
   },
   {
     "chamber_slug": "hwk-koblenz",
@@ -6507,7 +6507,7 @@
     "latitude": 49.9837081,
     "longitude": 7.5250674,
     "availability": "available",
-    "source_url": "https://www.hwk-koblenz.de/kurse/teile-iii-und-iv-crashkurs-52,0,coursedetail.html?id=120031&search-onr=52&img=15"
+    "source_url": "https://www.hwk-koblenz.de/kurse/teile-iii-und-iv-crashkurs-52,0,coursedetail.html?id=120031&search-onr=52&img=16"
   },
   {
     "chamber_slug": "hwk-koblenz",

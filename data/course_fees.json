@@ -32,17 +32,6 @@
     "is_generic": true
   },
   {
-    "chamber_slug": "hwk-koblenz",
-    "trade_slug": "konditoren",
-    "parts": [
-      1,
-      2
-    ],
-    "fee": 7350.0,
-    "exam_fee_scraped": null,
-    "is_generic": false
-  },
-  {
     "chamber_slug": "hwk-rhein-main",
     "trade_slug": "zweirad",
     "parts": [
@@ -785,6 +774,17 @@
       2
     ],
     "fee": 6950.0,
+    "exam_fee_scraped": null,
+    "is_generic": false
+  },
+  {
+    "chamber_slug": "hwk-koblenz",
+    "trade_slug": "konditoren",
+    "parts": [
+      1,
+      2
+    ],
+    "fee": 7350.0,
     "exam_fee_scraped": null,
     "is_generic": false
   },
