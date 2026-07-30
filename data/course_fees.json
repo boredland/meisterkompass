@@ -1163,6 +1163,17 @@
     "is_generic": false
   },
   {
+    "chamber_slug": "hwk-trier",
+    "trade_slug": "zahntechniker",
+    "parts": [
+      1,
+      2
+    ],
+    "fee": 9900.0,
+    "exam_fee_scraped": 1130.0,
+    "is_generic": false
+  },
+  {
     "chamber_slug": "hwk-rhein-main",
     "trade_slug": "tischler",
     "parts": [
@@ -1245,17 +1256,6 @@
     ],
     "fee": 4200.0,
     "exam_fee_scraped": 400.0,
-    "is_generic": false
-  },
-  {
-    "chamber_slug": "hwk-trier",
-    "trade_slug": "zahntechniker",
-    "parts": [
-      1,
-      2
-    ],
-    "fee": 10700.0,
-    "exam_fee_scraped": 1130.0,
     "is_generic": false
   },
   {

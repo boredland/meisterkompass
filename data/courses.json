@@ -8591,72 +8591,6 @@
     "chamber_region": "Hessen",
     "trade_slug": "allgemein-teil-iii-iv",
     "trade_name": "Wirtschaft, Recht, Pädagogik",
-    "title": "Wirtschaft und Recht (Teil III)",
-    "parts": [
-      3
-    ],
-    "format": "full_time",
-    "format_display": "Vollzeit",
-    "teaching_mode": "presence",
-    "start_date": "2026-08-27",
-    "end_date": "2026-10-16",
-    "duration_hours": null,
-    "course_fee": 2290.0,
-    "course_fee_display": "2.290 €",
-    "exam_fee_scraped": null,
-    "exam_fee": {
-      "fee": 340.0,
-      "fee_max": null,
-      "qualifier": "",
-      "display": "340 €"
-    },
-    "city": "Frankfurt am Main",
-    "street": "Schönstraße 21",
-    "zip_code": "60327",
-    "latitude": 50.1013705,
-    "longitude": 8.65682,
-    "availability": "available",
-    "source_url": "https://portal.hwk-rhein-main.de/seminar/ml-99vz/"
-  },
-  {
-    "chamber_slug": "hwk-rhein-main",
-    "chamber_name": "HWK Frankfurt-Rhein-Main",
-    "chamber_region": "Hessen",
-    "trade_slug": "allgemein-teil-iii-iv",
-    "trade_name": "Wirtschaft, Recht, Pädagogik",
-    "title": "Wirtschaft und Recht (Teil III)",
-    "parts": [
-      3
-    ],
-    "format": "full_time",
-    "format_display": "Vollzeit",
-    "teaching_mode": "presence",
-    "start_date": "2026-09-10",
-    "end_date": "2026-10-30",
-    "duration_hours": null,
-    "course_fee": 2290.0,
-    "course_fee_display": "2.290 €",
-    "exam_fee_scraped": null,
-    "exam_fee": {
-      "fee": 340.0,
-      "fee_max": null,
-      "qualifier": "",
-      "display": "340 €"
-    },
-    "city": "Frankfurt am Main",
-    "street": "Schönstraße 21",
-    "zip_code": "60327",
-    "latitude": 50.1013705,
-    "longitude": 8.65682,
-    "availability": "available",
-    "source_url": "https://portal.hwk-rhein-main.de/seminar/ml-99vz/"
-  },
-  {
-    "chamber_slug": "hwk-rhein-main",
-    "chamber_name": "HWK Frankfurt-Rhein-Main",
-    "chamber_region": "Hessen",
-    "trade_slug": "allgemein-teil-iii-iv",
-    "trade_name": "Wirtschaft, Recht, Pädagogik",
     "title": "Berufs- und Arbeitspädagogik (Teil IV)",
     "parts": [
       4
@@ -8683,39 +8617,6 @@
     "longitude": 8.6137976,
     "availability": "available",
     "source_url": "https://portal.hwk-rhein-main.de/seminar/ml-99sp/"
-  },
-  {
-    "chamber_slug": "hwk-rhein-main",
-    "chamber_name": "HWK Frankfurt-Rhein-Main",
-    "chamber_region": "Hessen",
-    "trade_slug": "allgemein-teil-iii-iv",
-    "trade_name": "Wirtschaft, Recht, Pädagogik",
-    "title": "Wirtschaft und Recht (Teil III)",
-    "parts": [
-      3
-    ],
-    "format": "full_time",
-    "format_display": "Vollzeit",
-    "teaching_mode": "presence",
-    "start_date": "2026-10-20",
-    "end_date": "2026-12-09",
-    "duration_hours": null,
-    "course_fee": 2290.0,
-    "course_fee_display": "2.290 €",
-    "exam_fee_scraped": null,
-    "exam_fee": {
-      "fee": 340.0,
-      "fee_max": null,
-      "qualifier": "",
-      "display": "340 €"
-    },
-    "city": "Weiterstadt",
-    "street": "Rudolf-Diesel-Straße 30",
-    "zip_code": "64331",
-    "latitude": 49.9011703,
-    "longitude": 8.6137976,
-    "availability": "available",
-    "source_url": "https://portal.hwk-rhein-main.de/seminar/ml-99vz/"
   },
   {
     "chamber_slug": "hwk-rhein-main",
@@ -12533,7 +12434,7 @@
     "zip_code": "54292",
     "latitude": 49.775426,
     "longitude": 6.6804464,
-    "availability": "waitlist",
+    "availability": "available",
     "source_url": "https://www.hwk-trier.de/kurse/teil-iii-zahntechniker-54,0,coursedetail.html?id=60528&search-onr=54&img=2"
   },
   {
@@ -12971,6 +12872,40 @@
     "longitude": 8.4921662,
     "availability": "available",
     "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-im-friseurhandwerk-teile-i-ii-vollzeit-44,0,coursedetail.html?id=121726&search-onr=44&img=4"
+  },
+  {
+    "chamber_slug": "hwk-wiesbaden",
+    "chamber_name": "HWK Wiesbaden",
+    "chamber_region": "Hessen",
+    "trade_slug": "friseur",
+    "trade_name": "Friseur",
+    "title": "Friseur (Teile I + II)",
+    "parts": [
+      1,
+      2
+    ],
+    "format": "part_time",
+    "format_display": "Teilzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-08-09",
+    "end_date": "2028-09-04",
+    "duration_hours": 446,
+    "course_fee": 3950.0,
+    "course_fee_display": "3.950 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 730.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "730 €"
+    },
+    "city": "Wetzlar",
+    "street": "Dillufer 40",
+    "zip_code": "35576",
+    "latitude": 50.5548159,
+    "longitude": 8.4921662,
+    "availability": "available",
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-im-friseurhandwerk-teile-i-ii-teilzeit-44,0,coursedetail.html?id=125561&search-onr=44&img=5"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
