@@ -11,7 +11,7 @@
   },
   {
     "chamber_slug": "hwk-kassel",
-    "trade_slug": "maler-und-lackierer",
+    "trade_slug": "maler-lackierervollzeit",
     "parts": [
       1,
       2
@@ -726,6 +726,17 @@
     "is_generic": false
   },
   {
+    "chamber_slug": "hwk-kassel",
+    "trade_slug": "maler-und-lackierer",
+    "parts": [
+      1,
+      2
+    ],
+    "fee": 7100.0,
+    "exam_fee_scraped": null,
+    "is_generic": false
+  },
+  {
     "chamber_slug": "hwk-saarland",
     "trade_slug": "strassenbauer",
     "parts": [
@@ -743,6 +754,17 @@
     ],
     "fee": 4265.0,
     "exam_fee_scraped": 990.0,
+    "is_generic": false
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "trade_slug": "maler-lackiererteilzeit",
+    "parts": [
+      1,
+      2
+    ],
+    "fee": 7120.0,
+    "exam_fee_scraped": null,
     "is_generic": false
   },
   {
@@ -1153,17 +1175,6 @@
   },
   {
     "chamber_slug": "hwk-trier",
-    "trade_slug": "elektrotechniker",
-    "parts": [
-      1,
-      2
-    ],
-    "fee": 9300.0,
-    "exam_fee_scraped": 1130.0,
-    "is_generic": false
-  },
-  {
-    "chamber_slug": "hwk-trier",
     "trade_slug": "zahntechniker",
     "parts": [
       1,
@@ -1259,6 +1270,17 @@
     "is_generic": false
   },
   {
+    "chamber_slug": "hwk-trier",
+    "trade_slug": "elektrotechniker",
+    "parts": [
+      1,
+      2
+    ],
+    "fee": 9300.0,
+    "exam_fee_scraped": 1130.0,
+    "is_generic": false
+  },
+  {
     "chamber_slug": "hwk-pfalz",
     "trade_slug": "elektrotechniker",
     "parts": [
@@ -1339,7 +1361,7 @@
       1,
       2
     ],
-    "fee": 7900.0,
+    "fee": 7300.0,
     "exam_fee_scraped": null,
     "is_generic": false
   },

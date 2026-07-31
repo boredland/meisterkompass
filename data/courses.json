@@ -1115,9 +1115,43 @@
     "chamber_slug": "hwk-kassel",
     "chamber_name": "HWK Kassel",
     "chamber_region": "Hessen",
-    "trade_slug": "maler-und-lackierer",
-    "trade_name": "Maler und Lackierer",
-    "title": "Maler und Lackierer (Teile I + II)",
+    "trade_slug": "maler-lackiererteilzeit",
+    "trade_name": "Maler + LackiererTeilzeit",
+    "title": "Maler + LackiererTeilzeit (Teile I + II)",
+    "parts": [
+      1,
+      2
+    ],
+    "format": "part_time",
+    "format_display": "Teilzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-04-08",
+    "end_date": "2029-03-22",
+    "duration_hours": 880,
+    "course_fee": 7120.0,
+    "course_fee_display": "7.120 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 730.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "730 €"
+    },
+    "city": "Marburg",
+    "street": "Umgehungsstraße 1-3",
+    "zip_code": "35043",
+    "latitude": 50.7872688,
+    "longitude": 8.7666044,
+    "availability": "available",
+    "source_url": "https://www.bbz-marburg.de/kurs/mv-mal-tz/"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "maler-lackierervollzeit",
+    "trade_name": "Maler + LackiererVollzeit",
+    "title": "Maler + LackiererVollzeit (Teile I + II)",
     "parts": [
       1,
       2
@@ -1127,6 +1161,40 @@
     "teaching_mode": "presence",
     "start_date": "2026-08-10",
     "end_date": "2027-03-05",
+    "duration_hours": 880,
+    "course_fee": 7120.0,
+    "course_fee_display": "7.120 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 730.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "730 €"
+    },
+    "city": "Marburg",
+    "street": "Umgehungsstraße 1-3",
+    "zip_code": "35043",
+    "latitude": 50.7872688,
+    "longitude": 8.7666044,
+    "availability": "available",
+    "source_url": "https://www.bbz-marburg.de/kurs/mv-mal-vz/"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "maler-lackierervollzeit",
+    "trade_name": "Maler + LackiererVollzeit",
+    "title": "Maler + LackiererVollzeit (Teile I + II)",
+    "parts": [
+      1,
+      2
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-04-05",
+    "end_date": "2027-11-05",
     "duration_hours": 880,
     "course_fee": 7120.0,
     "course_fee_display": "7.120 €",
@@ -1178,74 +1246,6 @@
     "longitude": 9.498614,
     "availability": "available",
     "source_url": "https://www.bz-kassel.de/bildungsangebot/elektro-und-gebaeudetechnik/kursdetail/kurs-1870"
-  },
-  {
-    "chamber_slug": "hwk-kassel",
-    "chamber_name": "HWK Kassel",
-    "chamber_region": "Hessen",
-    "trade_slug": "maler-und-lackierer",
-    "trade_name": "Maler und Lackierer",
-    "title": "Maler und Lackierer (Teile I + II)",
-    "parts": [
-      1,
-      2
-    ],
-    "format": "full_time",
-    "format_display": "Vollzeit",
-    "teaching_mode": "presence",
-    "start_date": "2027-04-05",
-    "end_date": "2027-11-05",
-    "duration_hours": 880,
-    "course_fee": 7120.0,
-    "course_fee_display": "7.120 €",
-    "exam_fee_scraped": null,
-    "exam_fee": {
-      "fee": 730.0,
-      "fee_max": null,
-      "qualifier": "",
-      "display": "730 €"
-    },
-    "city": "Marburg",
-    "street": "Umgehungsstraße 1-3",
-    "zip_code": "35043",
-    "latitude": 50.7872688,
-    "longitude": 8.7666044,
-    "availability": "available",
-    "source_url": "https://www.bbz-marburg.de/kurs/mv-mal-vz/"
-  },
-  {
-    "chamber_slug": "hwk-kassel",
-    "chamber_name": "HWK Kassel",
-    "chamber_region": "Hessen",
-    "trade_slug": "maler-und-lackierer",
-    "trade_name": "Maler und Lackierer",
-    "title": "Maler und Lackierer (Teile I + II)",
-    "parts": [
-      1,
-      2
-    ],
-    "format": "part_time",
-    "format_display": "Teilzeit",
-    "teaching_mode": "presence",
-    "start_date": "2027-04-08",
-    "end_date": "2029-03-22",
-    "duration_hours": 880,
-    "course_fee": 7120.0,
-    "course_fee_display": "7.120 €",
-    "exam_fee_scraped": null,
-    "exam_fee": {
-      "fee": 730.0,
-      "fee_max": null,
-      "qualifier": "",
-      "display": "730 €"
-    },
-    "city": "Marburg",
-    "street": "Umgehungsstraße 1-3",
-    "zip_code": "35043",
-    "latitude": 50.7872688,
-    "longitude": 8.7666044,
-    "availability": "available",
-    "source_url": "https://www.bbz-marburg.de/kurs/mv-mal-tz/"
   },
   {
     "chamber_slug": "hwk-kassel",
@@ -2849,6 +2849,39 @@
     "chamber_region": "Hessen",
     "trade_slug": "allgemein-teil-iii-iv",
     "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Wirtschaft und Recht (Teil III)",
+    "parts": [
+      3
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2028-01-10",
+    "end_date": "2028-02-29",
+    "duration_hours": null,
+    "course_fee": 1920.0,
+    "course_fee_display": "1.920 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 340.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "340 €"
+    },
+    "city": "Petersberg",
+    "street": "Goerdelerstraße 139",
+    "zip_code": "36100",
+    "latitude": 50.5673891,
+    "longitude": 9.699491,
+    "availability": "available",
+    "source_url": "https://www.bbz-mitte.de/de/kursfinder/meistervorbereitungskurs-teil-iii-fuer-alle-gewerke-im-handwerk"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
     "title": "Berufs- und Arbeitspädagogik (Teil IV)",
     "parts": [
       4
@@ -2908,6 +2941,72 @@
     "longitude": 9.4991416,
     "availability": "available",
     "source_url": "https://www.bubiza.de/kurse/vollzeit-hoehere-berufsbildung/zimmermeister-holzbau-deutschland-anerkannt.html"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Wirtschaft und Recht (Teil III)",
+    "parts": [
+      3
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2028-05-08",
+    "end_date": "2028-06-30",
+    "duration_hours": null,
+    "course_fee": 1920.0,
+    "course_fee_display": "1.920 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 340.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "340 €"
+    },
+    "city": "Petersberg",
+    "street": "Goerdelerstraße 139",
+    "zip_code": "36100",
+    "latitude": 50.5673891,
+    "longitude": 9.699491,
+    "availability": "available",
+    "source_url": "https://www.bbz-mitte.de/de/kursfinder/meistervorbereitungskurs-teil-iii-fuer-alle-gewerke-im-handwerk"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Wirtschaft und Recht (Teil III)",
+    "parts": [
+      3
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2028-07-31",
+    "end_date": "2028-09-22",
+    "duration_hours": null,
+    "course_fee": 1920.0,
+    "course_fee_display": "1.920 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 340.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "340 €"
+    },
+    "city": "Petersberg",
+    "street": "Goerdelerstraße 139",
+    "zip_code": "36100",
+    "latitude": 50.5673891,
+    "longitude": 9.699491,
+    "availability": "available",
+    "source_url": "https://www.bbz-mitte.de/de/kursfinder/meistervorbereitungskurs-teil-iii-fuer-alle-gewerke-im-handwerk"
   },
   {
     "chamber_slug": "hwk-kassel",
@@ -8591,6 +8690,39 @@
     "chamber_region": "Hessen",
     "trade_slug": "allgemein-teil-iii-iv",
     "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Wirtschaft und Recht (Teil III)",
+    "parts": [
+      3
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2026-08-27",
+    "end_date": "2026-10-16",
+    "duration_hours": null,
+    "course_fee": 2290.0,
+    "course_fee_display": "2.290 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 340.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "340 €"
+    },
+    "city": "Frankfurt am Main",
+    "street": "Schönstraße 21",
+    "zip_code": "60327",
+    "latitude": 50.1013705,
+    "longitude": 8.65682,
+    "availability": "available",
+    "source_url": "https://portal.hwk-rhein-main.de/seminar/ml-99vz/"
+  },
+  {
+    "chamber_slug": "hwk-rhein-main",
+    "chamber_name": "HWK Frankfurt-Rhein-Main",
+    "chamber_region": "Hessen",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
     "title": "Berufs- und Arbeitspädagogik (Teil IV)",
     "parts": [
       4
@@ -9404,8 +9536,8 @@
     "start_date": "2027-08-24",
     "end_date": "2029-08-31",
     "duration_hours": 1100,
-    "course_fee": 7900.0,
-    "course_fee_display": "7.900 €",
+    "course_fee": 7300.0,
+    "course_fee_display": "7.300 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 900.0,
@@ -11831,7 +11963,7 @@
     "zip_code": "54292",
     "latitude": 49.775426,
     "longitude": 6.6804464,
-    "availability": "available",
+    "availability": "waitlist",
     "source_url": "https://www.hwk-trier.de/kurse/teil-iii-elektrotechniker-54,0,coursedetail.html?id=60549&search-onr=54&img=2"
   },
   {
@@ -13280,6 +13412,40 @@
     "chamber_slug": "hwk-wiesbaden",
     "chamber_name": "HWK Wiesbaden",
     "chamber_region": "Hessen",
+    "trade_slug": "maler-und-lackierer",
+    "trade_name": "Maler und Lackierer",
+    "title": "Maler und Lackierer (Teile I + II)",
+    "parts": [
+      1,
+      2
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-08-16",
+    "end_date": "2028-02-04",
+    "duration_hours": 1050,
+    "course_fee": 8350.0,
+    "course_fee_display": "8.350 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 730.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "730 €"
+    },
+    "city": "Wiesbaden",
+    "street": "Brunhildenstraße 110",
+    "zip_code": "65189",
+    "latitude": 50.0652806,
+    "longitude": 8.2590004,
+    "availability": "available",
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-im-maler-und-lackierer-handwerk-teile-iii-schwerpunkt-gestaltung-und-instandhaltung-vollzeit-44,0,coursedetail.html?id=125641&search-onr=44&img=5"
+  },
+  {
+    "chamber_slug": "hwk-wiesbaden",
+    "chamber_name": "HWK Wiesbaden",
+    "chamber_region": "Hessen",
     "trade_slug": "maurer-und-betonbauer",
     "trade_name": "Maurer und Betonbauer",
     "title": "Maurer und Betonbauer (Teile I + II)",
@@ -14342,7 +14508,7 @@
     "latitude": 50.5548159,
     "longitude": 8.4921662,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-teilzeit-44,0,coursedetail.html?id=123886&search-onr=44&img=5"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-teilzeit-44,0,coursedetail.html?id=123886&search-onr=44&img=4"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -14376,7 +14542,7 @@
     "latitude": 50.5548159,
     "longitude": 8.4921662,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teile-iii-iv-teilzeit-44,0,coursedetail.html?id=115841&search-onr=44&img=4"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teile-iii-iv-teilzeit-44,0,coursedetail.html?id=115841&search-onr=44&img=5"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
