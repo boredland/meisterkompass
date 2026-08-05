@@ -1494,6 +1494,39 @@
     "parts": [
       3
     ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2026-08-17",
+    "end_date": "2026-10-02",
+    "duration_hours": 280,
+    "course_fee": 2100.0,
+    "course_fee_display": "2.100 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 340.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "340 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1066"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Wirtschaft und Recht (Teil III)",
+    "parts": [
+      3
+    ],
     "format": "part_time",
     "format_display": "Teilzeit",
     "teaching_mode": "presence",
@@ -5076,7 +5109,7 @@
     "zip_code": "56070",
     "latitude": 50.3895583,
     "longitude": 7.5708933,
-    "availability": "waitlist",
+    "availability": "available",
     "source_url": "https://www.hwk-koblenz.de/kurse/maler-und-lackierer-teile-i-und-ii-in-teilzeit-52,0,coursedetail.html?id=113777&search-onr=52&img=6"
   },
   {
@@ -9434,8 +9467,8 @@
     "start_date": "2027-08-24",
     "end_date": "2029-08-31",
     "duration_hours": 1100,
-    "course_fee": 7300.0,
-    "course_fee_display": "7.300 €",
+    "course_fee": null,
+    "course_fee_display": "—",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 900.0,
@@ -10236,7 +10269,7 @@
     "format": "part_time",
     "format_display": "Teilzeit",
     "teaching_mode": "presence",
-    "start_date": "2026-08-11",
+    "start_date": "2026-10-27",
     "end_date": "2028-04-25",
     "duration_hours": 320,
     "course_fee": 4175.0,
