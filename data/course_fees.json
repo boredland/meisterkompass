@@ -202,6 +202,16 @@
     "is_generic": true
   },
   {
+    "chamber_slug": "hwk-kassel",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "parts": [
+      4
+    ],
+    "fee": 750.0,
+    "exam_fee_scraped": null,
+    "is_generic": true
+  },
+  {
     "chamber_slug": "hwk-koblenz",
     "trade_slug": "allgemein-teil-iii-iv",
     "parts": [
@@ -249,13 +259,14 @@
     "is_generic": false
   },
   {
-    "chamber_slug": "hwk-kassel",
+    "chamber_slug": "hwk-pfalz",
     "trade_slug": "allgemein-teil-iii-iv",
     "parts": [
+      3,
       4
     ],
-    "fee": 750.0,
-    "exam_fee_scraped": null,
+    "fee": 2300.0,
+    "exam_fee_scraped": 600.0,
     "is_generic": true
   },
   {
@@ -322,16 +333,6 @@
     "fee": 2950.0,
     "exam_fee_scraped": null,
     "is_generic": false
-  },
-  {
-    "chamber_slug": "hwk-rheinhessen",
-    "trade_slug": "allgemein-teil-iii-iv",
-    "parts": [
-      3
-    ],
-    "fee": 1700.0,
-    "exam_fee_scraped": null,
-    "is_generic": true
   },
   {
     "chamber_slug": "hwk-kassel",
@@ -588,17 +589,6 @@
     "is_generic": false
   },
   {
-    "chamber_slug": "hwk-pfalz",
-    "trade_slug": "allgemein-teil-iii-iv",
-    "parts": [
-      3,
-      4
-    ],
-    "fee": 2300.0,
-    "exam_fee_scraped": 600.0,
-    "is_generic": true
-  },
-  {
     "chamber_slug": "hwk-kassel",
     "trade_slug": "tischler",
     "parts": [
@@ -792,12 +782,12 @@
   },
   {
     "chamber_slug": "hwk-saarland",
-    "trade_slug": "maler-und-lackierer",
+    "trade_slug": "dachdecker",
     "parts": [
       2
     ],
-    "fee": 1425.0,
-    "exam_fee_scraped": 420.0,
+    "fee": 2340.0,
+    "exam_fee_scraped": 350.0,
     "is_generic": false
   },
   {
@@ -812,11 +802,51 @@
   },
   {
     "chamber_slug": "hwk-saarland",
+    "trade_slug": "konditor",
+    "parts": [
+      2
+    ],
+    "fee": 1700.0,
+    "exam_fee_scraped": 560.0,
+    "is_generic": false
+  },
+  {
+    "chamber_slug": "hwk-saarland",
+    "trade_slug": "maler-und-lackierer",
+    "parts": [
+      2
+    ],
+    "fee": 1425.0,
+    "exam_fee_scraped": 420.0,
+    "is_generic": false
+  },
+  {
+    "chamber_slug": "hwk-saarland",
     "trade_slug": "metallbauer",
     "parts": [
       2
     ],
     "fee": 5300.0,
+    "exam_fee_scraped": 560.0,
+    "is_generic": false
+  },
+  {
+    "chamber_slug": "hwk-saarland",
+    "trade_slug": "strassenbauer",
+    "parts": [
+      2
+    ],
+    "fee": 4055.0,
+    "exam_fee_scraped": 560.0,
+    "is_generic": false
+  },
+  {
+    "chamber_slug": "hwk-saarland",
+    "trade_slug": "stuckateure",
+    "parts": [
+      2
+    ],
+    "fee": 2305.0,
     "exam_fee_scraped": 560.0,
     "is_generic": false
   },
@@ -840,6 +870,16 @@
     "fee": 8650.0,
     "exam_fee_scraped": null,
     "is_generic": false
+  },
+  {
+    "chamber_slug": "hwk-rheinhessen",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "parts": [
+      3
+    ],
+    "fee": 1700.0,
+    "exam_fee_scraped": null,
+    "is_generic": true
   },
   {
     "chamber_slug": "hwk-pfalz",
@@ -907,16 +947,6 @@
     "is_generic": false
   },
   {
-    "chamber_slug": "hwk-saarland",
-    "trade_slug": "dachdecker",
-    "parts": [
-      2
-    ],
-    "fee": 2340.0,
-    "exam_fee_scraped": 350.0,
-    "is_generic": false
-  },
-  {
     "chamber_slug": "hwk-kassel",
     "trade_slug": "feinwerkmechaniker",
     "parts": [
@@ -924,17 +954,6 @@
       2
     ],
     "fee": 9086.0,
-    "exam_fee_scraped": null,
-    "is_generic": false
-  },
-  {
-    "chamber_slug": "hwk-wiesbaden",
-    "trade_slug": "maurer-und-betonbauer",
-    "parts": [
-      1,
-      2
-    ],
-    "fee": 7500.0,
     "exam_fee_scraped": null,
     "is_generic": false
   },
@@ -1170,7 +1189,7 @@
       1,
       2
     ],
-    "fee": 6350.0,
+    "fee": 6650.0,
     "exam_fee_scraped": null,
     "is_generic": false
   },
@@ -1181,7 +1200,18 @@
       1,
       2
     ],
-    "fee": 6950.0,
+    "fee": 7250.0,
+    "exam_fee_scraped": null,
+    "is_generic": false
+  },
+  {
+    "chamber_slug": "hwk-wiesbaden",
+    "trade_slug": "maurer-und-betonbauer",
+    "parts": [
+      1,
+      2
+    ],
+    "fee": 7800.0,
     "exam_fee_scraped": null,
     "is_generic": false
   },
@@ -1223,7 +1253,7 @@
       1,
       2
     ],
-    "fee": 9700.0,
+    "fee": 10050.0,
     "exam_fee_scraped": null,
     "is_generic": false
   },
@@ -1318,7 +1348,7 @@
       1,
       2
     ],
-    "fee": 6390.0,
+    "fee": 6590.0,
     "exam_fee_scraped": null,
     "is_generic": false
   },
@@ -1430,16 +1460,6 @@
   },
   {
     "chamber_slug": "hwk-saarland",
-    "trade_slug": "konditor",
-    "parts": [
-      2
-    ],
-    "fee": 1700.0,
-    "exam_fee_scraped": 560.0,
-    "is_generic": false
-  },
-  {
-    "chamber_slug": "hwk-saarland",
     "trade_slug": "maler-und-lackierer",
     "parts": [
       1,
@@ -1462,26 +1482,6 @@
     ],
     "fee": 6070.0,
     "exam_fee_scraped": 1790.0,
-    "is_generic": false
-  },
-  {
-    "chamber_slug": "hwk-saarland",
-    "trade_slug": "strassenbauer",
-    "parts": [
-      2
-    ],
-    "fee": 4055.0,
-    "exam_fee_scraped": 560.0,
-    "is_generic": false
-  },
-  {
-    "chamber_slug": "hwk-saarland",
-    "trade_slug": "stuckateure",
-    "parts": [
-      2
-    ],
-    "fee": 2305.0,
-    "exam_fee_scraped": 560.0,
     "is_generic": false
   },
   {

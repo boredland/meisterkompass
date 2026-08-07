@@ -1560,6 +1560,39 @@
     "parts": [
       4
     ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2026-09-07",
+    "end_date": "2026-09-25",
+    "duration_hours": 92,
+    "course_fee": 750.0,
+    "course_fee_display": "750 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 235.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "235 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-826"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Berufs- und Arbeitspädagogik (Teil IV)",
+    "parts": [
+      4
+    ],
     "format": "part_time",
     "format_display": "Teilzeit",
     "teaching_mode": "presence",
@@ -1648,39 +1681,6 @@
     "longitude": 8.7666044,
     "availability": "available",
     "source_url": "https://www.bbz-marburg.de/kurs/mv-iii-vz/"
-  },
-  {
-    "chamber_slug": "hwk-kassel",
-    "chamber_name": "HWK Kassel",
-    "chamber_region": "Hessen",
-    "trade_slug": "allgemein-teil-iii-iv",
-    "trade_name": "Wirtschaft, Recht, Pädagogik",
-    "title": "Berufs- und Arbeitspädagogik (Teil IV)",
-    "parts": [
-      4
-    ],
-    "format": "full_time",
-    "format_display": "Vollzeit",
-    "teaching_mode": "presence",
-    "start_date": "2026-10-19",
-    "end_date": "2026-11-06",
-    "duration_hours": 92,
-    "course_fee": 750.0,
-    "course_fee_display": "750 €",
-    "exam_fee_scraped": null,
-    "exam_fee": {
-      "fee": 235.0,
-      "fee_max": null,
-      "qualifier": "",
-      "display": "235 €"
-    },
-    "city": "Kassel",
-    "street": "Falderbaumstraße 18-20",
-    "zip_code": "34123",
-    "latitude": 51.2841009,
-    "longitude": 9.498614,
-    "availability": "available",
-    "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-830"
   },
   {
     "chamber_slug": "hwk-kassel",
@@ -4143,8 +4143,8 @@
     "start_date": "2027-04-05",
     "end_date": "2027-07-23",
     "duration_hours": 450,
-    "course_fee": 5290.0,
-    "course_fee_display": "5.290 €",
+    "course_fee": 5390.0,
+    "course_fee_display": "5.390 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 1800.0,
@@ -4177,8 +4177,8 @@
     "start_date": "2027-09-20",
     "end_date": "2028-07-26",
     "duration_hours": 450,
-    "course_fee": 5290.0,
-    "course_fee_display": "5.290 €",
+    "course_fee": 5390.0,
+    "course_fee_display": "5.390 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 1800.0,
@@ -4245,8 +4245,8 @@
     "start_date": "2027-10-18",
     "end_date": "2028-04-29",
     "duration_hours": 500,
-    "course_fee": 6350.0,
-    "course_fee_display": "6.350 €",
+    "course_fee": 6650.0,
+    "course_fee_display": "6.650 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 1800.0,
@@ -4279,8 +4279,8 @@
     "start_date": "2028-10-23",
     "end_date": "2029-04-28",
     "duration_hours": 500,
-    "course_fee": 6350.0,
-    "course_fee_display": "6.350 €",
+    "course_fee": 6650.0,
+    "course_fee_display": "6.650 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 1800.0,
@@ -4381,8 +4381,8 @@
     "start_date": "2027-08-16",
     "end_date": "2029-07-16",
     "duration_hours": 1100,
-    "course_fee": 9700.0,
-    "course_fee_display": "9.700 €",
+    "course_fee": 10050.0,
+    "course_fee_display": "10.050 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 1800.0,
@@ -4415,8 +4415,8 @@
     "start_date": "2027-11-29",
     "end_date": "2028-07-21",
     "duration_hours": 1100,
-    "course_fee": 9700.0,
-    "course_fee_display": "9.700 €",
+    "course_fee": 10050.0,
+    "course_fee_display": "10.050 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 1800.0,
@@ -4449,8 +4449,8 @@
     "start_date": "2028-11-27",
     "end_date": "2029-07-27",
     "duration_hours": 1100,
-    "course_fee": 9700.0,
-    "course_fee_display": "9.700 €",
+    "course_fee": 10050.0,
+    "course_fee_display": "10.050 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 1800.0,
@@ -4483,8 +4483,8 @@
     "start_date": "2029-08-17",
     "end_date": "2031-07-11",
     "duration_hours": 1100,
-    "course_fee": 9700.0,
-    "course_fee_display": "9.700 €",
+    "course_fee": 10050.0,
+    "course_fee_display": "10.050 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 1800.0,
@@ -4517,8 +4517,8 @@
     "start_date": "2029-11-26",
     "end_date": "2030-07-26",
     "duration_hours": 1100,
-    "course_fee": 9700.0,
-    "course_fee_display": "9.700 €",
+    "course_fee": 10050.0,
+    "course_fee_display": "10.050 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 1800.0,
@@ -4551,8 +4551,8 @@
     "start_date": "2030-12-02",
     "end_date": "2031-07-25",
     "duration_hours": 1100,
-    "course_fee": 9700.0,
-    "course_fee_display": "9.700 €",
+    "course_fee": 10050.0,
+    "course_fee_display": "10.050 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 1800.0,
@@ -4585,8 +4585,8 @@
     "start_date": "2031-12-01",
     "end_date": "2032-07-30",
     "duration_hours": 1100,
-    "course_fee": 9700.0,
-    "course_fee_display": "9.700 €",
+    "course_fee": 10050.0,
+    "course_fee_display": "10.050 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 1800.0,
@@ -4619,8 +4619,8 @@
     "start_date": "2032-11-29",
     "end_date": "2033-07-29",
     "duration_hours": 1100,
-    "course_fee": 9700.0,
-    "course_fee_display": "9.700 €",
+    "course_fee": 10050.0,
+    "course_fee_display": "10.050 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 1800.0,
@@ -4653,8 +4653,8 @@
     "start_date": "2027-09-04",
     "end_date": "2029-06-23",
     "duration_hours": 756,
-    "course_fee": 6390.0,
-    "course_fee_display": "6.390 €",
+    "course_fee": 6590.0,
+    "course_fee_display": "6.590 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 1800.0,
@@ -4721,8 +4721,8 @@
     "start_date": "2027-01-05",
     "end_date": "2027-07-02",
     "duration_hours": 980,
-    "course_fee": 9200.0,
-    "course_fee_display": "9.200 €",
+    "course_fee": 9600.0,
+    "course_fee_display": "9.600 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 1800.0,
@@ -4755,8 +4755,8 @@
     "start_date": "2027-04-05",
     "end_date": "2027-09-24",
     "duration_hours": 980,
-    "course_fee": 9200.0,
-    "course_fee_display": "9.200 €",
+    "course_fee": 9600.0,
+    "course_fee_display": "9.600 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 1800.0,
@@ -4789,8 +4789,8 @@
     "start_date": "2027-07-05",
     "end_date": "2027-12-17",
     "duration_hours": 980,
-    "course_fee": 9200.0,
-    "course_fee_display": "9.200 €",
+    "course_fee": 9600.0,
+    "course_fee_display": "9.600 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 1800.0,
@@ -4823,8 +4823,8 @@
     "start_date": "2027-09-03",
     "end_date": "2029-07-27",
     "duration_hours": 980,
-    "course_fee": 9200.0,
-    "course_fee_display": "9.200 €",
+    "course_fee": 9600.0,
+    "course_fee_display": "9.600 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 1800.0,
@@ -4857,8 +4857,8 @@
     "start_date": "2028-01-10",
     "end_date": "2028-06-30",
     "duration_hours": 980,
-    "course_fee": 9200.0,
-    "course_fee_display": "9.200 €",
+    "course_fee": 9600.0,
+    "course_fee_display": "9.600 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 1800.0,
@@ -4891,8 +4891,8 @@
     "start_date": "2028-04-03",
     "end_date": "2028-09-29",
     "duration_hours": 980,
-    "course_fee": 9200.0,
-    "course_fee_display": "9.200 €",
+    "course_fee": 9600.0,
+    "course_fee_display": "9.600 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 1800.0,
@@ -4925,8 +4925,8 @@
     "start_date": "2028-09-01",
     "end_date": "2030-07-26",
     "duration_hours": 980,
-    "course_fee": 9200.0,
-    "course_fee_display": "9.200 €",
+    "course_fee": 9600.0,
+    "course_fee_display": "9.600 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 1800.0,
@@ -5061,8 +5061,8 @@
     "start_date": "2028-10-27",
     "end_date": "2030-10-26",
     "duration_hours": 800,
-    "course_fee": 6950.0,
-    "course_fee_display": "6.950 €",
+    "course_fee": 7250.0,
+    "course_fee_display": "7.250 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 1800.0,
@@ -5876,8 +5876,8 @@
     "start_date": "2027-01-11",
     "end_date": "2027-03-25",
     "duration_hours": 366,
-    "course_fee": 3370.0,
-    "course_fee_display": "3.370 €",
+    "course_fee": 3490.0,
+    "course_fee_display": "3.490 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 800.0,
@@ -5910,8 +5910,8 @@
     "start_date": "2027-01-12",
     "end_date": "2027-03-25",
     "duration_hours": 374,
-    "course_fee": 3370.0,
-    "course_fee_display": "3.370 €",
+    "course_fee": 3490.0,
+    "course_fee_display": "3.490 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 800.0,
@@ -5944,8 +5944,8 @@
     "start_date": "2027-01-18",
     "end_date": "2027-03-20",
     "duration_hours": 342,
-    "course_fee": 3370.0,
-    "course_fee_display": "3.370 €",
+    "course_fee": 3490.0,
+    "course_fee_display": "3.490 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 800.0,
@@ -5978,8 +5978,8 @@
     "start_date": "2027-01-18",
     "end_date": "2027-03-20",
     "duration_hours": 334,
-    "course_fee": 3370.0,
-    "course_fee_display": "3.370 €",
+    "course_fee": 3490.0,
+    "course_fee_display": "3.490 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 800.0,
@@ -6012,8 +6012,8 @@
     "start_date": "2027-01-18",
     "end_date": "2027-03-20",
     "duration_hours": 342,
-    "course_fee": 3370.0,
-    "course_fee_display": "3.370 €",
+    "course_fee": 3490.0,
+    "course_fee_display": "3.490 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 800.0,
@@ -6046,8 +6046,8 @@
     "start_date": "2027-02-01",
     "end_date": "2027-11-12",
     "duration_hours": 374,
-    "course_fee": 3370.0,
-    "course_fee_display": "3.370 €",
+    "course_fee": 3490.0,
+    "course_fee_display": "3.490 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 800.0,
@@ -6080,8 +6080,8 @@
     "start_date": "2027-04-12",
     "end_date": "2027-06-12",
     "duration_hours": 342,
-    "course_fee": 3370.0,
-    "course_fee_display": "3.370 €",
+    "course_fee": 3490.0,
+    "course_fee_display": "3.490 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 800.0,
@@ -6114,8 +6114,8 @@
     "start_date": "2027-04-12",
     "end_date": "2027-06-12",
     "duration_hours": 338,
-    "course_fee": 3370.0,
-    "course_fee_display": "3.370 €",
+    "course_fee": 3490.0,
+    "course_fee_display": "3.490 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 800.0,
@@ -6148,8 +6148,8 @@
     "start_date": "2027-09-02",
     "end_date": "2028-06-10",
     "duration_hours": 374,
-    "course_fee": 3370.0,
-    "course_fee_display": "3.370 €",
+    "course_fee": 3490.0,
+    "course_fee_display": "3.490 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 800.0,
@@ -6182,8 +6182,8 @@
     "start_date": "2027-09-06",
     "end_date": "2028-06-13",
     "duration_hours": 374,
-    "course_fee": 3370.0,
-    "course_fee_display": "3.370 €",
+    "course_fee": 3490.0,
+    "course_fee_display": "3.490 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 800.0,
@@ -6216,8 +6216,8 @@
     "start_date": "2027-09-07",
     "end_date": "2028-06-10",
     "duration_hours": 374,
-    "course_fee": 3370.0,
-    "course_fee_display": "3.370 €",
+    "course_fee": 3490.0,
+    "course_fee_display": "3.490 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 800.0,
@@ -6250,8 +6250,8 @@
     "start_date": "2027-09-07",
     "end_date": "2028-06-10",
     "duration_hours": 374,
-    "course_fee": 3370.0,
-    "course_fee_display": "3.370 €",
+    "course_fee": 3490.0,
+    "course_fee_display": "3.490 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 800.0,
@@ -6284,8 +6284,8 @@
     "start_date": "2027-09-08",
     "end_date": "2028-06-10",
     "duration_hours": 374,
-    "course_fee": 3370.0,
-    "course_fee_display": "3.370 €",
+    "course_fee": 3490.0,
+    "course_fee_display": "3.490 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 800.0,
@@ -6318,8 +6318,8 @@
     "start_date": "2027-09-08",
     "end_date": "2028-06-10",
     "duration_hours": 374,
-    "course_fee": 3290.0,
-    "course_fee_display": "3.290 €",
+    "course_fee": 3490.0,
+    "course_fee_display": "3.490 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 800.0,
@@ -6352,8 +6352,8 @@
     "start_date": "2027-09-13",
     "end_date": "2027-11-13",
     "duration_hours": 342,
-    "course_fee": 3370.0,
-    "course_fee_display": "3.370 €",
+    "course_fee": 3490.0,
+    "course_fee_display": "3.490 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 800.0,
@@ -6386,8 +6386,8 @@
     "start_date": "2028-01-10",
     "end_date": "2028-03-24",
     "duration_hours": 366,
-    "course_fee": 3370.0,
-    "course_fee_display": "3.370 €",
+    "course_fee": 3490.0,
+    "course_fee_display": "3.490 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 800.0,
@@ -6420,8 +6420,8 @@
     "start_date": "2028-01-11",
     "end_date": "2028-03-24",
     "duration_hours": 374,
-    "course_fee": 3370.0,
-    "course_fee_display": "3.370 €",
+    "course_fee": 3490.0,
+    "course_fee_display": "3.490 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 800.0,
@@ -6454,8 +6454,8 @@
     "start_date": "2028-01-17",
     "end_date": "2028-03-18",
     "duration_hours": 342,
-    "course_fee": 3370.0,
-    "course_fee_display": "3.370 €",
+    "course_fee": 3490.0,
+    "course_fee_display": "3.490 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 800.0,
@@ -6488,8 +6488,8 @@
     "start_date": "2028-01-17",
     "end_date": "2028-03-18",
     "duration_hours": 342,
-    "course_fee": 3370.0,
-    "course_fee_display": "3.370 €",
+    "course_fee": 3490.0,
+    "course_fee_display": "3.490 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 800.0,
@@ -6522,8 +6522,8 @@
     "start_date": "2028-01-17",
     "end_date": "2028-03-18",
     "duration_hours": 334,
-    "course_fee": 3370.0,
-    "course_fee_display": "3.370 €",
+    "course_fee": 3490.0,
+    "course_fee_display": "3.490 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 800.0,
@@ -6556,8 +6556,8 @@
     "start_date": "2028-02-01",
     "end_date": "2028-11-17",
     "duration_hours": 374,
-    "course_fee": 3370.0,
-    "course_fee_display": "3.370 €",
+    "course_fee": 3490.0,
+    "course_fee_display": "3.490 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 800.0,
@@ -6590,8 +6590,8 @@
     "start_date": "2028-04-10",
     "end_date": "2028-06-10",
     "duration_hours": 342,
-    "course_fee": 3370.0,
-    "course_fee_display": "3.370 €",
+    "course_fee": 3490.0,
+    "course_fee_display": "3.490 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 800.0,
@@ -6624,8 +6624,8 @@
     "start_date": "2028-04-10",
     "end_date": "2028-06-10",
     "duration_hours": 338,
-    "course_fee": 3370.0,
-    "course_fee_display": "3.370 €",
+    "course_fee": 3490.0,
+    "course_fee_display": "3.490 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 800.0,
@@ -6658,8 +6658,8 @@
     "start_date": "2028-09-04",
     "end_date": "2028-11-17",
     "duration_hours": 374,
-    "course_fee": 3370.0,
-    "course_fee_display": "3.370 €",
+    "course_fee": 3490.0,
+    "course_fee_display": "3.490 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 800.0,
@@ -6692,8 +6692,8 @@
     "start_date": "2028-09-04",
     "end_date": "2028-11-17",
     "duration_hours": 374,
-    "course_fee": 3370.0,
-    "course_fee_display": "3.370 €",
+    "course_fee": 3490.0,
+    "course_fee_display": "3.490 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 800.0,
@@ -6726,8 +6726,8 @@
     "start_date": "2028-09-05",
     "end_date": "2029-06-15",
     "duration_hours": 374,
-    "course_fee": 3370.0,
-    "course_fee_display": "3.370 €",
+    "course_fee": 3490.0,
+    "course_fee_display": "3.490 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 800.0,
@@ -6760,8 +6760,8 @@
     "start_date": "2028-09-11",
     "end_date": "2029-06-15",
     "duration_hours": 374,
-    "course_fee": 3370.0,
-    "course_fee_display": "3.370 €",
+    "course_fee": 3490.0,
+    "course_fee_display": "3.490 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 800.0,
@@ -6794,8 +6794,8 @@
     "start_date": "2028-09-12",
     "end_date": "2029-06-15",
     "duration_hours": 374,
-    "course_fee": 3370.0,
-    "course_fee_display": "3.370 €",
+    "course_fee": 3490.0,
+    "course_fee_display": "3.490 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 800.0,
@@ -6828,8 +6828,8 @@
     "start_date": "2028-09-12",
     "end_date": "2029-06-15",
     "duration_hours": 374,
-    "course_fee": 3370.0,
-    "course_fee_display": "3.370 €",
+    "course_fee": 3490.0,
+    "course_fee_display": "3.490 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 800.0,
@@ -6862,8 +6862,8 @@
     "start_date": "2028-09-13",
     "end_date": "2029-06-15",
     "duration_hours": 374,
-    "course_fee": 3370.0,
-    "course_fee_display": "3.370 €",
+    "course_fee": 3490.0,
+    "course_fee_display": "3.490 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 800.0,
@@ -6896,8 +6896,8 @@
     "start_date": "2028-09-13",
     "end_date": "2029-06-15",
     "duration_hours": 374,
-    "course_fee": 3370.0,
-    "course_fee_display": "3.370 €",
+    "course_fee": 3490.0,
+    "course_fee_display": "3.490 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 800.0,
@@ -6930,8 +6930,8 @@
     "start_date": "2028-09-18",
     "end_date": "2028-11-18",
     "duration_hours": 342,
-    "course_fee": 3370.0,
-    "course_fee_display": "3.370 €",
+    "course_fee": 3490.0,
+    "course_fee_display": "3.490 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 800.0,
@@ -7080,7 +7080,7 @@
     "latitude": 49.4261268,
     "longitude": 7.7748284,
     "availability": "available",
-    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-dachdecker-teil-ii-51,0,coursedetail.html?id=109082&search-onr=51&img=15"
+    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-dachdecker-teil-ii-51,0,coursedetail.html?id=109082&search-onr=51&img=16"
   },
   {
     "chamber_slug": "hwk-pfalz",
@@ -7114,7 +7114,7 @@
     "latitude": 49.4760852,
     "longitude": 8.4080881,
     "availability": "full",
-    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-elektrotechniker-teile-i-ii-51,0,coursedetail.html?id=103638&search-onr=51&img=3"
+    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-elektrotechniker-teile-i-ii-51,0,coursedetail.html?id=103638&search-onr=51&img=4"
   },
   {
     "chamber_slug": "hwk-pfalz",
@@ -7148,7 +7148,7 @@
     "latitude": 49.4760852,
     "longitude": 8.4080881,
     "availability": "available",
-    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-elektrotechniker-teile-i-ii-51,0,coursedetail.html?id=110304&search-onr=51&img=7"
+    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-elektrotechniker-teile-i-ii-51,0,coursedetail.html?id=110304&search-onr=51&img=8"
   },
   {
     "chamber_slug": "hwk-pfalz",
@@ -7181,7 +7181,7 @@
     "latitude": 49.4441065,
     "longitude": 7.7686373,
     "availability": "available",
-    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-fliesen-platten-und-mosaikleger-teil-ii-51,0,coursedetail.html?id=103642&search-onr=51&img=2"
+    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-fliesen-platten-und-mosaikleger-teil-ii-51,0,coursedetail.html?id=103642&search-onr=51&img=3"
   },
   {
     "chamber_slug": "hwk-pfalz",
@@ -7214,7 +7214,7 @@
     "latitude": 49.4441065,
     "longitude": 7.7686373,
     "availability": "unknown",
-    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-fliesen-platten-und-mosaikleger-teil-ii-51,0,coursedetail.html?id=109085&search-onr=51&img=4"
+    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-fliesen-platten-und-mosaikleger-teil-ii-51,0,coursedetail.html?id=109085&search-onr=51&img=5"
   },
   {
     "chamber_slug": "hwk-pfalz",
@@ -7248,7 +7248,7 @@
     "latitude": 49.4495183,
     "longitude": 7.7678746,
     "availability": "available",
-    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-informationstechniker-teile-i-ii-51,0,coursedetail.html?id=91509&search-onr=51&img=12"
+    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-informationstechniker-teile-i-ii-51,0,coursedetail.html?id=91509&search-onr=51&img=13"
   },
   {
     "chamber_slug": "hwk-pfalz",
@@ -7282,7 +7282,7 @@
     "latitude": 49.2117701,
     "longitude": 8.1271493,
     "availability": "full",
-    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-installateur-und-heizungsbauer-teile-i-ii-51,0,coursedetail.html?id=103644&search-onr=51&img=7"
+    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-installateur-und-heizungsbauer-teile-i-ii-51,0,coursedetail.html?id=103644&search-onr=51&img=8"
   },
   {
     "chamber_slug": "hwk-pfalz",
@@ -7315,7 +7315,7 @@
     "latitude": 49.4495183,
     "longitude": 7.7678746,
     "availability": "full",
-    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-installateur-und-heizungsbauer-teil-ii-51,0,coursedetail.html?id=103650&search-onr=51&img=13"
+    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-installateur-und-heizungsbauer-teil-ii-51,0,coursedetail.html?id=103650&search-onr=51&img=14"
   },
   {
     "chamber_slug": "hwk-pfalz",
@@ -7349,7 +7349,7 @@
     "latitude": 49.2117701,
     "longitude": 8.1271493,
     "availability": "full",
-    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-installateur-und-heizungsbauer-teile-i-ii-51,0,coursedetail.html?id=107527&search-onr=51&img=18"
+    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-installateur-und-heizungsbauer-teile-i-ii-51,0,coursedetail.html?id=107527&search-onr=51&img=19"
   },
   {
     "chamber_slug": "hwk-pfalz",
@@ -7382,7 +7382,7 @@
     "latitude": 49.4495183,
     "longitude": 7.7678746,
     "availability": "available",
-    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-installateur-und-heizungsbauer-teil-ii-51,0,coursedetail.html?id=107707&search-onr=51&img=6"
+    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-installateur-und-heizungsbauer-teil-ii-51,0,coursedetail.html?id=107707&search-onr=51&img=7"
   },
   {
     "chamber_slug": "hwk-pfalz",
@@ -7415,7 +7415,7 @@
     "latitude": 49.4441065,
     "longitude": 7.7686373,
     "availability": "unknown",
-    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-kraftfahrzeugtechniker-teil-ii-51,0,coursedetail.html?id=107662&search-onr=51&img=2"
+    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-kraftfahrzeugtechniker-teil-ii-51,0,coursedetail.html?id=107662&search-onr=51&img=3"
   },
   {
     "chamber_slug": "hwk-pfalz",
@@ -7481,7 +7481,7 @@
     "latitude": 49.4441065,
     "longitude": 7.7686373,
     "availability": "unknown",
-    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-metallbauer-teil-ii-51,0,coursedetail.html?id=92252&search-onr=51&img=11"
+    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-metallbauer-teil-ii-51,0,coursedetail.html?id=92252&search-onr=51&img=12"
   },
   {
     "chamber_slug": "hwk-pfalz",
@@ -7515,7 +7515,41 @@
     "latitude": 49.4261268,
     "longitude": 7.7748284,
     "availability": "full",
-    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-strassenbauer-teile-i-ii-51,0,coursedetail.html?id=103631&search-onr=51&img=3"
+    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-strassenbauer-teile-i-ii-51,0,coursedetail.html?id=103631&search-onr=51&img=4"
+  },
+  {
+    "chamber_slug": "hwk-pfalz",
+    "chamber_name": "HWK der Pfalz",
+    "chamber_region": "Rheinland-Pfalz",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Wirtschaft und Recht, Pädagogik (Teile III + IV)",
+    "parts": [
+      3,
+      4
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2026-09-14",
+    "end_date": "2026-11-06",
+    "duration_hours": 340,
+    "course_fee": 2300.0,
+    "course_fee_display": "2.300 €",
+    "exam_fee_scraped": 600.0,
+    "exam_fee": {
+      "fee": 600.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "600 €"
+    },
+    "city": "Kaiserslautern",
+    "street": "Am Altenhof 15",
+    "zip_code": "67655",
+    "latitude": 49.4441065,
+    "longitude": 7.7686373,
+    "availability": "available",
+    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-teile-iii-iv-51,0,coursedetail.html?id=100794&search-onr=51&img=2"
   },
   {
     "chamber_slug": "hwk-pfalz",
@@ -7549,7 +7583,7 @@
     "latitude": 49.4441065,
     "longitude": 7.7686373,
     "availability": "available",
-    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-teile-iii-iv-51,0,coursedetail.html?id=102615&search-onr=51&img=4"
+    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-teile-iii-iv-51,0,coursedetail.html?id=102615&search-onr=51&img=5"
   },
   {
     "chamber_slug": "hwk-pfalz",
@@ -7583,7 +7617,7 @@
     "latitude": 49.4441065,
     "longitude": 7.7686373,
     "availability": "available",
-    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-teile-iii-iv-51,0,coursedetail.html?id=105678&search-onr=51&img=5"
+    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-teile-iii-iv-51,0,coursedetail.html?id=105678&search-onr=51&img=6"
   },
   {
     "chamber_slug": "hwk-pfalz",
@@ -7617,7 +7651,7 @@
     "latitude": 49.4441065,
     "longitude": 7.7686373,
     "availability": "full",
-    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-teile-iii-iv-51,0,coursedetail.html?id=105652&search-onr=51&img=6"
+    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-teile-iii-iv-51,0,coursedetail.html?id=105652&search-onr=51&img=7"
   },
   {
     "chamber_slug": "hwk-pfalz",
@@ -7651,7 +7685,7 @@
     "latitude": 49.4760852,
     "longitude": 8.4080881,
     "availability": "available",
-    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-teile-iii-iv-51,0,coursedetail.html?id=104969&search-onr=51&img=10"
+    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-teile-iii-iv-51,0,coursedetail.html?id=104969&search-onr=51&img=11"
   },
   {
     "chamber_slug": "hwk-pfalz",
@@ -7685,7 +7719,7 @@
     "latitude": 49.4441065,
     "longitude": 7.7686373,
     "availability": "available",
-    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-teile-iii-iv-51,0,coursedetail.html?id=105601&search-onr=51&img=8"
+    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-teile-iii-iv-51,0,coursedetail.html?id=105601&search-onr=51&img=9"
   },
   {
     "chamber_slug": "hwk-pfalz",
@@ -7719,7 +7753,7 @@
     "latitude": 49.2117701,
     "longitude": 8.1271493,
     "availability": "available",
-    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-teile-iii-iv-51,0,coursedetail.html?id=105611&search-onr=51&img=9"
+    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-teile-iii-iv-51,0,coursedetail.html?id=105611&search-onr=51&img=10"
   },
   {
     "chamber_slug": "hwk-pfalz",
@@ -7753,7 +7787,7 @@
     "latitude": 49.4441065,
     "longitude": 7.7686373,
     "availability": "available",
-    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-teile-iii-iv-51,0,coursedetail.html?id=104043&search-onr=51&img=14"
+    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-teile-iii-iv-51,0,coursedetail.html?id=104043&search-onr=51&img=15"
   },
   {
     "chamber_slug": "hwk-pfalz",
@@ -7787,7 +7821,7 @@
     "latitude": 49.4441065,
     "longitude": 7.7686373,
     "availability": "unknown",
-    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-teile-iii-iv-51,0,coursedetail.html?id=105629&search-onr=51&img=16"
+    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-teile-iii-iv-51,0,coursedetail.html?id=105629&search-onr=51&img=17"
   },
   {
     "chamber_slug": "hwk-pfalz",
@@ -7821,7 +7855,7 @@
     "latitude": 49.4441065,
     "longitude": 7.7686373,
     "availability": "unknown",
-    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-teile-iii-iv-51,0,coursedetail.html?id=105647&search-onr=51&img=17"
+    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-teile-iii-iv-51,0,coursedetail.html?id=105647&search-onr=51&img=18"
   },
   {
     "chamber_slug": "hwk-pfalz",
@@ -7855,7 +7889,7 @@
     "latitude": 49.4441065,
     "longitude": 7.7686373,
     "availability": "unknown",
-    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-teile-iii-iv-51,0,coursedetail.html?id=105606&search-onr=51&img=1"
+    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-teile-iii-iv-51,0,coursedetail.html?id=105606&search-onr=51&img=2"
   },
   {
     "chamber_slug": "hwk-pfalz",
@@ -7889,7 +7923,7 @@
     "latitude": 49.4441065,
     "longitude": 7.7686373,
     "availability": "unknown",
-    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-teile-iii-iv-51,0,coursedetail.html?id=105616&search-onr=51&img=19"
+    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-teile-iii-iv-51,0,coursedetail.html?id=105616&search-onr=51&img=20"
   },
   {
     "chamber_slug": "hwk-pfalz",
@@ -7923,7 +7957,7 @@
     "latitude": 49.4441065,
     "longitude": 7.7686373,
     "availability": "unknown",
-    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-teile-iii-iv-51,0,coursedetail.html?id=105621&search-onr=51&img=20"
+    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-teile-iii-iv-51,0,coursedetail.html?id=105621&search-onr=51&img=1"
   },
   {
     "chamber_slug": "hwk-pfalz",
@@ -7957,7 +7991,7 @@
     "latitude": 49.4441065,
     "longitude": 7.7686373,
     "availability": "unknown",
-    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-teile-iii-iv-51,0,coursedetail.html?id=109016&search-onr=51&img=5"
+    "source_url": "https://www.hwk-pfalz.de/kurse/meistervorbereitung-teile-iii-iv-51,0,coursedetail.html?id=109016&search-onr=51&img=6"
   },
   {
     "chamber_slug": "hwk-rhein-main",
@@ -9803,8 +9837,41 @@
     "format": "part_time",
     "format_display": "Teilzeit",
     "teaching_mode": "presence",
-    "start_date": "2026-10-20",
-    "end_date": "2027-01-30",
+    "start_date": "2027-08-24",
+    "end_date": "2027-11-18",
+    "duration_hours": 300,
+    "course_fee": 1700.0,
+    "course_fee_display": "1.700 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 220.0,
+      "fee_max": 300.0,
+      "qualifier": "",
+      "display": "220 € bis 300 €"
+    },
+    "city": "Mainz",
+    "street": "Robert-Bosch-Straße 8",
+    "zip_code": "55129",
+    "latitude": 49.959692,
+    "longitude": 8.260685,
+    "availability": "available",
+    "source_url": "https://www.hwk.de/seminar/fachmann-frau-fuer-kaufmaennische-betriebsfuehrung-fkm-tz/"
+  },
+  {
+    "chamber_slug": "hwk-rheinhessen",
+    "chamber_name": "HWK Rheinhessen",
+    "chamber_region": "Rheinland-Pfalz",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Wirtschaft und Recht (Teil III)",
+    "parts": [
+      3
+    ],
+    "format": "part_time",
+    "format_display": "Teilzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-09-24",
+    "end_date": "2027-11-18",
     "duration_hours": 240,
     "course_fee": 1700.0,
     "course_fee_display": "1.700 €",
@@ -9855,6 +9922,72 @@
     "longitude": 8.260685,
     "availability": "full",
     "source_url": "https://www.hwk.de/seminar/vorbereitung-ausbildereignung-in-vollzeit-aevo-ada-vz/"
+  },
+  {
+    "chamber_slug": "hwk-rheinhessen",
+    "chamber_name": "HWK Rheinhessen",
+    "chamber_region": "Rheinland-Pfalz",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Wirtschaft und Recht (Teil III)",
+    "parts": [
+      3
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-11-22",
+    "end_date": "2027-12-18",
+    "duration_hours": 300,
+    "course_fee": 1700.0,
+    "course_fee_display": "1.700 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 220.0,
+      "fee_max": 300.0,
+      "qualifier": "",
+      "display": "220 € bis 300 €"
+    },
+    "city": "Mainz",
+    "street": "Robert-Bosch-Straße 8",
+    "zip_code": "55129",
+    "latitude": 49.959692,
+    "longitude": 8.260685,
+    "availability": "full",
+    "source_url": "https://www.hwk.de/seminar/fachmann-frau-fuer-kaufmaennsche-betriebsfuehrung-fkm-vz/"
+  },
+  {
+    "chamber_slug": "hwk-rheinhessen",
+    "chamber_name": "HWK Rheinhessen",
+    "chamber_region": "Rheinland-Pfalz",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Wirtschaft und Recht (Teil III)",
+    "parts": [
+      3
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-11-22",
+    "end_date": "2027-12-18",
+    "duration_hours": 240,
+    "course_fee": 1700.0,
+    "course_fee_display": "1.700 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 220.0,
+      "fee_max": 300.0,
+      "qualifier": "",
+      "display": "220 € bis 300 €"
+    },
+    "city": "Mainz",
+    "street": "Robert-Bosch-Straße 8",
+    "zip_code": "55129",
+    "latitude": 49.959692,
+    "longitude": 8.260685,
+    "availability": "full",
+    "source_url": "https://www.hwk.de/seminar/teil-iii-vz/"
   },
   {
     "chamber_slug": "hwk-rheinhessen",
@@ -9969,8 +10102,8 @@
     "format": "part_time",
     "format_display": "Teilzeit",
     "teaching_mode": "presence",
-    "start_date": "2028-10-23",
-    "end_date": "2030-01-21",
+    "start_date": "2027-08-23",
+    "end_date": "2028-11-27",
     "duration_hours": 230,
     "course_fee": 2890.0,
     "course_fee_display": "2.890 €",
@@ -10068,8 +10201,8 @@
     "format": "part_time",
     "format_display": "Teilzeit",
     "teaching_mode": "presence",
-    "start_date": "2027-10-08",
-    "end_date": "2028-11-21",
+    "start_date": "2027-08-23",
+    "end_date": "2029-01-21",
     "duration_hours": 478,
     "course_fee": 2340.0,
     "course_fee_display": "2.340 €",
@@ -10295,6 +10428,39 @@
     "chamber_region": "Saarland",
     "trade_slug": "feinwerkmechaniker",
     "trade_name": "Feinwerkmechaniker",
+    "title": "Feinwerkmechaniker (Teil II)",
+    "parts": [
+      2
+    ],
+    "format": "part_time",
+    "format_display": "Teilzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-08-23",
+    "end_date": "2029-01-21",
+    "duration_hours": 320,
+    "course_fee": 4175.0,
+    "course_fee_display": "4.175 €",
+    "exam_fee_scraped": 300.0,
+    "exam_fee": {
+      "fee": 300.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "300 €"
+    },
+    "city": "Saarbrücken",
+    "street": "Hohenzollernstraße 47-49",
+    "zip_code": "66117",
+    "latitude": 49.2297,
+    "longitude": 6.9967,
+    "availability": "available",
+    "source_url": "https://www.hwk-saarland.de/seminar/mv-teil-ii-feinwerkmechaniker-m2fm1/"
+  },
+  {
+    "chamber_slug": "hwk-saarland",
+    "chamber_name": "HWK des Saarlandes",
+    "chamber_region": "Saarland",
+    "trade_slug": "feinwerkmechaniker",
+    "trade_name": "Feinwerkmechaniker",
     "title": "Feinwerkmechaniker (Teil I)",
     "parts": [
       1
@@ -10321,6 +10487,39 @@
     "longitude": 6.9967,
     "availability": "available",
     "source_url": "https://www.hwk-saarland.de/seminar/mv-teil-i-feinwerkmechaniker-m1fm/"
+  },
+  {
+    "chamber_slug": "hwk-saarland",
+    "chamber_name": "HWK des Saarlandes",
+    "chamber_region": "Saarland",
+    "trade_slug": "feinwerkmechaniker",
+    "trade_name": "Feinwerkmechaniker",
+    "title": "Feinwerkmechaniker (Teil II)",
+    "parts": [
+      2
+    ],
+    "format": "part_time",
+    "format_display": "Teilzeit",
+    "teaching_mode": "presence",
+    "start_date": "2028-08-22",
+    "end_date": "2030-01-21",
+    "duration_hours": 320,
+    "course_fee": 4175.0,
+    "course_fee_display": "4.175 €",
+    "exam_fee_scraped": 300.0,
+    "exam_fee": {
+      "fee": 300.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "300 €"
+    },
+    "city": "Saarbrücken",
+    "street": "Hohenzollernstraße 47-49",
+    "zip_code": "66117",
+    "latitude": 49.2297,
+    "longitude": 6.9967,
+    "availability": "available",
+    "source_url": "https://www.hwk-saarland.de/seminar/mv-teil-ii-feinwerkmechaniker-m2fm1/"
   },
   {
     "chamber_slug": "hwk-saarland",
@@ -10372,7 +10571,7 @@
     "format_display": "Teilzeit",
     "teaching_mode": "presence",
     "start_date": "2027-08-23",
-    "end_date": "2028-12-03",
+    "end_date": "2028-10-23",
     "duration_hours": 432,
     "course_fee": 4340.0,
     "course_fee_display": "4.340 €",
@@ -10935,6 +11134,39 @@
     "chamber_region": "Saarland",
     "trade_slug": "konditor",
     "trade_name": "Konditor",
+    "title": "Konditor (Teil II)",
+    "parts": [
+      2
+    ],
+    "format": "part_time",
+    "format_display": "Teilzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-08-23",
+    "end_date": "2028-11-12",
+    "duration_hours": 176,
+    "course_fee": 1700.0,
+    "course_fee_display": "1.700 €",
+    "exam_fee_scraped": 560.0,
+    "exam_fee": {
+      "fee": 560.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "560 €"
+    },
+    "city": "Saarbrücken",
+    "street": "Hohenzollernstraße 47-49",
+    "zip_code": "66117",
+    "latitude": 49.2297,
+    "longitude": 6.9967,
+    "availability": "available",
+    "source_url": "https://www.hwk-saarland.de/seminar/mv-teil-ii-konditoren-m2ko/"
+  },
+  {
+    "chamber_slug": "hwk-saarland",
+    "chamber_name": "HWK des Saarlandes",
+    "chamber_region": "Saarland",
+    "trade_slug": "konditor",
+    "trade_name": "Konditor",
     "title": "Konditor (Teil I)",
     "parts": [
       1
@@ -10966,39 +11198,6 @@
     "chamber_slug": "hwk-saarland",
     "chamber_name": "HWK des Saarlandes",
     "chamber_region": "Saarland",
-    "trade_slug": "konditor",
-    "trade_name": "Konditor",
-    "title": "Konditor (Teil II)",
-    "parts": [
-      2
-    ],
-    "format": "part_time",
-    "format_display": "Teilzeit",
-    "teaching_mode": "presence",
-    "start_date": null,
-    "end_date": null,
-    "duration_hours": 176,
-    "course_fee": 1700.0,
-    "course_fee_display": "1.700 €",
-    "exam_fee_scraped": 560.0,
-    "exam_fee": {
-      "fee": 560.0,
-      "fee_max": null,
-      "qualifier": "",
-      "display": "560 €"
-    },
-    "city": "Saarbrücken",
-    "street": "Hohenzollernstraße 47-49",
-    "zip_code": "66117",
-    "latitude": 49.2297,
-    "longitude": 6.9967,
-    "availability": "unknown",
-    "source_url": "https://www.hwk-saarland.de/seminar/mv-teil-ii-konditoren-m2ko/"
-  },
-  {
-    "chamber_slug": "hwk-saarland",
-    "chamber_name": "HWK des Saarlandes",
-    "chamber_region": "Saarland",
     "trade_slug": "maler-und-lackierer",
     "trade_name": "Maler und Lackierer",
     "title": "Maler und Lackierer (Teil II)",
@@ -11008,8 +11207,8 @@
     "format": "part_time",
     "format_display": "Teilzeit",
     "teaching_mode": "presence",
-    "start_date": "2027-08-10",
-    "end_date": "2029-03-24",
+    "start_date": "2027-08-23",
+    "end_date": "2028-12-03",
     "duration_hours": 404,
     "course_fee": 1425.0,
     "course_fee_display": "1.425 €",
@@ -11060,6 +11259,39 @@
     "longitude": 6.9967,
     "availability": "available",
     "source_url": "https://www.hwk-saarland.de/seminar/mv-teil-i-maler-und-lackierer-m1ml/"
+  },
+  {
+    "chamber_slug": "hwk-saarland",
+    "chamber_name": "HWK des Saarlandes",
+    "chamber_region": "Saarland",
+    "trade_slug": "maler-und-lackierer",
+    "trade_name": "Maler und Lackierer",
+    "title": "Maler und Lackierer (Teil II)",
+    "parts": [
+      2
+    ],
+    "format": "part_time",
+    "format_display": "Teilzeit",
+    "teaching_mode": "presence",
+    "start_date": "2028-08-23",
+    "end_date": "2029-12-04",
+    "duration_hours": 404,
+    "course_fee": 1425.0,
+    "course_fee_display": "1.425 €",
+    "exam_fee_scraped": 420.0,
+    "exam_fee": {
+      "fee": 420.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "420 €"
+    },
+    "city": "Saarbrücken",
+    "street": "Hohenzollernstraße 47-49",
+    "zip_code": "66117",
+    "latitude": 49.2297,
+    "longitude": 6.9967,
+    "availability": "available",
+    "source_url": "https://www.hwk-saarland.de/seminar/mv-teil-ii-maler-und-lackierer-m2ml/"
   },
   {
     "chamber_slug": "hwk-saarland",
@@ -11136,6 +11368,39 @@
     "chamber_region": "Saarland",
     "trade_slug": "maurer-und-betonbauer",
     "trade_name": "Maurer und Betonbauer",
+    "title": "Maurer und Betonbauer (Teil II)",
+    "parts": [
+      2
+    ],
+    "format": "part_time",
+    "format_display": "Teilzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-08-23",
+    "end_date": "2029-01-21",
+    "duration_hours": 532,
+    "course_fee": 5480.0,
+    "course_fee_display": "5.480 €",
+    "exam_fee_scraped": 560.0,
+    "exam_fee": {
+      "fee": 560.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "560 €"
+    },
+    "city": "Saarbrücken",
+    "street": "Hohenzollernstraße 47-49",
+    "zip_code": "66117",
+    "latitude": 49.2297,
+    "longitude": 6.9967,
+    "availability": "available",
+    "source_url": "https://www.hwk-saarland.de/seminar/mv-teil-ii-maurer-und-betonbauer-m2ma/"
+  },
+  {
+    "chamber_slug": "hwk-saarland",
+    "chamber_name": "HWK des Saarlandes",
+    "chamber_region": "Saarland",
+    "trade_slug": "maurer-und-betonbauer",
+    "trade_name": "Maurer und Betonbauer",
     "title": "Maurer und Betonbauer (Teil I)",
     "parts": [
       1
@@ -11178,6 +11443,39 @@
     "teaching_mode": "presence",
     "start_date": "2027-08-23",
     "end_date": "2029-01-21",
+    "duration_hours": 481,
+    "course_fee": 5300.0,
+    "course_fee_display": "5.300 €",
+    "exam_fee_scraped": 560.0,
+    "exam_fee": {
+      "fee": 560.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "560 €"
+    },
+    "city": "Saarbrücken",
+    "street": "Hohenzollernstraße 47-49",
+    "zip_code": "66117",
+    "latitude": 49.2297,
+    "longitude": 6.9967,
+    "availability": "available",
+    "source_url": "https://www.hwk-saarland.de/seminar/mv-teil-ii-metallbauer-m2mb/"
+  },
+  {
+    "chamber_slug": "hwk-saarland",
+    "chamber_name": "HWK des Saarlandes",
+    "chamber_region": "Saarland",
+    "trade_slug": "metallbauer",
+    "trade_name": "Metallbauer",
+    "title": "Metallbauer (Teil II)",
+    "parts": [
+      2
+    ],
+    "format": "part_time",
+    "format_display": "Teilzeit",
+    "teaching_mode": "presence",
+    "start_date": "2028-08-22",
+    "end_date": "2030-01-20",
     "duration_hours": 481,
     "course_fee": 5300.0,
     "course_fee_display": "5.300 €",
@@ -11345,8 +11643,8 @@
     "format": "part_time",
     "format_display": "Teilzeit",
     "teaching_mode": "presence",
-    "start_date": null,
-    "end_date": null,
+    "start_date": "2027-08-23",
+    "end_date": "2029-02-11",
     "duration_hours": 610,
     "course_fee": 4055.0,
     "course_fee_display": "4.055 €",
@@ -11362,8 +11660,41 @@
     "zip_code": "66117",
     "latitude": 49.2297,
     "longitude": 6.9967,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.hwk-saarland.de/seminar/mv-teil-ii-strassenbauer-m2sb/"
+  },
+  {
+    "chamber_slug": "hwk-saarland",
+    "chamber_name": "HWK des Saarlandes",
+    "chamber_region": "Saarland",
+    "trade_slug": "stuckateure",
+    "trade_name": "Stuckateure",
+    "title": "Stuckateure (Teil II)",
+    "parts": [
+      2
+    ],
+    "format": "part_time",
+    "format_display": "Teilzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-08-23",
+    "end_date": "2029-01-28",
+    "duration_hours": 480,
+    "course_fee": 2305.0,
+    "course_fee_display": "2.305 €",
+    "exam_fee_scraped": 560.0,
+    "exam_fee": {
+      "fee": 560.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "560 €"
+    },
+    "city": "Saarbrücken",
+    "street": "Hohenzollernstraße 47-49",
+    "zip_code": "66117",
+    "latitude": 49.2297,
+    "longitude": 6.9967,
+    "availability": "available",
+    "source_url": "https://www.hwk-saarland.de/seminar/mv-teil-ii-stuckateure-m2st1/"
   },
   {
     "chamber_slug": "hwk-saarland",
@@ -11397,39 +11728,6 @@
     "longitude": 6.9967,
     "availability": "available",
     "source_url": "https://www.hwk-saarland.de/seminar/m1st/"
-  },
-  {
-    "chamber_slug": "hwk-saarland",
-    "chamber_name": "HWK des Saarlandes",
-    "chamber_region": "Saarland",
-    "trade_slug": "stuckateure",
-    "trade_name": "Stuckateure",
-    "title": "Stuckateure (Teil II)",
-    "parts": [
-      2
-    ],
-    "format": "part_time",
-    "format_display": "Teilzeit",
-    "teaching_mode": "presence",
-    "start_date": null,
-    "end_date": null,
-    "duration_hours": 480,
-    "course_fee": 2305.0,
-    "course_fee_display": "2.305 €",
-    "exam_fee_scraped": 560.0,
-    "exam_fee": {
-      "fee": 560.0,
-      "fee_max": null,
-      "qualifier": "",
-      "display": "560 €"
-    },
-    "city": "Saarbrücken",
-    "street": "Hohenzollernstraße 47-49",
-    "zip_code": "66117",
-    "latitude": 49.2297,
-    "longitude": 6.9967,
-    "availability": "unknown",
-    "source_url": "https://www.hwk-saarland.de/seminar/mv-teil-ii-stuckateure-m2st1/"
   },
   {
     "chamber_slug": "hwk-saarland",
@@ -11496,6 +11794,39 @@
     "longitude": 6.9967,
     "availability": "available",
     "source_url": "https://www.hwk-saarland.de/seminar/mv-teil-i-tischler-m1ti/"
+  },
+  {
+    "chamber_slug": "hwk-saarland",
+    "chamber_name": "HWK des Saarlandes",
+    "chamber_region": "Saarland",
+    "trade_slug": "tischler",
+    "trade_name": "Tischler",
+    "title": "Tischler (Teil II)",
+    "parts": [
+      2
+    ],
+    "format": "part_time",
+    "format_display": "Teilzeit",
+    "teaching_mode": "presence",
+    "start_date": "2028-08-22",
+    "end_date": "2030-01-27",
+    "duration_hours": 568,
+    "course_fee": 6145.0,
+    "course_fee_display": "6.145 €",
+    "exam_fee_scraped": 250.0,
+    "exam_fee": {
+      "fee": 250.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "250 €"
+    },
+    "city": "Saarbrücken",
+    "street": "Hohenzollernstraße 47-49",
+    "zip_code": "66117",
+    "latitude": 49.2297,
+    "longitude": 6.9967,
+    "availability": "available",
+    "source_url": "https://www.hwk-saarland.de/seminar/mv-teil-ii-tischler-m2ti/"
   },
   {
     "chamber_slug": "hwk-saarland",
@@ -13472,7 +13803,7 @@
     "zip_code": "35576",
     "latitude": 50.5548159,
     "longitude": 8.4921662,
-    "availability": "available",
+    "availability": "waitlist",
     "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-im-maurer-u-betonbauer-handwerk-teil-i-ii-vollzeit-44,0,coursedetail.html?id=113042&search-onr=44&img=2"
   },
   {
