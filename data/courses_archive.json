@@ -100,5 +100,73 @@
     "longitude": 8.7666044,
     "availability": "available",
     "source_url": "https://www.bbz-marburg.de/kurs/mv-iii-tz/"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Wirtschaft und Recht, Pädagogik (Teile III + IV)",
+    "parts": [
+      3,
+      4
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2026-08-10",
+    "end_date": "2026-10-02",
+    "duration_hours": null,
+    "course_fee": 3900.0,
+    "course_fee_display": "3.900 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 490.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "490 €"
+    },
+    "city": "Bad Wildungen",
+    "street": "Auf der Roten Erde 9",
+    "zip_code": "34537",
+    "latitude": 51.1300434,
+    "longitude": 9.1225344,
+    "availability": "available",
+    "source_url": "https://veranstaltung.holzfachschule.de/seminar/vorbereitungslehrgang-auf-die-meisterpruefung-teil-iii-iv_104853"
+  },
+  {
+    "chamber_slug": "hwk-wiesbaden",
+    "chamber_name": "HWK Wiesbaden",
+    "chamber_region": "Hessen",
+    "trade_slug": "kosmetiker",
+    "trade_name": "Kosmetiker",
+    "title": "Kosmetiker (Teile I + II)",
+    "parts": [
+      1,
+      2
+    ],
+    "format": "part_time",
+    "format_display": "Teilzeit",
+    "teaching_mode": "presence",
+    "start_date": "2026-08-10",
+    "end_date": "2027-07-05",
+    "duration_hours": 456,
+    "course_fee": 3750.0,
+    "course_fee_display": "3.750 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 730.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "730 €"
+    },
+    "city": "Wiesbaden",
+    "street": "Brunhildenstraße 110",
+    "zip_code": "65189",
+    "latitude": 50.0652806,
+    "longitude": 8.2590004,
+    "availability": "available",
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-im-kosmetikerhandwerk-teile-i-ii-teilzeit-44,0,coursedetail.html?id=113661&search-onr=44&img=1"
   }
 ]

@@ -1,28 +1,6 @@
 [
   {
     "chamber_slug": "hwk-kassel",
-    "trade_slug": "allgemein-teil-iii-iv",
-    "parts": [
-      3,
-      4
-    ],
-    "fee": 3900.0,
-    "exam_fee_scraped": null,
-    "is_generic": true
-  },
-  {
-    "chamber_slug": "hwk-wiesbaden",
-    "trade_slug": "kosmetiker",
-    "parts": [
-      1,
-      2
-    ],
-    "fee": 3750.0,
-    "exam_fee_scraped": null,
-    "is_generic": false
-  },
-  {
-    "chamber_slug": "hwk-kassel",
     "trade_slug": "zimmerer",
     "parts": [
       1
@@ -30,16 +8,6 @@
     "fee": 3990.0,
     "exam_fee_scraped": null,
     "is_generic": false
-  },
-  {
-    "chamber_slug": "hwk-wiesbaden",
-    "trade_slug": "allgemein-teil-iii-iv",
-    "parts": [
-      4
-    ],
-    "fee": 900.0,
-    "exam_fee_scraped": null,
-    "is_generic": true
   },
   {
     "chamber_slug": "hwk-kassel",
@@ -59,6 +27,16 @@
       3
     ],
     "fee": 2290.0,
+    "exam_fee_scraped": null,
+    "is_generic": true
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "parts": [
+      3
+    ],
+    "fee": 2100.0,
     "exam_fee_scraped": null,
     "is_generic": true
   },
@@ -148,6 +126,17 @@
   },
   {
     "chamber_slug": "hwk-koblenz",
+    "trade_slug": "maler-und-lackierer",
+    "parts": [
+      1,
+      2
+    ],
+    "fee": 7550.0,
+    "exam_fee_scraped": null,
+    "is_generic": false
+  },
+  {
+    "chamber_slug": "hwk-koblenz",
     "trade_slug": "maurer-und-betonbauer",
     "parts": [
       1,
@@ -226,6 +215,16 @@
     "is_generic": false
   },
   {
+    "chamber_slug": "hwk-kassel",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "parts": [
+      4
+    ],
+    "fee": 750.0,
+    "exam_fee_scraped": null,
+    "is_generic": true
+  },
+  {
     "chamber_slug": "hwk-pfalz",
     "trade_slug": "allgemein-teil-iii-iv",
     "parts": [
@@ -280,6 +279,16 @@
     "is_generic": false
   },
   {
+    "chamber_slug": "hwk-wiesbaden",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "parts": [
+      4
+    ],
+    "fee": 900.0,
+    "exam_fee_scraped": null,
+    "is_generic": true
+  },
+  {
     "chamber_slug": "hwk-rhein-main",
     "trade_slug": "zweirad",
     "parts": [
@@ -303,13 +312,14 @@
   },
   {
     "chamber_slug": "hwk-kassel",
-    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_slug": "metallbauer",
     "parts": [
-      3
+      1,
+      2
     ],
-    "fee": 1485.0,
+    "fee": 9086.0,
     "exam_fee_scraped": null,
-    "is_generic": true
+    "is_generic": false
   },
   {
     "chamber_slug": "hwk-trier",
@@ -427,16 +437,6 @@
     "is_generic": false
   },
   {
-    "chamber_slug": "hwk-kassel",
-    "trade_slug": "allgemein-teil-iii-iv",
-    "parts": [
-      4
-    ],
-    "fee": 720.0,
-    "exam_fee_scraped": null,
-    "is_generic": true
-  },
-  {
     "chamber_slug": "hwk-koblenz",
     "trade_slug": "steinmetze-und-steinbildhauer",
     "parts": [
@@ -445,6 +445,17 @@
     "fee": 4250.0,
     "exam_fee_scraped": null,
     "is_generic": false
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "parts": [
+      3,
+      4
+    ],
+    "fee": 3900.0,
+    "exam_fee_scraped": null,
+    "is_generic": true
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -870,17 +881,6 @@
   },
   {
     "chamber_slug": "hwk-koblenz",
-    "trade_slug": "maler-und-lackierer",
-    "parts": [
-      1,
-      2
-    ],
-    "fee": 6390.0,
-    "exam_fee_scraped": null,
-    "is_generic": false
-  },
-  {
-    "chamber_slug": "hwk-koblenz",
     "trade_slug": "strassenbauer",
     "parts": [
       1,
@@ -908,6 +908,17 @@
       2
     ],
     "fee": 6050.0,
+    "exam_fee_scraped": null,
+    "is_generic": false
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "trade_slug": "feinwerkmechaniker",
+    "parts": [
+      1,
+      2
+    ],
+    "fee": 9086.0,
     "exam_fee_scraped": null,
     "is_generic": false
   },
@@ -1590,6 +1601,17 @@
       2
     ],
     "fee": 5700.0,
+    "exam_fee_scraped": null,
+    "is_generic": false
+  },
+  {
+    "chamber_slug": "hwk-wiesbaden",
+    "trade_slug": "kosmetiker",
+    "parts": [
+      1,
+      2
+    ],
+    "fee": 3750.0,
     "exam_fee_scraped": null,
     "is_generic": false
   }

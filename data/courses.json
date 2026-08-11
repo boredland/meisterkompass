@@ -238,6 +238,74 @@
     "chamber_slug": "hwk-kassel",
     "chamber_name": "HWK Kassel",
     "chamber_region": "Hessen",
+    "trade_slug": "feinwerkmechaniker",
+    "trade_name": "Feinwerkmechaniker",
+    "title": "Feinwerkmechaniker (Teile I + II)",
+    "parts": [
+      1,
+      2
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-10-25",
+    "end_date": "2028-04-28",
+    "duration_hours": 930,
+    "course_fee": 9086.0,
+    "course_fee_display": "9.086 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 730.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "730 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/metalltechnik-und-schweisstechnik/kursdetail/kurs-2022"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "fleischer",
+    "trade_name": "Fleischer",
+    "title": "Fleischer (Teile I + II)",
+    "parts": [
+      1,
+      2
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-06-28",
+    "end_date": "2027-08-08",
+    "duration_hours": 300,
+    "course_fee": null,
+    "course_fee_display": "—",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 730.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "730 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/fleischerhandwerk/kursdetail/kurs-1888"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
     "trade_slug": "friseur",
     "trade_name": "Friseur",
     "title": "Friseur (Teile I + II)",
@@ -267,6 +335,74 @@
     "longitude": 8.7666044,
     "availability": "available",
     "source_url": "https://www.bbz-marburg.de/kurs/mv-fri-vz/"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "friseur",
+    "trade_name": "Friseur",
+    "title": "Friseur (Teile I + II)",
+    "parts": [
+      1,
+      2
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-08-09",
+    "end_date": "2027-11-28",
+    "duration_hours": 500,
+    "course_fee": null,
+    "course_fee_display": "—",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 730.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "730 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/friseurhandwerk/kursdetail/kurs-1884"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "friseur",
+    "trade_name": "Friseur",
+    "title": "Friseur (Teile I + II)",
+    "parts": [
+      1,
+      2
+    ],
+    "format": "part_time",
+    "format_display": "Teilzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-08-09",
+    "end_date": "2028-04-30",
+    "duration_hours": 500,
+    "course_fee": null,
+    "course_fee_display": "—",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 730.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "730 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/friseurhandwerk/kursdetail/kurs-1886"
   },
   {
     "chamber_slug": "hwk-kassel",
@@ -921,6 +1057,40 @@
     "format": "full_time",
     "format_display": "Vollzeit",
     "teaching_mode": "presence",
+    "start_date": "2027-03-15",
+    "end_date": "2027-08-06",
+    "duration_hours": 820,
+    "course_fee": 7100.0,
+    "course_fee_display": "7.100 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 730.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "730 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/elektro-und-gebaeudetechnik/kursdetail/kurs-1870"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "maler-und-lackierer",
+    "trade_name": "Maler und Lackierer",
+    "title": "Maler und Lackierer (Teile I + II)",
+    "parts": [
+      1,
+      2
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
     "start_date": "2027-04-05",
     "end_date": "2027-11-05",
     "duration_hours": 880,
@@ -974,6 +1144,74 @@
     "longitude": 8.7666044,
     "availability": "available",
     "source_url": "https://www.bbz-marburg.de/kurs/mv-mal-tz/"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "metallbauer",
+    "trade_name": "Metallbauer",
+    "title": "Metallbauer (Teile I + II)",
+    "parts": [
+      1,
+      2
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2026-10-26",
+    "end_date": "2027-04-30",
+    "duration_hours": 850,
+    "course_fee": 9086.0,
+    "course_fee_display": "9.086 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 730.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "730 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/metalltechnik-und-schweisstechnik/kursdetail/kurs-1350"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "metallbauer",
+    "trade_name": "Metallbauer",
+    "title": "Metallbauer (Teile I + II)",
+    "parts": [
+      1,
+      2
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-10-25",
+    "end_date": "2028-04-28",
+    "duration_hours": 850,
+    "course_fee": 9086.0,
+    "course_fee_display": "9.086 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 730.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "730 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/metalltechnik-und-schweisstechnik/kursdetail/kurs-2024"
   },
   {
     "chamber_slug": "hwk-kassel",
@@ -1321,33 +1559,131 @@
     "chamber_region": "Hessen",
     "trade_slug": "allgemein-teil-iii-iv",
     "trade_name": "Wirtschaft, Recht, Pädagogik",
-    "title": "Wirtschaft und Recht, Pädagogik (Teile III + IV)",
+    "title": "Wirtschaft und Recht (Teil III)",
     "parts": [
-      3,
-      4
+      3
     ],
     "format": "full_time",
     "format_display": "Vollzeit",
     "teaching_mode": "presence",
-    "start_date": "2026-08-10",
+    "start_date": "2026-08-17",
     "end_date": "2026-10-02",
-    "duration_hours": null,
-    "course_fee": 3900.0,
-    "course_fee_display": "3.900 €",
+    "duration_hours": 280,
+    "course_fee": 2100.0,
+    "course_fee_display": "2.100 €",
     "exam_fee_scraped": null,
     "exam_fee": {
-      "fee": 490.0,
+      "fee": 340.0,
       "fee_max": null,
       "qualifier": "",
-      "display": "490 €"
+      "display": "340 €"
     },
-    "city": "Bad Wildungen",
-    "street": "Auf der Roten Erde 9",
-    "zip_code": "34537",
-    "latitude": 51.1300434,
-    "longitude": 9.1225344,
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
     "availability": "available",
-    "source_url": "https://veranstaltung.holzfachschule.de/seminar/vorbereitungslehrgang-auf-die-meisterpruefung-teil-iii-iv_104853"
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1066"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Wirtschaft und Recht (Teil III)",
+    "parts": [
+      3
+    ],
+    "format": "part_time",
+    "format_display": "Teilzeit",
+    "teaching_mode": "presence",
+    "start_date": "2026-09-01",
+    "end_date": "2027-02-25",
+    "duration_hours": 280,
+    "course_fee": 2100.0,
+    "course_fee_display": "2.100 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 340.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "340 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1078"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Berufs- und Arbeitspädagogik (Teil IV)",
+    "parts": [
+      4
+    ],
+    "format": "part_time",
+    "format_display": "Teilzeit",
+    "teaching_mode": "presence",
+    "start_date": "2026-09-08",
+    "end_date": "2026-11-23",
+    "duration_hours": 92,
+    "course_fee": 750.0,
+    "course_fee_display": "750 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 235.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "235 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1140"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Wirtschaft und Recht (Teil III)",
+    "parts": [
+      3
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2026-10-12",
+    "end_date": "2026-11-27",
+    "duration_hours": 280,
+    "course_fee": 2100.0,
+    "course_fee_display": "2.100 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 340.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "340 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1070"
   },
   {
     "chamber_slug": "hwk-kassel",
@@ -1488,6 +1824,105 @@
     "chamber_region": "Hessen",
     "trade_slug": "allgemein-teil-iii-iv",
     "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Berufs- und Arbeitspädagogik (Teil IV)",
+    "parts": [
+      4
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-01-11",
+    "end_date": "2027-01-29",
+    "duration_hours": 92,
+    "course_fee": 825.0,
+    "course_fee_display": "825 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 235.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "235 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1574"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Wirtschaft und Recht (Teil III)",
+    "parts": [
+      3
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-01-11",
+    "end_date": "2027-02-26",
+    "duration_hours": 280,
+    "course_fee": 2500.0,
+    "course_fee_display": "2.500 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 340.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "340 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1732"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Wirtschaft und Recht (Teil III)",
+    "parts": [
+      3
+    ],
+    "format": "part_time",
+    "format_display": "Teilzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-01-19",
+    "end_date": "2027-06-26",
+    "duration_hours": 280,
+    "course_fee": 2500.0,
+    "course_fee_display": "2.500 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 340.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "340 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1784"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
     "title": "Wirtschaft und Recht (Teil III)",
     "parts": [
       3
@@ -1514,39 +1949,6 @@
     "longitude": 8.7666044,
     "availability": "available",
     "source_url": "https://www.bbz-marburg.de/kurs/mv-iii-vz/"
-  },
-  {
-    "chamber_slug": "hwk-kassel",
-    "chamber_name": "HWK Kassel",
-    "chamber_region": "Hessen",
-    "trade_slug": "allgemein-teil-iii-iv",
-    "trade_name": "Wirtschaft, Recht, Pädagogik",
-    "title": "Berufs- und Arbeitspädagogik (Teil IV)",
-    "parts": [
-      4
-    ],
-    "format": "full_time",
-    "format_display": "Vollzeit",
-    "teaching_mode": "presence",
-    "start_date": "2027-02-01",
-    "end_date": "2027-02-18",
-    "duration_hours": null,
-    "course_fee": 890.0,
-    "course_fee_display": "890 €",
-    "exam_fee_scraped": null,
-    "exam_fee": {
-      "fee": 235.0,
-      "fee_max": null,
-      "qualifier": "",
-      "display": "235 €"
-    },
-    "city": "Kassel",
-    "street": "Auedamm 18",
-    "zip_code": "34123",
-    "latitude": 51.3021202,
-    "longitude": 9.4991416,
-    "availability": "available",
-    "source_url": "https://www.bubiza.de/kurse/vollzeit-hoehere-berufsbildung/dachdeckermeister-fuer-dachdeckergesellen.html"
   },
   {
     "chamber_slug": "hwk-kassel",
@@ -1587,32 +1989,32 @@
     "chamber_region": "Hessen",
     "trade_slug": "allgemein-teil-iii-iv",
     "trade_name": "Wirtschaft, Recht, Pädagogik",
-    "title": "Wirtschaft und Recht (Teil III)",
+    "title": "Berufs- und Arbeitspädagogik (Teil IV)",
     "parts": [
-      3
+      4
     ],
     "format": "full_time",
     "format_display": "Vollzeit",
     "teaching_mode": "presence",
-    "start_date": "2027-03-01",
-    "end_date": "2027-04-23",
-    "duration_hours": null,
-    "course_fee": 1990.0,
-    "course_fee_display": "1.990 €",
+    "start_date": "2027-02-22",
+    "end_date": "2027-03-12",
+    "duration_hours": 92,
+    "course_fee": 825.0,
+    "course_fee_display": "825 €",
     "exam_fee_scraped": null,
     "exam_fee": {
-      "fee": 340.0,
+      "fee": 235.0,
       "fee_max": null,
       "qualifier": "",
-      "display": "340 €"
+      "display": "235 €"
     },
     "city": "Kassel",
-    "street": "Auedamm 18",
+    "street": "Falderbaumstraße 18-20",
     "zip_code": "34123",
-    "latitude": 51.3021202,
-    "longitude": 9.4991416,
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
     "availability": "available",
-    "source_url": "https://www.bubiza.de/kurse/vollzeit-hoehere-berufsbildung/dachdeckermeister-fuer-dachdeckergesellen.html"
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1576"
   },
   {
     "chamber_slug": "hwk-kassel",
@@ -1646,6 +2048,138 @@
     "longitude": 8.7666044,
     "availability": "available",
     "source_url": "https://www.bbz-marburg.de/kurs/ada-vz-96/"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Wirtschaft und Recht (Teil III)",
+    "parts": [
+      3
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-03-15",
+    "end_date": "2027-05-14",
+    "duration_hours": 280,
+    "course_fee": 2500.0,
+    "course_fee_display": "2.500 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 340.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "340 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1734"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Berufs- und Arbeitspädagogik (Teil IV)",
+    "parts": [
+      4
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-04-05",
+    "end_date": "2027-04-23",
+    "duration_hours": 92,
+    "course_fee": 825.0,
+    "course_fee_display": "825 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 235.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "235 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1578"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Berufs- und Arbeitspädagogik (Teil IV)",
+    "parts": [
+      4
+    ],
+    "format": "part_time",
+    "format_display": "Teilzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-04-05",
+    "end_date": "2027-06-11",
+    "duration_hours": 92,
+    "course_fee": 825.0,
+    "course_fee_display": "825 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 235.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "235 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1596"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Wirtschaft und Recht (Teil III)",
+    "parts": [
+      3
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-05-03",
+    "end_date": "2027-06-25",
+    "duration_hours": 280,
+    "course_fee": 2500.0,
+    "course_fee_display": "2.500 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 340.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "340 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1736"
   },
   {
     "chamber_slug": "hwk-kassel",
@@ -1712,6 +2246,72 @@
     "longitude": 8.7666044,
     "availability": "available",
     "source_url": "https://www.bbz-marburg.de/kurs/mv-iii-vz/"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Wirtschaft und Recht (Teil III)",
+    "parts": [
+      3
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-06-28",
+    "end_date": "2027-08-06",
+    "duration_hours": 240,
+    "course_fee": 2500.0,
+    "course_fee_display": "2.500 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 340.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "340 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1738"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Berufs- und Arbeitspädagogik (Teil IV)",
+    "parts": [
+      4
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "online",
+    "start_date": "2027-07-05",
+    "end_date": "2027-07-23",
+    "duration_hours": 92,
+    "course_fee": 825.0,
+    "course_fee_display": "825 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 235.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "235 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1582"
   },
   {
     "chamber_slug": "hwk-kassel",
@@ -1852,6 +2452,138 @@
     "chamber_region": "Hessen",
     "trade_slug": "allgemein-teil-iii-iv",
     "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Wirtschaft und Recht (Teil III)",
+    "parts": [
+      3
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-08-16",
+    "end_date": "2027-10-01",
+    "duration_hours": 280,
+    "course_fee": 2500.0,
+    "course_fee_display": "2.500 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 340.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "340 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1740"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Wirtschaft und Recht (Teil III)",
+    "parts": [
+      3
+    ],
+    "format": "part_time",
+    "format_display": "Teilzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-08-31",
+    "end_date": "2028-02-16",
+    "duration_hours": 280,
+    "course_fee": 2500.0,
+    "course_fee_display": "2.500 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 340.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "340 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1786"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Berufs- und Arbeitspädagogik (Teil IV)",
+    "parts": [
+      4
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-09-06",
+    "end_date": "2027-09-24",
+    "duration_hours": 92,
+    "course_fee": 825.0,
+    "course_fee_display": "825 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 235.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "235 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1584"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Berufs- und Arbeitspädagogik (Teil IV)",
+    "parts": [
+      4
+    ],
+    "format": "part_time",
+    "format_display": "Teilzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-09-06",
+    "end_date": "2027-11-24",
+    "duration_hours": 92,
+    "course_fee": 825.0,
+    "course_fee_display": "825 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 235.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "235 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1744"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
     "title": "Wirtschaft und Recht, Pädagogik (Teile III + IV)",
     "parts": [
       3,
@@ -1945,6 +2677,72 @@
     "longitude": 8.7666044,
     "availability": "available",
     "source_url": "https://www.bbz-marburg.de/kurs/mv-iii-vz/"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Wirtschaft und Recht (Teil III)",
+    "parts": [
+      3
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-10-18",
+    "end_date": "2027-12-03",
+    "duration_hours": 280,
+    "course_fee": 2500.0,
+    "course_fee_display": "2.500 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 340.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "340 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1742"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Berufs- und Arbeitspädagogik (Teil IV)",
+    "parts": [
+      4
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2027-10-25",
+    "end_date": "2027-11-12",
+    "duration_hours": 92,
+    "course_fee": 825.0,
+    "course_fee_display": "825 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 235.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "235 €"
+    },
+    "city": "Kassel",
+    "street": "Falderbaumstraße 18-20",
+    "zip_code": "34123",
+    "latitude": 51.2841009,
+    "longitude": 9.498614,
+    "availability": "available",
+    "source_url": "https://www.bz-kassel.de/bildungsangebot/kaufmaennisches-fachwissen-und-management/kursdetail/kurs-1586"
   },
   {
     "chamber_slug": "hwk-kassel",
@@ -4449,7 +5247,7 @@
     "zip_code": "56070",
     "latitude": 50.3895583,
     "longitude": 7.5708933,
-    "availability": "waitlist",
+    "availability": "available",
     "source_url": "https://www.hwk-koblenz.de/kurse/maler-und-lackierer-teile-i-und-ii-in-teilzeit-52,0,coursedetail.html?id=113777&search-onr=52&img=5"
   },
   {
@@ -8002,6 +8800,39 @@
     "format": "full_time",
     "format_display": "Vollzeit",
     "teaching_mode": "presence",
+    "start_date": "2026-08-27",
+    "end_date": "2026-10-16",
+    "duration_hours": null,
+    "course_fee": 2290.0,
+    "course_fee_display": "2.290 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 340.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "340 €"
+    },
+    "city": "Frankfurt am Main",
+    "street": "Schönstraße 21",
+    "zip_code": "60327",
+    "latitude": 50.1013705,
+    "longitude": 8.65682,
+    "availability": "available",
+    "source_url": "https://portal.hwk-rhein-main.de/seminar/ml-99vz/"
+  },
+  {
+    "chamber_slug": "hwk-rhein-main",
+    "chamber_name": "HWK Frankfurt-Rhein-Main",
+    "chamber_region": "Hessen",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Wirtschaft und Recht (Teil III)",
+    "parts": [
+      3
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
     "start_date": "2026-09-10",
     "end_date": "2026-10-30",
     "duration_hours": null,
@@ -11376,39 +12207,6 @@
     "parts": [
       4
     ],
-    "format": "full_time",
-    "format_display": "Vollzeit",
-    "teaching_mode": "presence",
-    "start_date": "2027-07-17",
-    "end_date": "2027-07-24",
-    "duration_hours": 56,
-    "course_fee": 505.0,
-    "course_fee_display": "505 €",
-    "exam_fee_scraped": 130.0,
-    "exam_fee": {
-      "fee": 130.0,
-      "fee_max": null,
-      "qualifier": "",
-      "display": "130 €"
-    },
-    "city": "Saarbrücken",
-    "street": "Hohenzollernstraße 47-49",
-    "zip_code": "66117",
-    "latitude": 49.2297,
-    "longitude": 6.9967,
-    "availability": "available",
-    "source_url": "https://www.hwk-saarland.de/seminar/mv-teil-iv-m4vz/"
-  },
-  {
-    "chamber_slug": "hwk-saarland",
-    "chamber_name": "HWK des Saarlandes",
-    "chamber_region": "Saarland",
-    "trade_slug": "allgemein-teil-iii-iv",
-    "trade_name": "Wirtschaft, Recht, Pädagogik",
-    "title": "Berufs- und Arbeitspädagogik (Teil IV)",
-    "parts": [
-      4
-    ],
     "format": "part_time",
     "format_display": "Teilzeit",
     "teaching_mode": "presence",
@@ -12809,40 +13607,6 @@
     "chamber_slug": "hwk-wiesbaden",
     "chamber_name": "HWK Wiesbaden",
     "chamber_region": "Hessen",
-    "trade_slug": "kosmetiker",
-    "trade_name": "Kosmetiker",
-    "title": "Kosmetiker (Teile I + II)",
-    "parts": [
-      1,
-      2
-    ],
-    "format": "part_time",
-    "format_display": "Teilzeit",
-    "teaching_mode": "presence",
-    "start_date": "2026-08-10",
-    "end_date": "2027-07-05",
-    "duration_hours": 456,
-    "course_fee": 3750.0,
-    "course_fee_display": "3.750 €",
-    "exam_fee_scraped": null,
-    "exam_fee": {
-      "fee": 730.0,
-      "fee_max": null,
-      "qualifier": "",
-      "display": "730 €"
-    },
-    "city": "Wiesbaden",
-    "street": "Brunhildenstraße 110",
-    "zip_code": "65189",
-    "latitude": 50.0652806,
-    "longitude": 8.2590004,
-    "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-im-kosmetikerhandwerk-teile-i-ii-teilzeit-44,0,coursedetail.html?id=113661&search-onr=44&img=1"
-  },
-  {
-    "chamber_slug": "hwk-wiesbaden",
-    "chamber_name": "HWK Wiesbaden",
-    "chamber_region": "Hessen",
     "trade_slug": "maler-und-lackierer",
     "trade_name": "Maler und Lackierer",
     "title": "Maler und Lackierer (Teile I + II)",
@@ -13293,39 +14057,6 @@
     ],
     "format": "full_time",
     "format_display": "Vollzeit",
-    "teaching_mode": "presence",
-    "start_date": "2026-08-11",
-    "end_date": "2026-08-25",
-    "duration_hours": 110,
-    "course_fee": 900.0,
-    "course_fee_display": "900 €",
-    "exam_fee_scraped": null,
-    "exam_fee": {
-      "fee": 235.0,
-      "fee_max": null,
-      "qualifier": "",
-      "display": "235 €"
-    },
-    "city": "Wetzlar",
-    "street": "Dillufer 40",
-    "zip_code": "35576",
-    "latitude": 50.5548159,
-    "longitude": 8.4921662,
-    "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/ausbildereignungspruefung-vollzeit-44,0,coursedetail.html?id=50893&search-onr=44&img=1"
-  },
-  {
-    "chamber_slug": "hwk-wiesbaden",
-    "chamber_name": "HWK Wiesbaden",
-    "chamber_region": "Hessen",
-    "trade_slug": "allgemein-teil-iii-iv",
-    "trade_name": "Wirtschaft, Recht, Pädagogik",
-    "title": "Berufs- und Arbeitspädagogik (Teil IV)",
-    "parts": [
-      4
-    ],
-    "format": "full_time",
-    "format_display": "Vollzeit",
     "teaching_mode": "hybrid",
     "start_date": "2026-08-17",
     "end_date": "2026-08-28",
@@ -13345,7 +14076,7 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "waitlist",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iv-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=94347&search-onr=44&img=2"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iv-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=94347&search-onr=44&img=1"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -13379,7 +14110,7 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teile-iii-iv-teilzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=105441&search-onr=44&img=3"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teile-iii-iv-teilzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=105441&search-onr=44&img=2"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -13412,7 +14143,7 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "waitlist",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=94343&search-onr=44&img=4"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=94343&search-onr=44&img=3"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -13445,7 +14176,7 @@
     "latitude": 50.5548159,
     "longitude": 8.4921662,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-44,0,coursedetail.html?id=53244&search-onr=44&img=5"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-44,0,coursedetail.html?id=53244&search-onr=44&img=4"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -13479,7 +14210,7 @@
     "latitude": 50.5548159,
     "longitude": 8.4921662,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teile-iii-iv-vollzeit-44,0,coursedetail.html?id=48864&search-onr=44&img=6"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teile-iii-iv-vollzeit-44,0,coursedetail.html?id=48864&search-onr=44&img=5"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -13512,7 +14243,7 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/ausbildereignungspruefung-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103826&search-onr=44&img=8"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/ausbildereignungspruefung-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103826&search-onr=44&img=7"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -13545,7 +14276,7 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iv-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=94350&search-onr=44&img=7"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iv-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=94350&search-onr=44&img=6"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -13578,7 +14309,7 @@
     "latitude": 50.5548159,
     "longitude": 8.4921662,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/ausbildereignungspruefung-vollzeit-44,0,coursedetail.html?id=50894&search-onr=44&img=9"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/ausbildereignungspruefung-vollzeit-44,0,coursedetail.html?id=50894&search-onr=44&img=8"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -13611,7 +14342,7 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "waitlist",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=94344&search-onr=44&img=10"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=94344&search-onr=44&img=9"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -13644,7 +14375,7 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/ausbildereignungspruefung-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103827&search-onr=44&img=12"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/ausbildereignungspruefung-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103827&search-onr=44&img=11"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -13677,7 +14408,7 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iv-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=94351&search-onr=44&img=11"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iv-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=94351&search-onr=44&img=10"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -13710,7 +14441,7 @@
     "latitude": 50.5548159,
     "longitude": 8.4921662,
     "availability": "waitlist",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-44,0,coursedetail.html?id=53245&search-onr=44&img=13"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-44,0,coursedetail.html?id=53245&search-onr=44&img=12"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -13743,8 +14474,8 @@
     "zip_code": "35576",
     "latitude": 50.5548159,
     "longitude": 8.4921662,
-    "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teile-iii-iv-vollzeit-44,0,coursedetail.html?id=77273&search-onr=44&img=14"
+    "availability": "waitlist",
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teile-iii-iv-vollzeit-44,0,coursedetail.html?id=77273&search-onr=44&img=13"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -13777,7 +14508,7 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103182&search-onr=44&img=15"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103182&search-onr=44&img=14"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -13810,7 +14541,7 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/ausbildereignungspruefung-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103841&search-onr=44&img=17"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/ausbildereignungspruefung-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103841&search-onr=44&img=16"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -13843,7 +14574,7 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iv-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103645&search-onr=44&img=16"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iv-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103645&search-onr=44&img=15"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -13876,7 +14607,7 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103624&search-onr=44&img=18"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103624&search-onr=44&img=17"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -13909,7 +14640,7 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/ausbildereignungspruefung-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103842&search-onr=44&img=20"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/ausbildereignungspruefung-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103842&search-onr=44&img=19"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -13942,7 +14673,7 @@
     "latitude": 50.5548159,
     "longitude": 8.4921662,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-44,0,coursedetail.html?id=113231&search-onr=44&img=1"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-44,0,coursedetail.html?id=113231&search-onr=44&img=20"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -13975,7 +14706,7 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iv-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103646&search-onr=44&img=19"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iv-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103646&search-onr=44&img=18"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -14009,7 +14740,7 @@
     "latitude": 50.5548159,
     "longitude": 8.4921662,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teile-iii-iv-vollzeit-44,0,coursedetail.html?id=113223&search-onr=44&img=2"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teile-iii-iv-vollzeit-44,0,coursedetail.html?id=113223&search-onr=44&img=1"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -14042,7 +14773,7 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103641&search-onr=44&img=3"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103641&search-onr=44&img=2"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -14075,7 +14806,7 @@
     "latitude": 50.5548159,
     "longitude": 8.4921662,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-teilzeit-44,0,coursedetail.html?id=123886&search-onr=44&img=4"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-teilzeit-44,0,coursedetail.html?id=123886&search-onr=44&img=3"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -14109,7 +14840,7 @@
     "latitude": 50.5548159,
     "longitude": 8.4921662,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teile-iii-iv-teilzeit-44,0,coursedetail.html?id=115841&search-onr=44&img=5"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teile-iii-iv-teilzeit-44,0,coursedetail.html?id=115841&search-onr=44&img=4"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -14142,7 +14873,7 @@
     "latitude": 50.5548159,
     "longitude": 8.4921662,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/ausbildereignungspruefung-vollzeit-44,0,coursedetail.html?id=113233&search-onr=44&img=6"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/ausbildereignungspruefung-vollzeit-44,0,coursedetail.html?id=113233&search-onr=44&img=5"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -14175,7 +14906,7 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/ausbildereignungspruefung-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103843&search-onr=44&img=8"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/ausbildereignungspruefung-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103843&search-onr=44&img=7"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -14208,7 +14939,7 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iv-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103647&search-onr=44&img=7"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iv-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103647&search-onr=44&img=6"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -14241,7 +14972,7 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103642&search-onr=44&img=9"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103642&search-onr=44&img=8"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -14274,7 +15005,7 @@
     "latitude": 50.5548159,
     "longitude": 8.4921662,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-44,0,coursedetail.html?id=113235&search-onr=44&img=10"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-vollzeit-44,0,coursedetail.html?id=113235&search-onr=44&img=9"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -14308,7 +15039,7 @@
     "latitude": 50.5548159,
     "longitude": 8.4921662,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teile-iii-iv-vollzeit-44,0,coursedetail.html?id=113228&search-onr=44&img=11"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teile-iii-iv-vollzeit-44,0,coursedetail.html?id=113228&search-onr=44&img=10"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -14341,7 +15072,7 @@
     "latitude": 50.5548159,
     "longitude": 8.4921662,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/ausbildereignungspruefung-vollzeit-44,0,coursedetail.html?id=113234&search-onr=44&img=12"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/ausbildereignungspruefung-vollzeit-44,0,coursedetail.html?id=113234&search-onr=44&img=11"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -14374,7 +15105,7 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/ausbildereignungspruefung-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103844&search-onr=44&img=14"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/ausbildereignungspruefung-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103844&search-onr=44&img=13"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -14407,7 +15138,41 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iv-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103648&search-onr=44&img=13"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iv-vollzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=103648&search-onr=44&img=12"
+  },
+  {
+    "chamber_slug": "hwk-wiesbaden",
+    "chamber_name": "HWK Wiesbaden",
+    "chamber_region": "Hessen",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "trade_name": "Wirtschaft, Recht, Pädagogik",
+    "title": "Wirtschaft und Recht, Pädagogik (Teile III + IV)",
+    "parts": [
+      3,
+      4
+    ],
+    "format": "part_time",
+    "format_display": "Teilzeit",
+    "teaching_mode": "hybrid",
+    "start_date": "2027-08-16",
+    "end_date": "2028-06-21",
+    "duration_hours": 360,
+    "course_fee": 2800.0,
+    "course_fee_display": "2.800 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 490.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "490 €"
+    },
+    "city": "Wiesbaden",
+    "street": "Brunhildenstraße 110",
+    "zip_code": "65189",
+    "latitude": 50.0652806,
+    "longitude": 8.2590004,
+    "availability": "available",
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teile-iii-iv-teilzeit-praesenz-oder-wahlweise-virtuelles-klassenzimmer-44,0,coursedetail.html?id=125841&search-onr=44&img=14"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
