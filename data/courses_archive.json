@@ -136,6 +136,39 @@
     "source_url": "https://veranstaltung.holzfachschule.de/seminar/vorbereitungslehrgang-auf-die-meisterpruefung-teil-iii-iv_104853"
   },
   {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
+    "trade_slug": "zimmerer",
+    "trade_name": "Zimmerer",
+    "title": "Zimmerer (Teil I)",
+    "parts": [
+      1
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2026-08-11",
+    "end_date": "2026-10-02",
+    "duration_hours": null,
+    "course_fee": 3990.0,
+    "course_fee_display": "3.990 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 420.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "420 €"
+    },
+    "city": "Kassel",
+    "street": "Auedamm 18",
+    "zip_code": "34123",
+    "latitude": 51.3021202,
+    "longitude": 9.4991416,
+    "availability": "available",
+    "source_url": "https://www.bubiza.de/kurse/vollzeit-hoehere-berufsbildung/zimmermeister-fuer-architekten-ingenieure-techniker.html"
+  },
+  {
     "chamber_slug": "hwk-wiesbaden",
     "chamber_name": "HWK Wiesbaden",
     "chamber_region": "Hessen",
