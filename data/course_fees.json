@@ -1,15 +1,5 @@
 [
   {
-    "chamber_slug": "hwk-rhein-main",
-    "trade_slug": "allgemein-teil-iii-iv",
-    "parts": [
-      3
-    ],
-    "fee": 2290.0,
-    "exam_fee_scraped": null,
-    "is_generic": true
-  },
-  {
     "chamber_slug": "hwk-wiesbaden",
     "trade_slug": "maler-und-lackierer",
     "parts": [
@@ -40,6 +30,17 @@
     "fee": 2650.0,
     "exam_fee_scraped": null,
     "is_generic": true
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "trade_slug": "elektrotechniker",
+    "parts": [
+      1,
+      2
+    ],
+    "fee": 9500.0,
+    "exam_fee_scraped": null,
+    "is_generic": false
   },
   {
     "chamber_slug": "hwk-rhein-main",
@@ -193,17 +194,6 @@
     "is_generic": false
   },
   {
-    "chamber_slug": "hwk-pfalz",
-    "trade_slug": "allgemein-teil-iii-iv",
-    "parts": [
-      3,
-      4
-    ],
-    "fee": 2300.0,
-    "exam_fee_scraped": 600.0,
-    "is_generic": true
-  },
-  {
     "chamber_slug": "hwk-saarland",
     "trade_slug": "maurer-und-betonbauer",
     "parts": [
@@ -232,6 +222,17 @@
       2
     ],
     "fee": 7350.0,
+    "exam_fee_scraped": null,
+    "is_generic": false
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "trade_slug": "land-und-baumaschinenmechatroniker",
+    "parts": [
+      1,
+      2
+    ],
+    "fee": 10500.0,
     "exam_fee_scraped": null,
     "is_generic": false
   },
@@ -384,6 +385,16 @@
     "is_generic": true
   },
   {
+    "chamber_slug": "hwk-saarland",
+    "trade_slug": "installateur-und-heizungsbauer",
+    "parts": [
+      1
+    ],
+    "fee": 3035.0,
+    "exam_fee_scraped": 990.0,
+    "is_generic": false
+  },
+  {
     "chamber_slug": "hwk-koblenz",
     "trade_slug": "steinmetze-und-steinbildhauer",
     "parts": [
@@ -392,6 +403,16 @@
     "fee": 4250.0,
     "exam_fee_scraped": null,
     "is_generic": false
+  },
+  {
+    "chamber_slug": "hwk-rhein-main",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "parts": [
+      3
+    ],
+    "fee": 2290.0,
+    "exam_fee_scraped": null,
+    "is_generic": true
   },
   {
     "chamber_slug": "hwk-kassel",
@@ -523,6 +544,28 @@
     "is_generic": false
   },
   {
+    "chamber_slug": "hwk-pfalz",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "parts": [
+      3,
+      4
+    ],
+    "fee": 2300.0,
+    "exam_fee_scraped": 600.0,
+    "is_generic": true
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "trade_slug": "tischler",
+    "parts": [
+      1,
+      2
+    ],
+    "fee": 9500.0,
+    "exam_fee_scraped": null,
+    "is_generic": false
+  },
+  {
     "chamber_slug": "hwk-koblenz",
     "trade_slug": "backer",
     "parts": [
@@ -543,6 +586,16 @@
     "fee": 2990.0,
     "exam_fee_scraped": null,
     "is_generic": true
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "trade_slug": "elektrotechniker",
+    "parts": [
+      2
+    ],
+    "fee": 6150.0,
+    "exam_fee_scraped": null,
+    "is_generic": false
   },
   {
     "chamber_slug": "hwk-saarland",
@@ -578,17 +631,6 @@
     "is_generic": false
   },
   {
-    "chamber_slug": "hwk-kassel",
-    "trade_slug": "tischler",
-    "parts": [
-      1,
-      2
-    ],
-    "fee": 9612.0,
-    "exam_fee_scraped": null,
-    "is_generic": false
-  },
-  {
     "chamber_slug": "hwk-saarland",
     "trade_slug": "backer",
     "parts": [
@@ -596,6 +638,16 @@
     ],
     "fee": 2710.0,
     "exam_fee_scraped": 990.0,
+    "is_generic": false
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "trade_slug": "kfz-techniker",
+    "parts": [
+      2
+    ],
+    "fee": 3990.0,
+    "exam_fee_scraped": null,
     "is_generic": false
   },
   {
@@ -967,16 +1019,6 @@
     "is_generic": false
   },
   {
-    "chamber_slug": "hwk-saarland",
-    "trade_slug": "installateur-und-heizungsbauer",
-    "parts": [
-      1
-    ],
-    "fee": 3035.0,
-    "exam_fee_scraped": 990.0,
-    "is_generic": false
-  },
-  {
     "chamber_slug": "hwk-koblenz",
     "trade_slug": "fleischer",
     "parts": [
@@ -1085,6 +1127,17 @@
     "is_generic": false
   },
   {
+    "chamber_slug": "hwk-rheinhessen",
+    "trade_slug": "kfz-techniker",
+    "parts": [
+      1,
+      2
+    ],
+    "fee": 7900.0,
+    "exam_fee_scraped": null,
+    "is_generic": false
+  },
+  {
     "chamber_slug": "hwk-rhein-main",
     "trade_slug": "tischler",
     "parts": [
@@ -1103,6 +1156,28 @@
     ],
     "fee": 1705.0,
     "exam_fee_scraped": 990.0,
+    "is_generic": false
+  },
+  {
+    "chamber_slug": "hwk-rheinhessen",
+    "trade_slug": "tischler",
+    "parts": [
+      1,
+      2
+    ],
+    "fee": 6700.0,
+    "exam_fee_scraped": null,
+    "is_generic": false
+  },
+  {
+    "chamber_slug": "hwk-rheinhessen",
+    "trade_slug": "zimmerer",
+    "parts": [
+      1,
+      2
+    ],
+    "fee": 6700.0,
+    "exam_fee_scraped": null,
     "is_generic": false
   },
   {
@@ -1509,45 +1584,12 @@
   },
   {
     "chamber_slug": "hwk-rheinhessen",
-    "trade_slug": "kfz-techniker",
-    "parts": [
-      1,
-      2
-    ],
-    "fee": 7900.0,
-    "exam_fee_scraped": null,
-    "is_generic": false
-  },
-  {
-    "chamber_slug": "hwk-rheinhessen",
-    "trade_slug": "tischler",
-    "parts": [
-      1,
-      2
-    ],
-    "fee": 6700.0,
-    "exam_fee_scraped": null,
-    "is_generic": false
-  },
-  {
-    "chamber_slug": "hwk-rheinhessen",
     "trade_slug": "dachdecker",
     "parts": [
       1,
       2
     ],
     "fee": 6600.0,
-    "exam_fee_scraped": null,
-    "is_generic": false
-  },
-  {
-    "chamber_slug": "hwk-rheinhessen",
-    "trade_slug": "zimmerer",
-    "parts": [
-      1,
-      2
-    ],
-    "fee": 6700.0,
     "exam_fee_scraped": null,
     "is_generic": false
   },
