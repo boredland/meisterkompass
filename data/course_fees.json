@@ -1,26 +1,5 @@
 [
   {
-    "chamber_slug": "hwk-pfalz",
-    "trade_slug": "land-und-baumaschinenmechatroniker",
-    "parts": [
-      1
-    ],
-    "fee": 6100.0,
-    "exam_fee_scraped": 1100.0,
-    "is_generic": false
-  },
-  {
-    "chamber_slug": "hwk-wiesbaden",
-    "trade_slug": "allgemein-teil-iii-iv",
-    "parts": [
-      3,
-      4
-    ],
-    "fee": 2650.0,
-    "exam_fee_scraped": null,
-    "is_generic": true
-  },
-  {
     "chamber_slug": "hwk-kassel",
     "trade_slug": "elektrotechniker",
     "parts": [
@@ -58,6 +37,17 @@
       3
     ],
     "fee": 1800.0,
+    "exam_fee_scraped": null,
+    "is_generic": true
+  },
+  {
+    "chamber_slug": "hwk-wiesbaden",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "parts": [
+      3,
+      4
+    ],
+    "fee": 2650.0,
     "exam_fee_scraped": null,
     "is_generic": true
   },
@@ -217,6 +207,16 @@
   },
   {
     "chamber_slug": "hwk-wiesbaden",
+    "trade_slug": "dachdecker",
+    "parts": [
+      1
+    ],
+    "fee": 4200.0,
+    "exam_fee_scraped": null,
+    "is_generic": false
+  },
+  {
+    "chamber_slug": "hwk-wiesbaden",
     "trade_slug": "allgemein-teil-iii-iv",
     "parts": [
       4
@@ -224,17 +224,6 @@
     "fee": 900.0,
     "exam_fee_scraped": null,
     "is_generic": true
-  },
-  {
-    "chamber_slug": "hwk-rhein-main",
-    "trade_slug": "zweirad",
-    "parts": [
-      1,
-      2
-    ],
-    "fee": 8490.0,
-    "exam_fee_scraped": null,
-    "is_generic": false
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -715,16 +704,6 @@
     "is_generic": false
   },
   {
-    "chamber_slug": "hwk-wiesbaden",
-    "trade_slug": "dachdecker",
-    "parts": [
-      1
-    ],
-    "fee": 4400.0,
-    "exam_fee_scraped": null,
-    "is_generic": false
-  },
-  {
     "chamber_slug": "hwk-saarland",
     "trade_slug": "installateur-und-heizungsbauer",
     "parts": [
@@ -918,6 +897,17 @@
       2
     ],
     "fee": 6050.0,
+    "exam_fee_scraped": null,
+    "is_generic": false
+  },
+  {
+    "chamber_slug": "hwk-rhein-main",
+    "trade_slug": "zweirad",
+    "parts": [
+      1,
+      2
+    ],
+    "fee": 9990.0,
     "exam_fee_scraped": null,
     "is_generic": false
   },
@@ -1203,17 +1193,6 @@
     "is_generic": false
   },
   {
-    "chamber_slug": "hwk-pfalz",
-    "trade_slug": "elektrotechniker",
-    "parts": [
-      1,
-      2
-    ],
-    "fee": 5000.0,
-    "exam_fee_scraped": 1600.0,
-    "is_generic": false
-  },
-  {
     "chamber_slug": "hwk-wiesbaden",
     "trade_slug": "maurer-und-betonbauer",
     "parts": [
@@ -1318,6 +1297,17 @@
     ],
     "fee": 10700.0,
     "exam_fee_scraped": 1130.0,
+    "is_generic": false
+  },
+  {
+    "chamber_slug": "hwk-pfalz",
+    "trade_slug": "elektrotechniker",
+    "parts": [
+      1,
+      2
+    ],
+    "fee": 5200.0,
+    "exam_fee_scraped": 1600.0,
     "is_generic": false
   },
   {
@@ -1519,6 +1509,17 @@
   },
   {
     "chamber_slug": "hwk-rheinhessen",
+    "trade_slug": "metallbauer",
+    "parts": [
+      1,
+      2
+    ],
+    "fee": 6100.0,
+    "exam_fee_scraped": null,
+    "is_generic": false
+  },
+  {
+    "chamber_slug": "hwk-rheinhessen",
     "trade_slug": "maurer-und-betonbauer",
     "parts": [
       1,
@@ -1591,6 +1592,16 @@
     ],
     "fee": 5700.0,
     "exam_fee_scraped": null,
+    "is_generic": false
+  },
+  {
+    "chamber_slug": "hwk-pfalz",
+    "trade_slug": "land-und-baumaschinenmechatroniker",
+    "parts": [
+      1
+    ],
+    "fee": 6100.0,
+    "exam_fee_scraped": 1100.0,
     "is_generic": false
   },
   {
