@@ -350,16 +350,6 @@
     "is_generic": true
   },
   {
-    "chamber_slug": "hwk-saarland",
-    "trade_slug": "installateur-und-heizungsbauer",
-    "parts": [
-      1
-    ],
-    "fee": 3035.0,
-    "exam_fee_scraped": 990.0,
-    "is_generic": false
-  },
-  {
     "chamber_slug": "hwk-koblenz",
     "trade_slug": "steinmetze-und-steinbildhauer",
     "parts": [
@@ -386,7 +376,7 @@
       3,
       4
     ],
-    "fee": 3900.0,
+    "fee": 4609.0,
     "exam_fee_scraped": null,
     "is_generic": true
   },
@@ -1226,6 +1216,16 @@
     "is_generic": false
   },
   {
+    "chamber_slug": "hwk-saarland",
+    "trade_slug": "installateur-und-heizungsbauer",
+    "parts": [
+      1
+    ],
+    "fee": 3035.0,
+    "exam_fee_scraped": 990.0,
+    "is_generic": false
+  },
+  {
     "chamber_slug": "hwk-koblenz",
     "trade_slug": "zimmerer",
     "parts": [
@@ -1276,6 +1276,17 @@
     ],
     "fee": 7350.0,
     "exam_fee_scraped": 1000.0,
+    "is_generic": false
+  },
+  {
+    "chamber_slug": "hwk-koblenz",
+    "trade_slug": "karosserie-und-fahrzeugbauer",
+    "parts": [
+      1,
+      2
+    ],
+    "fee": 6590.0,
+    "exam_fee_scraped": null,
     "is_generic": false
   },
   {
@@ -1359,17 +1370,6 @@
       2
     ],
     "fee": 4000.0,
-    "exam_fee_scraped": null,
-    "is_generic": false
-  },
-  {
-    "chamber_slug": "hwk-koblenz",
-    "trade_slug": "karosserie-und-fahrzeugbauer",
-    "parts": [
-      1,
-      2
-    ],
-    "fee": 6590.0,
     "exam_fee_scraped": null,
     "is_generic": false
   },

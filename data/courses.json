@@ -1332,8 +1332,8 @@
     "start_date": "2027-10-11",
     "end_date": "2028-02-25",
     "duration_hours": null,
-    "course_fee": 9612.0,
-    "course_fee_display": "9.612 €",
+    "course_fee": 12254.12,
+    "course_fee_display": "12.254 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 730.0,
@@ -1767,8 +1767,8 @@
     "start_date": "2027-01-04",
     "end_date": "2027-02-19",
     "duration_hours": null,
-    "course_fee": 3900.0,
-    "course_fee_display": "3.900 €",
+    "course_fee": 4609.0,
+    "course_fee_display": "4.609 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 490.0,
@@ -3889,7 +3889,7 @@
     "latitude": 50.3894351,
     "longitude": 7.5720768,
     "availability": "waitlist",
-    "source_url": "https://www.hwk-koblenz.de/kurse/elektrotechniker-teile-i-und-ii-in-teilzeit-52,0,coursedetail.html?id=116774&search-onr=52&img=3"
+    "source_url": "https://www.hwk-koblenz.de/kurse/elektrotechniker-teile-i-und-ii-in-teilzeit-52,0,coursedetail.html?id=116774&search-onr=52&img=4"
   },
   {
     "chamber_slug": "hwk-koblenz",
@@ -3923,7 +3923,7 @@
     "latitude": 50.3894351,
     "longitude": 7.5720768,
     "availability": "waitlist",
-    "source_url": "https://www.hwk-koblenz.de/kurse/elektrotechniker-teile-i-und-ii-in-vollzeit-52,0,coursedetail.html?id=114994&search-onr=52&img=4"
+    "source_url": "https://www.hwk-koblenz.de/kurse/elektrotechniker-teile-i-und-ii-in-vollzeit-52,0,coursedetail.html?id=114994&search-onr=52&img=5"
   },
   {
     "chamber_slug": "hwk-koblenz",
@@ -3957,7 +3957,7 @@
     "latitude": 50.3894351,
     "longitude": 7.5720768,
     "availability": "available",
-    "source_url": "https://www.hwk-koblenz.de/kurse/elektrotechniker-teile-i-und-ii-in-teilzeit-52,0,coursedetail.html?id=119250&search-onr=52&img=6"
+    "source_url": "https://www.hwk-koblenz.de/kurse/elektrotechniker-teile-i-und-ii-in-teilzeit-52,0,coursedetail.html?id=119250&search-onr=52&img=7"
   },
   {
     "chamber_slug": "hwk-koblenz",
@@ -3991,7 +3991,7 @@
     "latitude": 50.3894351,
     "longitude": 7.5720768,
     "availability": "waitlist",
-    "source_url": "https://www.hwk-koblenz.de/kurse/elektrotechniker-teile-i-und-ii-in-vollzeit-52,0,coursedetail.html?id=117151&search-onr=52&img=7"
+    "source_url": "https://www.hwk-koblenz.de/kurse/elektrotechniker-teile-i-und-ii-in-vollzeit-52,0,coursedetail.html?id=117151&search-onr=52&img=8"
   },
   {
     "chamber_slug": "hwk-koblenz",
@@ -4025,7 +4025,7 @@
     "latitude": 50.3894351,
     "longitude": 7.5720768,
     "availability": "waitlist",
-    "source_url": "https://www.hwk-koblenz.de/kurse/elektrotechniker-teile-i-und-ii-in-vollzeit-52,0,coursedetail.html?id=118637&search-onr=52&img=9"
+    "source_url": "https://www.hwk-koblenz.de/kurse/elektrotechniker-teile-i-und-ii-in-vollzeit-52,0,coursedetail.html?id=118637&search-onr=52&img=10"
   },
   {
     "chamber_slug": "hwk-koblenz",
@@ -4059,7 +4059,7 @@
     "latitude": 50.3894351,
     "longitude": 7.5720768,
     "availability": "available",
-    "source_url": "https://www.hwk-koblenz.de/kurse/elektrotechniker-teile-i-und-ii-in-vollzeit-52,0,coursedetail.html?id=120060&search-onr=52&img=11"
+    "source_url": "https://www.hwk-koblenz.de/kurse/elektrotechniker-teile-i-und-ii-in-vollzeit-52,0,coursedetail.html?id=120060&search-onr=52&img=12"
   },
   {
     "chamber_slug": "hwk-koblenz",
@@ -4705,7 +4705,7 @@
     "latitude": 50.3894351,
     "longitude": 7.5720768,
     "availability": "waitlist",
-    "source_url": "https://www.hwk-koblenz.de/kurse/installateur-und-heizungsbauer-teile-i-und-ii-in-vollzeit-52,0,coursedetail.html?id=113746&search-onr=52&img=2"
+    "source_url": "https://www.hwk-koblenz.de/kurse/installateur-und-heizungsbauer-teile-i-und-ii-in-vollzeit-52,0,coursedetail.html?id=113746&search-onr=52&img=3"
   },
   {
     "chamber_slug": "hwk-koblenz",
@@ -4739,7 +4739,7 @@
     "latitude": 50.3894351,
     "longitude": 7.5720768,
     "availability": "waitlist",
-    "source_url": "https://www.hwk-koblenz.de/kurse/installateur-und-heizungsbauer-teile-i-und-ii-in-vollzeit-52,0,coursedetail.html?id=115926&search-onr=52&img=5"
+    "source_url": "https://www.hwk-koblenz.de/kurse/installateur-und-heizungsbauer-teile-i-und-ii-in-vollzeit-52,0,coursedetail.html?id=115926&search-onr=52&img=6"
   },
   {
     "chamber_slug": "hwk-koblenz",
@@ -4773,7 +4773,7 @@
     "latitude": 50.3894351,
     "longitude": 7.5720768,
     "availability": "waitlist",
-    "source_url": "https://www.hwk-koblenz.de/kurse/installateur-und-heizungsbauer-teile-i-und-ii-in-vollzeit-52,0,coursedetail.html?id=118234&search-onr=52&img=8"
+    "source_url": "https://www.hwk-koblenz.de/kurse/installateur-und-heizungsbauer-teile-i-und-ii-in-vollzeit-52,0,coursedetail.html?id=118234&search-onr=52&img=9"
   },
   {
     "chamber_slug": "hwk-koblenz",
@@ -4807,7 +4807,7 @@
     "latitude": 50.3894351,
     "longitude": 7.5720768,
     "availability": "available",
-    "source_url": "https://www.hwk-koblenz.de/kurse/installateur-und-heizungsbauer-teile-i-und-ii-in-vollzeit-52,0,coursedetail.html?id=119662&search-onr=52&img=10"
+    "source_url": "https://www.hwk-koblenz.de/kurse/installateur-und-heizungsbauer-teile-i-und-ii-in-vollzeit-52,0,coursedetail.html?id=119662&search-onr=52&img=11"
   },
   {
     "chamber_slug": "hwk-koblenz",
@@ -4825,7 +4825,7 @@
     "teaching_mode": "presence",
     "start_date": "2027-09-04",
     "end_date": "2029-06-23",
-    "duration_hours": 756,
+    "duration_hours": 730,
     "course_fee": 6590.0,
     "course_fee_display": "6.590 €",
     "exam_fee_scraped": null,
@@ -4842,6 +4842,40 @@
     "longitude": 7.5720768,
     "availability": "waitlist",
     "source_url": "https://www.hwk-koblenz.de/kurse/karosserie-und-fahrzeugbauer-teile-i-und-ii-in-teilzeit-52,0,coursedetail.html?id=116441&search-onr=52&img=12"
+  },
+  {
+    "chamber_slug": "hwk-koblenz",
+    "chamber_name": "HWK Koblenz",
+    "chamber_region": "Rheinland-Pfalz",
+    "trade_slug": "karosserie-und-fahrzeugbauer",
+    "trade_name": "Karosserie- und Fahrzeugbauer",
+    "title": "Karosserie- und Fahrzeugbauer (Teile I + II)",
+    "parts": [
+      1,
+      2
+    ],
+    "format": "part_time",
+    "format_display": "Teilzeit",
+    "teaching_mode": "presence",
+    "start_date": "2029-09-08",
+    "end_date": "2031-06-28",
+    "duration_hours": 730,
+    "course_fee": 6590.0,
+    "course_fee_display": "6.590 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 1800.0,
+      "fee_max": null,
+      "qualifier": "bis zu",
+      "display": "bis zu 1.800 €"
+    },
+    "city": "Koblenz",
+    "street": "August-Horch-Str. 6-8",
+    "zip_code": "56070",
+    "latitude": 50.3894351,
+    "longitude": 7.5720768,
+    "availability": "available",
+    "source_url": "https://www.hwk-koblenz.de/kurse/karosserie-und-fahrzeugbauer-teile-i-und-ii-in-teilzeit-52,0,coursedetail.html?id=121990&search-onr=52&img=2"
   },
   {
     "chamber_slug": "hwk-koblenz",
@@ -8490,40 +8524,6 @@
     "chamber_name": "HWK Frankfurt-Rhein-Main",
     "chamber_region": "Hessen",
     "trade_slug": "installateur-und-heizungsbauer",
-    "trade_name": "Installateur und Heizungsbauer",
-    "title": "Installateur und Heizungsbauer (Teile I + II)",
-    "parts": [
-      1,
-      2
-    ],
-    "format": "full_time",
-    "format_display": "Vollzeit",
-    "teaching_mode": "presence",
-    "start_date": "2027-07-26",
-    "end_date": "2028-02-19",
-    "duration_hours": null,
-    "course_fee": 11490.0,
-    "course_fee_display": "11.490 €",
-    "exam_fee_scraped": null,
-    "exam_fee": {
-      "fee": 730.0,
-      "fee_max": null,
-      "qualifier": "",
-      "display": "730 €"
-    },
-    "city": "Frankfurt am Main",
-    "street": "Schönstraße 21",
-    "zip_code": "60327",
-    "latitude": 50.1013705,
-    "longitude": 8.65682,
-    "availability": "available",
-    "source_url": "https://portal.hwk-rhein-main.de/seminar/ml-27vz-iii/"
-  },
-  {
-    "chamber_slug": "hwk-rhein-main",
-    "chamber_name": "HWK Frankfurt-Rhein-Main",
-    "chamber_region": "Hessen",
-    "trade_slug": "installateur-und-heizungsbauer",
     "trade_name": "Installateur- und Heizungsbauer",
     "title": "Installateur- und Heizungsbauer (Teile I + II)",
     "parts": [
@@ -10695,7 +10695,7 @@
     "zip_code": "66117",
     "latitude": 49.2297,
     "longitude": 6.9967,
-    "availability": "available",
+    "availability": "unknown",
     "source_url": "https://www.hwk-saarland.de/seminar/mv-teil-i-installateur-und-heizungsbauer-m1ih/"
   },
   {
