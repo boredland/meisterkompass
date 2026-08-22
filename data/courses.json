@@ -1244,7 +1244,7 @@
     "zip_code": "34537",
     "latitude": 51.1300434,
     "longitude": 9.1225344,
-    "availability": "full",
+    "availability": "available",
     "source_url": "https://veranstaltung.holzfachschule.de/seminar/vorbereitungslehrgang-auf-die-meisterpruefung-im-tischlerhandwerk-teil-i-ii_104765"
   },
   {
@@ -1332,8 +1332,8 @@
     "start_date": "2027-10-11",
     "end_date": "2028-02-25",
     "duration_hours": null,
-    "course_fee": 12254.12,
-    "course_fee_display": "12.254 €",
+    "course_fee": 9612.0,
+    "course_fee_display": "9.612 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 730.0,
@@ -1767,8 +1767,8 @@
     "start_date": "2027-01-04",
     "end_date": "2027-02-19",
     "duration_hours": null,
-    "course_fee": 4609.0,
-    "course_fee_display": "4.609 €",
+    "course_fee": 3900.0,
+    "course_fee_display": "3.900 €",
     "exam_fee_scraped": null,
     "exam_fee": {
       "fee": 490.0,
@@ -5044,7 +5044,7 @@
     "zip_code": "56073",
     "latitude": 50.3603382,
     "longitude": 7.5844202,
-    "availability": "available",
+    "availability": "waitlist",
     "source_url": "https://www.hwk-koblenz.de/kurse/kfz-techniker-teile-i-und-ii-in-teilzeit-52,0,coursedetail.html?id=115232&search-onr=52&img=11"
   },
   {
@@ -10241,7 +10241,7 @@
     "teaching_mode": "presence",
     "start_date": "2027-04-05",
     "end_date": "2028-04-07",
-    "duration_hours": 520,
+    "duration_hours": 536,
     "course_fee": 1390.0,
     "course_fee_display": "1.390 €",
     "exam_fee_scraped": 560.0,
@@ -10256,7 +10256,7 @@
     "zip_code": "66117",
     "latitude": 49.2297,
     "longitude": 6.9967,
-    "availability": "unknown",
+    "availability": "available",
     "source_url": "https://www.hwk-saarland.de/seminar/mv-teil-ii-elektrotechniker-m2et/"
   },
   {
@@ -10291,6 +10291,39 @@
     "longitude": 6.9967,
     "availability": "available",
     "source_url": "https://www.hwk-saarland.de/seminar/mv-teil-i-elektrotechniker-m1et/"
+  },
+  {
+    "chamber_slug": "hwk-saarland",
+    "chamber_name": "HWK des Saarlandes",
+    "chamber_region": "Saarland",
+    "trade_slug": "elektrotechniker",
+    "trade_name": "Elektrotechniker",
+    "title": "Elektrotechniker (Teil II)",
+    "parts": [
+      2
+    ],
+    "format": "part_time",
+    "format_display": "Teilzeit",
+    "teaching_mode": "presence",
+    "start_date": "2028-04-10",
+    "end_date": "2029-04-15",
+    "duration_hours": 536,
+    "course_fee": 1390.0,
+    "course_fee_display": "1.390 €",
+    "exam_fee_scraped": 560.0,
+    "exam_fee": {
+      "fee": 560.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "560 €"
+    },
+    "city": "Saarbrücken",
+    "street": "Hohenzollernstraße 47-49",
+    "zip_code": "66117",
+    "latitude": 49.2297,
+    "longitude": 6.9967,
+    "availability": "available",
+    "source_url": "https://www.hwk-saarland.de/seminar/mv-teil-ii-elektrotechniker-m2et/"
   },
   {
     "chamber_slug": "hwk-saarland",
@@ -14872,7 +14905,7 @@
     "latitude": 50.5548159,
     "longitude": 8.4921662,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-teilzeit-44,0,coursedetail.html?id=123886&search-onr=44&img=2"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teil-iii-teilzeit-44,0,coursedetail.html?id=123886&search-onr=44&img=1"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -14906,7 +14939,7 @@
     "latitude": 50.5548159,
     "longitude": 8.4921662,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teile-iii-iv-teilzeit-44,0,coursedetail.html?id=115841&search-onr=44&img=1"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-teile-iii-iv-teilzeit-44,0,coursedetail.html?id=115841&search-onr=44&img=2"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
