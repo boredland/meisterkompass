@@ -3,6 +3,40 @@
     "chamber_slug": "hwk-kassel",
     "chamber_name": "HWK Kassel",
     "chamber_region": "Hessen",
+    "trade_slug": "elektrotechniker",
+    "trade_name": "Elektrotechniker",
+    "title": "Elektrotechniker (Teile I + II)",
+    "parts": [
+      1,
+      2
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2026-08-24",
+    "end_date": "2027-06-11",
+    "duration_hours": 1200,
+    "course_fee": 9500.0,
+    "course_fee_display": "9.500 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 730.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "730 €"
+    },
+    "city": "Petersberg",
+    "street": "Goerdelerstraße 139",
+    "zip_code": "36100",
+    "latitude": 50.5673891,
+    "longitude": 9.699491,
+    "availability": "available",
+    "source_url": "https://www.bbz-mitte.de/de/kursfinder/elektrotechnikermeister-teil-ii-i-vollzeit"
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "chamber_name": "HWK Kassel",
+    "chamber_region": "Hessen",
     "trade_slug": "fleischer",
     "trade_name": "Fleischer",
     "title": "Fleischer (Teile I + II)",
@@ -302,6 +336,40 @@
     "longitude": 8.2590004,
     "availability": "available",
     "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-im-maler-und-lackierer-handwerk-teile-iii-schwerpunkt-gestaltung-und-instandhaltung-vollzeit-44,0,coursedetail.html?id=114481&search-onr=44&img=1"
+  },
+  {
+    "chamber_slug": "hwk-wiesbaden",
+    "chamber_name": "HWK Wiesbaden",
+    "chamber_region": "Hessen",
+    "trade_slug": "tischler",
+    "trade_name": "Tischler",
+    "title": "Tischler (Teile I + II)",
+    "parts": [
+      1,
+      2
+    ],
+    "format": "full_time",
+    "format_display": "Vollzeit",
+    "teaching_mode": "presence",
+    "start_date": "2026-08-24",
+    "end_date": "2027-01-22",
+    "duration_hours": 806,
+    "course_fee": 7400.0,
+    "course_fee_display": "7.400 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 730.0,
+      "fee_max": null,
+      "qualifier": "",
+      "display": "730 €"
+    },
+    "city": "Wiesbaden",
+    "street": "Brunhildenstraße 110",
+    "zip_code": "65189",
+    "latitude": 50.0652806,
+    "longitude": 8.2590004,
+    "availability": "waitlist",
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-im-tischlerhandwerk-teile-iii-vollzeit-44,0,coursedetail.html?id=102121&search-onr=44&img=1"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
