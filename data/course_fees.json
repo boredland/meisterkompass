@@ -10,16 +10,6 @@
     "is_generic": false
   },
   {
-    "chamber_slug": "hwk-kassel",
-    "trade_slug": "allgemein-teil-iii-iv",
-    "parts": [
-      3
-    ],
-    "fee": 2100.0,
-    "exam_fee_scraped": null,
-    "is_generic": true
-  },
-  {
     "chamber_slug": "hwk-wiesbaden",
     "trade_slug": "allgemein-teil-iii-iv",
     "parts": [
@@ -72,6 +62,16 @@
     "fee": 6450.0,
     "exam_fee_scraped": null,
     "is_generic": false
+  },
+  {
+    "chamber_slug": "hwk-rhein-main",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "parts": [
+      3
+    ],
+    "fee": 2290.0,
+    "exam_fee_scraped": null,
+    "is_generic": true
   },
   {
     "chamber_slug": "hwk-saarland",
@@ -200,6 +200,16 @@
     "fee": 9612.0,
     "exam_fee_scraped": null,
     "is_generic": false
+  },
+  {
+    "chamber_slug": "hwk-kassel",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "parts": [
+      3
+    ],
+    "fee": 2100.0,
+    "exam_fee_scraped": null,
+    "is_generic": true
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -360,16 +370,6 @@
     "is_generic": false
   },
   {
-    "chamber_slug": "hwk-rhein-main",
-    "trade_slug": "allgemein-teil-iii-iv",
-    "parts": [
-      3
-    ],
-    "fee": 2290.0,
-    "exam_fee_scraped": null,
-    "is_generic": true
-  },
-  {
     "chamber_slug": "hwk-kassel",
     "trade_slug": "allgemein-teil-iii-iv",
     "parts": [
@@ -466,17 +466,6 @@
     ],
     "fee": 7600.0,
     "exam_fee_scraped": 1130.0,
-    "is_generic": false
-  },
-  {
-    "chamber_slug": "hwk-kassel",
-    "trade_slug": "zimmerer",
-    "parts": [
-      1,
-      2
-    ],
-    "fee": 10490.0,
-    "exam_fee_scraped": null,
     "is_generic": false
   },
   {
@@ -703,6 +692,17 @@
     "is_generic": false
   },
   {
+    "chamber_slug": "hwk-kassel",
+    "trade_slug": "zimmerer",
+    "parts": [
+      1,
+      2
+    ],
+    "fee": 7990.0,
+    "exam_fee_scraped": null,
+    "is_generic": false
+  },
+  {
     "chamber_slug": "hwk-koblenz",
     "trade_slug": "konditoren",
     "parts": [
@@ -711,6 +711,19 @@
     ],
     "fee": 7550.0,
     "exam_fee_scraped": null,
+    "is_generic": false
+  },
+  {
+    "chamber_slug": "hwk-saarland",
+    "trade_slug": "metallbauer",
+    "parts": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "fee": 6070.0,
+    "exam_fee_scraped": 1790.0,
     "is_generic": false
   },
   {
@@ -930,17 +943,6 @@
       2
     ],
     "fee": 8990.0,
-    "exam_fee_scraped": null,
-    "is_generic": false
-  },
-  {
-    "chamber_slug": "hwk-koblenz",
-    "trade_slug": "zimmerer",
-    "parts": [
-      1,
-      2
-    ],
-    "fee": 9900.0,
     "exam_fee_scraped": null,
     "is_generic": false
   },
@@ -1236,6 +1238,17 @@
     "is_generic": false
   },
   {
+    "chamber_slug": "hwk-koblenz",
+    "trade_slug": "zimmerer",
+    "parts": [
+      1,
+      2
+    ],
+    "fee": 9900.0,
+    "exam_fee_scraped": null,
+    "is_generic": false
+  },
+  {
     "chamber_slug": "hwk-saarland",
     "trade_slug": "fliesen-platten-und-mosaikleger",
     "parts": [
@@ -1479,19 +1492,6 @@
     ],
     "fee": 5550.0,
     "exam_fee_scraped": 1650.0,
-    "is_generic": false
-  },
-  {
-    "chamber_slug": "hwk-saarland",
-    "trade_slug": "metallbauer",
-    "parts": [
-      1,
-      2,
-      3,
-      4
-    ],
-    "fee": 6070.0,
-    "exam_fee_scraped": 1790.0,
     "is_generic": false
   },
   {
