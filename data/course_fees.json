@@ -607,6 +607,17 @@
     "is_generic": false
   },
   {
+    "chamber_slug": "hwk-kassel",
+    "trade_slug": "modellbauer",
+    "parts": [
+      1,
+      2
+    ],
+    "fee": 10427.0,
+    "exam_fee_scraped": null,
+    "is_generic": false
+  },
+  {
     "chamber_slug": "hwk-saarland",
     "trade_slug": "friseur",
     "parts": [
@@ -1563,17 +1574,6 @@
   },
   {
     "chamber_slug": "hwk-rheinhessen",
-    "trade_slug": "fliesen-platten-und-mosaikleger",
-    "parts": [
-      1,
-      2
-    ],
-    "fee": 5200.0,
-    "exam_fee_scraped": null,
-    "is_generic": false
-  },
-  {
-    "chamber_slug": "hwk-rheinhessen",
     "trade_slug": "installateur-und-heizungsbauer",
     "parts": [
       1,
@@ -1592,6 +1592,17 @@
     "fee": 650.0,
     "exam_fee_scraped": null,
     "is_generic": true
+  },
+  {
+    "chamber_slug": "hwk-rheinhessen",
+    "trade_slug": "fliesen-platten-und-mosaikleger",
+    "parts": [
+      1,
+      2
+    ],
+    "fee": 5400.0,
+    "exam_fee_scraped": null,
+    "is_generic": false
   },
   {
     "chamber_slug": "hwk-rheinhessen",
