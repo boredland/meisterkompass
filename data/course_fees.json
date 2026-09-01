@@ -1,15 +1,5 @@
 [
   {
-    "chamber_slug": "hwk-kassel",
-    "trade_slug": "kfz-techniker",
-    "parts": [
-      1
-    ],
-    "fee": 8510.0,
-    "exam_fee_scraped": null,
-    "is_generic": false
-  },
-  {
     "chamber_slug": "hwk-wiesbaden",
     "trade_slug": "allgemein-teil-iii-iv",
     "parts": [
@@ -189,6 +179,17 @@
     "fee": 900.0,
     "exam_fee_scraped": null,
     "is_generic": true
+  },
+  {
+    "chamber_slug": "hwk-rhein-main",
+    "trade_slug": "zweirad",
+    "parts": [
+      1,
+      2
+    ],
+    "fee": 8490.0,
+    "exam_fee_scraped": null,
+    "is_generic": false
   },
   {
     "chamber_slug": "hwk-trier",
@@ -565,6 +566,16 @@
   },
   {
     "chamber_slug": "hwk-kassel",
+    "trade_slug": "kfz-techniker",
+    "parts": [
+      1
+    ],
+    "fee": 8510.0,
+    "exam_fee_scraped": null,
+    "is_generic": false
+  },
+  {
+    "chamber_slug": "hwk-kassel",
     "trade_slug": "friseur",
     "parts": [
       1,
@@ -881,17 +892,6 @@
     "is_generic": false
   },
   {
-    "chamber_slug": "hwk-wiesbaden",
-    "trade_slug": "dachdecker",
-    "parts": [
-      1,
-      2
-    ],
-    "fee": 9975.0,
-    "exam_fee_scraped": null,
-    "is_generic": false
-  },
-  {
     "chamber_slug": "hwk-koblenz",
     "trade_slug": "maler-und-lackierer",
     "parts": [
@@ -931,17 +931,6 @@
       2
     ],
     "fee": 6050.0,
-    "exam_fee_scraped": null,
-    "is_generic": false
-  },
-  {
-    "chamber_slug": "hwk-rhein-main",
-    "trade_slug": "zweirad",
-    "parts": [
-      1,
-      2
-    ],
-    "fee": 9990.0,
     "exam_fee_scraped": null,
     "is_generic": false
   },
@@ -1167,7 +1156,7 @@
       1,
       2
     ],
-    "fee": 7900.0,
+    "fee": 8150.0,
     "exam_fee_scraped": null,
     "is_generic": false
   },
@@ -1408,6 +1397,17 @@
   },
   {
     "chamber_slug": "hwk-wiesbaden",
+    "trade_slug": "dachdecker",
+    "parts": [
+      1,
+      2
+    ],
+    "fee": 9975.0,
+    "exam_fee_scraped": null,
+    "is_generic": false
+  },
+  {
+    "chamber_slug": "hwk-wiesbaden",
     "trade_slug": "installateur-und-heizungsbauer",
     "parts": [
       1,
@@ -1541,28 +1541,6 @@
   },
   {
     "chamber_slug": "hwk-rheinhessen",
-    "trade_slug": "metallbauer",
-    "parts": [
-      1,
-      2
-    ],
-    "fee": 6100.0,
-    "exam_fee_scraped": null,
-    "is_generic": false
-  },
-  {
-    "chamber_slug": "hwk-rheinhessen",
-    "trade_slug": "maurer-und-betonbauer",
-    "parts": [
-      1,
-      2
-    ],
-    "fee": 6300.0,
-    "exam_fee_scraped": null,
-    "is_generic": false
-  },
-  {
-    "chamber_slug": "hwk-rheinhessen",
     "trade_slug": "friseur",
     "parts": [
       1,
@@ -1589,7 +1567,7 @@
     "parts": [
       4
     ],
-    "fee": 650.0,
+    "fee": 695.0,
     "exam_fee_scraped": null,
     "is_generic": true
   },
