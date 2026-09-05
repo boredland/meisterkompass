@@ -270,6 +270,40 @@
     "source_url": "https://www.bubiza.de/kurse/vollzeit-hoehere-berufsbildung/zimmermeister-fuer-architekten-ingenieure-techniker.html"
   },
   {
+    "chamber_slug": "hwk-koblenz",
+    "chamber_name": "HWK Koblenz",
+    "chamber_region": "Rheinland-Pfalz",
+    "trade_slug": "stuckateur",
+    "trade_name": "Stuckateur",
+    "title": "Stuckateur (Teile I + II)",
+    "parts": [
+      1,
+      2
+    ],
+    "format": "part_time",
+    "format_display": "Teilzeit",
+    "teaching_mode": "presence",
+    "start_date": "2026-09-04",
+    "end_date": "2027-10-22",
+    "duration_hours": 610,
+    "course_fee": 6450.0,
+    "course_fee_display": "6.450 €",
+    "exam_fee_scraped": null,
+    "exam_fee": {
+      "fee": 1800.0,
+      "fee_max": null,
+      "qualifier": "bis zu",
+      "display": "bis zu 1.800 €"
+    },
+    "city": "Koblenz",
+    "street": "August-Horch-Str. 6",
+    "zip_code": "56070",
+    "latitude": 50.3895583,
+    "longitude": 7.5708933,
+    "availability": "available",
+    "source_url": "https://www.hwk-koblenz.de/kurse/stuckateur-teile-i-und-ii-in-teilzeit-52,0,coursedetail.html?id=113477&search-onr=52&img=1"
+  },
+  {
     "chamber_slug": "hwk-pfalz",
     "chamber_name": "HWK der Pfalz",
     "chamber_region": "Rheinland-Pfalz",

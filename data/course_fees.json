@@ -1,26 +1,5 @@
 [
   {
-    "chamber_slug": "hwk-koblenz",
-    "trade_slug": "stuckateur",
-    "parts": [
-      1,
-      2
-    ],
-    "fee": 6450.0,
-    "exam_fee_scraped": null,
-    "is_generic": false
-  },
-  {
-    "chamber_slug": "hwk-saarland",
-    "trade_slug": "allgemein-teil-iii-iv",
-    "parts": [
-      4
-    ],
-    "fee": 505.0,
-    "exam_fee_scraped": 130.0,
-    "is_generic": true
-  },
-  {
     "chamber_slug": "hwk-kassel",
     "trade_slug": "allgemein-teil-iii-iv",
     "parts": [
@@ -73,6 +52,16 @@
     "fee": 5480.0,
     "exam_fee_scraped": 560.0,
     "is_generic": false
+  },
+  {
+    "chamber_slug": "hwk-saarland",
+    "trade_slug": "allgemein-teil-iii-iv",
+    "parts": [
+      4
+    ],
+    "fee": 505.0,
+    "exam_fee_scraped": 130.0,
+    "is_generic": true
   },
   {
     "chamber_slug": "hwk-koblenz",
@@ -1169,6 +1158,17 @@
     ],
     "fee": 9300.0,
     "exam_fee_scraped": 1130.0,
+    "is_generic": false
+  },
+  {
+    "chamber_slug": "hwk-koblenz",
+    "trade_slug": "stuckateur",
+    "parts": [
+      1,
+      2
+    ],
+    "fee": 6650.0,
+    "exam_fee_scraped": null,
     "is_generic": false
   },
   {
