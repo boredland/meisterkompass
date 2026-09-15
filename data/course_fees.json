@@ -1,16 +1,6 @@
 [
   {
     "chamber_slug": "hwk-saarland",
-    "trade_slug": "maurer-und-betonbauer",
-    "parts": [
-      2
-    ],
-    "fee": 5480.0,
-    "exam_fee_scraped": 560.0,
-    "is_generic": false
-  },
-  {
-    "chamber_slug": "hwk-saarland",
     "trade_slug": "allgemein-teil-iii-iv",
     "parts": [
       4
@@ -773,6 +763,16 @@
     ],
     "fee": 1425.0,
     "exam_fee_scraped": 420.0,
+    "is_generic": false
+  },
+  {
+    "chamber_slug": "hwk-saarland",
+    "trade_slug": "maurer-und-betonbauer",
+    "parts": [
+      2
+    ],
+    "fee": 5480.0,
+    "exam_fee_scraped": 560.0,
     "is_generic": false
   },
   {
