@@ -111,6 +111,13 @@
           "qualifier": ""
         }
       },
+      "kfz-techniker": {
+        "2": {
+          "fee": 600.0,
+          "fee_max": null,
+          "qualifier": ""
+        }
+      },
       "strassenbauer": {
         "1,2": {
           "fee": 1300.0,
