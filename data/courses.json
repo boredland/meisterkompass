@@ -5422,7 +5422,7 @@
     "zip_code": "56070",
     "latitude": 50.3894351,
     "longitude": 7.5720768,
-    "availability": "waitlist",
+    "availability": "available",
     "source_url": "https://www.hwk-koblenz.de/kurse/strassenbauer-teile-i-und-ii-in-vollzeit-52,0,coursedetail.html?id=115610&search-onr=52&img=12"
   },
   {
@@ -13125,7 +13125,7 @@
     "zip_code": "65189",
     "latitude": 50.0652806,
     "longitude": 8.2590004,
-    "availability": "available",
+    "availability": "waitlist",
     "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-im-friseurhandwerk-teile-i-iv-vollzeit-44,0,coursedetail.html?id=124674&search-onr=44&img=3"
   },
   {
@@ -13236,39 +13236,6 @@
     "chamber_region": "Hessen",
     "trade_slug": "kfz-techniker",
     "trade_name": "Kfz.-Techniker",
-    "title": "Kfz.-Techniker (Teil II)",
-    "parts": [
-      2
-    ],
-    "format": "full_time",
-    "format_display": "Vollzeit",
-    "teaching_mode": "presence",
-    "start_date": "2026-09-21",
-    "end_date": "2026-12-17",
-    "duration_hours": 556,
-    "course_fee": 4550.0,
-    "course_fee_display": "4.550 €",
-    "exam_fee_scraped": null,
-    "exam_fee": {
-      "fee": 420.0,
-      "fee_max": null,
-      "qualifier": "",
-      "display": "420 €"
-    },
-    "city": "Wetzlar",
-    "street": "Dillufer 40",
-    "zip_code": "35576",
-    "latitude": 50.5548159,
-    "longitude": 8.4921662,
-    "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-im-kraftfahrzeugtechnikerhandwerk-teil-ii-vollzeit-handlungsfeld-fahrzeugsysteme-44,0,coursedetail.html?id=102541&search-onr=44&img=1"
-  },
-  {
-    "chamber_slug": "hwk-wiesbaden",
-    "chamber_name": "HWK Wiesbaden",
-    "chamber_region": "Hessen",
-    "trade_slug": "kfz-techniker",
-    "trade_name": "Kfz.-Techniker",
     "title": "Kfz.-Techniker (Teil I)",
     "parts": [
       1
@@ -13294,7 +13261,7 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "waitlist",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-im-kraftfahrzeugtechnikerhandwerk-teil-i-in-teilzeit-mit-vollzeitblock-44,0,coursedetail.html?id=103381&search-onr=44&img=2"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-im-kraftfahrzeugtechnikerhandwerk-teil-i-in-teilzeit-mit-vollzeitblock-44,0,coursedetail.html?id=103381&search-onr=44&img=1"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -13327,7 +13294,7 @@
     "latitude": 50.5548159,
     "longitude": 8.4921662,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-im-kraftfahrzeugtechnikerhandwerk-teil-ii-vollzeit-handlungsfeld-fahrzeugsysteme-44,0,coursedetail.html?id=123442&search-onr=44&img=4"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-im-kraftfahrzeugtechnikerhandwerk-teil-ii-vollzeit-handlungsfeld-fahrzeugsysteme-44,0,coursedetail.html?id=123442&search-onr=44&img=3"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -13360,7 +13327,7 @@
     "latitude": 50.5548159,
     "longitude": 8.4921662,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-im-kraftfahrzeugtechnikerhandwerk-teil-ii-teilzeit-handlungsfeld-fahrzeugsysteme-44,0,coursedetail.html?id=52189&search-onr=44&img=3"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-im-kraftfahrzeugtechnikerhandwerk-teil-ii-teilzeit-handlungsfeld-fahrzeugsysteme-44,0,coursedetail.html?id=52189&search-onr=44&img=2"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -13393,7 +13360,7 @@
     "zip_code": "35576",
     "latitude": 50.5548159,
     "longitude": 8.4921662,
-    "availability": "available",
+    "availability": "waitlist",
     "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-im-maler-und-lackierer-handwerk-teil-i-ii-vollzeit-schwerpunkt-gestaltung-und-instandhaltung-44,0,coursedetail.html?id=113114&search-onr=44&img=1"
   },
   {
@@ -13428,7 +13395,7 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-im-maler-und-lackierer-handwerk-teile-i-ii-schwerpunkt-gestaltung-und-instandhaltung-teilzeit-mit-vollzeitblock-44,0,coursedetail.html?id=114502&search-onr=44&img=3"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-im-maler-und-lackierer-handwerk-teile-i-ii-schwerpunkt-gestaltung-und-instandhaltung-teilzeit-mit-vollzeitblock-44,0,coursedetail.html?id=114502&search-onr=44&img=2"
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -13462,7 +13429,7 @@
     "latitude": 50.0652806,
     "longitude": 8.2590004,
     "availability": "available",
-    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-im-maler-und-lackiererhandwerk-teile-i-ii-schwerpunkt-fahrzeuglackierung-teilzeit-mit-vollzeitblock-44,0,coursedetail.html?id=114521&search-onr=44&img=2"
+    "source_url": "https://www.hwk-wiesbaden.de/kurse/meistervorbereitung-im-maler-und-lackiererhandwerk-teile-i-ii-schwerpunkt-fahrzeuglackierung-teilzeit-mit-vollzeitblock-44,0,coursedetail.html?id=114521&search-onr=44&img=3"
   },
   {
     "chamber_slug": "hwk-wiesbaden",

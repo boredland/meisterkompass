@@ -1,15 +1,5 @@
 [
   {
-    "chamber_slug": "hwk-wiesbaden",
-    "trade_slug": "kfz-techniker",
-    "parts": [
-      2
-    ],
-    "fee": 4550.0,
-    "exam_fee_scraped": null,
-    "is_generic": false
-  },
-  {
     "chamber_slug": "hwk-kassel",
     "trade_slug": "land-und-baumaschinenmechatroniker",
     "parts": [
@@ -80,17 +70,6 @@
     "fee": 2100.0,
     "exam_fee_scraped": null,
     "is_generic": true
-  },
-  {
-    "chamber_slug": "hwk-wiesbaden",
-    "trade_slug": "maler-und-lackierer",
-    "parts": [
-      1,
-      2
-    ],
-    "fee": 7950.0,
-    "exam_fee_scraped": null,
-    "is_generic": false
   },
   {
     "chamber_slug": "hwk-koblenz",
@@ -220,6 +199,17 @@
     "is_generic": false
   },
   {
+    "chamber_slug": "hwk-wiesbaden",
+    "trade_slug": "maler-und-lackierer",
+    "parts": [
+      1,
+      2
+    ],
+    "fee": 7950.0,
+    "exam_fee_scraped": null,
+    "is_generic": false
+  },
+  {
     "chamber_slug": "hwk-saarland",
     "trade_slug": "backer",
     "parts": [
@@ -257,6 +247,17 @@
       2
     ],
     "fee": 4250.0,
+    "exam_fee_scraped": null,
+    "is_generic": false
+  },
+  {
+    "chamber_slug": "hwk-koblenz",
+    "trade_slug": "strassenbauer",
+    "parts": [
+      1,
+      2
+    ],
+    "fee": 9490.0,
     "exam_fee_scraped": null,
     "is_generic": false
   },
@@ -392,16 +393,6 @@
     "fee": 3490.0,
     "exam_fee_scraped": null,
     "is_generic": true
-  },
-  {
-    "chamber_slug": "hwk-wiesbaden",
-    "trade_slug": "friseur",
-    "parts": [
-      1
-    ],
-    "fee": 6700.0,
-    "exam_fee_scraped": null,
-    "is_generic": false
   },
   {
     "chamber_slug": "hwk-wiesbaden",
@@ -849,17 +840,6 @@
     "is_generic": false
   },
   {
-    "chamber_slug": "hwk-koblenz",
-    "trade_slug": "strassenbauer",
-    "parts": [
-      1,
-      2
-    ],
-    "fee": 9800.0,
-    "exam_fee_scraped": null,
-    "is_generic": false
-  },
-  {
     "chamber_slug": "hwk-saarland",
     "trade_slug": "kfz-techniker",
     "parts": [
@@ -877,6 +857,16 @@
       2
     ],
     "fee": 6050.0,
+    "exam_fee_scraped": null,
+    "is_generic": false
+  },
+  {
+    "chamber_slug": "hwk-wiesbaden",
+    "trade_slug": "kfz-techniker",
+    "parts": [
+      2
+    ],
+    "fee": 4750.0,
     "exam_fee_scraped": null,
     "is_generic": false
   },
@@ -1382,6 +1372,16 @@
       2
     ],
     "fee": 10050.0,
+    "exam_fee_scraped": null,
+    "is_generic": false
+  },
+  {
+    "chamber_slug": "hwk-wiesbaden",
+    "trade_slug": "friseur",
+    "parts": [
+      1
+    ],
+    "fee": 6400.0,
     "exam_fee_scraped": null,
     "is_generic": false
   },
